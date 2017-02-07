@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.1)
+set(CMAKE_CXX_STANDARD 11)
+project(VisionSensor)
+find_package(OpenCV REQUIRED)
+find_package(Boost REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS} ${Boost_INCLUDE_DIRS})
+add_executable(VisionSensor main.cpp ParkingSpot.cpp)
+target_link_libraries(VisionSensor ${OpenCV_LIBS} ${Boost_LIBRARIES} -lboost_system)
