@@ -13,7 +13,7 @@ int main(int argc, char** argv) {
     VideoCapture videoCapture;
     Mat frame;
     int inputKey = 0;
-
+    
     if (!videoCapture.open(0)) {
 		cout << "Failed to connect the camera" << endl;
 		return 0;

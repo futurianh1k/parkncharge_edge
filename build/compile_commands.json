@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/seongdokim/Projects/Seevider/VisionSensor/build",
+  "command": "/usr/bin/c++    -isystem /usr/local/include -isystem /usr/local/include/opencv  -g   -std=gnu++11 -o CMakeFiles/VisionSensor.dir/main.cpp.o -c /home/seongdokim/Projects/Seevider/VisionSensor/main.cpp",
+  "file": "/home/seongdokim/Projects/Seevider/VisionSensor/main.cpp"
+},
+{
+  "directory": "/home/seongdokim/Projects/Seevider/VisionSensor/build",
+  "command": "/usr/bin/c++    -isystem /usr/local/include -isystem /usr/local/include/opencv  -g   -std=gnu++11 -o CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o -c /home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.cpp",
+  "file": "/home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.cpp"
+}
+]
