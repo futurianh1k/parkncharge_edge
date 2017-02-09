@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "cstddef": "cpp",
+        "cstdlib": "cpp",
+        "*hpp*hpp*hppcstring": "cpp",
+        "*hpp*hpp*hpp*hpp*hppcsignal": "cpp",
+        "*h*h*h*h*h*hcwchar": "cpp",
+        "cstdint": "cpp",
+        "ctime": "cpp",
+        "*hpp*hpp*hppcctype": "cpp",
+        "cstdio": "cpp",
+        "*hpp*hpp*h*hppcmath": "cpp",
+        "cstdarg": "cpp",
+        "*h*h*hpp*hpp*hpp*hpp*hppclocale": "cpp",
+        "*hcwctype": "cpp",
+        "*hppinitializer_list": "cpp",
+        "*hpp*hpp*hpp*hpp*hpp*h*h*h*hthread": "cpp",
+        "thread": "cpp"
+    }
+}

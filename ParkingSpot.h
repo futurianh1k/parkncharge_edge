@@ -3,6 +3,9 @@
 #include <string>
 #include <opencv2/opencv.hpp>
 #include <boost/asio.hpp>
+#include <boost/thread.hpp>
+#include <boost/asio/deadline_timer.hpp>
+#include <boost/date_time/posix_time/posix_time.hpp>
 
 class ParkingSpot {
 public:
@@ -43,7 +46,9 @@ public:
      *  Only a clone of the image will be stored.
      * @param length Allowed length of time for this parking spot
      */
-     ParkingSpot(const int length = -1);
+     ParkingSpot(std::string id, const int length);
+
+     ~ParkingSpot();
 
      /**
       * Check if the parking spot is occupied
@@ -110,4 +115,41 @@ private:
      * Designate if the exit image is uploaded to the server.
      */
     bool mIsExitImageUploaded;
+
+    /**
+     * IO Service object for the deadline timer
+     */
+    boost::asio::io_service mService;
+
+    /**
+     * Work object for the deadline timer
+     */
+    boost::asio::io_service::work mWork;
+
+    boost::thread mTimerThread;
+
+    /**
+     * Timer to check if the parking expires
+     */
+    boost::asio::deadline_timer mParkingTimer;
+
+    /**
+     * Main entry of the timer thread
+     */
+    void runTimer();
+
+    /**
+     * Start the parking timer
+     */
+    void startTimer();
+
+    /**
+     * Stop the parking timer, if any
+     */
+    void stopTimer();
+
+    /**
+     * Notify a expiration message to the global message queue
+     */
+    void notifyExpiration() const;
 };

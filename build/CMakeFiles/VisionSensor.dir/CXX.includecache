@@ -9,6 +9,8 @@
 /home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.cpp
 ParkingSpot.h
 /home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.h
+iostream
+-
 
 /home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.h
 string
@@ -17,11 +19,19 @@ opencv2/opencv.hpp
 -
 boost/asio.hpp
 -
+boost/thread.hpp
+-
+boost/asio/deadline_timer.hpp
+-
+boost/date_time/posix_time/posix_time.hpp
+-
 
 /home/seongdokim/Projects/Seevider/VisionSensor/main.cpp
 main.h
 /home/seongdokim/Projects/Seevider/VisionSensor/main.h
 iostream
+-
+vector
 -
 opencv2/highgui/highgui.hpp
 -

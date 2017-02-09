@@ -1,6 +1,7 @@
 #include "main.h"
 
 #include <iostream>
+#include <vector>
 #include <opencv2/highgui/highgui.hpp>
 
 #include "ParkingSpot.h"
@@ -13,7 +14,10 @@ int main(int argc, char** argv) {
     VideoCapture videoCapture;
     Mat frame;
     int inputKey = 0;
-    
+
+    //boost::asio::io_service io;
+    //boost::asio::deadline_timer t(io, boost::posix_time::seconds(1));
+
     if (!videoCapture.open(0)) {
 		cout << "Failed to connect the camera" << endl;
 		return 0;
@@ -21,10 +25,10 @@ int main(int argc, char** argv) {
 
     namedWindow(demoWindowName);
 
-    vector<ParkingSpot> parkingSpots;
+    vector<boost::shared_ptr<ParkingSpot>> parkingSpots;
 
-    for (int i = 0; i < 9; i++) {
-        parkingSpots.push_back(ParkingSpot(10));
+    for (int i = 0; i < 10; i++) {
+        parkingSpots.push_back(boost::shared_ptr<ParkingSpot>(new ParkingSpot(std::to_string(i), 10)));
     }
 
     while (videoCapture.read(frame)) {
@@ -35,8 +39,16 @@ int main(int argc, char** argv) {
             break;
         }
 
-        if (inputKey == 'a') {
+        if (inputKey >= '0' && inputKey <= '9') {
             // Add a timer for testing purpose
+            int idx = inputKey - '0';
+            if (parkingSpots[idx]->isOccupied()) {
+                parkingSpots[idx]->exit(cv::Mat());
+            }
+            else {
+                cout << "Timer " << to_string(idx) << " begins" << endl;
+                parkingSpots[idx]->enter(cv::Mat());
+            }
         }
     }
 
