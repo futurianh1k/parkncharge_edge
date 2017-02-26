@@ -6,6 +6,46 @@
 
 #IncludeRegexTransform: 
 
+/home/seongdokim/Projects/Seevider/VisionSensor/IMessageData.h
+string
+-
+
+/home/seongdokim/Projects/Seevider/VisionSensor/IOUtils.cpp
+IOUtils.h
+/home/seongdokim/Projects/Seevider/VisionSensor/IOUtils.h
+boost/property_tree/ptree.hpp
+-
+boost/property_tree/json_parser.hpp
+-
+
+/home/seongdokim/Projects/Seevider/VisionSensor/IOUtils.h
+string
+-
+
+/home/seongdokim/Projects/Seevider/VisionSensor/MessageQueue.h
+string
+-
+sstream
+-
+queue
+-
+boost/thread/condition_variable.hpp
+-
+boost/thread/mutex.hpp
+-
+
+/home/seongdokim/Projects/Seevider/VisionSensor/NetworkHandler.h
+MessageQueue.h
+/home/seongdokim/Projects/Seevider/VisionSensor/MessageQueue.h
+iostream
+-
+boost/thread.hpp
+-
+boost/chrono.hpp
+-
+ParkingStatus.h
+/home/seongdokim/Projects/Seevider/VisionSensor/ParkingStatus.h
+
 /home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.cpp
 ParkingSpot.h
 /home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.h
@@ -25,10 +65,24 @@ boost/asio/deadline_timer.hpp
 -
 boost/date_time/posix_time/posix_time.hpp
 -
+MessageQueue.h
+/home/seongdokim/Projects/Seevider/VisionSensor/MessageQueue.h
+
+/home/seongdokim/Projects/Seevider/VisionSensor/ParkingStatus.h
+opencv2/opencv.hpp
+-
+boost/date_time/posix_time/posix_time.hpp
+-
+IMessageData.h
+/home/seongdokim/Projects/Seevider/VisionSensor/IMessageData.h
+types.h
+/home/seongdokim/Projects/Seevider/VisionSensor/types.h
 
 /home/seongdokim/Projects/Seevider/VisionSensor/main.cpp
 main.h
 /home/seongdokim/Projects/Seevider/VisionSensor/main.h
+string
+-
 iostream
 -
 vector
@@ -37,8 +91,14 @@ opencv2/highgui/highgui.hpp
 -
 ParkingSpot.h
 /home/seongdokim/Projects/Seevider/VisionSensor/ParkingSpot.h
+NetworkHandler.h
+/home/seongdokim/Projects/Seevider/VisionSensor/NetworkHandler.h
+IOUtils.h
+/home/seongdokim/Projects/Seevider/VisionSensor/IOUtils.h
 
 /home/seongdokim/Projects/Seevider/VisionSensor/main.h
+
+/home/seongdokim/Projects/Seevider/VisionSensor/types.h
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

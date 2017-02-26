@@ -7,6 +7,8 @@
 #include <boost/asio/deadline_timer.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 
+#include "MessageQueue.h"
+
 class ParkingSpot {
 public:
     
@@ -46,29 +48,29 @@ public:
      *  Only a clone of the image will be stored.
      * @param length Allowed length of time for this parking spot
      */
-     ParkingSpot(std::string id, const int length);
+    ParkingSpot(std::string id, const int length);
 
-     ~ParkingSpot();
+    ~ParkingSpot();
 
-     /**
-      * Check if the parking spot is occupied
-      */
-     bool isOccupied();
+    /**
+     * Check if the parking spot is occupied
+     */
+    bool isOccupied();
 
-     /**
-      * Must be called when the vehicle comes in.
-      */
-     void enter(const cv::Mat& entryImage);
+    /**
+     * Must be called when the vehicle comes in.
+     */
+    void enter(const cv::Mat& entryImage);
 
-     /**
-      * Must be called when the maximum allowed time has reached.
-      */
-     void expired(const cv::Mat& expiredImage);
+    /**
+     * Must be called when the maximum allowed time has reached.
+     */
+    void expired(const cv::Mat& expiredImage);
 
-     /**
-      * Must be called when the vehicle goes out.
-      */
-     void exit(const cv::Mat& exitImage);
+    /**
+     * Must be called when the vehicle goes out.
+     */
+    void exit(const cv::Mat& exitImage);
 
 private:
     /**
@@ -126,6 +128,9 @@ private:
      */
     boost::asio::io_service::work mWork;
 
+    /**
+     * Timer thread
+     */
     boost::thread mTimerThread;
 
     /**
@@ -151,5 +156,18 @@ private:
     /**
      * Notify a expiration message to the global message queue
      */
-    void notifyExpiration() const;
+    void notifyExpiration();
+
+    //-----------------------------------
+    // Static functions and variables
+    //-----------------------------------
+public:
+    static void setMessageQueue(MessageQueue<std::string> *messageQueue);
+
+private:
+    /**
+     * Network message queue for uploading the parking spot status information to the server.
+     * Data will be inserted when the status changes
+     */
+    static MessageQueue<std::string> *mServerMsgQueue;
 };

@@ -1,10 +1,13 @@
 #include "main.h"
 
+#include <string>
 #include <iostream>
 #include <vector>
 #include <opencv2/highgui/highgui.hpp>
 
 #include "ParkingSpot.h"
+#include "NetworkHandler.h"
+#include "IOUtils.h"
 
 using namespace std;
 using namespace cv;
@@ -15,8 +18,10 @@ int main(int argc, char** argv) {
     Mat frame;
     int inputKey = 0;
 
-    //boost::asio::io_service io;
-    //boost::asio::deadline_timer t(io, boost::posix_time::seconds(1));
+    MessageQueue<std::string> *msgQueue = new MessageQueue<std::string>();
+    NetworkHandler<std::string> networkHandler(msgQueue);
+
+    ParkingSpot::setMessageQueue(msgQueue);
 
     if (!videoCapture.open(0)) {
 		cout << "Failed to connect the camera" << endl;
@@ -57,4 +62,7 @@ int main(int argc, char** argv) {
     if (videoCapture.isOpened()) {
 		videoCapture.release();
 	}
+
+    networkHandler.destroy();
+    delete msgQueue;
 }

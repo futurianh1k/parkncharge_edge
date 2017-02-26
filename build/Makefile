@@ -123,6 +123,33 @@ VisionSensor/fast:
 	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/build
 .PHONY : VisionSensor/fast
 
+IOUtils.o: IOUtils.cpp.o
+
+.PHONY : IOUtils.o
+
+# target to build an object file
+IOUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOUtils.cpp.o
+.PHONY : IOUtils.cpp.o
+
+IOUtils.i: IOUtils.cpp.i
+
+.PHONY : IOUtils.i
+
+# target to preprocess a source file
+IOUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOUtils.cpp.i
+.PHONY : IOUtils.cpp.i
+
+IOUtils.s: IOUtils.cpp.s
+
+.PHONY : IOUtils.s
+
+# target to generate assembly for a file
+IOUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOUtils.cpp.s
+.PHONY : IOUtils.cpp.s
+
 ParkingSpot.o: ParkingSpot.cpp.o
 
 .PHONY : ParkingSpot.o
@@ -186,6 +213,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... VisionSensor"
+	@echo "... IOUtils.o"
+	@echo "... IOUtils.i"
+	@echo "... IOUtils.s"
 	@echo "... ParkingSpot.o"
 	@echo "... ParkingSpot.i"
 	@echo "... ParkingSpot.s"

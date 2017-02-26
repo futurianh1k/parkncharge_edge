@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/VisionSensor.dir/main.cpp.o"
   "CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o"
+  "CMakeFiles/VisionSensor.dir/IOUtils.cpp.o"
   "VisionSensor.pdb"
   "VisionSensor"
 )
