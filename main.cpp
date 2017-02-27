@@ -5,64 +5,36 @@
 #include <vector>
 #include <opencv2/highgui/highgui.hpp>
 
-#include "ParkingSpot.h"
-#include "NetworkHandler.h"
+#include <boost/date_time/posix_time/posix_time.hpp>
+#include <boost/date_time/local_time/local_time.hpp>
+
 #include "IOUtils.h"
+#include "MainInterface.h"
 
 using namespace std;
 using namespace cv;
+using namespace seevider;
 
 int main(int argc, char** argv) {
-    String demoWindowName = "Demo";
-    VideoCapture videoCapture;
-    Mat frame;
-    int inputKey = 0;
+    MainInterface mainInterface;
 
-    MessageQueue<std::string> *msgQueue = new MessageQueue<std::string>();
-    NetworkHandler<std::string> networkHandler(msgQueue);
+    mainInterface.run();
 
-    ParkingSpot::setMessageQueue(msgQueue);
+    /*
+    // TODO: remove timers for each parking ParkingSpot
+    // Instead, when a vehicle enters to a spot,
+    // record expiration time to the time list.
+    // When the vehicle exit from the spot, remove the expiration time from the list.
+    // For each iteration, check if current time equals to one of the expiration times in the list.
 
-    if (!videoCapture.open(0)) {
-		cout << "Failed to connect the camera" << endl;
-		return 0;
-	}
+    while (videoReader.read(frame)) {
+        // Retrieve current local time
+        boost::posix_time::ptime now = boost::posix_time::second_clock::local_time();
+        boost::posix_time::time_duration td = now.time_of_day();
+        std::stringstream ss;
+        ss << static_cast<int>(now.date().month()) << "/" << now.date().day()
+            << "/" << now.date().year() << ", " << td.hours() << ":" << td.minutes() << ":" << td.seconds();
+        std::cout << ss.str() << std::endl;
+    }*/
 
-    namedWindow(demoWindowName);
-
-    vector<boost::shared_ptr<ParkingSpot>> parkingSpots;
-
-    for (int i = 0; i < 10; i++) {
-        parkingSpots.push_back(boost::shared_ptr<ParkingSpot>(new ParkingSpot(std::to_string(i), 10)));
-    }
-
-    while (videoCapture.read(frame)) {
-        imshow(demoWindowName, frame);
-        inputKey = 0xFF & waitKey(30);
-
-        if (inputKey == 27) {
-            break;
-        }
-
-        if (inputKey >= '0' && inputKey <= '9') {
-            // Add a timer for testing purpose
-            int idx = inputKey - '0';
-            if (parkingSpots[idx]->isOccupied()) {
-                parkingSpots[idx]->exit(cv::Mat());
-            }
-            else {
-                cout << "Timer " << to_string(idx) << " begins" << endl;
-                parkingSpots[idx]->enter(cv::Mat());
-            }
-        }
-    }
-
-    destroyAllWindows();
-
-    if (videoCapture.isOpened()) {
-		videoCapture.release();
-	}
-
-    networkHandler.destroy();
-    delete msgQueue;
 }

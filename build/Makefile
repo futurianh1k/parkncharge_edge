@@ -150,6 +150,33 @@ IOUtils.cpp.s:
 	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOUtils.cpp.s
 .PHONY : IOUtils.cpp.s
 
+MainInterface.o: MainInterface.cpp.o
+
+.PHONY : MainInterface.o
+
+# target to build an object file
+MainInterface.cpp.o:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/MainInterface.cpp.o
+.PHONY : MainInterface.cpp.o
+
+MainInterface.i: MainInterface.cpp.i
+
+.PHONY : MainInterface.i
+
+# target to preprocess a source file
+MainInterface.cpp.i:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/MainInterface.cpp.i
+.PHONY : MainInterface.cpp.i
+
+MainInterface.s: MainInterface.cpp.s
+
+.PHONY : MainInterface.s
+
+# target to generate assembly for a file
+MainInterface.cpp.s:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/MainInterface.cpp.s
+.PHONY : MainInterface.cpp.s
+
 ParkingSpot.o: ParkingSpot.cpp.o
 
 .PHONY : ParkingSpot.o
@@ -176,6 +203,87 @@ ParkingSpot.s: ParkingSpot.cpp.s
 ParkingSpot.cpp.s:
 	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.s
 .PHONY : ParkingSpot.cpp.s
+
+ParkingStatus.o: ParkingStatus.cpp.o
+
+.PHONY : ParkingStatus.o
+
+# target to build an object file
+ParkingStatus.cpp.o:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ParkingStatus.cpp.o
+.PHONY : ParkingStatus.cpp.o
+
+ParkingStatus.i: ParkingStatus.cpp.i
+
+.PHONY : ParkingStatus.i
+
+# target to preprocess a source file
+ParkingStatus.cpp.i:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ParkingStatus.cpp.i
+.PHONY : ParkingStatus.cpp.i
+
+ParkingStatus.s: ParkingStatus.cpp.s
+
+.PHONY : ParkingStatus.s
+
+# target to generate assembly for a file
+ParkingStatus.cpp.s:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ParkingStatus.cpp.s
+.PHONY : ParkingStatus.cpp.s
+
+SerialVideoReader.o: SerialVideoReader.cpp.o
+
+.PHONY : SerialVideoReader.o
+
+# target to build an object file
+SerialVideoReader.cpp.o:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o
+.PHONY : SerialVideoReader.cpp.o
+
+SerialVideoReader.i: SerialVideoReader.cpp.i
+
+.PHONY : SerialVideoReader.i
+
+# target to preprocess a source file
+SerialVideoReader.cpp.i:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.i
+.PHONY : SerialVideoReader.cpp.i
+
+SerialVideoReader.s: SerialVideoReader.cpp.s
+
+.PHONY : SerialVideoReader.s
+
+# target to generate assembly for a file
+SerialVideoReader.cpp.s:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.s
+.PHONY : SerialVideoReader.cpp.s
+
+ServerNetworkHandler.o: ServerNetworkHandler.cpp.o
+
+.PHONY : ServerNetworkHandler.o
+
+# target to build an object file
+ServerNetworkHandler.cpp.o:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o
+.PHONY : ServerNetworkHandler.cpp.o
+
+ServerNetworkHandler.i: ServerNetworkHandler.cpp.i
+
+.PHONY : ServerNetworkHandler.i
+
+# target to preprocess a source file
+ServerNetworkHandler.cpp.i:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.i
+.PHONY : ServerNetworkHandler.cpp.i
+
+ServerNetworkHandler.s: ServerNetworkHandler.cpp.s
+
+.PHONY : ServerNetworkHandler.s
+
+# target to generate assembly for a file
+ServerNetworkHandler.cpp.s:
+	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.s
+.PHONY : ServerNetworkHandler.cpp.s
 
 main.o: main.cpp.o
 
@@ -216,9 +324,21 @@ help:
 	@echo "... IOUtils.o"
 	@echo "... IOUtils.i"
 	@echo "... IOUtils.s"
+	@echo "... MainInterface.o"
+	@echo "... MainInterface.i"
+	@echo "... MainInterface.s"
 	@echo "... ParkingSpot.o"
 	@echo "... ParkingSpot.i"
 	@echo "... ParkingSpot.s"
+	@echo "... ParkingStatus.o"
+	@echo "... ParkingStatus.i"
+	@echo "... ParkingStatus.s"
+	@echo "... SerialVideoReader.o"
+	@echo "... SerialVideoReader.i"
+	@echo "... SerialVideoReader.s"
+	@echo "... ServerNetworkHandler.o"
+	@echo "... ServerNetworkHandler.i"
+	@echo "... ServerNetworkHandler.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

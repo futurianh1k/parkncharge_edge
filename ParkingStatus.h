@@ -10,10 +10,15 @@ namespace seevider {
     class ParkingStatus : public IMessageData {
     public:
         /**
+         * Empty constructor
+         */
+        ParkingStatus();
+        
+        /**
          * Basic constructor
          */
-        ParkingStatus(const int update_code, const int spotID,
-            const cv::Mat &frame, boost::posix_time::ptime eventTime);
+        ParkingStatus(const int update_code, const std::string spotID,
+            const cv::Mat &frame, const boost::posix_time::ptime &eventTime);
 
         /**
          * Basic destructor
@@ -24,12 +29,12 @@ namespace seevider {
          * Construct a string to show the content of the data.
          * Generally used for debugging purpose.
          */
-        std::string toString() const;
+        virtual std::string toString() const;
 
         /**
         * Construct a JSON data for network communication
         */
-        std::string toJSONObject() const;
+        virtual std::string toJSONObject() const;
 
     private:
         /**
@@ -40,7 +45,7 @@ namespace seevider {
         /**
          * Parking spot ID
          */
-        int mSpotID;
+        std::string mSpotID;
 
         /**
          * Image frame
@@ -50,6 +55,6 @@ namespace seevider {
         /**
          * Date and time that this event happened.
          */
-        boost::posix_time::ptime mTime;
+        boost::posix_time::ptime mEventTime;
     };
 }

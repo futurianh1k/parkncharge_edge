@@ -7,10 +7,14 @@
 
 using namespace seevider;
 
-ParkingStatus::ParkingStatus(const int update_code, const int spotID,
-    const cv::Mat &frame, boost::posix_time::ptime eventTime) :
+ParkingStatus::ParkingStatus() {
+
+}
+
+ParkingStatus::ParkingStatus(const int update_code, const std::string spotID,
+    const cv::Mat &frame, const boost::posix_time::ptime &eventTime) :
     mUpdateCode(update_code), mSpotID(spotID),
-    mFrame(frame.clone()), mTime(eventTime) {
+    mFrame(frame.clone()), mEventTime(eventTime) {
     // do nothing
 }
 
@@ -19,8 +23,11 @@ ParkingStatus::~ParkingStatus() {
 }
 
 std::string ParkingStatus::toString() const {
-    // TODO: implement it
-    return std::string();
+    std::stringstream sstr;
+
+    sstr << mSpotID << " at " << to_simple_string(mEventTime);
+
+    return sstr.str();
 }
 
 std::string ParkingStatus::toJSONObject() const {

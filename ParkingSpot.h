@@ -8,166 +8,154 @@
 #include <boost/date_time/posix_time/posix_time.hpp>
 
 #include "MessageQueue.h"
+#include "SerialVideoReader.h"
+#include "ParkingStatus.h"
 
-class ParkingSpot {
-public:
-    
-    /**
-     * The read-only rectangular ROI
-     */
-    const cv::Rect& ROI;
+namespace seevider {
+    class ParkingSpot {
+    public:
+        
+        /**
+         * The read-only rectangular ROI
+         */
+        const cv::Rect& ROI;
 
-    /**
-     * The read-only time limit as minutes
-     */
-    const int& TimeLimit;
-    
-    /**
-     * The read-only server-synchronized ID of the parking spot
-     */
-    const std::string& ID;
+        /**
+         * The read-only time limit as minutes
+         */
+        const int& TimeLimit;
+        
+        /**
+         * The read-only server-synchronized ID of the parking spot
+         */
+        const std::string& ID;
 
-    /**
-     * The read-only image which is taken at the time of entry.
-     */
-    const cv::Mat& ImageAtEntry;
+        /**
+         * Basic constructor.
+         * @params entryImage The original image taken at the time of entry.
+         *  Only a clone of the image will be stored.
+         * @param length Allowed length of time for this parking spot
+         */
+        ParkingSpot(std::string id, const int length);
 
-    /**
-     * The read-only image which is taken at the time of exit.
-     */
-    const cv::Mat& ImageAtExit;
+        ~ParkingSpot();
 
-    /**
-     * The read-only image which is taken at the expiration time.
-     */
-    const cv::Mat& ImageAtExpired;
+        /**
+         * Check if the parking spot is occupied
+         */
+        bool isOccupied() const;
 
-    /**
-     * Basic constructor.
-     * @params entryImage The original image taken at the time of entry.
-     *  Only a clone of the image will be stored.
-     * @param length Allowed length of time for this parking spot
-     */
-    ParkingSpot(std::string id, const int length);
+        /**
+         * Must be called when the vehicle comes in.
+         */
+        void enter(const cv::Mat& entryImage, const boost::posix_time::ptime &entryTime);
 
-    ~ParkingSpot();
+        /**
+         * Must be called when the maximum allowed time has reached.
+         */
+        void expired(const cv::Mat& expiredImage, const boost::posix_time::ptime &exprTime);
 
-    /**
-     * Check if the parking spot is occupied
-     */
-    bool isOccupied();
+        /**
+         * Must be called when the vehicle goes out.
+         */
+        void exit(const cv::Mat& exitImage, const boost::posix_time::ptime &exitTime);
 
-    /**
-     * Must be called when the vehicle comes in.
-     */
-    void enter(const cv::Mat& entryImage);
+    private:
+        /**
+         * The original rectangular ROI
+         */
+        cv::Rect mROI;
 
-    /**
-     * Must be called when the maximum allowed time has reached.
-     */
-    void expired(const cv::Mat& expiredImage);
+        /**
+         * Time limit as minute
+         */
+        int mTimeLimit;
 
-    /**
-     * Must be called when the vehicle goes out.
-     */
-    void exit(const cv::Mat& exitImage);
+        /**
+         * The read-only server-synchronized ID of the parking spot
+         */
+        std::string mID;
 
-private:
-    /**
-     * The original rectangular ROI
-     */
-    cv::Rect mROI;
+        /**
+         * Must be true if the parking spot is occupied
+         */
+        bool mOccupied;
 
-    /**
-     * Time limit as minute
-     */
-    int mTimeLimit;
+        /**
+         * Designate if the entry image is uploaded to the server.
+         */
+        bool mIsEntryImageUploaded;
 
-    /**
-     * The read-only server-synchronized ID of the parking spot
-     */
-    std::string mID;
+        /**
+         * Designate if the exit image is uploaded to the server.
+         */
+        bool mIsExitImageUploaded;
 
-    /**
-     * Must be true if the parking spot is occupied
-     */
-    bool mOccupied;
+        /**
+         * IO Service object for the deadline timer
+         */
+        boost::asio::io_service mService;
 
-    /**
-     * The original image taken at the time of entry
-     */
-    cv::Mat mImageAtEntry;
+        /**
+         * Work object for the deadline timer
+         */
+        boost::asio::io_service::work mWork;
 
-    /**
-     * The original image taken at the time of exit.
-     */
-    cv::Mat mImageAtExit;
+        /**
+         * Timer thread
+         */
+        boost::thread mTimerThread;
 
-    /**
-     * The read-only image which is taken at the expiration time.
-     */
-    cv::Mat mImageAtExpired;
+        /**
+         * Timer to check if the parking expires
+         */
+        boost::asio::deadline_timer mParkingTimer;
 
-    /**
-     * Designate if the entry image is uploaded to the server.
-     */
-    bool mIsEntryImageUploaded;
+        /**
+         * Main entry of the timer thread
+         */
+        void runTimer();
 
-    /**
-     * Designate if the exit image is uploaded to the server.
-     */
-    bool mIsExitImageUploaded;
+        /**
+         * Start the parking timer
+         */
+        void startTimer();
 
-    /**
-     * IO Service object for the deadline timer
-     */
-    boost::asio::io_service mService;
+        /**
+         * Stop the parking timer, if any
+         */
+        void stopTimer();
 
-    /**
-     * Work object for the deadline timer
-     */
-    boost::asio::io_service::work mWork;
+        /**
+         * Notify a expiration message to the global message queue
+         */
+        void notifyExpiration();
 
-    /**
-     * Timer thread
-     */
-    boost::thread mTimerThread;
+        //-----------------------------------
+        // Static functions and variables
+        //-----------------------------------
+    public:
+        /**
+         * Set the shared message queue for server-side communication.
+         */
+        static void setMessageQueue(MessageQueue<ParkingStatus> *messageQueue);
 
-    /**
-     * Timer to check if the parking expires
-     */
-    boost::asio::deadline_timer mParkingTimer;
+        /**
+         * Set the camera frame reader for the expiration event.
+         */
+        static void setVideoReader(SerialVideoReader *videoReader);
 
-    /**
-     * Main entry of the timer thread
-     */
-    void runTimer();
+    private:
+        /**
+         * Network message queue for uploading the parking spot status information to the server.
+         * Data will be inserted when the status changes
+         */
+        static MessageQueue<ParkingStatus> *mServerMsgQueue;
 
-    /**
-     * Start the parking timer
-     */
-    void startTimer();
-
-    /**
-     * Stop the parking timer, if any
-     */
-    void stopTimer();
-
-    /**
-     * Notify a expiration message to the global message queue
-     */
-    void notifyExpiration();
-
-    //-----------------------------------
-    // Static functions and variables
-    //-----------------------------------
-public:
-    static void setMessageQueue(MessageQueue<std::string> *messageQueue);
-
-private:
-    /**
-     * Network message queue for uploading the parking spot status information to the server.
-     * Data will be inserted when the status changes
-     */
-    static MessageQueue<std::string> *mServerMsgQueue;
-};
+        /**
+         * Since the parking enforcement is time-critical, each timer needs to acquire the camera
+         * frame at the time of an expiration event.
+         */
+        static SerialVideoReader *mVideoReader;
+    };
+}

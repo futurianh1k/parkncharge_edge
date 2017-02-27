@@ -11,11 +11,11 @@ namespace seevider {
         /**
         * Construct a string to show the content of the data
         */
-        virtual std::string toString() = 0;
+        virtual std::string toString() const = 0;
 
         /**
         * Construct a JSON data for network communication
         */
-        virtual std::string toJSONObject() = 0;
+        virtual std::string toJSONObject() const = 0;
     };
 }

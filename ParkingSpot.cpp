@@ -2,11 +2,15 @@
 
 #include <iostream>
 
+#include "types.h"
+
+using namespace seevider;
+namespace pt = boost::posix_time;
+
 using cv::Mat;
 
 ParkingSpot::ParkingSpot(std::string id, const int length) :
 ROI(mROI), TimeLimit(mTimeLimit), ID(mID),
-ImageAtEntry(mImageAtEntry), ImageAtExit(mImageAtExit), ImageAtExpired(mImageAtExpired),
 mWork(mService), mTimerThread(boost::bind(&ParkingSpot::runTimer, this)),
 mParkingTimer(mService) {
     mOccupied = false;
@@ -19,29 +23,31 @@ ParkingSpot::~ParkingSpot() {
     mTimerThread.join();
 }
 
-bool ParkingSpot::isOccupied() {
+bool ParkingSpot::isOccupied() const {
     return mOccupied;
 }
 
-void ParkingSpot::enter(const cv::Mat& entryImage) {
-    //mImageAtEntry = entryImage.clone();
+void ParkingSpot::enter(const Mat& entryImage, const pt::ptime &entryTime) {
     mOccupied = true;
-    // TODO: retrive current time and put the data into message queue
-    mServerMsgQueue->push(mID + ": vehicle entered");   // for test
+    mServerMsgQueue->push(ParkingStatus(
+        (int)PARKING_SPOT_UPDATE::PARKING_SPOT_UPDATE_ENTER,
+        mID, entryImage.clone(), entryTime));
+
     startTimer();
 }
 
-void ParkingSpot::expired(const cv::Mat& expiredImage) {
-    //mImageAtExpired = expiredImage.clone();
-    // TODO: retrive current time and put the data into message queue
-    mServerMsgQueue->push(mID + ": time expired");    // for test
+void ParkingSpot::expired(const Mat& expiredImage, const pt::ptime &exprTime) {
+    mServerMsgQueue->push(ParkingStatus(
+        (int)PARKING_SPOT_UPDATE::PARKING_SPOT_UPDATE_EXPIRED,
+        mID, expiredImage.clone(), exprTime));
 }
 
-void ParkingSpot::exit(const cv::Mat& exitImage) {
-    //mImageAtExit = exitImage.clone();
+void ParkingSpot::exit(const Mat& exitImage, const pt::ptime &exitTime) {
     mOccupied = false;
-    // TODO: retrive current time and put the data into message queue
-    mServerMsgQueue->push(mID + ": vehicle exited");    // for test
+    mServerMsgQueue->push(ParkingStatus(
+        (int)PARKING_SPOT_UPDATE::PARKING_SPOT_UPDATE_EXIT,
+        mID, exitImage.clone(), exitTime));
+
     stopTimer();
 }
 
@@ -59,23 +65,32 @@ void ParkingSpot::stopTimer() {
 }
 
 void ParkingSpot::notifyExpiration() {
-    cv::Mat dummy;
     if (mOccupied) {
+        Mat frame;
+        pt::ptime time;
+
+        mVideoReader->read(frame, time);
+
         std::cout << mID << " was expired!" << std::endl;   // for test
-        expired(dummy);
-    }
-    else {
-        std::cout << mID << " was exited!" << std::endl;   // for test
-        //exit(dummy);
+        expired(frame, time);
     }
 }
 
 //-----------------------------------
-// Static functions and variables
+// Static functions
 //-----------------------------------
 
-MessageQueue<std::string> *ParkingSpot::mServerMsgQueue = NULL;
-
-void ParkingSpot::setMessageQueue(MessageQueue<std::string> *messageQueue) {
+void ParkingSpot::setMessageQueue(MessageQueue<ParkingStatus> *messageQueue) {
     mServerMsgQueue = messageQueue;
 }
+
+void ParkingSpot::setVideoReader(SerialVideoReader *videoReader) {
+    mVideoReader = videoReader;
+}
+
+//-----------------------------------
+// Static variables
+//-----------------------------------
+
+MessageQueue<ParkingStatus> *ParkingSpot::mServerMsgQueue = NULL;
+SerialVideoReader *ParkingSpot::mVideoReader = NULL;
