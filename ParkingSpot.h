@@ -9,7 +9,6 @@
 
 #include "MessageQueue.h"
 #include "SerialVideoReader.h"
-#include "ParkingStatus.h"
 
 namespace seevider {
     class ParkingSpot {
@@ -28,7 +27,22 @@ namespace seevider {
         /**
          * The read-only server-synchronized ID of the parking spot
          */
-        const std::string& ID;
+		const int& ID;
+
+		/**
+		 * The read-only server-synchronized human-friendly name of the parking spot
+		 */
+		const std::string& SpotName;
+
+		/**
+		 * The read-only pre-defined parking policy
+		 */
+		const PARKING_SPOT_POLICY& ParkingPolicy;
+
+		/**
+		* (read-only) Designate if the system needs to update this parking spot
+		*/
+		const bool &UpdateEnabled;
 
         /**
          * Basic constructor.
@@ -36,7 +50,7 @@ namespace seevider {
          *  Only a clone of the image will be stored.
          * @param length Allowed length of time for this parking spot
          */
-        ParkingSpot(std::string id, const int length);
+		ParkingSpot(int id, std::string spotName, const int length, const cv::Rect roi, PARKING_SPOT_POLICY policy);
 
         ~ParkingSpot();
 
@@ -60,6 +74,11 @@ namespace seevider {
          */
         void exit(const cv::Mat& exitImage, const boost::posix_time::ptime &exitTime);
 
+		/**
+		 * Update current status. Return true if the status has updated.
+		 */
+		bool update(bool occupied, bool triggerUpdatability);
+
     private:
         /**
          * The original rectangular ROI
@@ -72,14 +91,34 @@ namespace seevider {
         int mTimeLimit;
 
         /**
-         * The read-only server-synchronized ID of the parking spot
+         * The server-synchronized ID of the parking spot
          */
-        std::string mID;
+		int mID;
+
+		/**
+		 * The server-synchronized human-friendly name of the parking spot
+		 */
+		std::string mSpotName;
+
+		/**
+		 * The pre-defined parking policy
+		 */
+		PARKING_SPOT_POLICY mParkingPolicy;
+
+		/**
+		 * Set to be true if the system needs to update this parking spot
+		 */
+		bool mUpdateEnabled;
 
         /**
          * Must be true if the parking spot is occupied
          */
         bool mOccupied;
+
+		/**
+		 * Frame counter represents the occurence of occupancy events.
+		 */
+		int mOccupiedFrameCounter = 0;
 
         /**
          * Designate if the entry image is uploaded to the server.
@@ -111,6 +150,11 @@ namespace seevider {
          */
         boost::asio::deadline_timer mParkingTimer;
 
+		/**
+		 * Entry time to compute expiration when the timer is expired.
+		 */
+		boost::posix_time::ptime mEntryTime;
+
         /**
          * Main entry of the timer thread
          */
@@ -138,24 +182,44 @@ namespace seevider {
         /**
          * Set the shared message queue for server-side communication.
          */
-        static void setMessageQueue(MessageQueue<ParkingStatus> *messageQueue);
+		static void setMessageQueue(std::shared_ptr<MessageQueue> &messageQueue);
 
         /**
          * Set the camera frame reader for the expiration event.
          */
-        static void setVideoReader(SerialVideoReader *videoReader);
+		static void setVideoReader(std::shared_ptr<SerialVideoReader> &videoReader);
+
+		/**
+		 * Set the positive threshold
+		 */
+		static void setPositiveThreshold(int positiveThreshold);
+
+		/**
+		 * Set the negative threshold
+		 */
+		static void setNegativeThreshold(int negativeThreshold);
 
     private:
         /**
          * Network message queue for uploading the parking spot status information to the server.
          * Data will be inserted when the status changes
          */
-        static MessageQueue<ParkingStatus> *mServerMsgQueue;
+        static std::shared_ptr<MessageQueue> mServerMsgQueue;
 
         /**
          * Since the parking enforcement is time-critical, each timer needs to acquire the camera
          * frame at the time of an expiration event.
          */
-        static SerialVideoReader *mVideoReader;
+		static std::shared_ptr<SerialVideoReader> mVideoReader;
+
+		/**
+		 * The positive threshold to be estimated as an occupied parking spot.
+		 */
+		static int mPositiveThreshold;
+
+		/**
+		 * The negative threshold to be estimated as an unoccupied parking spot.
+		 */
+		static int mNegativeThreshold;
     };
 }

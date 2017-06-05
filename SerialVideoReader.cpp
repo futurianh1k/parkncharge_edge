@@ -3,59 +3,194 @@
 #include <iostream>
 
 #include <boost/date_time/local_time/local_time.hpp>
+#include <boost/date_time/posix_time/posix_time_io.hpp>
 
 using namespace seevider;
 
 namespace bpt = boost::posix_time;
 
-SerialVideoReader::SerialVideoReader(int id) {
-    open(id);
-}
-
-SerialVideoReader::SerialVideoReader(std::string filename) {
-    open(filename);
+SerialVideoReader::SerialVideoReader() :
+mThread(boost::bind(&SerialVideoReader::run, this)) {
 }
 
 SerialVideoReader::~SerialVideoReader() {
-    if (mVideoCapture.isOpened()) {
-        std::cout << "Close the vidao API." << std::endl;
-        mVideoCapture.release();
-    }
+	if (mThread.joinable()) {
+		// If the thread is still joinable, destroy it.
+		destroy();
+	}
+}
+
+bool SerialVideoReader::open(int id) {
+	if (mVideoReader.isOpened()) {
+		std::cout << "The video reader is already opened! It must be closed before open new one" << std::endl;
+		return false;
+	}
+
+	if (!mVideoReader.open(id)) {
+		std::cout << "Failed to connect the camera" << std::endl;
+		return false;
+	}
+
+	Operation = true;
+	mFromVideo = false;
+
+	//VideoReader.set(cv::CAP_PROP_AUTOFOCUS, 1);
+
+	mFrameSize = cv::Size((int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH), (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT));
+
+	return true;
+}
+
+bool SerialVideoReader::open(std::string filename) {
+	if (mVideoReader.isOpened()) {
+		std::cout << "The video reader is already opened! It must be closed before open new one" << std::endl;
+		return false;
+	}
+
+	if (!mVideoReader.open(filename)) {
+		std::cout << "Failed to connect the camera" << std::endl;
+		return false;
+	}
+
+	Operation = true;
+	mFromVideo = true;
+
+	mFrameSize = cv::Size((int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH), (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT));
+
+	return true;
+}
+
+void SerialVideoReader::destroy() {
+	std::cout << "Destroy video input handler...";
+	Operation = false;
+	mThread.try_join_for(boost::chrono::seconds(mWaitSeconds));
+	if (mThread.joinable()) {
+		// If the thread is still joinable, force to cancel it.
+		mThread.interrupt();
+		mThread.try_join_for(boost::chrono::seconds(mDestroySeconds));
+	}
+	std::cout << "done." << std::endl;
 }
 
 bool SerialVideoReader::read(cv::Mat &frame, bpt::ptime &now) {
     boost::mutex::scoped_lock lock(mMutex);
-    if (!mVideoCapture.read(frame)) {
-        now = bpt::second_clock::local_time();
-        return false;
-    }
-    else {
-        now = bpt::second_clock::local_time();
-        return true;
-    }
+
+	if (mFrameQueue.empty()) {
+		return false;
+	}
+
+	std::pair<boost::posix_time::ptime, cv::Mat> data = mFrameQueue.back();
+
+	now = data.first;
+	data.second.copyTo(frame);
+
+	return true;
+}
+
+bool SerialVideoReader::readAt(cv::Mat &frame, boost::posix_time::ptime &time) {
+	boost::mutex::scoped_lock lock(mMutex);
+
+	if (mFrameIndexer.empty()) {
+		return false;
+	}
+
+	// Check at most ten seconds to find a frame of the closest moment
+	for (int i = 0; i <= 10; i++) {
+		boost::posix_time::ptime frameTime = time + boost::posix_time::seconds(i);
+		if (mFrameIndexer.find(frameTime) != mFrameIndexer.end()) {
+			mFrameIndexer[frameTime].copyTo(frame);
+
+			std::cout << "Frame found at " << to_simple_string(frameTime) << std::endl;
+
+			return true;
+		}
+	}
+
+	return false;
 }
 
 bool SerialVideoReader::isOpened() const {
     boost::mutex::scoped_lock lock(mMutex);
-    return mVideoCapture.isOpened();
+	return mVideoReader.isOpened();
 }
 
-bool SerialVideoReader::open(int id) {
-    boost::mutex::scoped_lock lock(mMutex);
-    if (!mVideoCapture.open(id)) {
-		std::cout << "Failed to connect the camera" << std::endl;
-        return false;
-	}
+bool SerialVideoReader::isReady() const {
+	boost::mutex::scoped_lock lock(mMutex);
 
-    return true;
+	return !(mFrameQueue.empty() || mFrameIndexer.empty());
 }
 
-bool SerialVideoReader::open(std::string filename) {
-    boost::mutex::scoped_lock lock(mMutex);
-    if (!mVideoCapture.open(filename)) {
-		std::cout << "Failed to connect the camera" << std::endl;
-        return false;
-	}
+void SerialVideoReader::close() {
+	Operation = false;
 
-    return true;
+	destroy();
+
+	if (mVideoReader.isOpened()) {
+		std::cout << "Close the vidao API." << std::endl;
+		mVideoReader.release();
+	}
+}
+
+cv::Size SerialVideoReader::size() const {
+	return mFrameSize;
+}
+
+void SerialVideoReader::run() {
+    bpt::ptime prev = bpt::second_clock::local_time();
+	bpt::ptime frontOfIndexerTime;
+
+    // Wait and check if video input is opened. May need to be improved.
+    while (!isOpened()) {
+		boost::this_thread::sleep_for(boost::chrono::seconds(1));
+    }
+
+    // Only this thread will access the instance of the actual VideoCapture.
+	while (Operation) {
+        cv::Mat frame;
+
+		mVideoReader.read(frame);   // read one frame
+        bpt::ptime now = bpt::second_clock::local_time();   // time stamp
+		
+        // Insert the acquired frame to the queue
+		if (mFrameQueue.size() < mMaxFrames) {
+			boost::mutex::scoped_lock lock(mMutex);
+
+			mFrameQueue.push_back({ now, frame });
+		}
+		else {
+			boost::mutex::scoped_lock lock(mMutex);
+			
+			mFrameQueue.pop_front();
+			mFrameQueue.push_back({ now, frame });
+		}
+
+        // Insert the frame to the indexer only if this frame is the first frame for the current time
+		if (mFrameIndexer.empty()) {
+			boost::mutex::scoped_lock lock(mMutex);
+
+			frontOfIndexerTime = now;
+			mFrameIndexer.insert({ now, frame });
+		}
+		else {
+			boost::mutex::scoped_lock lock(mMutex);
+
+			if (mFrameIndexer.size() >= mMaxFrames) {
+				while (mFrameIndexer.find(frontOfIndexerTime) == mFrameIndexer.end()) {
+					frontOfIndexerTime = frontOfIndexerTime + boost::posix_time::seconds(1);
+				}
+				mFrameIndexer.erase(frontOfIndexerTime);
+			}
+
+			bpt::time_duration diff = now - prev;
+			if (diff.total_seconds() == 1) {
+				mFrameIndexer.insert({ now, frame });
+			}
+		}
+
+        prev = now;
+
+		if (mFromVideo) {
+			boost::this_thread::sleep_for(boost::chrono::microseconds(40));
+		}
+    }
 }

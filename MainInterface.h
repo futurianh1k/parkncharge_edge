@@ -3,6 +3,9 @@
 #include "SerialVideoReader.h"
 #include "ServerNetworkHandler.h"
 #include "ParkingSpot.h"
+#include "Settings.h"
+#include "SensorInfo.h"
+#include "IOccupancyDetector.h"
 
 #include <boost/thread.hpp>
 
@@ -18,8 +21,8 @@ namespace seevider {
         ~MainInterface();
 
         /**
-        * Main entry of the class
-        */
+         * Main entry of the class
+         */
         void run();
 
     private:
@@ -28,29 +31,91 @@ namespace seevider {
          */
         bool mOperation;
 
+		/**
+		 * Abling and disabling by a manager.
+		 * While this value is true, the system will not detect the vehicle and wait for receiving
+		 * the update information from the manager.
+		 */
+		bool mManagementMode;
+
+		/**
+		 * Settings
+		 */
+		std::shared_ptr<Settings> mSettings;
+
         /**
          * Pointer of the video reader.
          */
-        SerialVideoReader *mVideoReader;
+        std::shared_ptr<SerialVideoReader> mVideoReader;
 
         /**
          * The massage queue for the server communication
          */
-        MessageQueue<ParkingStatus> *mServMsgQueue;
+		std::shared_ptr<MessageQueue> mServMsgQueue;
 
         /**
          * The server-side network handler
          */
-        ServerNetworkHandler *mServNetHandler;
+		std::unique_ptr<ServerNetworkHandler> mServNetHandler;
+
+		/**
+		 * Occupancy detector
+		 */
+		std::unique_ptr<IOccupancyDetector> mDetector;
 
         /**
          * An array of parking spots
          */
-        std::vector<boost::shared_ptr<ParkingSpot>> mParkingSpots;
+        std::vector<std::shared_ptr<ParkingSpot>> mParkingSpots;
 
         /**
          * Window name for debugging
          */
         cv::String mDebugWindowName = "Debugging Camera View";
+
+		/**
+		 *
+		 */
+		cv::String mInitializeWindow = "Parking Spot Initialization";
+
+		/**
+		 * Initialize parking spots. Use this function only for debugging purpose.
+		 */
+		void initParkingSpots();
+
+		/**
+		 * Add one parking spot
+		 */
+		void addParkingSpot(int id, cv::Rect roi);
+
+		/**
+		 * Remove the last parking spot
+		 */
+		void removeLastParkingSpot();
+
+		/**
+		 * Update occupancy status of parking spots
+		 */
+		void updateSpots(const cv::Mat &frame, const boost::posix_time::ptime& now);
+
+		/**
+		 * Draw current parking status
+		 */
+		cv::Mat drawParkingStatus(const cv::Mat& frame) const;
+
+		/**
+		 * Load parking spots from pre-designated data file
+		 */
+		void loadParkingSpots();
+
+		/**
+		 * Save parking spots
+		 */
+		boost::property_tree::ptree getJSONParkingSpots();
+
+		/**
+		 * Print the instruction to use the ROI setting window
+		 */
+		void print_usage_roi_settings();
     };
 }
