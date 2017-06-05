@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServerSettings>
+	<ServerAddress>52.52.203.176</ServerAddress>
+	<Request>
+		<RequestType>0</RequestType>
+		<HTTPRequestMethod>PUT</HTTPRequestMethod>
+		<TargetPath>/parksync/sync</TargetPath>
+	</Request>
+	<Request>
+		<RequestType>1</RequestType>
+		<HTTPRequestMethod>POST</HTTPRequestMethod>
+		<TargetPath>/parkstatus/enter</TargetPath>
+	</Request>
+	<Request>
+		<RequestType>2</RequestType>
+		<HTTPRequestMethod>POST</HTTPRequestMethod>
+		<TargetPath>/parkstatus/exit</TargetPath>
+	</Request>
+	<Request>
+		<RequestType>3</RequestType>
+		<HTTPRequestMethod>POST</HTTPRequestMethod>
+		<TargetPath>/parkstatus/overtime</TargetPath>
+	</Request>
+</ServerSettings>
