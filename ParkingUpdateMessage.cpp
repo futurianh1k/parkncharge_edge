@@ -9,6 +9,8 @@
 #include <boost/filesystem.hpp>
 #include <boost/algorithm/string.hpp>
 
+#include <glog/logging.h>
+
 using namespace seevider;
 
 ParkingUpdateMessage::ParkingUpdateMessage() {
@@ -68,8 +70,10 @@ bool ParkingUpdateMessage::load(const std::string filename) {
 	std::vector<std::string> substrs;
 	boost::split(substrs, p.stem().string(), boost::is_any_of("_"));
 
+	// TODO: add exception handling codes
+
 	if (substrs.size() < 3) {
-		std::cout << "ERROR! invalid filename." << std::endl;
+		LOG(ERROR) << "Invalid filename: " << filename;
 		return false;	// failed to parse filename
 	}
 
@@ -77,7 +81,7 @@ bool ParkingUpdateMessage::load(const std::string filename) {
 	mFrame = cv::imread(filename);
 	if (mFrame.empty()) {
 		// Not able to read image
-		std::cout << "ERROR! failed to read image." << std::endl;
+		LOG(ERROR) << "Failed to read image: " << filename;
 		return false;
 	}
 

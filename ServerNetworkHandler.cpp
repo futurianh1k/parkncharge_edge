@@ -5,14 +5,13 @@
 #include <boost/chrono.hpp>
 #include <boost/asio.hpp>
 
-using namespace seevider;
+#include <glog/logging.h>
 
-using std::cout;
-using std::endl;
+using namespace seevider;
 
 ServerNetworkHandler::ServerNetworkHandler(std::shared_ptr<MessageQueue> &messageQueue,
 	const std::shared_ptr<Settings> &settings) :
-	mSettingsFilename(SYSTEM_FOLDER_CORE + "/" + settings->ServerDataFilename),
+	mSettingsFilename(SYSTEM_FOLDER_CORE + settings->ServerDataFilename),
 	mHandlerThread(boost::bind(&ServerNetworkHandler::run, this)),
 	mSensorInfo(std::dynamic_pointer_cast<SensorInfo, Settings>(settings)) {
 	assert(messageQueue != nullptr);
@@ -31,35 +30,41 @@ ServerNetworkHandler::~ServerNetworkHandler() {
 }
 
 void ServerNetworkHandler::destroy() {
-    std::cout << "Destroy network handler...";
+	LOG(INFO) << "Destroying the HTTP message uploading handler";
+
     mOperation = false;
     mHandlerThread.try_join_for(boost::chrono::seconds(mWaitSeconds));
     if (mHandlerThread.joinable()) {
         // If the thread is still joinable, force to cancel it.
         mHandlerThread.interrupt();
         mHandlerThread.try_join_for(boost::chrono::seconds(mDestroySeconds));
-    }
-    std::cout << "done." << std::endl;
+	}
+
+	LOG(INFO) << "The HTTP message uploading handler has destroyed";
 }
 
 void ServerNetworkHandler::run() {
-    std::cout << "Starts the network handler" << std::endl;
+	LOG(INFO) << "Starting the HTTP message uploading handler";
+
     while (mOperation) {
 		std::unique_ptr<IMessageData> data;
 		mMessageQueue->wait_and_pop(data);
 
         // upload data to destination server in designated format
-		if (!upload(data)) {
+		while (!upload(data)) {
 			// if upload is failed, wait for few seconds and try it again.
-			std::cout << "Upload failed. Try it again in 3 seconds.. " << std::endl;
+			LOG(WARNING) << "Upload failed. Try it again in 3 seconds.. " << std::endl;
 			boost::this_thread::sleep_for(boost::chrono::seconds(3));
+
+			// TODO: if the uploading failed for specific times, ignore this message
 		}
-    }
-    std::cout << "Ends the network handler" << std::endl;
+	}
+
+	LOG(INFO) << "The HTTP message uploading handler has initialized";
 }
 
 bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) const {
-    cout << "Processing data: " << data->toString() << endl;
+	DLOG(INFO) << data->toString();
 
 	boost::property_tree::ptree root = data->toPTree();
 
@@ -71,12 +76,14 @@ bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) con
 	root.erase("httpRequest");
 
 	if (request < 0) {
-		// TODO: current data does not have any event type.
+		LOG(ERROR) << "Current data has negative request type: " << request;
+		// TODO: Handle the error (non-recoverable error)
 		return false;
 	}
 
 	if (mServerDestinations.find(request) == mServerDestinations.end()) {
-		// TODO: current data does not have any event type.
+		LOG(ERROR) << "Current data has wrong request type: " << request;
+		// TODO: Handle the error (non-recoverable error)
 		return false;
 	}
 	else {
@@ -87,9 +94,9 @@ bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) con
 	root.put<std::string>("timeZone", mSensorInfo->TimeZone);
 	write_json(ss, root);
 
-	std::ofstream fout("sync_upload.txt");
-	fout << ss.str() << endl;
-	fout.close();
+	//std::ofstream fout("sync_upload.txt");
+	//fout << ss.str() << std::endl;
+	//fout.close();
 
 	return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
 }
@@ -185,7 +192,7 @@ bool ServerNetworkHandler::sendHTTP(const std::string method, const std::string 
 			throw boost::system::system_error(error);
 	}
 	catch (std::exception& e) {
-		std::cout << "Exception: " << e.what() << "\n";
+		LOG(ERROR) << e.what();
 		return false;
 	}
 
@@ -194,7 +201,7 @@ bool ServerNetworkHandler::sendHTTP(const std::string method, const std::string 
 
 bool ServerNetworkHandler::loadSettings(const std::string filename) {
 	if (filename.empty()) {
-		std::cout << "ERROR! Server data filename is empty." << std::endl;
+		LOG(FATAL) << "Server data filename is empty.";
 		return false;
 	}
 
@@ -222,7 +229,7 @@ bool ServerNetworkHandler::loadSettings(const std::string filename) {
 
 bool ServerNetworkHandler::writeSettings() {
 	if (mSettingsFilename.empty()) {
-		std::cout << "ERROR! Server data filename is empty." << std::endl;
+		LOG(FATAL) << "Server data filename is empty.";
 		return false;
 	}
 
@@ -236,7 +243,7 @@ bool ServerNetworkHandler::writeSettings() {
 
 		node.put("RequestType", data.second.RequestType);
 		node.put("HTTPRequestMethod", data.second.HTTPRequestMethod);
-		node.put("HTTPRequestMethod", data.second.TargetPath);
+		node.put("TargetPath", data.second.TargetPath);
 	}
 
 	write_xml(mSettingsFilename, root, std::locale(), boost::property_tree::xml_writer_make_settings<std::string >('\t', 1));

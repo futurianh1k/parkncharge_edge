@@ -1,10 +1,12 @@
+#include "IOUtils.h"
+#include "ParkingUpdateMessage.h"
+
 #include <iostream>
 
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/filesystem.hpp>
 
-#include "IOUtils.h"
-#include "ParkingUpdateMessage.h"
+#include <glog/logging.h>
 
 namespace seevider {
 	namespace utils {
@@ -57,7 +59,7 @@ namespace seevider {
 				if (!boost::filesystem::create_directory(p)) {
 					// TODO: If we failed to create a storage directory, we must fix it.
 					// At least, we must notify the system what is the problem.
-					std::cout << "ERROR! failed to create the storage folder: " << p.string() << std::endl;
+					std::cerr << "FATAL ERROR! failed to create the folder: " << p.string() << std::endl;
 					return false;
 				}
 			}
@@ -70,7 +72,7 @@ namespace seevider {
 
 			// If the storage folder does not exist, create it.
 			if (!boost::filesystem::exists(p) || !boost::filesystem::is_directory(p)) {
-				std::cout << "ERROR! the storage folder does not exist: " << p.string() << std::endl;
+				LOG(ERROR) << "The storage folder does not exist: " << p.string();
 				return false;
 			}
 
@@ -87,9 +89,8 @@ namespace seevider {
 					if (data->load(iter->path().string())) {
 						// Remove the loaded file
 						if (!boost::filesystem::remove(iter->path())) {
-							// TODO: if we are not able to remove the loaded file, we should have problem.
-							// Fix it.
-							std::cout << "ERROR! failed to remove the file." << std::endl;
+							// TODO: if we are not able to remove the loaded file, we should have problem. Fix it.
+							LOG(ERROR) << "Failed to remove the file: " << iter->path().string();
 							return false;
 						}
 
@@ -97,10 +98,11 @@ namespace seevider {
 					}
 				}
 				else if (ext.compare(".avi") == 0) {
-					std::cout << "Not supported file type: " << iter->path().filename().string() << std::endl;
+					LOG(WARNING) << "Not supported file type: " << iter->path().filename().string();
 				}
 				else {
-					std::cout << "ERROR! Invalid file type: " << iter->path().filename().string() << std::endl;
+					// TODO: if invalid file type is found, remove it.
+					LOG(ERROR) << "Invalid file type: " << iter->path().filename().string();
 				}
 
 				iter++;

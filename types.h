@@ -107,9 +107,14 @@ namespace seevider {
 	};
 
 	/**
-	 * Folder name that contains the core data
+	 * Folder name containing the core data
 	 */
-	const std::string SYSTEM_FOLDER_CORE = "core";
+	const std::string SYSTEM_FOLDER_CORE = "./core/";
+
+	/**
+	 * Folder name containing
+	 */
+	const std::string SYSTEM_FOLDER_LOG = "./log/";
 
 	/**
 	 * Filename to save parking spots

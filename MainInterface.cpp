@@ -1,13 +1,15 @@
 #include "MainInterface.h"
 
-#include <boost/date_time/posix_time/posix_time.hpp>
-#include <boost/date_time/local_time/local_time.hpp>
-#include <boost/property_tree/json_parser.hpp>
-
 #include "Utils.h"
 #include "IOUtils.h"
 #include "CascadeClassifier.h"
 #include "ServerSyncMessage.h"
+
+#include <boost/date_time/posix_time/posix_time.hpp>
+#include <boost/date_time/local_time/local_time.hpp>
+#include <boost/property_tree/json_parser.hpp>
+
+#include <glog/logging.h>
 
 using namespace seevider;
 namespace pt = boost::posix_time;
@@ -16,8 +18,16 @@ using cv::Mat;
 
 MainInterface::MainInterface() :
 	mOperation(true), mManagementMode(false),
-	mSettings(std::make_shared<Settings>(SYSTEM_FOLDER_CORE + "/settings.ini"))
+	mSettings(std::make_shared<Settings>(SYSTEM_FOLDER_CORE + "settings.ini"))
 {
+	LOG(INFO) << "Starting the main activity";
+
+	if (!mSettings->loadSettings()) {
+		LOG(FATAL) << "Failed to load settings";
+		mOperation = false;
+		return;
+	}
+
     // Construct core resource instances
 	mVideoReader = std::make_shared<SerialVideoReader>();
 	mServMsgQueue = std::make_shared<MessageQueue>();
@@ -30,7 +40,7 @@ MainInterface::MainInterface() :
 	mServNetHandler = std::make_unique<ServerNetworkHandler>(mServMsgQueue, mSettings);
 
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + "/" + mSettings->TrainedFilename);
+		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
 	}
 
     // Share message queues
@@ -41,18 +51,25 @@ MainInterface::MainInterface() :
 	loadParkingSpots();
 		
 	cv::namedWindow(mDebugWindowName);
+
+	// Send an initial sync message
+	/*std::unique_ptr<IMessageData> sync_data = std::make_unique<ServerSyncMessage>(mVideoReader->size(),
+	boost::posix_time::second_clock::local_time(), getJSONParkingSpots());
+	mServMsgQueue->push(sync_data);*/
 }
 
 MainInterface::~MainInterface() {
+	LOG(INFO) << "Finishing the main activity";
+
+	// Destroy the debug window
 	cv::destroyWindow(mDebugWindowName);
-	std::cout << "Finish the main activity" << std::endl;
 
 	// Release resources
 	mServNetHandler->destroy();
 	mVideoReader->close();
 
 	// Save current parking spots
-	utils::writeJSON(SYSTEM_FOLDER_CORE + "/" + SYSTEM_FILE_PARKINGSPOTS, getJSONParkingSpots());
+	utils::writeJSON(SYSTEM_FOLDER_CORE + SYSTEM_FILE_PARKINGSPOTS, getJSONParkingSpots());
 }
 
 void MainInterface::run() {
@@ -72,11 +89,6 @@ void MainInterface::run() {
 		// Wait until the camera connection becomes ready
 		boost::this_thread::sleep_for(boost::chrono::seconds(1));
 	}
-
-	// Send an initial sync message
-	/*std::unique_ptr<IMessageData> sync_data = std::make_unique<ServerSyncMessage>(mVideoReader->size(),
-		boost::posix_time::second_clock::local_time(), getJSONParkingSpots());
-	mServMsgQueue->push(sync_data);*/
 
 	while (mOperation && mVideoReader->read(frame, now)) {
 		if (mManagementMode) {
@@ -274,7 +286,7 @@ Mat MainInterface::drawParkingStatus(const Mat& frame) const  {
 void MainInterface::loadParkingSpots() {
 	boost::property_tree::ptree ptree;
 
-	boost::property_tree::read_json(SYSTEM_FOLDER_CORE + "/" + SYSTEM_FILE_PARKINGSPOTS, ptree);
+	boost::property_tree::read_json(SYSTEM_FOLDER_CORE + SYSTEM_FILE_PARKINGSPOTS, ptree);
 
 	for (auto &elem : ptree) {
 		int id, timeLimit;

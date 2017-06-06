@@ -38,6 +38,11 @@ namespace seevider {
 		 */
 		~Settings();
 
+		/**
+		 * Load current options to given filename
+		 */
+		bool loadSettings();
+
 	private:
 		/**
 		 * Files to load and store the setting data
@@ -45,13 +50,8 @@ namespace seevider {
 		std::string mSettingsFilename;
 
 		/**
-		 * Load current options to given filename
-		 */
-		bool loadSettings(const std::string filename);
-
-		/**
 		 * Write current options to given filename
 		 */
-		bool writeSettings(const std::string filename);
+		bool writeSettings();
 	};
 }

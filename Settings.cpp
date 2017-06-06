@@ -1,20 +1,22 @@
 #include "Settings.h"
 
+#include "Utils.h"
+
 #include <iostream>
 #include <boost/property_tree/ini_parser.hpp>
 
-#include "Utils.h"
+#include <glog/logging.h>
 
 namespace seevider {
 	Settings::Settings(std::string filename) : mSettingsFilename(filename) {
-		loadSettings(filename);
+		loadSettings();
 	}
 
 	Settings::~Settings() {
-		writeSettings(mSettingsFilename);
+		writeSettings();
 	}
 
-	bool Settings::loadSettings(const std::string filename) {
+	bool Settings::loadSettings() {
 		using std::cout;
 		using std::endl;
 
@@ -22,36 +24,39 @@ namespace seevider {
 		boost::property_tree::ptree ptree;
 
 		try {
-			boost::property_tree::read_ini(filename, ptree);
+			boost::property_tree::read_ini(mSettingsFilename, ptree);
 		}
 		catch (const boost::property_tree::ptree_error &e) {
-			cout << e.what() << endl;
+			LOG(FATAL) << e.what();
 			return false;
 		}
 
 		if (ptree.empty()) {
-			cout << "The option file is empty: " << filename << endl;
+			LOG(FATAL) << "The option file is empty: " << mSettingsFilename;
 			return false;
 		}
 
+		// Read the option 'SensorID'
 		value = ptree.get<std::string>("SensorID", "");
 		if (!value.empty()) {
 			mSensorID = value;
 		}
 		else {
-			cout << "Failed to read option \'SensorID\'" << endl;
+			LOG(ERROR) << "Failed to read option \'SensorID\'";
+			// TODO: set sensor ID to default ID, or connect server to check its ID
 		}
 
 		// Read the option 'ServerData'
 		ServerDataFilename = ptree.get<std::string>("ServerData", "");
 		if (ServerDataFilename.empty()) {
-			cout << "Failed to read option \'ServerData\'" << endl;
+			LOG(FATAL) << "Failed to read option \'ServerData\'";
+			return false;
 		}
 
-		// Read the option 'ServerAddress'
+		// Read the option 'MotionDetection'
 		value = ptree.get<std::string>("MotionDetection", "");
 		if (value.empty()) {
-			cout << "Failed to read option \'MotionDetection\'" << endl;
+			LOG(ERROR) << "Failed to read option \'MotionDetection\'";
 			MotionDetectionEnabled = false;
 		}
 		else {
@@ -61,7 +66,7 @@ namespace seevider {
 		// Read the Time-Zone parameter
 		mTimeZone = ptree.get<std::string>("TimeZone", "");
 		if (mTimeZone.empty()) {
-			cout << "Failed to read option \'TimeZone\'" << endl;
+			LOG(ERROR) << "Failed to read option \'TimeZone\'";
 			mTimeZone = "+00";
 		}
 
@@ -76,36 +81,39 @@ namespace seevider {
 				Type = CLASSIFIER_CNN;
 			}
 			else {
-				cout << "Critical error! Undefined classifier type: " << value << endl;
+				LOG(FATAL) << "Undefined classifier type: " << value;
 				return false;
 			}
 
 			value = ptree.get<std::string>("TrainedFilename", "");
 			if (value.empty()) {
-				cout << "Critical error! Failed to read option \'TrainedFilename\'" << endl;
+				LOG(FATAL) << "Failed to read option \'TrainedFilename\'";
 			}
 			else {
 				TrainedFilename = value;
 			}
 		}
 		else {
-			cout << "Critical error! Failed to read option \'DetectorType\'" << endl;
+			LOG(FATAL) << "Critical error! Failed to read option \'DetectorType\'";
 			return false;
 		}
 
 		return true;
 	}
 
-	bool Settings::writeSettings(const std::string filename) {
+	bool Settings::writeSettings() {
 		boost::property_tree::ptree ptree;
-		std::ofstream fout(filename);
+		std::ofstream fout(mSettingsFilename);
 		std::stringstream ss;
 
 		// Check if file was opened without any error
 		if (!fout.is_open()) {
-			std::cerr << stderr << std::endl;
+			LOG(ERROR) << stderr;
 			return false;
 		}
+
+		// Write the option 'ServerAddress'
+		ptree.put<std::string>("SensorID", mSensorID);
 
 		// Write the option 'ServerAddress'
 		ptree.put<std::string>("ServerData", ServerDataFilename);

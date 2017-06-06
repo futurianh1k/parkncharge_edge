@@ -1,9 +1,8 @@
 #include "ParkingSpot.h"
-
-#include <iostream>
-
 #include "types.h"
 #include "ParkingUpdateMessage.h"
+
+#include <glog/logging.h>
 
 using namespace seevider;
 namespace pt = boost::posix_time;
@@ -24,7 +23,7 @@ ParkingSpot::~ParkingSpot() {
     mService.stop();
     mTimerThread.join();
 
-	std::cout << "Release parking spot " << mID << std::endl;
+	DLOG(INFO) << "Release parking spot " << mID;
 }
 
 bool ParkingSpot::isOccupied() const {
@@ -40,8 +39,8 @@ void ParkingSpot::enter(const Mat& entryImage, const pt::ptime &entryTime) {
 	
 	mEntryTime = entryTime;
 
-	std::cout << "Timer of ID " << mID << "starts at " << to_simple_string(entryTime) << std::endl;
-    startTimer();
+	startTimer();
+	LOG(INFO) << "Parking spot ID " << mID << " has occupied at " << to_simple_string(entryTime);
 }
 
 void ParkingSpot::expired(const Mat& expiredImage, const pt::ptime &exprTime) {
@@ -58,7 +57,8 @@ void ParkingSpot::exit(const Mat& exitImage, const pt::ptime &exitTime) {
     mOccupied = false;
 	mServerMsgQueue->push(data);
 
-    stopTimer();
+	stopTimer();
+	LOG(INFO) << "Parking spot ID " << mID << " has released at " << to_simple_string(exitTime);
 }
 
 bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
@@ -120,7 +120,7 @@ void ParkingSpot::notifyExpiration() {
 
         mVideoReader->readAt(frame, time);
 
-        std::cout << mID << " was expired!" << std::endl;   // for test
+		LOG(INFO) << "Parking spot ID " << mID << " has expired.";
         expired(frame, time);
     }
 }
