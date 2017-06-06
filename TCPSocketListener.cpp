@@ -3,6 +3,8 @@
 
 #include <sstream>
 
+#include <glog/logging.h>
+
 namespace seevider {
 	using boost::asio::ip::tcp;
 
@@ -25,7 +27,7 @@ namespace seevider {
 			}
 		}
 		catch (std::exception& e) {
-			std::cerr << "Exception occured from TCPSocketListener: " << e.what() << std::endl;
+			LOG(ERROR) << e.what();
 		}
 	}
 
@@ -69,7 +71,7 @@ namespace seevider {
 			}
 		}
 		catch (std::exception& e) {
-			std::cerr << "Exception in TCPSocketListener::session(): " << e.what() << std::endl;
+			LOG(ERROR) << e.what();
 		}
 	}
 

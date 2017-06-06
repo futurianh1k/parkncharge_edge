@@ -1,5 +1,5 @@
-#include "ServerSyncMessage.h"
 #include "types.h"
+#include "ServerSyncMessage.h"
 
 namespace seevider {
 	ServerSyncMessage::ServerSyncMessage(const cv::Size imageSize,

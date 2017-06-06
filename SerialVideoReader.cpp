@@ -1,9 +1,9 @@
 #include "SerialVideoReader.h"
 
-#include <iostream>
-
 #include <boost/date_time/local_time/local_time.hpp>
 #include <boost/date_time/posix_time/posix_time_io.hpp>
+
+#include <glog/logging.h>
 
 using namespace seevider;
 
@@ -22,12 +22,12 @@ SerialVideoReader::~SerialVideoReader() {
 
 bool SerialVideoReader::open(int id) {
 	if (mVideoReader.isOpened()) {
-		std::cout << "The video reader is already opened! It must be closed before open new one" << std::endl;
+		LOG(WARNING) << "The video reader is already opened! It must be closed before open new one";
 		return false;
 	}
 
 	if (!mVideoReader.open(id)) {
-		std::cout << "Failed to connect the camera" << std::endl;
+		LOG(FATAL) << "Failed to connect the camera";
 		return false;
 	}
 
@@ -43,12 +43,12 @@ bool SerialVideoReader::open(int id) {
 
 bool SerialVideoReader::open(std::string filename) {
 	if (mVideoReader.isOpened()) {
-		std::cout << "The video reader is already opened! It must be closed before open new one" << std::endl;
+		LOG(WARNING) << "The video reader is already opened! It must be closed before open new one";
 		return false;
 	}
 
 	if (!mVideoReader.open(filename)) {
-		std::cout << "Failed to connect the camera" << std::endl;
+		LOG(FATAL) << "Failed to connect the camera";
 		return false;
 	}
 
@@ -61,7 +61,8 @@ bool SerialVideoReader::open(std::string filename) {
 }
 
 void SerialVideoReader::destroy() {
-	std::cout << "Destroy video input handler...";
+	LOG(INFO) << "Destroying the video input handler";
+
 	Operation = false;
 	mThread.try_join_for(boost::chrono::seconds(mWaitSeconds));
 	if (mThread.joinable()) {
@@ -69,7 +70,8 @@ void SerialVideoReader::destroy() {
 		mThread.interrupt();
 		mThread.try_join_for(boost::chrono::seconds(mDestroySeconds));
 	}
-	std::cout << "done." << std::endl;
+
+	LOG(INFO) << "The video input handler has destroyed.";
 }
 
 bool SerialVideoReader::read(cv::Mat &frame, bpt::ptime &now) {
@@ -94,13 +96,15 @@ bool SerialVideoReader::readAt(cv::Mat &frame, boost::posix_time::ptime &time) {
 		return false;
 	}
 
+	LOG(INFO) << "Frame has requestd at " << to_simple_string(time);
+
 	// Check at most ten seconds to find a frame of the closest moment
 	for (int i = 0; i <= 10; i++) {
 		boost::posix_time::ptime frameTime = time + boost::posix_time::seconds(i);
 		if (mFrameIndexer.find(frameTime) != mFrameIndexer.end()) {
 			mFrameIndexer[frameTime].copyTo(frame);
 
-			std::cout << "Frame found at " << to_simple_string(frameTime) << std::endl;
+			LOG(INFO) << "Frame has found at " << to_simple_string(frameTime);
 
 			return true;
 		}
@@ -126,7 +130,7 @@ void SerialVideoReader::close() {
 	destroy();
 
 	if (mVideoReader.isOpened()) {
-		std::cout << "Close the vidao API." << std::endl;
+		LOG(INFO) << "Closing the vidao API";
 		mVideoReader.release();
 	}
 }

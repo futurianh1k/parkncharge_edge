@@ -4,13 +4,19 @@
 #include "IOUtils.h"
 
 #include <boost/property_tree/xml_parser.hpp>
+#include <glog/logging.h>
 
 using namespace seevider;
 
 bool system_check() {
 	// Check if the system core folder is exist
 	if (!utils::checkFolder(SYSTEM_FOLDER_CORE)) {
-		std::cout << "Failed to create the system core folder: " << SYSTEM_FOLDER_CORE << std::endl;
+		std::cout << "Failed to create the system folder: " << SYSTEM_FOLDER_CORE << std::endl;
+		return false;
+	}
+
+	if (!utils::checkFolder(SYSTEM_FOLDER_LOG)) {
+		std::cout << "Failed to create the system folder: " << SYSTEM_FOLDER_LOG << std::endl;
 		return false;
 	}
 
@@ -85,14 +91,14 @@ void loadXMLFile(std::string filename) {
 }
 
 int main(int argc, char** argv) {
-	//writeXMLFile("core\\serverdata.xml");
-	//loadXMLFile("core\\serverdata.xml");
-	//system("pause");
-	//return 0;
-
 	if (!system_check()) {
-		std::cout << "Failed to check system" << std::endl;
+		std::cerr << "Failed to check system" << std::endl;
 	}
+
+	// Initialize Google's logging library.
+	FLAGS_alsologtostderr = 1;
+	FLAGS_log_dir = "./log/";
+	google::InitGoogleLogging(argv[0]);
 
     MainInterface mainInterface;
 
