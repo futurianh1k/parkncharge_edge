@@ -28,12 +28,12 @@ namespace seevider {
 		/**
 		 * Save date to given folder
 		 */
-		virtual bool save(std::string folder) const = 0;
+		virtual bool save(const std::string folder) const = 0;
 
 		/**
 		 * Load the oldest data from given folder
 		 */
-		virtual bool load(std::string folder) = 0;
+		virtual bool load(const std::string folder) = 0;
 
 	protected:
 		/**

@@ -2,6 +2,7 @@
 
 #include <string>
 #include <opencv2/opencv.hpp>
+
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
 #include <boost/asio/deadline_timer.hpp>
@@ -44,55 +45,20 @@ namespace seevider {
 		*/
 		const bool &UpdateEnabled;
 
-        /**
-         * Basic constructor.
-         * @params entryImage The original image taken at the time of entry.
-         *  Only a clone of the image will be stored.
-         * @param length Allowed length of time for this parking spot
-         */
-		ParkingSpot(int id, std::string spotName, const int length, const cv::Rect roi, PARKING_SPOT_POLICY policy);
-
-        ~ParkingSpot();
-
-        /**
-         * Check if the parking spot is occupied
-         */
-        bool isOccupied() const;
-
-        /**
-         * Must be called when the vehicle comes in.
-         */
-        void enter(const cv::Mat& entryImage, const boost::posix_time::ptime &entryTime);
-
-        /**
-         * Must be called when the maximum allowed time has reached.
-         */
-        void expired(const cv::Mat& expiredImage, const boost::posix_time::ptime &exprTime);
-
-        /**
-         * Must be called when the vehicle goes out.
-         */
-        void exit(const cv::Mat& exitImage, const boost::posix_time::ptime &exitTime);
+	private:
+		/**
+		 * The original rectangular ROI
+		 */
+		cv::Rect mROI;
 
 		/**
-		 * Update current status. Return true if the status has updated.
+		 * Time limit as minute
 		 */
-		bool update(bool occupied, bool triggerUpdatability);
+		int mTimeLimit;
 
-    private:
-        /**
-         * The original rectangular ROI
-         */
-        cv::Rect mROI;
-
-        /**
-         * Time limit as minute
-         */
-        int mTimeLimit;
-
-        /**
-         * The server-synchronized ID of the parking spot
-         */
+		/**
+		 * The server-synchronized ID of the parking spot
+		 */
 		int mID;
 
 		/**
@@ -110,51 +76,112 @@ namespace seevider {
 		 */
 		bool mUpdateEnabled;
 
-        /**
-         * Must be true if the parking spot is occupied
-         */
-        bool mOccupied;
+		/**
+		 * Must be true if the parking spot is occupied
+		 */
+		bool mOccupied;
+
+		/**
+		 * True if the spot is overstayed
+		 */
+		bool mOverstayed;
 
 		/**
 		 * Frame counter represents the occurence of occupancy events.
 		 */
 		int mOccupiedFrameCounter = 0;
 
-        /**
-         * Designate if the entry image is uploaded to the server.
-         */
-        bool mIsEntryImageUploaded;
+		/**
+		 * Designate if the entry image is uploaded to the server.
+		 */
+		bool mIsEntryImageUploaded;
 
-        /**
-         * Designate if the exit image is uploaded to the server.
-         */
-        bool mIsExitImageUploaded;
+		/**
+		 * Designate if the exit image is uploaded to the server.
+		 */
+		bool mIsExitImageUploaded;
 
-        /**
-         * IO Service object for the deadline timer
-         */
-        boost::asio::io_service mService;
+		/**
+		 * IO Service object for the deadline timer
+		 */
+		boost::asio::io_service mService;
 
-        /**
-         * Work object for the deadline timer
-         */
-        boost::asio::io_service::work mWork;
+		/**
+		 * Work object for the deadline timer
+		 */
+		boost::asio::io_service::work mWork;
 
-        /**
-         * Timer thread
-         */
-        boost::thread mTimerThread;
+		/**
+		 * Timer thread
+		 */
+		boost::thread mTimerThread;
 
-        /**
-         * Timer to check if the parking expires
-         */
-        boost::asio::deadline_timer mParkingTimer;
+		/**
+		 * Timer to check if the parking expires
+		 */
+		boost::asio::deadline_timer mParkingTimer;
 
 		/**
 		 * Entry time to compute expiration when the timer is expired.
 		 */
 		boost::posix_time::ptime mEntryTime;
 
+	public:
+        /**
+         * Basic constructor.
+         * @params entryImage The original image taken at the time of entry.
+         *  Only a clone of the image will be stored.
+         * @param length Allowed length of time for this parking spot
+         */
+		ParkingSpot(int id, std::string spotName, const int length, const cv::Rect roi, PARKING_SPOT_POLICY policy);
+		
+		/**
+		 * Basic destructor
+		 */
+        ~ParkingSpot();
+
+        /**
+         * Check if the parking spot is occupied
+         */
+        bool isOccupied() const;
+
+		/**
+		 * Check if the parking spot is occupied and overstayed
+		 */
+		bool isOverstayed() const;
+
+        /**
+         * Must be called when the vehicle comes in.
+         */
+        void enter(const cv::Mat& entryImage, const boost::posix_time::ptime &entryTime);
+
+        /**
+         * Must be called when the maximum allowed time has reached.
+         */
+        void overstayed(const cv::Mat& expiredImage, const boost::posix_time::ptime &exprTime);
+
+        /**
+         * Must be called when the vehicle goes out.
+         */
+        void exit(const cv::Mat& exitImage, const boost::posix_time::ptime &exitTime);
+
+		/**
+		 * Update parking spot attributes. If current spot is occupied and the timer is running,
+		 * it will not update the spot and return false.
+		 */
+		bool update(std::string spotName, int timeLimit, cv::Rect roi, PARKING_SPOT_POLICY policy);
+
+		/**
+		 * Update current status. Return true if the status has updated.
+		 */
+		bool update(bool occupied, bool triggerUpdatability);
+
+		/**
+		 * Reset the parking timer and status.
+		 */
+		void reset();
+
+	private:
         /**
          * Main entry of the timer thread
          */

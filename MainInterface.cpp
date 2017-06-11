@@ -17,7 +17,7 @@ namespace pt = boost::posix_time;
 using cv::Mat;
 
 MainInterface::MainInterface() :
-	mOperation(true), mManagementMode(false),
+	mOperation(true),
 	mSettings(std::make_shared<Settings>(SYSTEM_FOLDER_CORE + "settings.ini"))
 {
 	LOG(INFO) << "Starting the main activity";
@@ -27,6 +27,9 @@ MainInterface::MainInterface() :
 		mOperation = false;
 		return;
 	}
+	
+	// Constrauct the parking spot manager
+	mParkingSpotManager = std::make_shared<ParkingSpotManager>();
 
     // Construct core resource instances
 	mVideoReader = std::make_shared<SerialVideoReader>();
@@ -36,8 +39,16 @@ MainInterface::MainInterface() :
 	//mVideoReader->open("..\\..\\Video\\20160527120257(fixed).avi");
 	mVideoReader->open(0);
 
-    // Start the resource managing threads.
-	mServNetHandler = std::make_unique<ServerNetworkHandler>(mServMsgQueue, mSettings);
+    //--------------------------------
+	// Start the resource managing threads.
+	//--------------------------------
+
+	// Construct HTTP uploader
+	mHTTPServUploader = std::make_unique<ServerNetworkHandler>(mServMsgQueue,
+		std::dynamic_pointer_cast<SensorInfo, Settings>(mSettings), mSettings->ServerDataFilename);
+
+	// Construct TCP socket listener
+	mTCPSocketListener = std::make_unique<TCPSocketListener>(mParkingSpotManager, mVideoReader, mSettings, mMutualConditionVariable);
 
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
 		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
@@ -47,9 +58,6 @@ MainInterface::MainInterface() :
     ParkingSpot::setMessageQueue(mServMsgQueue);
     ParkingSpot::setVideoReader(mVideoReader);
 
-    // Load options
-	loadParkingSpots();
-		
 	cv::namedWindow(mDebugWindowName);
 
 	// Send an initial sync message
@@ -65,11 +73,9 @@ MainInterface::~MainInterface() {
 	cv::destroyWindow(mDebugWindowName);
 
 	// Release resources
-	mServNetHandler->destroy();
+	mHTTPServUploader->destroy();
+	mTCPSocketListener->destroy();
 	mVideoReader->close();
-
-	// Save current parking spots
-	utils::writeJSON(SYSTEM_FOLDER_CORE + SYSTEM_FILE_PARKINGSPOTS, getJSONParkingSpots());
 }
 
 void MainInterface::run() {
@@ -91,8 +97,16 @@ void MainInterface::run() {
 	}
 
 	while (mOperation && mVideoReader->read(frame, now)) {
-		if (mManagementMode) {
-			// Do some modification on settings
+		if (mMutualConditionVariable.ManagementMode) {
+			// Wait until the modifier changes settings
+			LOG(INFO) << "Enter to the management mode";
+			boost::mutex::scoped_lock lockEnter(mMutualConditionVariable.MutexEntrace);
+			boost::mutex::scoped_lock lockExit(mMutualConditionVariable.MutexExit);
+
+			lockEnter.unlock();
+			mMutualConditionVariable.SenderCV.notify_all();
+			mMutualConditionVariable.ReceiverCV.wait(lockExit);
+			LOG(INFO) << "Exit from the management mode";
 		}
 		else {
 			// Draw current status
@@ -113,20 +127,20 @@ void MainInterface::run() {
 				initParkingSpots();
 			}
 
-			if (inputKey >= '1' && inputKey <= mParkingSpots.size() + '0') {
+			if (inputKey >= '1' && inputKey <= mParkingSpotManager->size() + '0') {
 				// Add a timer for testing purpose
 				int idx = inputKey - '1';
-				if (mParkingSpots[idx]->isOccupied()) {
-					mParkingSpots[idx]->exit(frame, now);
+				if ((*mParkingSpotManager)[idx]->isOccupied()) {
+					(*mParkingSpotManager)[idx]->exit(frame, now);
 				}
 				else {
 					std::cout << "Timer " << std::to_string(idx) << " begins" << std::endl;
-					mParkingSpots[idx]->enter(frame, now);
+					(*mParkingSpotManager)[idx]->enter(frame, now);
 				}
 			}
 			else if (inputKey == 's' || inputKey == 'S') {
 				std::unique_ptr<IMessageData> sync_data = std::make_unique<ServerSyncMessage>(mVideoReader->size(),
-					boost::posix_time::second_clock::local_time(), getJSONParkingSpots());
+					boost::posix_time::second_clock::local_time(), mParkingSpotManager->toPTree());
 				mServMsgQueue->push(sync_data);
 			}
 		}
@@ -161,8 +175,8 @@ void MainInterface::initParkingSpots()
 		callbackData.roi_set = false;
 		clonedFrame = frame.clone();
 		drawParkingStatus(clonedFrame);
-		for (const auto &spot : mParkingSpots) {
-			rectangle(clonedFrame, spot->ROI, CV_RGB(255, 0, 0));
+		for (const auto &spot : *mParkingSpotManager) {
+			rectangle(clonedFrame, spot.second->ROI, CV_RGB(255, 0, 0));
 		}
 		imshow(mInitializeWindow, clonedFrame);
 
@@ -202,19 +216,18 @@ void MainInterface::initParkingSpots()
 				callbackData.roi_y0 < callbackData.roi_y1 ? callbackData.roi_y0 : callbackData.roi_y1,
 				abs(callbackData.roi_x1 - callbackData.roi_x0), abs(callbackData.roi_y1 - callbackData.roi_y0));
 
-			mParkingSpots.push_back(std::shared_ptr<ParkingSpot>(new ParkingSpot(id, "spot" + std::to_string(id), timeLimit, roi, POLICY_TIMED)));
+			mParkingSpotManager->add(id, "spot" + std::to_string(id), timeLimit, roi, POLICY_TIMED);
 
 			break;
 
 		case 'e':	// Remove all parking spots.
 		case 'E':
-			mParkingSpots.clear();
+			mParkingSpotManager->clear();
 
 			break;
 
 		case 'b':	// Remove the most recently added parking spot
 		case 'B':
-			mParkingSpots.pop_back();
 
 			break;
 
@@ -236,13 +249,14 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 		return;
 	}
 
-	if (mParkingSpots.size() >= 1) {
+	if (mParkingSpotManager->size() >= 1) {
 		if (mSettings->MotionDetectionEnabled) {
 			//detectMotion(frame);
 		}
 
-		for (auto &parkingSpot : mParkingSpots) {
+		for (auto &elem : *mParkingSpotManager) {
 			vector<Rect> locs;
+			std::shared_ptr<ParkingSpot> &parkingSpot = elem.second;
 
 			if (!parkingSpot->UpdateEnabled) {
 				// Update only if the status of the parking spot is unstable
@@ -267,65 +281,20 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 
 Mat MainInterface::drawParkingStatus(const Mat& frame) const  {
 	Mat drawn = frame.clone();
-
-	for (auto &parkingSpot : mParkingSpots) {
+	
+	for (auto &parkingSpot : *mParkingSpotManager) {
 		cv::Scalar color;
-		if (parkingSpot->isOccupied()) {
+		if (parkingSpot.second->isOccupied()) {
 			color = CV_RGB(255, 0, 0);
 		}
 		else {
 			color = CV_RGB(0, 255, 0);
 		}
 
-		cv::rectangle(drawn, parkingSpot->ROI, color, 2);
+		cv::rectangle(drawn, parkingSpot.second->ROI, color, 2);
 	}
 
 	return drawn;
-}
-
-void MainInterface::loadParkingSpots() {
-	boost::property_tree::ptree ptree;
-
-	boost::property_tree::read_json(SYSTEM_FOLDER_CORE + SYSTEM_FILE_PARKINGSPOTS, ptree);
-
-	for (auto &elem : ptree) {
-		int id, timeLimit;
-		std::string spotName;
-		PARKING_SPOT_POLICY policy;
-		cv::Rect roi;
-
-		id = elem.second.get<int>("parkingSpotId");
-		spotName = elem.second.get<std::string>("parkingSpotName");
-		roi.x = elem.second.get<int>("roiCoordX");
-		roi.y = elem.second.get<int>("roiCoordY");
-		roi.width = elem.second.get<int>("roiWidth");
-		roi.height = elem.second.get<int>("roiHeight");
-		policy = (PARKING_SPOT_POLICY)elem.second.get<int>("policyId");
-		timeLimit = elem.second.get<int>("timeLimit");
-
-		mParkingSpots.push_back(std::shared_ptr<ParkingSpot>(new ParkingSpot(id, spotName, timeLimit, roi, policy)));
-	}
-}
-
-boost::property_tree::ptree MainInterface::getJSONParkingSpots() {
-	boost::property_tree::ptree spotArray;
-
-	for (auto spot : mParkingSpots) {
-		boost::property_tree::ptree elem;
-
-		elem.put("parkingSpotId", std::to_string(spot->ID));
-		elem.put("parkingSpotName", spot->SpotName);
-		elem.put("roiCoordX", spot->ROI.x);
-		elem.put("roiCoordY", spot->ROI.y);
-		elem.put("roiWidth", spot->ROI.width);
-		elem.put("roiHeight", spot->ROI.height);
-		elem.put("policyId", (int)spot->ParkingPolicy);
-		elem.put("timeLimit", spot->TimeLimit);
-
-		spotArray.push_back(std::make_pair("", elem));
-	}
-
-	return spotArray;
 }
 
 void MainInterface::print_usage_roi_settings()

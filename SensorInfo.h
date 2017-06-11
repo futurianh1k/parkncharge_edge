@@ -13,6 +13,11 @@ namespace seevider {
 		const std::string &SensorID;
 
 		/**
+		 * User-friendly sensor name
+		 */
+		const std::string &SensorName;
+
+		/**
 		 * Time-zone string, e.g., [+|-]##
 		 */
 		const std::string &TimeZone;
@@ -32,6 +37,11 @@ namespace seevider {
 		 * Sensor identification string
 		 */
 		std::string mSensorID;
+
+		/** 
+		 * User-friendly sensor name
+		 */
+		std::string mSensorName;
 
 		/**
 		 * Time-zone string

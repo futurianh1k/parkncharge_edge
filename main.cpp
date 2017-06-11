@@ -60,7 +60,11 @@ void writeXMLFile(cv::string filename) {
 		node.put("TargetPath", data.second.TargetPath);
 	}
 
-	write_xml(filename, root, std::locale(), boost::property_tree::xml_writer_make_settings<std::string >('\t', 1));
+#if BOOST_VERSION_MINOR > 55
+	write_xml(filename, root, std::locale(), boost::property_tree::xml_writer_make_settings<std::string>('\t', 1));
+#else
+	write_xml(filename, root, std::locale(), boost::property_tree::xml_writer_make_settings<char>('\t', 1));
+#endif
 }
 
 void loadXMLFile(std::string filename) {

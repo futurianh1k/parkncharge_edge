@@ -2,9 +2,9 @@
 
 #include "SerialVideoReader.h"
 #include "ServerNetworkHandler.h"
+#include "TCPSocketListener.h"
 #include "ParkingSpot.h"
 #include "Settings.h"
-#include "SensorInfo.h"
 #include "IOccupancyDetector.h"
 
 #include <boost/thread.hpp>
@@ -32,11 +32,9 @@ namespace seevider {
         bool mOperation;
 
 		/**
-		 * Abling and disabling by a manager.
-		 * While this value is true, the system will not detect the vehicle and wait for receiving
-		 * the update information from the manager.
+		 * Mutual condition variable to update the data from TCP socket connection.
 		 */
-		bool mManagementMode;
+		MutualConditionVariable mMutualConditionVariable;
 
 		/**
 		 * Settings
@@ -56,17 +54,22 @@ namespace seevider {
         /**
          * The server-side network handler
          */
-		std::unique_ptr<ServerNetworkHandler> mServNetHandler;
+		std::unique_ptr<ServerNetworkHandler> mHTTPServUploader;
+
+		/**
+		 * The manager connection handler
+		 */
+		std::unique_ptr<TCPSocketListener> mTCPSocketListener;
 
 		/**
 		 * Occupancy detector
 		 */
 		std::unique_ptr<IOccupancyDetector> mDetector;
 
-        /**
-         * An array of parking spots
-         */
-        std::vector<std::shared_ptr<ParkingSpot>> mParkingSpots;
+		/**
+		 * Parking spot manager
+		 */
+		std::shared_ptr<ParkingSpotManager> mParkingSpotManager;
 
         /**
          * Window name for debugging
@@ -102,16 +105,6 @@ namespace seevider {
 		 * Draw current parking status
 		 */
 		cv::Mat drawParkingStatus(const cv::Mat& frame) const;
-
-		/**
-		 * Load parking spots from pre-designated data file
-		 */
-		void loadParkingSpots();
-
-		/**
-		 * Save parking spots
-		 */
-		boost::property_tree::ptree getJSONParkingSpots();
 
 		/**
 		 * Print the instruction to use the ROI setting window

@@ -6,16 +6,19 @@
 #include <boost/thread.hpp>
 #include <boost/property_tree/ptree.hpp>
 
+#include "types.h"
+#include "INetworkHandler.h"
 #include "MessageQueue.h"
-#include "Settings.h"
+#include "SensorInfo.h"
 
 namespace seevider {
-    class ServerNetworkHandler {
+	class ServerNetworkHandler : public INetworkHandler {
     public:
         /**
         * Construct the network handler with a message queue
         */
-		ServerNetworkHandler(std::shared_ptr<MessageQueue> &messageQueue, const std::shared_ptr<Settings> &settings);
+		ServerNetworkHandler(std::shared_ptr<MessageQueue> &messageQueue,
+			const std::shared_ptr<SensorInfo> &sensorInfo, std::string serverDataFilename);
 
         /**
         * Destruct the network handler
@@ -25,17 +28,12 @@ namespace seevider {
 		/**
 		 * Destroy the network thread
 		 */
-		void destroy();
+		void destroy() override;
 
     private:
 		//---------------------------
 		// Private variables
 		//---------------------------
-
-        /**
-         * Network handling thread
-         */
-        boost::thread mHandlerThread;
 
         /**
          * The pointer of message queue
@@ -46,23 +44,6 @@ namespace seevider {
 		 * Sensor information to be sent along with a message
 		 */
 		const std::shared_ptr<SensorInfo> mSensorInfo = nullptr;
-
-        /**
-         * True if the system is running
-         */
-        bool mOperation = true;
-
-        /**
-         * Set it for how long we will wait until the remaining job processes.
-         * The unit of this number is second.
-         */
-        int mWaitSeconds = 2;
-
-        /**
-         * Set it for how long we will wait until the handler is destroyed.
-         * The unit of this number is second.
-         */
-		int mDestroySeconds = 3;
 		
 		/**
 		 * Server address
@@ -96,7 +77,7 @@ namespace seevider {
         /**
          * Main entry of the handling thread
          */
-		void run();
+		void run() override;
 
         /**
          * Retrive data from the network message queue, then upload it to the server

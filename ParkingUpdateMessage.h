@@ -29,22 +29,22 @@ namespace seevider {
          * Construct a string to show the content of the data.
          * Generally used for debugging purpose.
          */
-        virtual std::string toString() const;
+		virtual std::string toString() const override;
 
         /**
         * Construct a JSON data for network communication
         */
-		virtual boost::property_tree::ptree toPTree() const;
+		virtual boost::property_tree::ptree toPTree() const override;
 
 		/**
 		 * Save date to given folder
 		 */
-		virtual bool save(const std::string folder) const;
+		virtual bool save(const std::string folder) const override;
 
 		/**
 		 * Load the oldest data from given folder
 		 */
-		virtual bool load(const std::string filename);
+		virtual bool load(const std::string filename) override;
 
     private:
         /**

@@ -1,11 +1,14 @@
 #pragma once
 
 #include <opencv2/opencv.hpp>
+
+#include <boost/version.hpp>
+#include <boost/thread/mutex.hpp>
+#include <boost/thread/condition_variable.hpp>
 #include <boost/functional/hash.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 
 namespace seevider {
-
 	//--------------------------------
 	// Parking spot related constants
 	//--------------------------------
@@ -81,6 +84,38 @@ namespace seevider {
 	//--------------------------
 
 	/**
+	 * Structure to suspend the receiving thread
+	 */
+	struct MutualConditionVariable {
+		/**
+		 * Abling and disabling the management mode.
+		 * While this value is true, the system will not detect the vehicle and
+		 * wait for receiving the update from the manager.
+		 */
+		bool ManagementMode = false;
+
+		/**
+		 * Conditional variable for the requesting thread
+		 */
+		boost::condition_variable SenderCV;
+
+		/**
+		 * Conditional variable for the thread to be suspended
+		 */
+		boost::condition_variable ReceiverCV;
+
+		/**
+		 * Mutex to ensure atomic operations at the entrance of the management mode
+		 */
+		boost::mutex MutexEntrace;
+
+		/**
+		 * Mutex to wait the update
+		 */
+		boost::mutex MutexExit;
+	};
+
+	/**
 	 ROI Callback data to communicate with the preview window
 	 */
 	struct ROISettingCallbackData {
@@ -120,12 +155,14 @@ namespace seevider {
 	 * Filename to save parking spots
 	 */
 	const std::string SYSTEM_FILE_PARKINGSPOTS = "parkingspots.json";
+	
+	/**
+	 * Boost major version
+	 */
+	#define BOOST_VERSION_MAJOR	BOOST_VERSION / 100000
 
 	/**
-	 * JSON request key
+	 * Boost minor version
 	 */
-	const std::string JSON_KEY_REQUEST = "request";
-
-	const int JSON_REQUEST_STREAMING = 1;
-	const int JSON_REQUEST_DISCONNECT = 9;
+	#define BOOST_VERSION_MINOR	BOOST_VERSION / 100 % 1000
 }

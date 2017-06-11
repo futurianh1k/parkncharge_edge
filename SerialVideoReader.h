@@ -37,8 +37,13 @@ namespace seevider {
 		 */
 		bool open(std::string filename);
 
+		/**
+		 * Retrieve the latest image from the input source.
+		 */
+		cv::Mat read() const;
+
         /**
-         * Retrieve a frame from the input source.
+         * Retrieve the latest image frame from the input source.
          * @returns True if success, and false otherwise.
          */
 		bool read(cv::Mat &frame, boost::posix_time::ptime &now);

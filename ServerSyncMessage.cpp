@@ -26,6 +26,7 @@ namespace seevider {
 
 		info.put<int>("httpRequest", HTTP_REQ_SYNC_GENERAL);
 		//info.put<std::string>("timeStamp", boost::posix_time::to_iso_string(mEventTime));
+		info.put<int>("messageType", 0);
 		info.put<std::string>("timeStamp", eventTime);
 		info.put<int>("pictureWidth", mImageSize.width);
 		info.put<int>("pictureHeight", mImageSize.height);

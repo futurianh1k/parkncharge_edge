@@ -74,6 +74,14 @@ void SerialVideoReader::destroy() {
 	LOG(INFO) << "The video input handler has destroyed.";
 }
 
+cv::Mat SerialVideoReader::read() const {
+	boost::mutex::scoped_lock lock(mMutex);
+
+	std::pair<boost::posix_time::ptime, cv::Mat> data = mFrameQueue.back();
+
+	return data.second.clone();
+}
+
 bool SerialVideoReader::read(cv::Mat &frame, bpt::ptime &now) {
     boost::mutex::scoped_lock lock(mMutex);
 

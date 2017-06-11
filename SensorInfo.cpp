@@ -2,7 +2,7 @@
 
 namespace seevider {
 	SensorInfo::SensorInfo() :
-		SensorID(mSensorID), TimeZone(mTimeZone) {
+		SensorID(mSensorID), SensorName(mSensorName), TimeZone(mTimeZone) {
 		//mSensorID = sensorID;
 	};
 

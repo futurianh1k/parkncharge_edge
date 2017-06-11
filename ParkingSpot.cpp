@@ -14,7 +14,7 @@ ParkingSpot::ParkingSpot(int id, std::string spotName, const int length,
 	ROI(mROI), TimeLimit(mTimeLimit), ParkingPolicy(mParkingPolicy),
 	UpdateEnabled(mUpdateEnabled),
 	mID(id), mSpotName(spotName), mTimeLimit(length), mROI(roi),
-	mParkingPolicy(policy),	mOccupied(false), mUpdateEnabled(true),
+	mParkingPolicy(policy), mOccupied(false), mOverstayed(false), mUpdateEnabled(true),
 	mWork(mService), mTimerThread(boost::bind(&ParkingSpot::runTimer, this)),
 	mParkingTimer(mService) {
 }
@@ -30,6 +30,10 @@ bool ParkingSpot::isOccupied() const {
     return mOccupied;
 }
 
+bool ParkingSpot::isOverstayed() const {
+	return mOccupied && mOverstayed;
+}
+
 void ParkingSpot::enter(const Mat& entryImage, const pt::ptime &entryTime) {
 	std::unique_ptr<IMessageData> data = std::make_unique<ParkingUpdateMessage>(
 		HTTP_REQ_UPDATE_ENTER, mID, entryImage, entryTime);
@@ -43,10 +47,10 @@ void ParkingSpot::enter(const Mat& entryImage, const pt::ptime &entryTime) {
 	LOG(INFO) << "Parking spot ID " << mID << " has occupied at " << to_simple_string(entryTime);
 }
 
-void ParkingSpot::expired(const Mat& expiredImage, const pt::ptime &exprTime) {
+void ParkingSpot::overstayed(const Mat& expiredImage, const pt::ptime &exprTime) {
 	std::unique_ptr<IMessageData> data = std::make_unique<ParkingUpdateMessage>(
 		HTTP_REQ_UPDATE_OVER, mID, expiredImage.clone(), exprTime);
-
+	mOverstayed = true;
 	mServerMsgQueue->push(data);
 }
 
@@ -55,10 +59,25 @@ void ParkingSpot::exit(const Mat& exitImage, const pt::ptime &exitTime) {
 		HTTP_REQ_UPDATE_EXIT, mID, exitImage, exitTime);
 
     mOccupied = false;
+	mOverstayed = false;
 	mServerMsgQueue->push(data);
 
 	stopTimer();
 	LOG(INFO) << "Parking spot ID " << mID << " has released at " << to_simple_string(exitTime);
+}
+
+bool ParkingSpot::update(std::string spotName, int timeLimit, cv::Rect roi, PARKING_SPOT_POLICY policy) {
+	if (mOccupied && !mOverstayed) {
+		LOG(WARNING) << "Failed to update parking spot id " << mID << ". To update a parking spot, parking timer must be disabled.";
+		return false;
+	}
+
+	mSpotName = spotName;
+	mTimeLimit = timeLimit;
+	mROI = roi;
+	mParkingPolicy = policy;
+
+	return true;
 }
 
 bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
@@ -100,6 +119,14 @@ bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
 	return updated;
 }
 
+void ParkingSpot::reset() {
+	stopTimer();
+	mOccupied = false;
+	mOverstayed = false;
+	mUpdateEnabled = true;
+	mOccupiedFrameCounter = 0;
+}
+
 void ParkingSpot::runTimer() {
     mService.run();
 }
@@ -121,7 +148,7 @@ void ParkingSpot::notifyExpiration() {
         mVideoReader->readAt(frame, time);
 
 		LOG(INFO) << "Parking spot ID " << mID << " has expired.";
-        expired(frame, time);
+		overstayed(frame, time);
     }
 }
 

@@ -10,14 +10,17 @@
 using namespace seevider;
 
 ServerNetworkHandler::ServerNetworkHandler(std::shared_ptr<MessageQueue> &messageQueue,
-	const std::shared_ptr<Settings> &settings) :
-	mSettingsFilename(SYSTEM_FOLDER_CORE + settings->ServerDataFilename),
-	mHandlerThread(boost::bind(&ServerNetworkHandler::run, this)),
-	mSensorInfo(std::dynamic_pointer_cast<SensorInfo, Settings>(settings)) {
+	const std::shared_ptr<SensorInfo> &sensorInfo, std::string serverDataFilename) :
+	mSettingsFilename(SYSTEM_FOLDER_CORE + serverDataFilename),
+	mSensorInfo(sensorInfo) {
 	assert(messageQueue != nullptr);
 	mMessageQueue = messageQueue;
 
 	loadSettings(mSettingsFilename);
+
+	// Start the handling thread
+	boost::thread t(boost::bind(&ServerNetworkHandler::run, this));
+	mHandlerThread.swap(t);
 }
 
 ServerNetworkHandler::~ServerNetworkHandler() {
@@ -246,7 +249,11 @@ bool ServerNetworkHandler::writeSettings() {
 		node.put("TargetPath", data.second.TargetPath);
 	}
 
-	write_xml(mSettingsFilename, root, std::locale(), boost::property_tree::xml_writer_make_settings<std::string >('\t', 1));
+#if BOOST_VERSION_MINOR > 55
+	write_xml(mSettingsFilename, root, std::locale(), boost::property_tree::xml_writer_make_settings<std::string>('\t', 1));
+#else
+	write_xml(mSettingsFilename, root, std::locale(), boost::property_tree::xml_writer_make_settings<char>('\t', 1));
+#endif
 
 	return true;
 }
