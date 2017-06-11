@@ -23,9 +23,9 @@ namespace seevider {
 		boost::thread t(boost::bind(&TCPSocketListener::run, this));
 		mHandlerThread.swap(t);
 
-		mRequestTranslator["disconnect"] = REQ_DISCONNECT;
-		mRequestTranslator["streaming"] = REQ_STREAMING;
-		mRequestTranslator["update"] = REQ_UPDATE;
+		RequestTranslator["disconnect"] = REQ_DISCONNECT;
+		RequestTranslator["streaming"] = REQ_STREAMING;
+		RequestTranslator["update"] = REQ_UPDATE;
 	}
 
 	TCPSocketListener::~TCPSocketListener() {
@@ -53,7 +53,7 @@ namespace seevider {
 		LOG(INFO) << "Starting the socket listener";
 
 		boost::asio::io_service io_service;
-		tcp::acceptor acceptor_(io_service, tcp::endpoint(tcp::v4(), mPort));
+		tcp::acceptor acceptor_(io_service, tcp::endpoint(tcp::v4(), Port));
 		io_service.run();
 
 		try {
@@ -84,7 +84,7 @@ namespace seevider {
 			}
 
 			while (connected) {
-				char data[4096];
+				char data[MaxBufSize];
 
 				std::memset(data, 0, sizeof(char) * 4096);
 
@@ -105,7 +105,7 @@ namespace seevider {
 
 				switch (requestCode) {
 				case REQ_STREAMING:
-					DLOG(INFO) << "REQ_STREAMING";
+					//DLOG(INFO) << "REQ_STREAMING";
 					sendImageFrame(sock);
 					break;
 
@@ -148,9 +148,9 @@ namespace seevider {
 
 	int TCPSocketListener::parseRequestCode(boost::property_tree::ptree &node) {
 		std::string requestString = node.get<std::string>(JSON_KEY_REQUEST);
-		const auto& elem = mRequestTranslator.find(requestString);
+		const auto& elem = RequestTranslator.find(requestString);
 
-		if (elem == mRequestTranslator.cend()) {
+		if (elem == RequestTranslator.cend()) {
 			return -1;
 		}
 
@@ -195,7 +195,27 @@ namespace seevider {
 		cv::imencode(".jpg", frame, imageBuffer, params);
 
 		// Send the image data size to the client
-		ss << "{ \"bytes\" : \"" << imageBuffer.size() << "\" }";
+		ss << "{ \"bytes\" : " << imageBuffer.size() << " } ";
+		/*ss << "{ \"bytes\" : \"" << imageBuffer.size() << "\" , \"update\" : [ ";
+		for (const auto& elem : *mParkingSpotManager) {
+			if (elem.first != mParkingSpotManager->begin()->first) {
+				ss << ", ";
+			}
+			
+			if (elem.second->isOccupied()) {
+				if (elem.second->isOverstayed()) {
+					ss << "{ \"id\" : " << elem.second->ID << " , \"code\" : 2 }";	// overstayed
+				}
+				else {
+					ss << "{ \"id\" : " << elem.second->ID << " , \"code\" : 1 }";	// occupied
+				}
+			}
+			else {
+				ss << "{ \"id\" : " << elem.second->ID << " , \"code\" : 0 }";	// empty
+			}
+
+		}
+		ss << " ] }";*/
 		boost::asio::write(sock, boost::asio::buffer(ss.str()), error);
 		if (error) {
 			LOG(ERROR) << error.message();
@@ -288,5 +308,5 @@ namespace seevider {
 	//--------------------------------
 	const std::string TCPSocketListener::JSON_KEY_REQUEST = "request";
 
-	std::unordered_map<std::string, int> TCPSocketListener::mRequestTranslator;
+	std::unordered_map<std::string, int> TCPSocketListener::RequestTranslator;
 };

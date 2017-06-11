@@ -61,6 +61,7 @@ namespace seevider {
 		 * Update parking spots from given property tree.
 		 * If parking spots of given id is exist, it will update the data of the parking spot.
 		 * If parking spots of given id is not exist, it will add the new parking spot.
+		 * If the ID of an existing parking spot is not in the given property tree, remove the parking spot.
 		 */
 		bool updateParkingSpots(boost::property_tree::ptree &root);
 

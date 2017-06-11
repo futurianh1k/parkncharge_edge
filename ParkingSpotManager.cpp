@@ -1,5 +1,7 @@
 #include "ParkingSpotManager.h"
 
+#include <unordered_set>
+
 #include <glog/logging.h>
 
 #include <boost/property_tree/json_parser.hpp>
@@ -99,6 +101,8 @@ namespace seevider {
 	}
 
 	bool ParkingSpotManager::updateParkingSpots(boost::property_tree::ptree &root) {
+		std::unordered_set<int> updated;
+
 		for (auto elem : root) {
 			int id, timeLimit;
 			std::string spotName;
@@ -127,6 +131,18 @@ namespace seevider {
 			}
 			else {
 				update(id, spotName, timeLimit, roi, policy);
+			}
+
+			updated.insert(id);
+		}
+
+		// Remove parking spots that are not in 'root'
+		for (auto iter = mParkingSpots.begin(); iter != mParkingSpots.end();) {
+			if (updated.find(iter->first) != updated.end()) {
+				iter++;
+			}
+			else {
+				iter = mParkingSpots.erase(iter);
 			}
 		}
 

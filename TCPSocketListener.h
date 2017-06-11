@@ -20,16 +20,6 @@ namespace seevider {
 		MutualConditionVariable &mMutualConditionVariable;
 
 		/**
-		 * Default port number to receive the connection
-		 */
-		const int mPort = 1050;
-
-		/**
-		 * The maxmimum buffer size of common messages
-		 */
-		const int mMaxLength = 1024;
-
-		/**
 		 * Manager parking spots
 		 */
 		std::shared_ptr<ParkingSpotManager> mParkingSpotManager;
@@ -149,6 +139,16 @@ namespace seevider {
 	private:
 
 		/**
+		* Default port number to receive the connection
+		*/
+		static const int Port = 1050;
+
+		/**
+		 * The maxmimum buffer size of common messages
+		 */
+		static const int MaxBufSize = 4096;
+
+		/**
 		 * JSON request key
 		 */
 		static const std::string JSON_KEY_REQUEST;
@@ -156,6 +156,6 @@ namespace seevider {
 		/**
 		 * Request translator
 		 */
-		static std::unordered_map<std::string, int> mRequestTranslator;
+		static std::unordered_map<std::string, int> RequestTranslator;
 	};
 };
