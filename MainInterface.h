@@ -30,21 +30,23 @@ namespace seevider {
      * Otherwise, the application will be crashed due to the OpenCV windows.
      * The purpose of having this class is to manage various resources easily.
      */
-    class MainInterface {
-    public:
-        MainInterface();
-        ~MainInterface();
+	class MainInterface {
 
-        /**
-         * Main entry of the class
-         */
-        void run();
+	private:
+		/**
+		 * Must be true while the system is operating.
+		 */
+		bool mOperation;
 
-    private:
-        /**
-         * Must be true while the system is operating.
-         */
-        bool mOperation;
+		/**
+		 * IPv4 Address of this machine, if any
+		 */
+		std::string mIPv4Address;
+
+		/**
+		 * IPv6 Address of this machine, if any
+		 */
+		std::string mIPv6Address;
 
 		/**
 		 * Mutual condition variable to update the data from TCP socket connection.
@@ -56,19 +58,19 @@ namespace seevider {
 		 */
 		std::shared_ptr<Settings> mSettings;
 
-        /**
-         * Pointer of the video reader.
-         */
-        std::shared_ptr<SerialVideoReader> mVideoReader;
+		/**
+		 * Pointer of the video reader.
+		 */
+		std::shared_ptr<SerialVideoReader> mVideoReader;
 
-        /**
-         * The massage queue for the server communication
-         */
+		/**
+		 * The massage queue for the server communication
+		 */
 		std::shared_ptr<MessageQueue> mServMsgQueue;
 
-        /**
-         * The server-side network handler
-         */
+		/**
+		 * The server-side network handler
+		 */
 		std::unique_ptr<ServerNetworkHandler> mHTTPServUploader;
 
 		/**
@@ -86,15 +88,30 @@ namespace seevider {
 		 */
 		std::shared_ptr<ParkingSpotManager> mParkingSpotManager;
 
-        /**
-         * Window name for debugging
-         */
-        cv::String mDebugWindowName = "Debugging Camera View";
+		/**
+		 * Window name for debugging
+		 */
+		cv::String mDebugWindowName = "Debugging Camera View";
 
 		/**
 		 *
 		 */
 		cv::String mInitializeWindow = "Parking Spot Initialization";
+
+    public:
+        MainInterface();
+        ~MainInterface();
+
+        /**
+         * Main entry of the class
+         */
+        void run();
+
+	private:
+		/**
+		 * Retrive and store network addresses of this machine
+		 */
+		void retrieveNetworkAddresses();
 
 		/**
 		 * Initialize parking spots. Use this function only for debugging purpose.

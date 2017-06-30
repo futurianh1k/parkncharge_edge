@@ -38,6 +38,9 @@ MainInterface::MainInterface() :
 {
 	LOG(INFO) << "Starting the main activity";
 
+	// First retrieve network addresses
+	retrieveNetworkAddresses();
+
 	if (!mSettings->loadSettings()) {
 		LOG(FATAL) << "Failed to load settings";
 		mOperation = false;
@@ -129,6 +132,7 @@ void MainInterface::run() {
 			output = drawParkingStatus(frame);
 
 			// do something
+			cv::putText(output, mIPv4Address, cv::Point(0, frame.rows), cv::FONT_HERSHEY_PLAIN, 1.0, CV_RGB(255, 0, 0));
 			cv::imshow(mDebugWindowName, output);
 			inputKey = 0xFF & cv::waitKey(30);
 
@@ -161,6 +165,34 @@ void MainInterface::run() {
 			}
 		}
     }
+}
+
+void MainInterface::retrieveNetworkAddresses() {
+	using boost::asio::ip::tcp;
+
+	boost::asio::io_service io_service;
+	tcp::resolver resolver(io_service);
+	std::string h = boost::asio::ip::host_name();
+	tcp::resolver::iterator end;
+	tcp::resolver::iterator endpoint_iterator = resolver.resolve({ h, "" });
+
+	DLOG(INFO) << "Host name is " << h;
+	while (endpoint_iterator != end) {
+		auto addr = endpoint_iterator->endpoint().address();
+		if (addr.is_v4()) {
+			mIPv4Address = addr.to_string();
+			LOG(INFO) << "IPv4: " << mIPv4Address;
+		}
+		else if (addr.is_v6()) {
+			mIPv6Address = addr.to_string();
+			LOG(INFO) << "IPv6: " << mIPv6Address;
+		}
+		else {
+			LOG(INFO) << addr.to_string();
+		}
+		endpoint_iterator++;
+	}
+
 }
 
 void MainInterface::initParkingSpots()
