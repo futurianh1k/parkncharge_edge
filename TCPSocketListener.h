@@ -98,6 +98,14 @@ namespace seevider {
 		boost::property_tree::ptree parseJSON(boost::asio::streambuf& buffer);
 
 		/**
+		 * Send a message with acknowledgement in following order:
+		 * 1) Send a JSON object containing message size to the connected client.
+		 * 2) Receive an acknowledgement
+		 * 3) Send the given message
+		 */
+		void send(boost::asio::ip::tcp::socket &sock, const std::string message);
+
+		/**
 		 * Send the latest image frame in following order:
 		 * 1) Send a JSON object containing image size to the connected client.
 		 * 2) Receive any message from the connected client.

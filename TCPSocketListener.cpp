@@ -92,10 +92,10 @@ namespace seevider {
 
 		try {
 			// Send a welcome message
-			boost::asio::write(sock, boost::asio::buffer(getJSONSyncMessage()), error);
+			send(sock, getJSONSyncMessage());
 
 			if (error) {
-				DLOG(ERROR) << error.message();
+				LOG(ERROR) << error.message();
 			}
 
 			while (connected) {
@@ -103,9 +103,10 @@ namespace seevider {
 
 				std::memset(data, 0, sizeof(char) * 4096);
 
-				size_t length = sock.read_some(boost::asio::buffer(data));
+				size_t length = sock.read_some(boost::asio::buffer(data), error);
 
 				if (error == boost::asio::error::eof) {
+					LOG(INFO) << "Connection closed by peer";
 					break; // Connection closed cleanly by peer.
 				}
 				else if (error) {
@@ -190,6 +191,34 @@ namespace seevider {
 		boost::property_tree::read_json(is, ptree);
 
 		return ptree;
+	}
+
+	void TCPSocketListener::send(boost::asio::ip::tcp::socket &sock, const std::string message) {
+		std::stringstream ss;
+		boost::system::error_code error;
+		char data[128];
+
+		ss << "{ \"bytes\" : " << message.length() << " } ";
+		boost::asio::write(sock, boost::asio::buffer(ss.str()), error);
+		if (error) {
+			LOG(ERROR) << error.message();
+		}
+
+		// Receive any message from the connected client
+		size_t length = sock.read_some(boost::asio::buffer(data), error);
+		if (error) {
+			LOG(ERROR) << error.message();
+		}
+
+		// Check if "ready" message has arrived
+		boost::property_tree::ptree json = parseJSON(data);
+		LOG(INFO) << "Ack: " << json.get<std::string>("ack");
+
+		// Send the message to the client
+		boost::asio::write(sock, boost::asio::buffer(message), error);
+		if (error) {
+			LOG(ERROR) << error.message();
+		}
 	}
 
 	void TCPSocketListener::sendImageFrame(boost::asio::ip::tcp::socket &sock) {
