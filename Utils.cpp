@@ -76,4 +76,10 @@ namespace seevider {
 		}
 	}
 
+	std::vector<char> cvtToFourCC(double val) {
+		int ex = static_cast<int>(val);
+		std::vector<char> fourcc = { (char)(ex & 0XFF), (char)((ex & 0XFF00) >> 8), (char)((ex & 0XFF0000) >> 16), (char)((ex & 0XFF000000) >> 24) };
+
+		return fourcc;
+	}
 }

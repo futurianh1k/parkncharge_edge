@@ -24,6 +24,7 @@
 #include <boost/thread/mutex.hpp>
 
 #include "types.h"
+#include "CameraInfo.h"
 
 namespace seevider {
     class SerialVideoReader {
@@ -31,7 +32,7 @@ namespace seevider {
         /**
          * Construct the class instance.
          */
-        SerialVideoReader();
+		SerialVideoReader(std::shared_ptr<CameraInfo> setting);
 
         /**
          * Basic destructor. If the video API is still opened, close it.
@@ -116,6 +117,11 @@ namespace seevider {
 		 */
 		int mMaxFrames = 100;
 
+		/**
+		 * The length of seconds to store the key frames.
+		 */
+		int mHoldingFramesSeconds = 100;
+
         /**
          * A mutex to limit the simultaneous access to the video API.
          */
@@ -128,8 +134,7 @@ namespace seevider {
 		int mWaitSeconds = 2;
 
 		/**
-		 * Set it for how long we will wait until the handler is destroyed.
-		 * The unit of this number is second.
+		 * A variable that determines how many seconds images are held.
 		 */
 		int mDestroySeconds = 3;
 
@@ -138,13 +143,24 @@ namespace seevider {
 		 */
 		cv::Size mFrameSize;
 
+		/**
+		 * Current codec name
+		 */
+		char mInputFourCC[4];
+
+		/**
+		 * Set to true after 'open' process finishes
+		 */
+		bool mReady = false;
+
         /**
          * Queue of taken frames
          */
         std::list<std::pair<boost::posix_time::ptime, cv::Mat>> mFrameQueue;
 
         /**
-         * Fast access to a frame taken at particular time
+         * The frame indexer holds frames of each second, from mHoldingFramesSeconds seconds
+		 * ago to the present.
          */
         std::unordered_map<boost::posix_time::ptime, cv::Mat, CustomHash> mFrameIndexer;
 		

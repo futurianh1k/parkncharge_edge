@@ -15,6 +15,7 @@
 //
 
 #include "SerialVideoReader.h"
+#include "Utils.h"
 
 #include <boost/date_time/local_time/local_time.hpp>
 #include <boost/date_time/posix_time/posix_time_io.hpp>
@@ -25,8 +26,11 @@ using namespace seevider;
 
 namespace bpt = boost::posix_time;
 
-SerialVideoReader::SerialVideoReader() :
+SerialVideoReader::SerialVideoReader(std::shared_ptr<CameraInfo> setting) :
 mThread(boost::bind(&SerialVideoReader::run, this)) {
+	mFrameSize.width = setting->FrameWidth;
+	mFrameSize.height = setting->FrameHeight;
+	setting->FourCC.copy(mInputFourCC, 4, 0);
 }
 
 SerialVideoReader::~SerialVideoReader() {
@@ -50,9 +54,33 @@ bool SerialVideoReader::open(int id) {
 	Operation = true;
 	mFromVideo = false;
 
+	// Retrieve and print the current attributes
+	std::vector<char> EXT = cvtToFourCC(mVideoReader.get(CV_CAP_PROP_FOURCC));
+	LOG(INFO) << "The original camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
+	LOG(INFO) << "The original camera frame size: " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH) << ", " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT);
+
+	// Modify video properties
+
+	// Set the new attributes
+	LOG(INFO) << "Modifying camera attributes";
+	if (!mVideoReader.set(CV_CAP_PROP_FOURCC,
+		CV_FOURCC(mInputFourCC[0], mInputFourCC[1], mInputFourCC[2], mInputFourCC[3]))) {
+		LOG(ERROR) << "Failed to change the input frame format: " << mInputFourCC;
+	}
+	if (mFrameSize.width > 0 && mFrameSize.height > 0) {
+		if (!mVideoReader.set(CV_CAP_PROP_FRAME_WIDTH, mFrameSize.width) ||
+			!mVideoReader.set(CV_CAP_PROP_FRAME_HEIGHT, mFrameSize.height)) {
+			LOG(ERROR) << "Failed to change the input frame size: " << mFrameSize;
+		}
+	}
 	//VideoReader.set(cv::CAP_PROP_AUTOFOCUS, 1);
 
-	mFrameSize = cv::Size((int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH), (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT));
+	// Print information to make sure that new setting is correctly delivered to the camera
+	EXT = cvtToFourCC(mVideoReader.get(CV_CAP_PROP_FOURCC));
+	LOG(INFO) << "Modified camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
+	LOG(INFO) << "The original camera frame size: " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH) << ", " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT);
+
+	mReady = true;
 
 	return true;
 }
@@ -145,7 +173,7 @@ bool SerialVideoReader::isOpened() const {
 bool SerialVideoReader::isReady() const {
 	boost::mutex::scoped_lock lock(mMutex);
 
-	return !(mFrameQueue.empty() || mFrameIndexer.empty());
+	return !(mFrameQueue.empty() || mFrameIndexer.empty()) && mReady;
 }
 
 void SerialVideoReader::close() {
@@ -168,7 +196,7 @@ void SerialVideoReader::run() {
 	bpt::ptime frontOfIndexerTime;
 
     // Wait and check if video input is opened. May need to be improved.
-    while (!isOpened()) {
+    while (!(isOpened() && mReady)) {
 		boost::this_thread::sleep_for(boost::chrono::seconds(1));
     }
 
@@ -192,7 +220,7 @@ void SerialVideoReader::run() {
 			mFrameQueue.push_back({ now, frame });
 		}
 
-        // Insert the frame to the indexer only if this frame is the first frame for the current time
+        // mFrameIndexer holds the frame of each second, back to given time period.
 		if (mFrameIndexer.empty()) {
 			boost::mutex::scoped_lock lock(mMutex);
 
@@ -202,7 +230,7 @@ void SerialVideoReader::run() {
 		else {
 			boost::mutex::scoped_lock lock(mMutex);
 
-			if (mFrameIndexer.size() >= mMaxFrames) {
+			if (mFrameIndexer.size() >= mHoldingFramesSeconds) {
 				while (mFrameIndexer.find(frontOfIndexerTime) == mFrameIndexer.end()) {
 					frontOfIndexerTime = frontOfIndexerTime + boost::posix_time::seconds(1);
 				}
@@ -218,7 +246,7 @@ void SerialVideoReader::run() {
         prev = now;
 
 		if (mFromVideo) {
-			boost::this_thread::sleep_for(boost::chrono::microseconds(40));
+			boost::this_thread::sleep_for(boost::chrono::microseconds(30));
 		}
     }
 }

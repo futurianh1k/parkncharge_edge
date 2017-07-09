@@ -52,8 +52,12 @@ namespace seevider {
 			return false;
 		}
 
+		//-------------------------------------
+		// Read sensor information
+		//-------------------------------------
+
 		// Read the option 'SensorID'
-		value = ptree.get<std::string>("SensorID", "");
+		value = ptree.get<std::string>("Sensor.SensorID", "");
 		if (!value.empty()) {
 			mSensorID = value;
 		}
@@ -63,14 +67,25 @@ namespace seevider {
 		}
 
 		// Read the option 'ServerData'
-		ServerDataFilename = ptree.get<std::string>("ServerData", "");
+		ServerDataFilename = ptree.get<std::string>("Sensor.ServerData", "");
 		if (ServerDataFilename.empty()) {
 			LOG(FATAL) << "Failed to read option \'ServerData\'";
 			return false;
 		}
 
+		// Read the Time-Zone parameter
+		mTimeZone = ptree.get<std::string>("Sensor.TimeZone", "");
+		if (mTimeZone.empty()) {
+			LOG(ERROR) << "Failed to read option \'TimeZone\'";
+			mTimeZone = "+00";
+		}
+
+		//-------------------------------------
+		// Read algorithm settings
+		//-------------------------------------
+
 		// Read the option 'MotionDetection'
-		value = ptree.get<std::string>("MotionDetection", "");
+		value = ptree.get<std::string>("Algorithm.MotionDetection", "");
 		if (value.empty()) {
 			LOG(ERROR) << "Failed to read option \'MotionDetection\'";
 			MotionDetectionEnabled = false;
@@ -79,15 +94,8 @@ namespace seevider {
 			MotionDetectionEnabled = to_bool(value);
 		}
 
-		// Read the Time-Zone parameter
-		mTimeZone = ptree.get<std::string>("TimeZone", "");
-		if (mTimeZone.empty()) {
-			LOG(ERROR) << "Failed to read option \'TimeZone\'";
-			mTimeZone = "+00";
-		}
-
 		// Read the detection engine type
-		value = ptree.get<std::string>("DetectorType", "");
+		value = ptree.get<std::string>("Algorithm.DetectorType", "");
 		if (!value.empty()) {
 			if (value.compare("cascade") == 0) {
 				Type = CLASSIFIER_CASCADE;
@@ -101,7 +109,7 @@ namespace seevider {
 				return false;
 			}
 
-			value = ptree.get<std::string>("TrainedFilename", "");
+			value = ptree.get<std::string>("Algorithm.TrainedFilename", "");
 			if (value.empty()) {
 				LOG(FATAL) << "Failed to read option \'TrainedFilename\'";
 			}
@@ -114,6 +122,28 @@ namespace seevider {
 			return false;
 		}
 
+		//-------------------------------------
+		// Read camera settings
+		//-------------------------------------
+
+		// Read the option 'FrameWidth'
+		mFrameWidth = ptree.get<int>("Camera.FrameWidth", -1);
+		if (mFrameWidth <= 0) {
+			LOG(ERROR) << "Failed to read option \'FrameWidth\'";
+		}
+
+		// Read the option 'FrameHeight'
+		mFrameHeight = ptree.get<int>("Camera.FrameHeight", -1);
+		if (mFrameHeight <= 0) {
+			LOG(ERROR) << "Failed to read option \'FrameHeight\'";
+		}
+
+		// Read the option 'FourCC'
+		mFourCC = ptree.get<std::string>("Camera.FourCC", "");
+		if (mFourCC.empty()) {
+			LOG(ERROR) << "Failed to read option \'FourCC\'";
+		}
+		
 		return true;
 	}
 
@@ -129,22 +159,31 @@ namespace seevider {
 		}
 
 		// Write the option 'ServerAddress'
-		ptree.put<std::string>("SensorID", mSensorID);
+		ptree.put<std::string>("Sensor.SensorID", mSensorID);
 
 		// Write the option 'ServerAddress'
-		ptree.put<std::string>("ServerData", ServerDataFilename);
-
-		// Write the option 'MotionDetection'
-		ptree.put<std::string>("MotionDetection", to_string(MotionDetectionEnabled));
+		ptree.put<std::string>("Sensor.ServerData", ServerDataFilename);
 
 		// Write the option 'TimeZone'
-		ptree.put<std::string>("TimeZone", TimeZone);
+		ptree.put<std::string>("Sensor.TimeZone", TimeZone);
+
+		// Write the option 'MotionDetection'
+		ptree.put<std::string>("Algorithm.MotionDetection", to_string(MotionDetectionEnabled));
 
 		// Write the option 'DetectorType'
-		ptree.put<std::string>("DetectorType", CLASSIFIER_TYPE_STRING[Type]);
+		ptree.put<std::string>("Algorithm.DetectorType", CLASSIFIER_TYPE_STRING[Type]);
 
-		// Write the option 'DetectorType'
-		ptree.put<std::string>("TrainedFilename", TrainedFilename);
+		// Write the option 'TrainedFilename'
+		ptree.put<std::string>("Algorithm.TrainedFilename", TrainedFilename);
+
+		// Write the option 'FrameWidth'
+		ptree.put<int>("Camera.FrameWidth", mFrameWidth);
+
+		// Write the option 'FrameHeight'
+		ptree.put<int>("Camera.FrameHeight", mFrameHeight);
+
+		// Write the option 'FourCC'
+		ptree.put<std::string>("Camera.FourCC", FourCC);
 
 		// Write INI file
 		write_ini(ss, ptree);

@@ -19,9 +19,10 @@
 
 #include "types.h"
 #include "SensorInfo.h"
+#include "CameraInfo.h"
 
 namespace seevider {
-	class Settings : public SensorInfo {
+	class Settings : public SensorInfo, public CameraInfo {
 	public:
 		/**
 		 * Trained filename for the detection

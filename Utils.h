@@ -16,6 +16,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 namespace seevider {
 	/**
@@ -32,4 +33,9 @@ namespace seevider {
 	 * OnMouse event handler for ROI settings
 	 */
 	void ROISetting_OnMouse(int event, int x, int y, int, void *data);
+
+	/**
+	 * Convert given value to readable fourCC code
+	 */
+	std::vector<char> cvtToFourCC(double val);
 }

@@ -51,7 +51,7 @@ MainInterface::MainInterface() :
 	mParkingSpotManager = std::make_shared<ParkingSpotManager>();
 
     // Construct core resource instances
-	mVideoReader = std::make_shared<SerialVideoReader>();
+	mVideoReader = std::make_shared<SerialVideoReader>(std::dynamic_pointer_cast<CameraInfo, Settings>(mSettings));
 	mServMsgQueue = std::make_shared<MessageQueue>();
 
 	// Open the connected camera
