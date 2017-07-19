@@ -14,6 +14,7 @@
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
 
 #include "ServerNetworkHandler.h"
+#include "SecureClient.h"
 
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/property_tree/xml_parser.hpp>
@@ -116,10 +117,16 @@ bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) con
 	//fout << ss.str() << std::endl;
 	//fout.close();
 
-	return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
+	if (mSecureConnection.compare("none")) {
+		return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
+	}
+	else {
+		return sendSecureHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
+	}
 }
 
-bool ServerNetworkHandler::sendHTTP(const std::string method, const std::string jsonstring, const std::string targetAddr) const {
+bool ServerNetworkHandler::sendHTTP(const std::string method,
+	const std::string jsonstring, const std::string targetAddr) const {
 	using boost::asio::ip::tcp;
 
 	try {
@@ -217,6 +224,51 @@ bool ServerNetworkHandler::sendHTTP(const std::string method, const std::string 
 	return true;
 }
 
+bool ServerNetworkHandler::sendSecureHTTP(const std::string method,
+	const std::string jsonstring, const std::string targetAddr) const {
+	using boost::asio::ip::tcp;
+
+	try {
+		boost::asio::io_service io_service;
+
+		// Get a list of endpoints corresponding to the server name.
+		tcp::resolver resolver(io_service);
+		tcp::resolver::query query(mServerAddr, "https");	// or default secure port 443
+		tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
+
+		boost::asio::ssl::context ctx(boost::asio::ssl::context::tlsv11);
+		ctx.set_default_verify_paths();
+
+		SecureClient c(io_service, ctx, endpoint_iterator,
+			makeHTTPMessage(method, targetAddr, jsonstring));
+
+		io_service.run();
+	}
+	catch (std::exception& e) {
+		LOG(ERROR) << e.what();
+		return false;
+	}
+
+	return true;
+}
+
+std::string ServerNetworkHandler::makeHTTPMessage(const std::string &method,
+	const std::string &targetAddr, const std::string &contents) const {
+	std::stringstream request_stream;
+
+	request_stream << method << " " << targetAddr << " HTTP/1.1\r\n";
+	request_stream << "Host: " << mServerAddr << "\r\n";
+	request_stream << "User-Agent: C/1.0\r\n";
+	request_stream << "Content-Type: application/json; charset=utf-8 \r\n";
+	request_stream << "Accept: */*\r\n";
+	request_stream << "Content-Length: " << contents.length() << "\r\n";
+	request_stream << "sensorid: " << mSensorInfo->SensorID << "\r\n";
+	request_stream << "Connection: close\r\n\r\n";  //NOTE THE Double line feed
+	request_stream << contents;
+
+	return request_stream.str();
+}
+
 bool ServerNetworkHandler::loadSettings(const std::string filename) {
 	if (filename.empty()) {
 		LOG(FATAL) << "Server data filename is empty.";
@@ -231,6 +283,9 @@ bool ServerNetworkHandler::loadSettings(const std::string filename) {
 	for (ptree::value_type const& v : root.get_child("ServerSettings")) {
 		if (v.first == "ServerAddress") {
 			mServerAddr = v.second.get_value<std::string>();
+		}
+		else if (v.first == "SecureConnection") {
+			mSecureConnection = v.second.get_value<std::string>();
 		}
 		else if (v.first == "Request") {
 			ServerDestinations_t dest;
@@ -256,6 +311,7 @@ bool ServerNetworkHandler::writeSettings() {
 	ptree root;
 
 	root.add("ServerSettings.ServerAddress", mServerAddr);
+	root.add("ServerSettings.SecureConnection", mSecureConnection);
 	for (const auto& data : mServerDestinations) {
 		ptree &node = root.add("ServerSettings.Request", "");
 

@@ -38,4 +38,10 @@ namespace seevider {
 	 * Convert given value to readable fourCC code
 	 */
 	std::vector<char> cvtToFourCC(double val);
+
+	/**
+	 * Construct a HTTP message
+	 */
+	std::string getHTTPMessage(const std::string &targetAddr,
+		const std::string &serverAddress, const std::string &contents);
 }

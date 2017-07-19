@@ -28,38 +28,22 @@
 
 namespace seevider {
 	class ServerNetworkHandler : public INetworkHandler {
-    public:
-        /**
-        * Construct the network handler with a message queue
-        */
-		ServerNetworkHandler(std::shared_ptr<MessageQueue> &messageQueue,
-			const std::shared_ptr<SensorInfo> &sensorInfo, std::string serverDataFilename);
 
-        /**
-        * Destruct the network handler
-        */
-		~ServerNetworkHandler();
-
-		/**
-		 * Destroy the network thread
-		 */
-		void destroy() override;
-
-    private:
+	private:
 		//---------------------------
 		// Private variables
 		//---------------------------
 
-        /**
-         * The pointer of message queue
-         */
+		/**
+		 * The pointer of message queue
+		 */
 		std::shared_ptr<MessageQueue> mMessageQueue = nullptr;
 
 		/**
 		 * Sensor information to be sent along with a message
 		 */
 		const std::shared_ptr<SensorInfo> mSensorInfo = nullptr;
-		
+
 		/**
 		 * Server address
 		 */
@@ -76,6 +60,11 @@ namespace seevider {
 		std::vector<std::string> mMethod;
 
 		/**
+		 * Protocol of the secure connection.
+		 */
+		std::string mSecureConnection;
+
+		/**
 		 * Filename to save and load setting data
 		 */
 		std::string mSettingsFilename;
@@ -84,6 +73,30 @@ namespace seevider {
 		 * Destinations of the server side for each message
 		 */
 		std::unordered_map<int, seevider::ServerDestinations_t> mServerDestinations;
+
+	public:
+
+		//---------------------------
+		// Public functions
+		//---------------------------
+
+        /**
+        * Construct the network handler with a message queue
+        */
+		ServerNetworkHandler(std::shared_ptr<MessageQueue> &messageQueue,
+			const std::shared_ptr<SensorInfo> &sensorInfo, std::string serverDataFilename);
+
+        /**
+        * Destruct the network handler
+        */
+		~ServerNetworkHandler();
+
+		/**
+		 * Destroy the network thread
+		 */
+		void destroy() override;
+
+	private:
 
 		//---------------------------
 		// Private functions
@@ -100,9 +113,22 @@ namespace seevider {
 		bool upload(const std::unique_ptr<IMessageData> &data) const;
 
 		/**
-		 * Send http post message.
+		 * Send http message.
 		 */
-		bool sendHTTP(const std::string method, const std::string jsonstring, const std::string targetAddr) const;
+		bool sendHTTP(const std::string method, const std::string jsonstring,
+			const std::string targetAddr) const;
+
+		/**
+		 * Send secure http message.
+		 */
+		bool sendSecureHTTP(const std::string method, const std::string jsonstring,
+			const std::string targetAddr) const;
+
+		/**
+		 * Construct a HTTP message
+		 */
+		std::string makeHTTPMessage(const std::string &method,
+			const std::string &targetAddr, const std::string &contents) const;
 
 		/**
 		 * Load setting data

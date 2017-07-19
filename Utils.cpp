@@ -82,4 +82,5 @@ namespace seevider {
 
 		return fourcc;
 	}
+
 }

@@ -55,30 +55,40 @@ bool SerialVideoReader::open(int id) {
 	mFromVideo = false;
 
 	// Retrieve and print the current attributes
-	std::vector<char> EXT = cvtToFourCC(mVideoReader.get(CV_CAP_PROP_FOURCC));
-	LOG(INFO) << "The original camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
-	LOG(INFO) << "The original camera frame size: " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH) << ", " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT);
+	std::vector<char> EXT;
+	cv::Size originalSize;
+	double ext_code = mVideoReader.get(CV_CAP_PROP_FOURCC);
+	if (ext_code >= 0.0) {
+		EXT = cvtToFourCC(ext_code);
+		LOG(INFO) << "The original camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
+	}
+	else {
+		LOG(ERROR) << "Failed to retrieve camera codec: " << ext_code;
+	}
+	originalSize.width = (int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH);
+	originalSize.height = (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT);
+	LOG(INFO) << "The original camera frame size: " << originalSize;
 
 	// Modify video properties
-
-	// Set the new attributes
 	LOG(INFO) << "Modifying camera attributes";
 	if (!mVideoReader.set(CV_CAP_PROP_FOURCC,
 		CV_FOURCC(mInputFourCC[0], mInputFourCC[1], mInputFourCC[2], mInputFourCC[3]))) {
 		LOG(ERROR) << "Failed to change the input frame format: " << mInputFourCC;
 	}
+	else {
+		EXT = cvtToFourCC(mVideoReader.get(CV_CAP_PROP_FOURCC));
+		LOG(INFO) << "Modified camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
+	}
 	if (mFrameSize.width > 0 && mFrameSize.height > 0) {
 		if (!mVideoReader.set(CV_CAP_PROP_FRAME_WIDTH, mFrameSize.width) ||
 			!mVideoReader.set(CV_CAP_PROP_FRAME_HEIGHT, mFrameSize.height)) {
 			LOG(ERROR) << "Failed to change the input frame size: " << mFrameSize;
+			mFrameSize = originalSize;
 		}
 	}
-	//VideoReader.set(cv::CAP_PROP_AUTOFOCUS, 1);
-
-	// Print information to make sure that new setting is correctly delivered to the camera
-	EXT = cvtToFourCC(mVideoReader.get(CV_CAP_PROP_FOURCC));
-	LOG(INFO) << "Modified camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
-	LOG(INFO) << "The original camera frame size: " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH) << ", " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT);
+	else {
+		LOG(INFO) << "Modified camera frame size: " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH) << ", " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT);
+	}
 
 	mReady = true;
 

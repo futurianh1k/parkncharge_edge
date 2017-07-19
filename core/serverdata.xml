@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ServerSettings>
-	<ServerAddress>52.52.203.176</ServerAddress>
+	<ServerAddress>sandbox.seevider.net</ServerAddress>
+	<SecureConnection>TLS1_1</SecureConnection>
 	<Request>
 		<RequestType>0</RequestType>
 		<HTTPRequestMethod>PUT</HTTPRequestMethod>
