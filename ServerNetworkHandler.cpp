@@ -117,7 +117,7 @@ bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) con
 	//fout << ss.str() << std::endl;
 	//fout.close();
 
-	if (mSecureConnection.compare("none")) {
+	if (mSecureConnection.compare("none") == 0) {
 		return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
 	}
 	else {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ServerSettings>
-	<ServerAddress>sandbox.seevider.net</ServerAddress>
+	<ServerAddress>api.seevider.net</ServerAddress>
 	<SecureConnection>TLS1_1</SecureConnection>
 	<Request>
 		<RequestType>0</RequestType>
