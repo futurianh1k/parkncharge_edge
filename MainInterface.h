@@ -132,12 +132,7 @@ namespace seevider {
 		 * Update occupancy status of parking spots
 		 */
 		void updateSpots(const cv::Mat &frame, const boost::posix_time::ptime& now);
-
-		/**
-		 * Draw current parking status
-		 */
-		cv::Mat drawParkingStatus(const cv::Mat& frame) const;
-
+		
 		/**
 		 * Print the instruction to use the ROI setting window
 		 */

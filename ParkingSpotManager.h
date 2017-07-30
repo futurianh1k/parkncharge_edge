@@ -86,6 +86,11 @@ namespace seevider {
 		boost::property_tree::ptree toPTree() const;
 
 		/**
+		 * Draw parking ROI and its status on given image
+		 */
+		cv::Mat drawParkingStatus(cv::Mat frame) const;
+
+		/**
 		 * The beginning iterator of parking spots
 		 */
 		iterator begin();

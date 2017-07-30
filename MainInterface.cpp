@@ -129,7 +129,7 @@ void MainInterface::run() {
 		}
 		else {
 			// Draw current status
-			output = drawParkingStatus(frame);
+			output = mParkingSpotManager->drawParkingStatus(frame);
 
 			// do something
 			cv::putText(output, mIPv4Address, cv::Point(0, frame.rows), cv::FONT_HERSHEY_PLAIN, 1.0, CV_RGB(255, 0, 0));
@@ -221,8 +221,7 @@ void MainInterface::initParkingSpots()
 	do {
 		// Update image window
 		callbackData.roi_set = false;
-		clonedFrame = frame.clone();
-		drawParkingStatus(clonedFrame);
+		clonedFrame = mParkingSpotManager->drawParkingStatus(frame);
 		for (const auto &spot : *mParkingSpotManager) {
 			rectangle(clonedFrame, spot.second->ROI, CV_RGB(255, 0, 0));
 		}
@@ -325,24 +324,6 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 			}
 		}
 	}
-}
-
-Mat MainInterface::drawParkingStatus(const Mat& frame) const  {
-	Mat drawn = frame.clone();
-	
-	for (auto &parkingSpot : *mParkingSpotManager) {
-		cv::Scalar color;
-		if (parkingSpot.second->isOccupied()) {
-			color = CV_RGB(255, 0, 0);
-		}
-		else {
-			color = CV_RGB(0, 255, 0);
-		}
-
-		cv::rectangle(drawn, parkingSpot.second->ROI, color, 2);
-	}
-
-	return drawn;
 }
 
 void MainInterface::print_usage_roi_settings()

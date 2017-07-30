@@ -111,7 +111,7 @@ namespace seevider {
 		 * 2) Receive any message from the connected client.
 		 * 3) Send actual byte array of the image frame.
 		 */
-		void sendImageFrame(boost::asio::ip::tcp::socket &sock);
+		void sendImageFrame(boost::asio::ip::tcp::socket &sock, bool drawStatus);
 
 		/**
 		 * Suspend main thread

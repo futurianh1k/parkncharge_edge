@@ -187,6 +187,24 @@ namespace seevider {
 		return spotArray;
 	}
 
+	cv::Mat ParkingSpotManager::drawParkingStatus(cv::Mat frame) const {
+		cv::Mat drawn = frame.clone();
+
+		for (auto parkingSpot : mParkingSpots) {
+			cv::Scalar color;
+			if (parkingSpot.second->isOccupied()) {
+				color = CV_RGB(255, 0, 0);
+			}
+			else {
+				color = CV_RGB(0, 255, 0);
+			}
+
+			cv::rectangle(drawn, parkingSpot.second->ROI, color, 2);
+		}
+
+		return drawn;
+	}
+
 	ParkingSpotManager::iterator ParkingSpotManager::begin() {
 		return mParkingSpots.begin();
 	}

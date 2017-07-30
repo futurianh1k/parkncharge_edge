@@ -15,6 +15,7 @@
 
 #include "TCPSocketListener.h"
 #include "types.h"
+#include "Utils.h"
 
 #include <sstream>
 
@@ -122,7 +123,7 @@ namespace seevider {
 				switch (requestCode) {
 				case REQ_STREAMING:
 					//DLOG(INFO) << "REQ_STREAMING";
-					sendImageFrame(sock);
+					sendImageFrame(sock, seevider::to_bool(json.get<std::string>("showStatus", "false")));
 					break;
 
 				case REQ_UPDATE:
@@ -221,7 +222,7 @@ namespace seevider {
 		}
 	}
 
-	void TCPSocketListener::sendImageFrame(boost::asio::ip::tcp::socket &sock) {
+	void TCPSocketListener::sendImageFrame(boost::asio::ip::tcp::socket &sock, bool drawStatus) {
 		std::vector<uchar> imageBuffer;
 		std::vector<int> params;
 		cv::Mat frame = mSerialVideoReader->read();
@@ -233,6 +234,10 @@ namespace seevider {
 		std::memset(data, 0, sizeof(char) * 64);
 
 		// TODO: handler error if the frame is empty
+
+		if (drawStatus) {
+			frame = mParkingSpotManager->drawParkingStatus(frame);
+		}
 
 		// encode image
 		params.push_back(cv::IMWRITE_JPEG_QUALITY);
