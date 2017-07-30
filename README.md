@@ -23,4 +23,7 @@ sudo apt-get -y install libssl-dev
 
 # (Boost)
 sudo apt-get install -y --no-install-recommends libboost-all-dev
+
+# (OpenALPR)
+sudo apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev
 ```
