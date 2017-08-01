@@ -69,14 +69,29 @@ MainInterface::MainInterface() :
 	// Construct TCP socket listener
 	mTCPSocketListener = std::make_unique<TCPSocketListener>(mParkingSpotManager, mVideoReader, mSettings, mMutualConditionVariable);
 
-	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
-	}
-
     // Share message queues
     ParkingSpot::setMessageQueue(mServMsgQueue);
     ParkingSpot::setVideoReader(mVideoReader);
 
+	//--------------------------------
+	// Start computer vision engines
+	//--------------------------------
+	// Occupancy Detector
+	if (mSettings->Type == CLASSIFIER_CASCADE) {
+		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
+	}
+
+	// LPR engine
+	if (!mSettings->LPRSettingsFilename.empty()) {
+		mLPR = std::make_unique<LPR>(mSettings->LPRRegionCode, SYSTEM_FOLDER_CORE + mSettings->LPRSettingsFilename);
+	}
+	else {
+		mLPR = nullptr;
+	}
+
+	//--------------------------------
+	// Start Graphic User Interface
+    //--------------------------------
 	cv::namedWindow(mDebugWindowName);
 
 	// Send an initial sync message
@@ -147,6 +162,7 @@ void MainInterface::run() {
 				initParkingSpots();
 			}
 
+			// For debugging
 			if (inputKey >= '1' && inputKey <= mParkingSpotManager->size() + '0') {
 				// Add a timer for testing purpose
 				int idx = inputKey - '1';
@@ -315,6 +331,11 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 			if (parkingSpot->update(mDetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
 				if (parkingSpot->isOccupied()) {
 					// if the status has changed to 'Occupied' from 'Empty'
+					std::string PN = "null";
+					if (mLPR != nullptr) {
+						PN = mLPR->recognize(croppedFrame);
+					}
+
 					parkingSpot->enter(frame.clone(), now);
 				}
 				else {

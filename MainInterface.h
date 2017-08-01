@@ -21,6 +21,7 @@
 #include "ParkingSpot.h"
 #include "Settings.h"
 #include "IOccupancyDetector.h"
+#include "LPR.h"
 
 #include <boost/thread.hpp>
 
@@ -82,6 +83,11 @@ namespace seevider {
 		 * Occupancy detector
 		 */
 		std::unique_ptr<IOccupancyDetector> mDetector;
+
+		/**
+		 * License plate recognizer
+		 */
+		std::unique_ptr<LPR> mLPR;
 
 		/**
 		 * Parking spot manager

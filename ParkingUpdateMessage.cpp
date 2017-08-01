@@ -32,9 +32,10 @@ ParkingUpdateMessage::ParkingUpdateMessage() {
 };
 
 ParkingUpdateMessage::ParkingUpdateMessage(const int request, const int spotID,
-    const cv::Mat &frame, const boost::posix_time::ptime &eventTime) :
+    const cv::Mat &frame, const boost::posix_time::ptime &eventTime,
+	const std::string PN) :
 	IMessageData(eventTime), mRequestCode(request), mSpotID(spotID),
-	mFrame(frame.clone()) {
+	mFrame(frame.clone()), mPN(PN) {
     // do nothing
 }
 
@@ -45,7 +46,8 @@ ParkingUpdateMessage::~ParkingUpdateMessage() {
 std::string ParkingUpdateMessage::toString() const {
     std::stringstream sstr;
 
-	sstr << mSpotID << " at " << to_simple_string(mEventTime) << " (" << mRequestCode << ")";
+	sstr << mSpotID << " with plate number " << mPN <<
+		" at " << to_simple_string(mEventTime) << " (" << mRequestCode << ")";
 
     return sstr.str();
 }
@@ -57,6 +59,7 @@ boost::property_tree::ptree ParkingUpdateMessage::toPTree() const {
 	info.put<int>("httpRequest", mRequestCode);
 	info.put<int>("parkingSpotId", mSpotID);
 	info.put<std::string>("timeStamp", boost::posix_time::to_iso_string(mEventTime));
+	info.put<std::string>("plateNumber", mPN);
 	info.put<std::string>("currentPicture", utils::base64_encode_image(mFrame));
 
 	return info;
@@ -87,7 +90,7 @@ bool ParkingUpdateMessage::load(const std::string filename) {
 
 	// TODO: add exception handling codes
 
-	if (substrs.size() < 3) {
+	if (substrs.size() < 4) {
 		LOG(ERROR) << "Invalid filename: " << filename;
 		return false;	// failed to parse filename
 	}
@@ -102,15 +105,8 @@ bool ParkingUpdateMessage::load(const std::string filename) {
 
 	mEventTime = boost::posix_time::from_iso_string(substrs[0]);
 	mRequestCode = std::stoi(substrs[1]);
-	if (substrs.size() == 3) {
-		mSpotID = stoi(substrs[2]);
-	}
-	else if (substrs.size() == 4) {
-		mSpotID = stoi(substrs[2] + substrs[3]);
-	}
-	else {
-		mSpotID = stoi(boost::algorithm::join(std::vector<std::string>(substrs.begin() + 2, substrs.end()), ""));
-	}
+	mPN = substrs[2];
+	mSpotID = stoi(substrs[3]);
 
 	return true;
 }
@@ -123,5 +119,6 @@ cv::String ParkingUpdateMessage::constructFilename() const {
 	//sstr << mEventTime << "_" << mSpotID << ".png";
 
 	//return sstr.str();
-	return boost::posix_time::to_iso_string(mEventTime) + "_" + std::to_string(mRequestCode) + "_" + std::to_string(mSpotID) + ".png";
+	return boost::posix_time::to_iso_string(mEventTime) + "_" + std::to_string(mRequestCode) +
+		"_" + mPN + "_" + std::to_string(mSpotID) + ".png";
 }

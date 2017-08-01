@@ -33,7 +33,8 @@ namespace seevider {
          * Constructor with initialization
          */
 		ParkingUpdateMessage(const int request, const int spotID,
-            const cv::Mat &frame, const boost::posix_time::ptime &eventTime);
+            const cv::Mat &frame, const boost::posix_time::ptime &eventTime,
+			const std::string PN = "null");
 
         /**
          * Basic destructor
@@ -65,17 +66,22 @@ namespace seevider {
         /**
          * Parking spot update data
          */
-        int mRequestCode;
+        int mRequestCode = 0;
 
         /**
          * Local parking spot ID
          */
-        int mSpotID;
+        int mSpotID = 0;
 
         /**
          * Image frame
          */
         cv::Mat mFrame;
+
+		/**
+		 * Plate number, if any
+		 */
+		std::string mPN = "null";
 
 		/**
 		 * Construct a filename

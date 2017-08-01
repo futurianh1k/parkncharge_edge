@@ -30,6 +30,16 @@ namespace seevider {
 		std::string TrainedFilename;
 
 		/**
+		 * LPR region code
+		 */
+		std::string LPRRegionCode;
+
+		/**
+		 * LPR settings filename
+		 */
+		std::string LPRSettingsFilename;
+
+		/**
 		 * Server settings
 		 */
 		std::string ServerDataFilename;

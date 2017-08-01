@@ -11,7 +11,7 @@
 // conditions stipulated in the agreement/contract under
 // which the program(s) have been supplied.
 //
-// Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
+// Written by Seongdo Kim <sdland85@gmail.com>, June 2017
 
 #pragma once
 

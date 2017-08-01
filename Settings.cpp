@@ -122,6 +122,20 @@ namespace seevider {
 			return false;
 		}
 
+		// Read the option 'LPRRegionCode'
+		LPRRegionCode = ptree.get<std::string>("Algorithm.LPRRegionCode", "");
+		if (LPRRegionCode.empty()) {
+			LOG(ERROR) << "Failed to read option \'LPRRegionCode\'. Set to the default region \'us\'";
+			LPRRegionCode = "us";
+		}
+
+		// Read the option 'LPRSettingsFilename'
+		LPRSettingsFilename = ptree.get<std::string>("Algorithm.LPRSettingsFilename", "");
+		if (LPRSettingsFilename.empty()) {
+			LOG(FATAL) << "Failed to read option \'LPRSettingsFilename\'. Turn off the LPR engine";
+			LPRSettingsFilename = "";
+		}
+
 		//-------------------------------------
 		// Read camera settings
 		//-------------------------------------
@@ -175,6 +189,12 @@ namespace seevider {
 
 		// Write the option 'TrainedFilename'
 		ptree.put<std::string>("Algorithm.TrainedFilename", TrainedFilename);
+
+		// Write the option 'LPRRegionCode'
+		ptree.put<std::string>("Algorithm.LPRRegionCode", LPRRegionCode);
+
+		// Write the option 'LPRSettingsFilename'
+		ptree.put<std::string>("Algorithm.LPRSettingsFilename", LPRSettingsFilename);
 
 		// Write the option 'FrameWidth'
 		ptree.put<int>("Camera.FrameWidth", mFrameWidth);
