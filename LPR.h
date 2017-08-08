@@ -18,6 +18,7 @@
 #include <string>
 #include <vector>
 #include <opencv2/opencv.hpp>
+#include <alpr.h>
 
 namespace seevider {
 	class LPR
@@ -32,14 +33,9 @@ namespace seevider {
 		/**
 		 * License plate recognizing engine
 		 */
-		//alpr::Alpr mLPR;
+		alpr::Alpr mLPR;
 
 	public:
-
-		/**
-		 * Empty constructor
-		 */
-		LPR();
 
 		/**
 		 * Basic constructor
@@ -49,7 +45,12 @@ namespace seevider {
 		/**
 		 * Recognize license plate number from given image.
 		 */
-		std::string recognize(const cv::Mat& image, std::vector<std::string> &LPLists = std::vector<std::string>()) const;
+		std::string recognize(const cv::Mat& image);
+
+		/**
+		 * Recognize license plate number from given image.
+		 */
+		void recognize(const cv::Mat& image, std::vector<std::pair<std::string, float>> &LPLists);
 
 	private:
 	};

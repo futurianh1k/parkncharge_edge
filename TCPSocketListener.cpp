@@ -199,7 +199,7 @@ namespace seevider {
 		boost::system::error_code error;
 		char data[128];
 
-		ss << "{ \"bytes\" : " << message.length() << " } ";
+		ss << "{ \"bytes\" : " << message.length() << " }\0";
 		boost::asio::write(sock, boost::asio::buffer(ss.str()), error);
 		if (error) {
 			LOG(ERROR) << error.message();
@@ -245,7 +245,7 @@ namespace seevider {
 		cv::imencode(".jpg", frame, imageBuffer, params);
 
 		// Send the image data size to the client
-		ss << "{ \"bytes\" : " << imageBuffer.size() << " } ";
+		ss << "{ \"bytes\" : " << imageBuffer.size() << " }\0";
 		/*ss << "{ \"bytes\" : \"" << imageBuffer.size() << "\" , \"update\" : [ ";
 		for (const auto& elem : *mParkingSpotManager) {
 			if (elem.first != mParkingSpotManager->begin()->first) {
@@ -295,13 +295,19 @@ namespace seevider {
 		suspendMainThread();
 
 		// Send the image data size to the client
-		boost::asio::write(sock, boost::asio::buffer("{ \"response\" : \"ok\" }"), error);
+		boost::asio::write(sock, boost::asio::buffer("{ \"response\" : \"ok\" }\0"), error);
 
 		bytes_received = boost::asio::read(sock, read_buffer, boost::asio::transfer_exactly(bytes_reserved));
 
 		message = parseJSON(read_buffer);
 
-		mParkingSpotManager->updateParkingSpots(message.get_child("ROI"));
+		boost::property_tree::ptree ROIList = message.get_child("ROI", boost::property_tree::ptree());
+		if (ROIList.empty()) {
+			mParkingSpotManager->clear();
+		}
+		else {
+			mParkingSpotManager->updateParkingSpots(ROIList);
+		}
 		
 		// Resume the main thread for update
 		resumeMainThread();

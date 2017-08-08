@@ -336,7 +336,7 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 						PN = mLPR->recognize(croppedFrame);
 					}
 
-					parkingSpot->enter(frame.clone(), now);
+					parkingSpot->enter(frame.clone(), now, PN);
 				}
 				else {
 					// if the status has changed to 'Empty' from 'Occupied'

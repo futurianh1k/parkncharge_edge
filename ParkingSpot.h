@@ -102,6 +102,11 @@ namespace seevider {
 		bool mOverstayed;
 
 		/**
+		 * Plane number of the parked car. Could be null if it failed to read PN.
+		 */
+		std::string mPlateNumber;
+
+		/**
 		 * Frame counter represents the occurence of occupancy events.
 		 */
 		int mOccupiedFrameCounter = 0;

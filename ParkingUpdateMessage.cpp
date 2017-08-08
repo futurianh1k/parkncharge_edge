@@ -59,7 +59,7 @@ boost::property_tree::ptree ParkingUpdateMessage::toPTree() const {
 	info.put<int>("httpRequest", mRequestCode);
 	info.put<int>("parkingSpotId", mSpotID);
 	info.put<std::string>("timeStamp", boost::posix_time::to_iso_string(mEventTime));
-	info.put<std::string>("plateNumber", mPN);
+	info.put<std::string>("parkingCarNumber", mPN);
 	info.put<std::string>("currentPicture", utils::base64_encode_image(mFrame));
 
 	return info;

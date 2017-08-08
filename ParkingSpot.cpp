@@ -30,7 +30,8 @@ ParkingSpot::ParkingSpot(int id, std::string spotName, const int length,
 	ROI(mROI), TimeLimit(mTimeLimit), ParkingPolicy(mParkingPolicy),
 	UpdateEnabled(mUpdateEnabled),
 	mID(id), mSpotName(spotName), mTimeLimit(length), mROI(roi),
-	mParkingPolicy(policy), mOccupied(false), mOverstayed(false), mUpdateEnabled(true),
+	mParkingPolicy(policy), mOccupied(false), mOverstayed(false), mPlateNumber("null"),
+	mUpdateEnabled(true),
 	mWork(mService), mTimerThread(boost::bind(&ParkingSpot::runTimer, this)),
 	mParkingTimer(mService) {
 }
@@ -55,12 +56,13 @@ void ParkingSpot::enter(const Mat& entryImage, const pt::ptime &entryTime, const
 		HTTP_REQ_UPDATE_ENTER, mID, entryImage, entryTime, PN);
 
 	mOccupied = true;
+	mPlateNumber = PN;
     mServerMsgQueue->push(data);
 	
 	mEntryTime = entryTime;
 
 	startTimer();
-	LOG(INFO) << "Parking spot ID " << mID << " has occupied at " << to_simple_string(entryTime);
+	LOG(INFO) << "Parking spot ID " << mID << " has occupied at " << to_simple_string(entryTime) + " by " + PN;
 }
 
 void ParkingSpot::overstayed(const Mat& expiredImage, const pt::ptime &exprTime) {
@@ -76,6 +78,7 @@ void ParkingSpot::exit(const Mat& exitImage, const pt::ptime &exitTime) {
 
     mOccupied = false;
 	mOverstayed = false;
+	mPlateNumber = "null";
 	mServerMsgQueue->push(data);
 
 	stopTimer();

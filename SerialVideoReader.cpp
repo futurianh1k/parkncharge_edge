@@ -182,8 +182,8 @@ bool SerialVideoReader::isOpened() const {
 
 bool SerialVideoReader::isReady() const {
 	boost::mutex::scoped_lock lock(mMutex);
-
-	return !(mFrameQueue.empty() || mFrameIndexer.empty()) && mReady;
+	
+	return !(mFrameQueue.empty() || mFrameIndexer.empty()) && !mFrameQueue.back().second.empty() && mReady;
 }
 
 void SerialVideoReader::close() {
