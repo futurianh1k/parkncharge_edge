@@ -42,4 +42,7 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc ..
 
 ### compile the library
 make
+
+### Install the binaries/libraries to your local system (prefix is /usr)
+sudo make install
 ```
