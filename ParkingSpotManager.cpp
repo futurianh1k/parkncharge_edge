@@ -79,6 +79,10 @@ namespace seevider {
 		return (unsigned int)mParkingSpots.size();
 	}
 
+	bool ParkingSpotManager::empty() const {
+		return mParkingSpots.empty();
+	}
+
 	bool ParkingSpotManager::readFromJSONFile(std::string filename) {
 		boost::property_tree::ptree ptree;
 

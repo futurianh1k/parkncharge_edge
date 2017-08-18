@@ -66,6 +66,11 @@ namespace seevider {
 		 * Get the number of parking spots
 		 */
 		unsigned int size() const;
+
+		/**
+		 * Check if the list of parking spot is empty
+		 */
+		bool empty() const;
 		
 		/**
 		 * Read parking spots from given json file
