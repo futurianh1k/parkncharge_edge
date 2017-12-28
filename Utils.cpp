@@ -83,4 +83,9 @@ namespace seevider {
 		return fourcc;
 	}
 
+	double computeImageRatio(int width, int height) {
+		if (width <= 0 || height <= 0) return 0.0;
+		if (width < height) return double(height) / double(width);
+		return double(width) / double(height);
+	}
 }

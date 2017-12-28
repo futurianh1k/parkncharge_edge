@@ -55,8 +55,8 @@ MainInterface::MainInterface() :
 	mServMsgQueue = std::make_shared<MessageQueue>();
 
 	// Open the connected camera
-	//mVideoReader->open("..\\..\\Video\\20160527120257(fixed).avi");
-	mVideoReader->open(0);
+	mVideoReader->open("..\\..\\Video\\20160527120257(fixed).avi");
+	//mVideoReader->open(0);
 
     //--------------------------------
 	// Start the resource managing threads.
@@ -82,12 +82,12 @@ MainInterface::MainInterface() :
 	}
 
 	// LPR engine
-	if (!mSettings->LPRSettingsFilename.empty()) {
+	/*if (!mSettings->LPRSettingsFilename.empty()) {
 		mLPR = std::make_unique<LPR>(mSettings->LPRRegionCode, SYSTEM_FOLDER_CORE + mSettings->LPRSettingsFilename);
 	}
 	else {
 		mLPR = nullptr;
-	}
+	}*/
 
 	//--------------------------------
 	// Start Graphic User Interface
@@ -130,6 +130,9 @@ void MainInterface::run() {
 		boost::this_thread::sleep_for(boost::chrono::seconds(1));
 	}
 
+	// Motion detector--delayed initialization to retrieve the original frame size
+	mMotionDetector = std::make_unique<MotionDetection>(mVideoReader->size());
+
 	while (mOperation && mVideoReader->read(frame, now)) {
 		if (mMutualConditionVariable.ManagementMode) {
 			// Wait until the modifier changes settings
@@ -150,6 +153,15 @@ void MainInterface::run() {
 			cv::putText(output, mIPv4Address, cv::Point(0, frame.rows), cv::FONT_HERSHEY_PLAIN, 1.0, CV_RGB(255, 0, 0));
 			cv::imshow(mDebugWindowName, output);
 			inputKey = 0xFF & cv::waitKey(30);
+
+			// Detect motions
+			mMotionDetector->update(frame);
+
+			// Check if any motion has detected in this frame
+			if (mMotionDetector->isMotionDetected(frame)) {
+				std::cout << "Motion detected--brighten the light" << std::endl;
+				// TODO: control lighting
+			}
 
 			// Update parking spots with current frame
 			updateSpots(frame, now);
@@ -313,13 +325,14 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 	}
 
 	if (mParkingSpotManager->size() >= 1) {
-		if (mSettings->MotionDetectionEnabled) {
-			//detectMotion(frame);
-		}
-
 		for (auto &elem : *mParkingSpotManager) {
 			vector<Rect> locs;
 			std::shared_ptr<ParkingSpot> &parkingSpot = elem.second;
+
+			if (mSettings->MotionDetectionEnabled && mMotionDetector->isMotionDetected(frame, elem.second->ROI)) {
+				std::cout << "Motion detected at spot " << elem.first << std::endl;
+				continue;	// if some motion has detected for this ROI, wait until the region becomes stable
+			}
 
 			if (!parkingSpot->UpdateEnabled) {
 				// Update only if the status of the parking spot is unstable
@@ -332,9 +345,9 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 				if (parkingSpot->isOccupied()) {
 					// if the status has changed to 'Occupied' from 'Empty'
 					std::string PN = "null";
-					if (mLPR != nullptr) {
+					/*if (mLPR != nullptr) {
 						PN = mLPR->recognize(croppedFrame);
-					}
+					}*/
 
 					parkingSpot->enter(frame.clone(), now, PN);
 				}

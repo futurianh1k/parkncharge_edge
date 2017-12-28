@@ -44,4 +44,10 @@ namespace seevider {
 	 */
 	std::string getHTTPMessage(const std::string &targetAddr,
 		const std::string &serverAddress, const std::string &contents);
+
+	/**
+	 * Compute image ratio. Returing ratio will be greater than or equal to one.
+	 * If input values are invalid, it will return zero.
+	 */
+	double computeImageRatio(int width, int height);
 }

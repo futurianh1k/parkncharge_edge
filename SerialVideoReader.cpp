@@ -86,7 +86,7 @@ bool SerialVideoReader::open(int id) {
 	mVideoReader.set(CV_CAP_PROP_FRAME_HEIGHT, mFrameSize.height);
 	LOG(INFO) << "Modified camera frame size: " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH) << ", " << (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT);
 
-	mReady = true;
+	//mReady = true;
 
 	return true;
 }
@@ -106,6 +106,8 @@ bool SerialVideoReader::open(std::string filename) {
 	mFromVideo = true;
 
 	mFrameSize = cv::Size((int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH), (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT));
+
+	//mReady = true;
 
 	return true;
 }
@@ -178,7 +180,6 @@ bool SerialVideoReader::isOpened() const {
 
 bool SerialVideoReader::isReady() const {
 	boost::mutex::scoped_lock lock(mMutex);
-	
 	return !(mFrameQueue.empty() || mFrameIndexer.empty()) && !mFrameQueue.back().second.empty() && mReady;
 }
 
@@ -202,7 +203,7 @@ void SerialVideoReader::run() {
 	bpt::ptime frontOfIndexerTime;
 
     // Wait and check if video input is opened. May need to be improved.
-    while (!(isOpened() && mReady)) {
+    while (!(isOpened()/* && mReady*/)) {
 		boost::this_thread::sleep_for(boost::chrono::seconds(1));
     }
 
@@ -249,10 +250,12 @@ void SerialVideoReader::run() {
 			}
 		}
 
-        prev = now;
+		prev = now;
+
+		mReady = true;	// make it ready after at least one frame-retrieval
 
 		if (mFromVideo) {
-			boost::this_thread::sleep_for(boost::chrono::microseconds(30));
+			boost::this_thread::sleep_for(boost::chrono::milliseconds(30));
 		}
     }
 }
