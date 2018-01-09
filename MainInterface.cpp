@@ -60,18 +60,14 @@ MainInterface::MainInterface() :
     //--------------------------------
 	// Start the resource managing threads.
 	//--------------------------------
-std::cout<<"dkssud4";
 	// Construct HTTP uploader
 	mHTTPServUploader = std::make_unique<ServerNetworkHandler>(mServMsgQueue,
 		std::dynamic_pointer_cast<SensorInfo, Settings>(mSettings), mSettings->ServerDataFilename);
-std::cout<<"dkssud1";
 	// Construct TCP socket listener
 	mTCPSocketListener = std::make_unique<TCPSocketListener>(mParkingSpotManager, mVideoReader, mSettings, mMutualConditionVariable);
-std::cout<<"dkssud2";
     // Share message queues
     ParkingSpot::setMessageQueue(mServMsgQueue);
     ParkingSpot::setVideoReader(mVideoReader);
-std::cout<<"dkssud3";
 	//--------------------------------
 	// Start computer vision engines
 	//--------------------------------

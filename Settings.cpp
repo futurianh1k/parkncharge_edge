@@ -130,7 +130,6 @@ namespace seevider {
 		}
 		else {
 			LPTrainedFilename = value;
-			std::cout<<"the trained file name is " << LPTrainedFilename << std::endl;
 		}
 
 		// Read the option 'LPRRegionCode'
