@@ -30,4 +30,10 @@ namespace seevider {
 
 		return locs.size();
 	}
+	int CascadeClassifier::detectLP(const cv::Mat& image, std::vector<cv::Rect> &plates) {
+
+		mClassifier.detectMultiScale(image, plates, 1.1, 2, 0, cv::Size(30, 30));
+
+		return plates.size();
+	}
 }

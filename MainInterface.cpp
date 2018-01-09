@@ -34,6 +34,7 @@ using cv::Mat;
 
 MainInterface::MainInterface() :
 	mOperation(true),
+	mLightOn(false),
 	mSettings(std::make_shared<Settings>(SYSTEM_FOLDER_CORE + "settings.ini"))
 {
 	LOG(INFO) << "Starting the main activity";
@@ -53,26 +54,24 @@ MainInterface::MainInterface() :
     // Construct core resource instances
 	mVideoReader = std::make_shared<SerialVideoReader>(std::dynamic_pointer_cast<CameraInfo, Settings>(mSettings));
 	mServMsgQueue = std::make_shared<MessageQueue>();
-
 	// Open the connected camera
-	mVideoReader->open("..\\..\\Video\\20160527120257(fixed).avi");
-	//mVideoReader->open(0);
-
+	//mVideoReader->open("..\\..\\Video\\20160527120257(fixed).avi");
+	mVideoReader->open(0);
     //--------------------------------
 	// Start the resource managing threads.
 	//--------------------------------
-
+std::cout<<"dkssud4";
 	// Construct HTTP uploader
 	mHTTPServUploader = std::make_unique<ServerNetworkHandler>(mServMsgQueue,
 		std::dynamic_pointer_cast<SensorInfo, Settings>(mSettings), mSettings->ServerDataFilename);
-
+std::cout<<"dkssud1";
 	// Construct TCP socket listener
 	mTCPSocketListener = std::make_unique<TCPSocketListener>(mParkingSpotManager, mVideoReader, mSettings, mMutualConditionVariable);
-
+std::cout<<"dkssud2";
     // Share message queues
     ParkingSpot::setMessageQueue(mServMsgQueue);
     ParkingSpot::setVideoReader(mVideoReader);
-
+std::cout<<"dkssud3";
 	//--------------------------------
 	// Start computer vision engines
 	//--------------------------------
@@ -80,6 +79,9 @@ MainInterface::MainInterface() :
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
 		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
 	}
+	
+	// License Plate Detector
+	mLPDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename);
 
 	// LPR engine
 	/*if (!mSettings->LPRSettingsFilename.empty()) {
@@ -117,7 +119,6 @@ void MainInterface::run() {
     Mat frame, output;
 	pt::ptime now;
 	int dummyID = 1;
-
 	if (!mVideoReader->isOpened()) {
 		// if video is not opened, there is nothing to do with it.
 		// Maybe we need to upload some message to server that shows
@@ -159,11 +160,22 @@ void MainInterface::run() {
 
 			// Check if any motion has detected in this frame
 			if (mMotionDetector->isMotionDetected(frame)) {
-				std::cout << "Motion detected--brighten the light" << std::endl;
+				//std::cout << "Motion detected--brighten the light" << std::endl;
+				if (!mLightOn) {
+					mLight.onMaximum();
+				}
+				mLightOn = true;
 				// TODO: control lighting
 			}
+			else {
+				//std::cout << "No motion detected--dim down the light" << std::endl;
+				if (mLightOn) {
+					mLight.onDimDown();
+				}
+				mLightOn = false;
+			}
 
-			// Update parking spots with current frame
+			// Update parking spots with std::cout<<"hi";current frame
 			updateSpots(frame, now);
 
 			if (inputKey == 27) {
@@ -183,7 +195,7 @@ void MainInterface::run() {
 				}
 				else {
 					std::cout << "Timer " << std::to_string(idx) << " begins" << std::endl;
-					(*mParkingSpotManager)[idx]->enter(frame, now);
+					(*mParkingSpotManager)[idx]->enter(frame, frame, now);
 				}
 			}
 			else if (inputKey == 's' || inputKey == 'S') {
@@ -327,6 +339,7 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 	if (mParkingSpotManager->size() >= 1) {
 		for (auto &elem : *mParkingSpotManager) {
 			vector<Rect> locs;
+			vector<Rect> plates;
 			std::shared_ptr<ParkingSpot> &parkingSpot = elem.second;
 
 			if (mSettings->MotionDetectionEnabled && mMotionDetector->isMotionDetected(frame, elem.second->ROI)) {
@@ -344,12 +357,28 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 			if (parkingSpot->update(mDetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
 				if (parkingSpot->isOccupied()) {
 					// if the status has changed to 'Occupied' from 'Empty'
+
+					// detect license plate in cropped frame
+					Mat lpFrame;
+					if (mLPDetector->detectLP(croppedFrame, plates)) {
+						int max = 0;
+						int index;	
+						for (size_t i = 0; i < plates.size(); i++) // get the index of the largest plate detected
+						{										   // in case multiple plates are detected in a single vehicle
+							if (max < plates[i].width * plates[i].height)
+							{
+								max = plates[i].width * plates[i].height;
+								index = i;
+							}
+						}
+						lpFrame = croppedFrame(plates[index]);
+					}
 					std::string PN = "null";
 					/*if (mLPR != nullptr) {
 						PN = mLPR->recognize(croppedFrame);
 					}*/
 
-					parkingSpot->enter(frame.clone(), now, PN);
+					parkingSpot->enter(frame.clone(), croppedFrame.clone(), now, PN);
 				}
 				else {
 					// if the status has changed to 'Empty' from 'Occupied'

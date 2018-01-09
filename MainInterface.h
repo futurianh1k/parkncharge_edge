@@ -22,6 +22,7 @@
 #include "Settings.h"
 #include "IOccupancyDetector.h"
 #include "MotionDetection.h"
+#include "Light.h"
 //#include "LPR.h"
 
 #include <boost/thread.hpp>
@@ -86,9 +87,24 @@ namespace seevider {
 		std::unique_ptr<IOccupancyDetector> mDetector;
 
 		/**
+		 * License Plate detector
+		 */
+		std::unique_ptr<IOccupancyDetector> mLPDetector;
+		
+		/**
 		 * Motion detector
 		 */
 		std::unique_ptr<MotionDetection> mMotionDetector;
+
+		/**
+		 * Light Controller
+		 */
+		Light mLight;
+		
+		/**
+		 * Check if the light is on
+		 */
+		bool mLightOn;
 
 		/**
 		 * License plate recognizer
