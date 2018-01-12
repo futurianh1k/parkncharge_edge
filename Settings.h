@@ -25,10 +25,15 @@ namespace seevider {
 	class Settings : public SensorInfo, public CameraInfo {
 	public:
 		/**
-		 * Trained filename for the detection
+		 * Trained filename for the vehicle detection
 		 */
 		std::string TrainedFilename;
 
+		/**
+		 * Trained filename for the license plate detection
+		 */
+		std::string LPTrainedFilename;
+		
 		/**
 		 * LPR region code
 		 */

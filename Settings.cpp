@@ -122,6 +122,16 @@ namespace seevider {
 			return false;
 		}
 
+		// Read the option 'LPTrainedFilename
+
+		value = ptree.get<std::string>("Algorithm.LPTrainedFilename", "");
+		if (value.empty()) {
+			LOG(FATAL) << "Failed to read option \'LPTrainedFilename\'";
+		}
+		else {
+			LPTrainedFilename = value;
+		}
+
 		// Read the option 'LPRRegionCode'
 		LPRRegionCode = ptree.get<std::string>("Algorithm.LPRRegionCode", "");
 		if (LPRRegionCode.empty()) {

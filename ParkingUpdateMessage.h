@@ -32,8 +32,13 @@ namespace seevider {
         /**
          * Constructor with initialization
          */
-		ParkingUpdateMessage(const int request, const int spotID,
+
+        ParkingUpdateMessage(const int request, const int spotID,
             const cv::Mat &frame, const boost::posix_time::ptime &eventTime,
+			const std::string PN = "null");
+
+		ParkingUpdateMessage(const int request, const int spotID,
+            const cv::Mat &frame, const cv::Mat &cropFrame, const boost::posix_time::ptime &eventTime,
 			const std::string PN = "null");
 
         /**
@@ -78,6 +83,12 @@ namespace seevider {
          */
         cv::Mat mFrame;
 
+        /**
+         * Cropped image frame
+         */
+        cv::Mat mCropFrame;
+        
+        
 		/**
 		 * Plate number, if any
 		 */

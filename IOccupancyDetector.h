@@ -30,5 +30,7 @@ public:
 	 * The number of detected vehicles will be returned.
 	 */
 	virtual int detect(const cv::Mat& image, std::vector<cv::Rect> &locs) = 0;
+
+	virtual int detectLP(const cv::Mat& image, std::vector<cv::Rect> &plates) = 0;
 };
 

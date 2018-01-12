@@ -26,6 +26,8 @@ namespace seevider {
 
 		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);
 
+		virtual int detectLP(const cv::Mat &image, std::vector<cv::Rect> &plates);
+
 	private:
 		cv::CascadeClassifier mClassifier;
 	};

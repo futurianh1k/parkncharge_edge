@@ -39,6 +39,14 @@ ParkingUpdateMessage::ParkingUpdateMessage(const int request, const int spotID,
     // do nothing
 }
 
+ParkingUpdateMessage::ParkingUpdateMessage(const int request, const int spotID,
+    const cv::Mat &frame, const cv::Mat &cropFrame, const boost::posix_time::ptime &eventTime,
+	const std::string PN) :
+	IMessageData(eventTime), mRequestCode(request), mSpotID(spotID),
+	mFrame(frame.clone()), mCropFrame(cropFrame.clone()), mPN(PN) {
+    // do nothing
+}
+
 ParkingUpdateMessage::~ParkingUpdateMessage() {
 
 }
@@ -61,7 +69,9 @@ boost::property_tree::ptree ParkingUpdateMessage::toPTree() const {
 	info.put<std::string>("timeStamp", boost::posix_time::to_iso_string(mEventTime));
 	info.put<std::string>("parkingCarNumber", mPN);
 	info.put<std::string>("currentPicture", utils::base64_encode_image(mFrame));
-
+	if (!mCropFrame.empty()) {
+		info.put<std::string>("croppedPicture", utils::base64_encode_image(mCropFrame));
+	}
 	return info;
 }
 

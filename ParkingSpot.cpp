@@ -51,16 +51,14 @@ bool ParkingSpot::isOverstayed() const {
 	return mOccupied && mOverstayed;
 }
 
-void ParkingSpot::enter(const Mat& entryImage, const pt::ptime &entryTime, const std::string PN) {
+void ParkingSpot::enter(const Mat& entryImage, const Mat& cropImage, const pt::ptime &entryTime, const std::string PN) {
 	std::unique_ptr<IMessageData> data = std::make_unique<ParkingUpdateMessage>(
-		HTTP_REQ_UPDATE_ENTER, mID, entryImage, entryTime, PN);
+		HTTP_REQ_UPDATE_ENTER, mID, entryImage, cropImage, entryTime, PN);
 
 	mOccupied = true;
 	mPlateNumber = PN;
     mServerMsgQueue->push(data);
-	
 	mEntryTime = entryTime;
-
 	startTimer();
 	LOG(INFO) << "Parking spot ID " << mID << " has occupied at " << to_simple_string(entryTime) + " by " + PN;
 }
@@ -75,12 +73,10 @@ void ParkingSpot::overstayed(const Mat& expiredImage, const pt::ptime &exprTime)
 void ParkingSpot::exit(const Mat& exitImage, const pt::ptime &exitTime) {
 	std::unique_ptr<IMessageData> data = std::make_unique<ParkingUpdateMessage>(
 		HTTP_REQ_UPDATE_EXIT, mID, exitImage, exitTime);
-
     mOccupied = false;
 	mOverstayed = false;
 	mPlateNumber = "null";
 	mServerMsgQueue->push(data);
-
 	stopTimer();
 	LOG(INFO) << "Parking spot ID " << mID << " has released at " << to_simple_string(exitTime);
 }

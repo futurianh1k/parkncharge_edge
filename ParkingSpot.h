@@ -173,7 +173,7 @@ namespace seevider {
         /**
          * Must be called when the vehicle comes in.
          */
-		void enter(const cv::Mat& entryImage, const boost::posix_time::ptime &entryTime, const std::string PN = "null");
+		void enter(const cv::Mat& entryImage, const cv::Mat& cropImage, const boost::posix_time::ptime &entryTime, const std::string PN = "null");
 
         /**
          * Must be called when the maximum allowed time has reached.
