@@ -353,7 +353,6 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 			if (parkingSpot->update(mDetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
 				if (parkingSpot->isOccupied()) {
 					// if the status has changed to 'Occupied' from 'Empty'
-
 					// detect license plate in cropped frame
 					Mat lpFrame;
 					if (mLPDetector->detect(croppedFrame, plates)) {

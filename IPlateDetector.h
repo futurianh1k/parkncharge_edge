@@ -19,7 +19,7 @@
 namespace seevider {
 	class IPlateDetector
 	{
-		IGenericDetector * generic;
+		std::unique_ptr<IGenericDetector> generic;
 
 	public:
 		IPlateDetector(std::string option_filename);

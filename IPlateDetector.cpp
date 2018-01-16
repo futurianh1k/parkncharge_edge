@@ -18,7 +18,7 @@
 
 namespace seevider {
 	IPlateDetector::IPlateDetector(std::string option_filename) {
-		generic = new CascadeClassifier(option_filename);
+        generic = std::make_unique<CascadeClassifier>(option_filename);
 	}
 
 	IPlateDetector::~IPlateDetector() {

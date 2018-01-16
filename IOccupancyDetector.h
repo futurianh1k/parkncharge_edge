@@ -19,7 +19,7 @@
 namespace seevider {
 	class IOccupancyDetector
 	{
-		IGenericDetector * generic;
+		std::unique_ptr<IGenericDetector> generic;
 
 	public:
 		IOccupancyDetector(std::string option_filename);
