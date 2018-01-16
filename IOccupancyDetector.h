@@ -1,6 +1,6 @@
 // File:	IOccupancyDetector.h
 // Author:	Seongdo Kim
-// Contact:	sdland85@gmail.com
+// Contact:	sdland85@gmail.com  
 //
 // Copyright (c) 2017, Seongdo Kim <sdland85@gmail.com>
 // All rights reserved.
@@ -11,26 +11,23 @@
 // conditions stipulated in the agreement/contract under
 // which the program(s) have been supplied.
 //
-// Written by Seongdo Kim <sdland85@gmail.com>, June 2017
+// Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
 
 #pragma once
+#include "CascadeClassifier.h"
 
-#include <vector>
-#include <opencv2/opencv.hpp>
+namespace seevider {
+	class IOccupancyDetector
+	{
+		IGenericDetector * generic;
 
-class IOccupancyDetector
-{
-public:
-	IOccupancyDetector();
-	~IOccupancyDetector();
+	public:
+		IOccupancyDetector(std::string option_filename);
+		~IOccupancyDetector();
 
-	/**
-	 * Detect vehicles from given image. The locations of detected vehicles
-	 * will be stored to the parameter 'locs'.
-	 * The number of detected vehicles will be returned.
-	 */
-	virtual int detect(const cv::Mat& image, std::vector<cv::Rect> &locs) = 0;
-
-	virtual int detectLP(const cv::Mat& image, std::vector<cv::Rect> &plates) = 0;
-};
+		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);
+		
+	private:
+	};
+}
 
