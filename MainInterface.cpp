@@ -73,11 +73,11 @@ MainInterface::MainInterface() :
 	//--------------------------------
 	// Occupancy Detector
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
+		mDetector = std::make_unique<IOccupancyDetector>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
 	}
 	
 	// License Plate Detector
-	mLPDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename);
+	mLPDetector = std::make_unique<IPlateDetector>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename);
 
 	// LPR engine
 	/*if (!mSettings->LPRSettingsFilename.empty()) {
@@ -353,10 +353,9 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 			if (parkingSpot->update(mDetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
 				if (parkingSpot->isOccupied()) {
 					// if the status has changed to 'Occupied' from 'Empty'
-
 					// detect license plate in cropped frame
 					Mat lpFrame;
-					if (mLPDetector->detectLP(croppedFrame, plates)) {
+					if (mLPDetector->detect(croppedFrame, plates)) {
 						int max = 0;
 						int index;	
 						for (size_t i = 0; i < plates.size(); i++) // get the index of the largest plate detected

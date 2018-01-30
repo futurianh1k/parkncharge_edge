@@ -21,6 +21,7 @@
 #include "ParkingSpot.h"
 #include "Settings.h"
 #include "IOccupancyDetector.h"
+#include "IPlateDetector.h"
 #include "MotionDetection.h"
 #include "Light.h"
 //#include "LPR.h"
@@ -89,7 +90,7 @@ namespace seevider {
 		/**
 		 * License Plate detector
 		 */
-		std::unique_ptr<IOccupancyDetector> mLPDetector;
+		std::unique_ptr<IPlateDetector> mLPDetector;
 		
 		/**
 		 * Motion detector

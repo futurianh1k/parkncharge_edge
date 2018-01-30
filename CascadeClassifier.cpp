@@ -24,16 +24,10 @@ namespace seevider {
 	CascadeClassifier::~CascadeClassifier() {
 	}
 
-	int CascadeClassifier::detect(const cv::Mat& image, std::vector<cv::Rect> &locs) {
+	int CascadeClassifier::detect(const cv::Mat& image, std::vector<cv::Rect> &locs, int size) {
 
-		mClassifier.detectMultiScale(image, locs, 1.1, 2, 0, cv::Size(image.cols / 4, image.rows / 4));
+		mClassifier.detectMultiScale(image, locs, 1.1, 2, 0, cv::Size(image.cols / size, image.rows / size));
 
 		return locs.size();
-	}
-	int CascadeClassifier::detectLP(const cv::Mat& image, std::vector<cv::Rect> &plates) {
-
-		mClassifier.detectMultiScale(image, plates, 1.1, 2, 0, cv::Size(30, 30));
-
-		return plates.size();
 	}
 }

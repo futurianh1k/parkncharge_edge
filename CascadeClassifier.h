@@ -14,19 +14,17 @@
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
 
 #pragma once
-#include "IOccupancyDetector.h"
+#include "IGenericDetector.h"
 
 namespace seevider {
 	class CascadeClassifier :
-		public IOccupancyDetector
+		public IGenericDetector
 	{
 	public:
 		CascadeClassifier(std::string option_filename);
 		~CascadeClassifier();
 
-		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);
-
-		virtual int detectLP(const cv::Mat &image, std::vector<cv::Rect> &plates);
+		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs, int size);
 
 	private:
 		cv::CascadeClassifier mClassifier;

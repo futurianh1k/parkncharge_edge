@@ -1,6 +1,6 @@
-// File:	IOccupancyDetector.cpp
+// File:	IPlateDetector.h
 // Author:	Seongdo Kim
-// Contact:	sdland85@gmail.com
+// Contact:	sdland85@gmail.com  
 //
 // Copyright (c) 2017, Seongdo Kim <sdland85@gmail.com>
 // All rights reserved.
@@ -12,19 +12,22 @@
 // which the program(s) have been supplied.
 //
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
-//
 
-#include "IOccupancyDetector.h"
+#pragma once
+#include "CascadeClassifier.h"
 
 namespace seevider {
-	IOccupancyDetector::IOccupancyDetector(std::string option_filename) {
-        generic = std::make_unique<CascadeClassifier>(option_filename);
-	}
+	class IPlateDetector
+	{
+		std::unique_ptr<IGenericDetector> generic;
 
-	IOccupancyDetector::~IOccupancyDetector() {
-	}
+	public:
+		IPlateDetector(std::string option_filename);
+		~IPlateDetector();
 
-	int IOccupancyDetector::detect(const cv::Mat& image, std::vector<cv::Rect> &locs) {
-        generic->detect(image, locs, 4);
-	}
+		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);
+		
+	private:
+	};
 }
+
