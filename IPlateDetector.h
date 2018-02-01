@@ -19,10 +19,10 @@
 namespace seevider {
 	class IPlateDetector
 	{
-		std::unique_ptr<IGenericDetector> generic;
+		std::unique_ptr<IGenericDetector> pDetector;
 
 	public:
-		IPlateDetector(std::string option_filename);
+		IPlateDetector(std::unique_ptr<IGenericDetector> generic_detector);
 		~IPlateDetector();
 
 		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);

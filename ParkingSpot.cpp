@@ -51,10 +51,16 @@ bool ParkingSpot::isOverstayed() const {
 	return mOccupied && mOverstayed;
 }
 
-void ParkingSpot::enter(const Mat& entryImage, const Mat& cropImage, const pt::ptime &entryTime, const std::string PN) {
+void ParkingSpot::enter(const Mat& entryImage, const cv::Rect &ROI, const pt::ptime &entryTime, const std::string PN) {
+	Mat cropImage;
+	if (ROI.width <= entryImage.rows && ROI.height <= entryImage.cols){
+		cropImage = entryImage(ROI);
+	}
+	else {
+		cropImage = entryImage;
+	}
 	std::unique_ptr<IMessageData> data = std::make_unique<ParkingUpdateMessage>(
 		HTTP_REQ_UPDATE_ENTER, mID, entryImage, cropImage, entryTime, PN);
-
 	mOccupied = true;
 	mPlateNumber = PN;
     mServerMsgQueue->push(data);
