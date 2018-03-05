@@ -17,14 +17,14 @@
 #include "IPlateDetector.h"
 
 namespace seevider {
-	IPlateDetector::IPlateDetector(std::string option_filename) {
-        generic = std::make_unique<CascadeClassifier>(option_filename);
+	IPlateDetector::IPlateDetector(std::unique_ptr<IGenericDetector> generic_detector) {
+        	pDetector = std::move(generic_detector);
 	}
 
 	IPlateDetector::~IPlateDetector() {
 	}
 
 	int IPlateDetector::detect(const cv::Mat& image, std::vector<cv::Rect> &locs) {
-        generic->detect(image, locs, 8);
+        	pDetector->detect(image, locs, 8);
 	}
 }

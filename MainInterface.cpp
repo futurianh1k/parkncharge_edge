@@ -73,18 +73,24 @@ MainInterface::MainInterface() :
 	//--------------------------------
 	// Occupancy Detector
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<IOccupancyDetector>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
+		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
 	}
 	
+	mODetector = std::make_unique<IOccupancyDetector>(std::move(mDetector));
+	
 	// License Plate Detector
-	mLPDetector = std::make_unique<IPlateDetector>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename);
+	if (mSettings->Type == CLASSIFIER_CASCADE) {
+		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename);
+	}
+	
+	mLPDetector = std::make_unique<IPlateDetector>(std::move(mDetector));
 
 	// LPR engine
 	/*if (!mSettings->LPRSettingsFilename.empty()) {
 		mLPR = std::make_unique<LPR>(mSettings->LPRRegionCode, SYSTEM_FOLDER_CORE + mSettings->LPRSettingsFilename);
 	}
 	else {
-		mLPR = nullptr;
+		mLPR = nullptr;g
 	}*/
 
 	//--------------------------------
@@ -129,7 +135,6 @@ void MainInterface::run() {
 
 	// Motion detector--delayed initialization to retrieve the original frame size
 	mMotionDetector = std::make_unique<MotionDetection>(mVideoReader->size());
-
 	while (mOperation && mVideoReader->read(frame, now)) {
 		if (mMutualConditionVariable.ManagementMode) {
 			// Wait until the modifier changes settings
@@ -171,7 +176,7 @@ void MainInterface::run() {
 				mLightOn = false;
 			}
 
-			// Update parking spots with std::cout<<"hi";current frame
+			// Update parking spots with current frame
 			updateSpots(frame, now);
 
 			if (inputKey == 27) {
@@ -191,7 +196,7 @@ void MainInterface::run() {
 				}
 				else {
 					std::cout << "Timer " << std::to_string(idx) << " begins" << std::endl;
-					(*mParkingSpotManager)[idx]->enter(frame, frame, now);
+					//(*mParkingSpotManager)[idx]->enter(frame, now);
 				}
 			}
 			else if (inputKey == 's' || inputKey == 'S') {
@@ -350,7 +355,7 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 
 			Mat croppedFrame = frame(parkingSpot->ROI);
 
-			if (parkingSpot->update(mDetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
+			if (parkingSpot->update(mODetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
 				if (parkingSpot->isOccupied()) {
 					// if the status has changed to 'Occupied' from 'Empty'
 					// detect license plate in cropped frame
@@ -367,13 +372,14 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 							}
 						}
 						lpFrame = croppedFrame(plates[index]);
+						//imshow("LP", lpFrame);
 					}
 					std::string PN = "null";
 					/*if (mLPR != nullptr) {
 						PN = mLPR->recognize(croppedFrame);
 					}*/
 
-					parkingSpot->enter(frame.clone(), croppedFrame.clone(), now, PN);
+					parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, PN);
 				}
 				else {
 					// if the status has changed to 'Empty' from 'Occupied'

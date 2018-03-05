@@ -19,10 +19,10 @@
 namespace seevider {
 	class IOccupancyDetector
 	{
-		std::unique_ptr<IGenericDetector> generic;
+		std::unique_ptr<IGenericDetector> oDetector;
 
 	public:
-		IOccupancyDetector(std::string option_filename);
+		IOccupancyDetector(std::unique_ptr<IGenericDetector> generic_detector);
 		~IOccupancyDetector();
 
 		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);

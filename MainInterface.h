@@ -83,9 +83,15 @@ namespace seevider {
 		std::unique_ptr<TCPSocketListener> mTCPSocketListener;
 
 		/**
+		 * Generic detector
+		 */
+
+		std::unique_ptr<IGenericDetector> mDetector;
+
+		/**
 		 * Occupancy detector
 		 */
-		std::unique_ptr<IOccupancyDetector> mDetector;
+		std::unique_ptr<IOccupancyDetector> mODetector;
 
 		/**
 		 * License Plate detector

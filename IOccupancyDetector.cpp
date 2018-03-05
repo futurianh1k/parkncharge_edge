@@ -17,14 +17,14 @@
 #include "IOccupancyDetector.h"
 
 namespace seevider {
-	IOccupancyDetector::IOccupancyDetector(std::string option_filename) {
-        generic = std::make_unique<CascadeClassifier>(option_filename);
+	IOccupancyDetector::IOccupancyDetector(std::unique_ptr<IGenericDetector> generic_detector) {
+        	oDetector = std::move(generic_detector);
 	}
 
 	IOccupancyDetector::~IOccupancyDetector() {
 	}
 
 	int IOccupancyDetector::detect(const cv::Mat& image, std::vector<cv::Rect> &locs) {
-        generic->detect(image, locs, 4);
+        	oDetector->detect(image, locs, 4);
 	}
 }
