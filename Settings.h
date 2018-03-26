@@ -16,6 +16,7 @@
 #pragma once
 
 #include <string>
+#include <boost/property_tree/ptree.hpp>
 
 #include "types.h"
 #include "SensorInfo.h"
@@ -74,6 +75,18 @@ namespace seevider {
 		 */
 		bool loadSettings();
 
+		/**
+		 * Update parking sensor parameters
+		 * @param root
+		 */
+        void updateParkingParams(boost::property_tree::ptree &root);
+
+		/**
+		 * Update lighting sensor parameters
+		 * @param root
+		 */
+        void updateLightingParams(boost::property_tree::ptree &root);
+
 	private:
 		/**
 		 * Files to load and store the setting data
@@ -84,5 +97,5 @@ namespace seevider {
 		 * Write current options to given filename
 		 */
 		bool writeSettings();
-	};
+    };
 }

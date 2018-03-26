@@ -42,6 +42,7 @@ namespace seevider {
 		RequestTranslator["disconnect"] = REQ_DISCONNECT;
 		RequestTranslator["streaming"] = REQ_STREAMING;
 		RequestTranslator["update"] = REQ_UPDATE;
+		RequestTranslator["updateLighting"] = REQ_LIGHTING_SENSOR_UPDATE;
 	}
 
 	TCPSocketListener::~TCPSocketListener() {
@@ -117,7 +118,7 @@ namespace seevider {
 				
 				// parse incomining request message
 				boost::property_tree::ptree json = parseJSON(data);
-				
+
 				int requestCode = parseRequestCode(json);
 
 				switch (requestCode) {
@@ -131,6 +132,11 @@ namespace seevider {
 					update(sock, json);
 					break;
 
+				case REQ_LIGHTING_SENSOR_UPDATE:
+					DLOG(INFO) << "REQ_LIGHTING_SENSOR_UPDATE";
+					update_lighting(sock, json);
+					break;
+
 				case REQ_DISCONNECT:
 					// TODO: disconnection message never have arrived.
 					DLOG(INFO) << "REQ_DISCONNECT";
@@ -138,7 +144,7 @@ namespace seevider {
 					sock.shutdown(boost::asio::ip::tcp::socket::shutdown_both);
 					sock.close();
 					connected = false;
-					break;
+                    break;
 
 				default:
 					break;
@@ -301,12 +307,41 @@ namespace seevider {
 
 		message = parseJSON(read_buffer);
 
+		if (!message.empty()) {
+			mSettings->updateParkingParams(message);
+		}
+
 		boost::property_tree::ptree ROIList = message.get_child("ROI", boost::property_tree::ptree());
 		if (ROIList.empty()) {
 			mParkingSpotManager->clear();
 		}
 		else {
 			mParkingSpotManager->updateParkingSpots(ROIList);
+		}
+		
+		// Resume the main thread for update
+		resumeMainThread();
+	}
+
+	void TCPSocketListener::update_lighting(boost::asio::ip::tcp::socket &sock, boost::property_tree::ptree& message) {
+		boost::system::error_code error;
+		int bytes_reserved = message.get<int>("length");
+		int bytes_received;
+		boost::asio::streambuf read_buffer;
+		std::string input;
+
+		// Suspend the main thread for update
+		suspendMainThread();
+
+		// Send the image data size to the client
+		boost::asio::write(sock, boost::asio::buffer("{ \"response\" : \"ok\" }\0"), error);
+
+		bytes_received = boost::asio::read(sock, read_buffer, boost::asio::transfer_exactly(bytes_reserved));
+
+		message = parseJSON(read_buffer);
+		
+		if (!message.empty()) {
+			mSettings->updateLightingParams(message);
 		}
 		
 		// Resume the main thread for update
@@ -342,14 +377,35 @@ namespace seevider {
 		// Sensor name
 		message.put<std::string>("name", mSettings->SensorName);
 
-		// sensitivity -- dummy
-		message.put<int>("sensitivity", 3);
+		// sensitivity
+		message.put<int>("sensitivity", mSettings->ParkingParams.sensitivity);
 
-		// enter count -- dummy
-		message.put<int>("enterCount", 6);
+		// enter count
+		message.put<int>("enterCount", mSettings->ParkingParams.enterCount);
 
-		// exit count -- dummy
-		message.put<int>("exitCount", 3);
+		// exit count
+		message.put<int>("exitCount", mSettings->ParkingParams.exitCount);
+
+		// noise filter size
+		message.put<int>("noiseFilterSize", mSettings->LightingParams.noiseFilterSize);
+
+		// min motion area
+		message.put<int>("minMotionArea", mSettings->LightingParams.minMotionArea);
+
+		// max motion area
+		message.put<int>("maxMotionArea", mSettings->LightingParams.maxMotionArea);
+
+		// light delay time
+		message.put<int>("lightDelayTime", mSettings->LightingParams.lightDelayTime);
+
+		// light dimdown time
+		message.put<int>("lightDimdownTime", mSettings->LightingParams.lightDimdownTime);
+
+		// light max level
+		message.put<int>("lightMaxLevel", mSettings->LightingParams.lightMaxLevel);
+
+		// light min level
+		message.put<int>("lightMinLevel", mSettings->LightingParams.lightMinLevel);
 
 		// ROI
 		message.add_child("ROI", mParkingSpotManager->toPTree());

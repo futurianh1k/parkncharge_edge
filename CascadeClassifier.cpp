@@ -14,19 +14,20 @@
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
 //
 
+#include <logging.h>
 #include "CascadeClassifier.h"
 
 namespace seevider {
-	CascadeClassifier::CascadeClassifier(std::string option_filename) {
+	CascadeClassifier::CascadeClassifier(std::string option_filename, std::shared_ptr<Settings> &settings) {
 		mClassifier.load(option_filename);
+		mSettings = settings;
 	}
 
 	CascadeClassifier::~CascadeClassifier() {
 	}
 
 	int CascadeClassifier::detect(const cv::Mat& image, std::vector<cv::Rect> &locs, int size) {
-
-		mClassifier.detectMultiScale(image, locs, 1.1, 2, 0, cv::Size(image.cols / size, image.rows / size));
+        mClassifier.detectMultiScale(image, locs, 1.1, mSettings->ParkingParams.sensitivity, 0, cv::Size(image.cols / size, image.rows / size));
 
 		return locs.size();
 	}

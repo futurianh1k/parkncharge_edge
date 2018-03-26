@@ -157,6 +157,28 @@ namespace seevider {
 	};
 
 	/**
+	 * Structure for saving parameters of parking sensor
+	 */
+	struct ParkingParams {
+		int sensitivity;
+		int enterCount;
+		int exitCount;
+	};
+
+	/**
+	 * Structure for saving parameters of lighting sensor
+	 */
+	struct LightingParams {
+		int noiseFilterSize;
+		int minMotionArea;
+		int maxMotionArea;
+		int lightDelayTime;
+		int lightDimdownTime;
+		int lightMaxLevel;
+		int lightMinLevel;
+	};
+
+	/**
 	 * Folder name containing the core data
 	 */
 	const std::string SYSTEM_FOLDER_CORE = "./core/";

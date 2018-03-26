@@ -166,12 +166,15 @@ namespace seevider {
 			}
 		}
 
+		// Write json file
+		boost::property_tree::write_json(SYSTEM_FOLDER_CORE + SYSTEM_FILE_PARKINGSPOTS, toPTree());
+
 		return true;
 	}
 
 	boost::property_tree::ptree ParkingSpotManager::toPTree() const {
 		boost::property_tree::ptree spotArray;
-
+		
 		for (auto elem : mParkingSpots) {
 			std::shared_ptr<ParkingSpot> &spot = elem.second;
 			boost::property_tree::ptree result;

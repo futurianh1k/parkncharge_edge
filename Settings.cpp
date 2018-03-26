@@ -80,6 +80,76 @@ namespace seevider {
 			mTimeZone = "+00";
 		}
 
+		// Read the option 'Sensitivity'
+		mParkingParams.sensitivity = ptree.get<int>("Sensor.Sensitivity");
+		if (mParkingParams.sensitivity <= 0) {
+			LOG(ERROR) << "Failed to read option \'Sensitivity\'";
+			mParkingParams.sensitivity = 3;
+		}
+
+		// Read the option 'EnterCount'
+		mParkingParams.enterCount = ptree.get<int>("Sensor.EnterCount");
+		if (mParkingParams.enterCount <= 0) {
+			LOG(ERROR) << "Failed to read option \'EnterCount\'";
+			mParkingParams.enterCount = 6;
+		}
+
+		// Read the option 'ExitCount'
+		mParkingParams.exitCount = ptree.get<int>("Sensor.ExitCount");
+		if (mParkingParams.exitCount <= 0) {
+			LOG(ERROR) << "Failed to read option \'ExitCount\'";
+			mParkingParams.exitCount = 3;
+		}
+
+		// Read the option 'NoiseFilterSize'
+		mLightingParams.noiseFilterSize = ptree.get<int>("Sensor.NoiseFilterSize");
+		if (mLightingParams.noiseFilterSize <= 0) {
+			LOG(FATAL) << "Failed to read option \'NoiseFilterSize\'";
+			return false;
+		}
+
+		// Read the option 'MinMotionArea'
+		mLightingParams.minMotionArea = ptree.get<int>("Sensor.MinMotionArea");
+		if (mLightingParams.minMotionArea <= 0) {
+			LOG(FATAL) << "Failed to read option \'MinMotionArea\'";
+			return false;
+		}
+
+		// Read the option 'MaxMotionArea'
+		mLightingParams.maxMotionArea = ptree.get<int>("Sensor.MaxMotionArea");
+		if (mLightingParams.maxMotionArea <= 0) {
+			LOG(FATAL) << "Failed to read option \'MaxMotionArea\'";
+			return false;
+		}
+
+		// Read the option 'LightDelayTime'
+		mLightingParams.lightDelayTime = ptree.get<int>("Sensor.LightDelayTime");
+		if (mLightingParams.lightDelayTime <= 0) {
+			LOG(FATAL) << "Failed to read option \'LightDelayTime\'";
+			return false;
+		}
+
+		// Read the option 'LightDimdownTime'
+		mLightingParams.lightDimdownTime = ptree.get<int>("Sensor.LightDimdownTime");
+		if (mLightingParams.lightDimdownTime <= 0) {
+			LOG(FATAL) << "Failed to read option \'LightDimdownTime\'";
+			return false;
+		}
+
+		// Read the option 'LightMaxLevel'
+		mLightingParams.lightMaxLevel = ptree.get<int>("Sensor.LightMaxLevel");
+		if (mLightingParams.lightMaxLevel <= 0) {
+			LOG(FATAL) << "Failed to read option \'LightMaxLevel\'";
+			return false;
+		}
+
+		// Read the option 'LightMinLevel'
+		mLightingParams.lightMinLevel = ptree.get<int>("Sensor.LightMinLevel");
+		if (mLightingParams.lightMinLevel <= 0) {
+			LOG(FATAL) << "Failed to read option \'LightMinLevel\'";
+			return false;
+		}
+
 		//-------------------------------------
 		// Read algorithm settings
 		//-------------------------------------
@@ -167,9 +237,51 @@ namespace seevider {
 		if (mFourCC.empty()) {
 			LOG(ERROR) << "Failed to read option \'FourCC\'";
 		}
-		
+
 		return true;
 	}
+
+
+    void Settings::updateParkingParams(boost::property_tree::ptree &root){
+		// Update the value 'sensitivity'
+		mParkingParams.sensitivity = root.get<int>("sensitivity");
+
+		// Update the value 'enterCount'
+		mParkingParams.enterCount = root.get<int>("enterCount");
+
+		// Update the value 'exitCount'
+		mParkingParams.exitCount = root.get<int>("exitCount");
+
+		// Write INI file
+		writeSettings();
+    }
+
+
+    void Settings::updateLightingParams(boost::property_tree::ptree &root){
+		// Update the value 'noiseFilterSize'
+        mLightingParams.noiseFilterSize = root.get<int>("noiseFilterSize");
+
+		// Update the value 'minMotionArea'
+        mLightingParams.minMotionArea = root.get<int>("minMotionArea");
+
+		// Update the value 'maxMotionArea'
+        mLightingParams.maxMotionArea = root.get<int>("maxMotionArea");
+
+		// Update the value 'lightDelayTime'
+        mLightingParams.lightDelayTime = root.get<int>("lightDelayTime");
+
+		// Update the value 'lightDimdownTime'
+        mLightingParams.lightDimdownTime = root.get<int>("lightDimdownTime");
+
+		// Update the value 'lightMinLevel'
+        mLightingParams.lightMinLevel = root.get<int>("lightMinLevel");
+
+		// Update the value 'lightMaxLevel'
+        mLightingParams.lightMaxLevel = root.get<int>("lightMaxLevel");
+
+		// Write INI file
+		writeSettings();
+    }
 
 	bool Settings::writeSettings() {
 		boost::property_tree::ptree ptree;
@@ -182,14 +294,44 @@ namespace seevider {
 			return false;
 		}
 
-		// Write the option 'ServerAddress'
-		ptree.put<std::string>("Sensor.SensorID", mSensorID);
+        // Write the option 'SensorID'
+		ptree.put<std::string>("Sensor.SensorID", SensorID);
 
 		// Write the option 'ServerAddress'
 		ptree.put<std::string>("Sensor.ServerData", ServerDataFilename);
 
 		// Write the option 'TimeZone'
 		ptree.put<std::string>("Sensor.TimeZone", TimeZone);
+
+		// Write the option 'Sensitivity'
+		ptree.put<int>("Sensor.Sensitivity", ParkingParams.sensitivity);
+
+		// Write the option 'EnterCount'
+		ptree.put<int>("Sensor.EnterCount", ParkingParams.enterCount);
+
+		// Write the option 'ExitCount'
+		ptree.put<int>("Sensor.ExitCount", ParkingParams.exitCount);
+
+		// Write the option 'NoiseFilterSize'
+		ptree.put<int>("Sensor.NoiseFilterSize", LightingParams.noiseFilterSize);
+
+		// Write the option 'MinMotionArea'
+		ptree.put<int>("Sensor.MinMotionArea", LightingParams.minMotionArea);
+
+		// Write the option 'MaxMotionArea'
+		ptree.put<int>("Sensor.MaxMotionArea", LightingParams.maxMotionArea);
+
+		// Write the option 'LightDelayTime'
+		ptree.put<int>("Sensor.LightDelayTime", LightingParams.lightDelayTime);
+
+		// Write the option 'LightDimdownTime'
+		ptree.put<int>("Sensor.LightDimdownTime", LightingParams.lightDimdownTime);
+
+		// Write the option 'LightMaxLevel'
+		ptree.put<int>("Sensor.LightMaxLevel", LightingParams.lightMaxLevel);
+
+		// Write the option 'LightMinLevel'
+		ptree.put<int>("Sensor.LightMinLevel", LightingParams.lightMinLevel);
 
 		// Write the option 'MotionDetection'
 		ptree.put<std::string>("Algorithm.MotionDetection", to_string(MotionDetectionEnabled));
@@ -199,6 +341,9 @@ namespace seevider {
 
 		// Write the option 'TrainedFilename'
 		ptree.put<std::string>("Algorithm.TrainedFilename", TrainedFilename);
+
+		// Write the option 'LPTrainedFilename'
+		ptree.put<std::string>("Algorithm.LPTrainedFilename", LPTrainedFilename);
 
 		// Write the option 'LPRRegionCode'
 		ptree.put<std::string>("Algorithm.LPRRegionCode", LPRRegionCode);

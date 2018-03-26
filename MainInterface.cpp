@@ -73,14 +73,14 @@ MainInterface::MainInterface() :
 	//--------------------------------
 	// Occupancy Detector
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename);
+		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename, mSettings);
 	}
 	
 	mODetector = std::make_unique<IOccupancyDetector>(std::move(mDetector));
 	
 	// License Plate Detector
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename);
+		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename, mSettings);
 	}
 	
 	mLPDetector = std::make_unique<IPlateDetector>(std::move(mDetector));

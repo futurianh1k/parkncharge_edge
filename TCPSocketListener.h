@@ -129,6 +129,11 @@ namespace seevider {
 		void update(boost::asio::ip::tcp::socket &sock, boost::property_tree::ptree &message);
 
 		/**
+		 * Handle lighting sensor parameters update message
+		 */
+		void update_lighting(boost::asio::ip::tcp::socket &sock, boost::property_tree::ptree &message);
+
+		/**
 		 * Construct JSON welcome message
 		 */
 		std::string getJSONSyncMessage();
@@ -158,6 +163,11 @@ namespace seevider {
 		 * Turn off the sensor
 		 */
 		static const int REQ_SENSOROFF = 4;
+
+		/**
+		 * Update lighting sensor parameters
+		 */
+		static const int REQ_LIGHTING_SENSOR_UPDATE = 5;
 
 	private:
 
