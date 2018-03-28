@@ -68,6 +68,9 @@ MainInterface::MainInterface() :
     // Share message queues
     ParkingSpot::setMessageQueue(mServMsgQueue);
     ParkingSpot::setVideoReader(mVideoReader);
+    // Initialize threshold of parking spot
+    ParkingSpot::setPositiveThreshold(mSettings->ParkingParams.enterCount);
+    ParkingSpot::setNegativeThreshold(-mSettings->ParkingParams.exitCount);
 	//--------------------------------
 	// Start computer vision engines
 	//--------------------------------

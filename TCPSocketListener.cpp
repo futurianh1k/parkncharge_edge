@@ -309,6 +309,10 @@ namespace seevider {
 
 		if (!message.empty()) {
 			mSettings->updateParkingParams(message);
+
+			// Update threshold of parking spot
+			ParkingSpot::setPositiveThreshold(message.get<int>("enterCount"));
+			ParkingSpot::setNegativeThreshold(-message.get<int>("exitCount"));
 		}
 
 		boost::property_tree::ptree ROIList = message.get_child("ROI", boost::property_tree::ptree());
