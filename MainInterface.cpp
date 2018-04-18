@@ -26,6 +26,7 @@
 #include <boost/property_tree/json_parser.hpp>
 
 #include <glog/logging.h>
+#include "Config.h"
 
 using namespace seevider;
 namespace pt = boost::posix_time;
@@ -47,7 +48,7 @@ MainInterface::MainInterface() :
 		mOperation = false;
 		return;
 	}
-	
+
 	// Constrauct the parking spot manager
 	mParkingSpotManager = std::make_shared<ParkingSpotManager>();
 
@@ -78,14 +79,14 @@ MainInterface::MainInterface() :
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
 		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename, mSettings);
 	}
-	
+
 	mODetector = std::make_unique<IOccupancyDetector>(std::move(mDetector));
-	
+
 	// License Plate Detector
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
 		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename, mSettings);
 	}
-	
+
 	mLPDetector = std::make_unique<IPlateDetector>(std::move(mDetector));
 
 	// LPR engine
@@ -99,8 +100,9 @@ MainInterface::MainInterface() :
 	//--------------------------------
 	// Start Graphic User Interface
     //--------------------------------
+#ifdef DEBUG
 	cv::namedWindow(mDebugWindowName);
-
+#endif
 	// Send an initial sync message
 	/*std::unique_ptr<IMessageData> sync_data = std::make_unique<ServerSyncMessage>(mVideoReader->size(),
 	boost::posix_time::second_clock::local_time(), getJSONParkingSpots());
@@ -111,7 +113,9 @@ MainInterface::~MainInterface() {
 	LOG(INFO) << "Finishing the main activity";
 
 	// Destroy the debug window
+#ifdef DEBUG
 	cv::destroyWindow(mDebugWindowName);
+#endif
 
 	// Release resources
 	mHTTPServUploader->destroy();
@@ -156,7 +160,9 @@ void MainInterface::run() {
 
 			// do something
 			cv::putText(output, mIPv4Address, cv::Point(0, frame.rows), cv::FONT_HERSHEY_PLAIN, 1.0, CV_RGB(255, 0, 0));
+#ifdef DEBUG
 			cv::imshow(mDebugWindowName, output);
+#endif
 			inputKey = 0xFF & cv::waitKey(30);
 
 			// Detect motions
@@ -182,7 +188,8 @@ void MainInterface::run() {
 			// Update parking spots with current frame
 			updateSpots(frame, now);
 
-			if (inputKey == 27) {
+#ifdef DEBUG
+            if (inputKey == 27) {
 				break;
 			}
 			else if (inputKey == 'i' || inputKey == 'I') {
@@ -207,6 +214,7 @@ void MainInterface::run() {
 					boost::posix_time::second_clock::local_time(), mParkingSpotManager->toPTree());
 				mServMsgQueue->push(sync_data);
 			}
+#endif
 		}
     }
 }
@@ -253,6 +261,7 @@ void MainInterface::initParkingSpots()
 	mVideoReader->read(frame, now);
 	clonedFrame = frame.clone();
 
+#ifdef DEBUG
 	callbackData.window_name = mInitializeWindow;
 	callbackData.image = frame.clone();
 
@@ -270,7 +279,6 @@ void MainInterface::initParkingSpots()
 			rectangle(clonedFrame, spot.second->ROI, CV_RGB(255, 0, 0));
 		}
 		imshow(mInitializeWindow, clonedFrame);
-
 		key = cv::waitKey();
 
 		// Do nothing when a user is drawing a rectangle
@@ -292,7 +300,7 @@ void MainInterface::initParkingSpots()
 			mVideoReader->read(frame, now);
 
 			break;
-			
+
 		case 'a':	// Add a parking spot
 		case 'A':
 			if (!callbackData.roi_set)
@@ -329,6 +337,7 @@ void MainInterface::initParkingSpots()
 	} while (key != 27);
 
 	cv::destroyWindow(mInitializeWindow);
+#endif
 }
 
 void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
@@ -365,7 +374,7 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 					Mat lpFrame;
 					if (mLPDetector->detect(croppedFrame, plates)) {
 						int max = 0;
-						int index;	
+						int index;
 						for (size_t i = 0; i < plates.size(); i++) // get the index of the largest plate detected
 						{										   // in case multiple plates are detected in a single vehicle
 							if (max < plates[i].width * plates[i].height)
