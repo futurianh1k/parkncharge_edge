@@ -15,19 +15,25 @@
 
 #pragma once
 #include "IGenericDetector.h"
+#include "Settings.h"
 
 namespace seevider {
 	class CascadeClassifier :
 		public IGenericDetector
 	{
 	public:
-		CascadeClassifier(std::string option_filename);
+		CascadeClassifier(std::string option_filename, std::shared_ptr<Settings> &settings);
 		~CascadeClassifier();
 
 		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs, int size);
 
 	private:
 		cv::CascadeClassifier mClassifier;
+
+		/**
+		 * Sensor information
+		 */
+		 std::shared_ptr<Settings> mSettings = nullptr;
 	};
 }
 

@@ -18,7 +18,7 @@
 
 namespace seevider {
 	SensorInfo::SensorInfo() :
-		SensorID(mSensorID), SensorName(mSensorName), TimeZone(mTimeZone) {
+		SensorID(mSensorID), SensorName(mSensorName), TimeZone(mTimeZone), ParkingParams(mParkingParams), LightingParams(mLightingParams) {
 		//mSensorID = sensorID;
 	};
 

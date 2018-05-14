@@ -4,6 +4,12 @@ project(VisionSensor)
 find_package(OpenSSL REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(Boost REQUIRED)
+option(DEBUG "Select ON to define DEBUG" ON)
+message("-- DEBUG = ${DEBUG}")
+configure_file(
+        "${PROJECT_SOURCE_DIR}/Config.h.in"
+        "${PROJECT_BINARY_DIR}/Config.h"
+)
 set(TARGET_CPP BoardController.cpp CameraInfo.cpp CascadeClassifier.cpp IMessageData.cpp INetworkHandler.cpp IGenericDetector.cpp IOccupancyDetector.cpp IPlateDetector.cpp IOUtils.cpp Light.cpp LPR.cpp MessageQueue.cpp MotionDetection.cpp ParkingSpot.cpp ParkingSpotManager.cpp ParkingUpdateMessage.cpp SecureClient.cpp SensorInfo.cpp SerialVideoReader.cpp ServerNetworkHandler.cpp ServerSyncMessage.cpp Settings.cpp TCPSocketListener.cpp Utils.cpp)
 add_executable(VisionSensor main.cpp MainInterface.cpp ${TARGET_CPP})
 set(BOOST_LIB_LIST -lboost_system -lboost_thread -lboost_chrono -lboost_date_time -lboost_filesystem)

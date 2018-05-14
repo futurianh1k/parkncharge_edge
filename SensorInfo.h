@@ -16,24 +16,36 @@
 #pragma once
 
 #include <string>
+#include "CameraInfo.h"
+#include "SerialVideoReader.h"
 
 namespace seevider {
 	class SensorInfo {
 	public:
 		/**
-		 * Sensor identification string
+		 * The read-only sensor identification string
 		 */
 		const std::string &SensorID;
 
 		/**
-		 * User-friendly sensor name
+		 * The read-only user-friendly sensor name
 		 */
 		const std::string &SensorName;
 
 		/**
-		 * Time-zone string, e.g., [+|-]##
+		 * The read-only time-zone string, e.g., [+|-]##
 		 */
 		const std::string &TimeZone;
+
+        /**
+         * The read-only parameters of parking sensor
+         */
+        const seevider::ParkingParams &ParkingParams;
+
+        /**
+         * The read-only parameters of lighting sensor
+         */
+        const seevider::LightingParams &LightingParams;
 
 		/**
 		 * Basic constructor
@@ -60,5 +72,15 @@ namespace seevider {
 		 * Time-zone string
 		 */
 		std::string mTimeZone;
+
+		/**
+         * Parameters of parking sensor
+         */
+		seevider::ParkingParams mParkingParams;
+
+        /**
+         * Parameters of lighting sensor
+         */
+        seevider::LightingParams mLightingParams;
 	};
 }
