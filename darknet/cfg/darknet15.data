@@ -1,0 +1,6 @@
+classes=2
+train  = data/darknet15-train.list
+valid  = data/darknet15-valid.list
+labels = data/vgg-tiny-labels.txt
+backup = backup/
+top=1
