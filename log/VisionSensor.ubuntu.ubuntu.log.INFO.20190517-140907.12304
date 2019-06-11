@@ -1,0 +1,4 @@
+Log file created at: 2019/05/17 14:09:07
+Running on machine: ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0517 14:09:07.206164 12304 MainInterface.cpp:41] Starting the main activity

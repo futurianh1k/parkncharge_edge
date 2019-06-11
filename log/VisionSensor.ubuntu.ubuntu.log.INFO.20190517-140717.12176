@@ -1,0 +1,7 @@
+Log file created at: 2019/05/17 14:07:17
+Running on machine: ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0517 14:07:17.161243 12176 MainInterface.cpp:41] Starting the main activity
+I0517 14:07:17.163619 12176 MainInterface.cpp:231] Host name is ubuntu
+I0517 14:07:17.163671 12176 MainInterface.cpp:236] IPv4: 127.0.1.1
+F0517 14:07:17.481290 12176 SerialVideoReader.cpp:52] Failed to connect the camera

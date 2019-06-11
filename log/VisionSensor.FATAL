@@ -1,0 +1,4 @@
+Log file created at: 2019/05/17 14:08:14
+Running on machine: ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0517 14:08:14.657289 12256 SerialVideoReader.cpp:52] Failed to connect the camera
