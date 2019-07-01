@@ -26,8 +26,8 @@ namespace seevider {
 	CascadeClassifier::~CascadeClassifier() {
 	}
 
-	int CascadeClassifier::detect(const cv::Mat& image, std::vector<cv::Rect> &locs, int size) {
-        mClassifier.detectMultiScale(image, locs, 1.1, mSettings->ParkingParams.sensitivity, 0, cv::Size(image.cols / size, image.rows / size));
+	int CascadeClassifier::detect(const cv::Mat& img, std::vector<cv::Rect> &locs, int size) {
+        mClassifier.detectMultiScale(img, locs, 1.1, mSettings->ParkingParams.sensitivity, 0, cv::Size(img.cols / size, img.rows / size));
 
 		return locs.size();
 	}

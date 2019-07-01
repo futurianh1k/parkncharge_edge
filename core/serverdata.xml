@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ServerSettings>
-	<ServerAddress>api.seevider.net</ServerAddress>
-	<SecureConnection>TLS1_1</SecureConnection>
+	<ServerAddress>192.168.64.117</ServerAddress>
+	<SecureConnection/>
 	<Request>
 		<RequestType>0</RequestType>
 		<HTTPRequestMethod>PUT</HTTPRequestMethod>

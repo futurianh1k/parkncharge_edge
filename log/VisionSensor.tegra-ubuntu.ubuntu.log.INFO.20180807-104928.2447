@@ -1,0 +1,572 @@
+Log file created at: 2018/08/07 10:49:28
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0807 10:49:28.215622  2447 MainInterface.cpp:42] Starting the main activity
+I0807 10:49:28.217008  2447 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0807 10:49:28.217094  2447 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0807 10:49:28.378953  2447 SerialVideoReader.cpp:61] Modifying camera codec
+E0807 10:49:28.379587  2447 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0807 10:49:28.384786  2447 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0807 10:49:28.385299  2447 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0807 10:49:28.395419  2447 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0807 10:49:28.401083  2453 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0807 10:49:28.402029  2454 TCPSocketListener.cpp:70] Starting the socket listener
+I0807 10:50:09.094137  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+I0807 10:50:09.095850  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:50:08 by null
+E0807 10:50:09.129775  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:09.129943  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:11.610738  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:50:11
+I0807 10:50:12.130103  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:12.160754  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:12.160886  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:15.161043  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:15.188120  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:15.188410  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:18.188678  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:18.215993  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:18.216168  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:21.216353  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:21.243413  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:21.243552  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:24.243715  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:24.299131  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:24.299270  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:25.258129  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:50:25 by null
+I0807 10:50:27.299474  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:27.327416  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:27.327555  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:30.327716  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:30.355473  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:30.355624  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:33.355789  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:33.408216  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:33.408519  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:35.258219  2448 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:50:35
+I0807 10:50:35.259208  2448 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:50:35
+I0807 10:50:35.259268  2448 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0807 10:50:35.529553  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:50:35 by null
+I0807 10:50:35.778864  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:50:35
+I0807 10:50:36.408774  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:36.438648  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:36.438794  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:37.066848  2447 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2018-Aug-07 10:50:36 by null
+I0807 10:50:39.438984  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:39.480139  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:39.480270  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:41.763953  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:50:41
+I0807 10:50:42.480412  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:42.516047  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:42.516177  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:42.559355  2447 ParkingSpot.cpp:87] Parking spot ID 1 has released at 2018-Aug-07 10:50:42
+I0807 10:50:45.516348  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:45.569845  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:45.569990  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:48.570163  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:48.602059  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:48.602202  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:51.602355  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:51.629344  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:51.629499  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:54.629659  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:54.665088  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:54.665226  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:50:57.665463  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:50:57.700476  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:50:57.700608  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:00.700775  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:00.734424  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:00.734903  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:03.735152  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:03.770372  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:03.770531  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:06.770957  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:06.800261  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:06.801031  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:09.801473  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:09.829586  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:09.829886  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:10.508692  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:51:10 by null
+I0807 10:51:12.830198  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:12.858878  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:12.859320  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:15.859793  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:15.893434  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:15.893887  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:18.894387  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:18.922961  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:18.923930  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:20.508767  2450 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:51:20
+I0807 10:51:20.509729  2450 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:51:20
+I0807 10:51:20.509793  2450 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0807 10:51:21.924535  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:21.966747  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:21.967212  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:22.930078  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:51:22
+I0807 10:51:23.788827  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:51:23 by null
+I0807 10:51:24.968500  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:24.996644  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:24.996814  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:27.997117  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:28.024224  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:28.024554  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:31.024850  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:31.051867  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:31.052120  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:33.788880  2448 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:51:33
+I0807 10:51:33.789296  2448 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:51:33
+I0807 10:51:33.789355  2448 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0807 10:51:34.052330  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:34.079033  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:34.079354  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:34.199919  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:51:33 by null
+I0807 10:51:37.079797  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:37.110486  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:37.110826  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:37.674996  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:51:37
+I0807 10:51:40.111136  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:40.142246  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:40.142470  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:43.142711  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:43.171109  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:43.171624  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:44.200059  2450 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:51:43
+I0807 10:51:44.200604  2450 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:51:43
+I0807 10:51:44.200681  2450 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0807 10:51:46.171924  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:46.200888  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:46.201320  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:47.125898  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:51:46 by null
+I0807 10:51:47.712550  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:51:47
+I0807 10:51:49.202168  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:49.240166  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:49.240628  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:52.240900  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:52.274778  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:52.275146  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:53.880466  2447 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2018-Aug-07 10:51:53 by null
+I0807 10:51:53.948235  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:51:53 by null
+I0807 10:51:55.275512  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:55.307330  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:55.307837  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:51:57.125936  2448 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:51:56
+I0807 10:51:57.126281  2448 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:51:56
+I0807 10:51:57.126334  2448 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0807 10:51:57.337540  2447 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Aug-07 10:51:57 by null
+I0807 10:51:58.308440  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:51:58.335590  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:51:58.338704  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:01.345927  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:01.378446  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:01.378873  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:02.858971  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:52:02
+I0807 10:52:03.068509  2447 ParkingSpot.cpp:87] Parking spot ID 1 has released at 2018-Aug-07 10:52:02
+I0807 10:52:04.379302  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:04.406010  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:04.406503  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:05.270953  2447 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2018-Aug-07 10:52:05
+I0807 10:52:07.407095  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:07.436225  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:07.436592  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:07.477787  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:52:07
+I0807 10:52:10.436969  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:10.466059  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:10.466464  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:11.471025  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:52:11 by null
+I0807 10:52:13.466714  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:13.494133  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:13.494689  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:16.495002  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:16.529959  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:16.530393  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:19.530645  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:19.566148  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:19.566633  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:19.829969  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:52:19
+I0807 10:52:22.567062  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:22.593983  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:22.594383  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:25.594700  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:25.621289  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:25.621541  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:27.352228  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:52:27 by null
+I0807 10:52:28.331849  2447 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Aug-07 10:52:28 by null
+I0807 10:52:28.621884  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:28.648644  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:28.650058  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:31.650583  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:31.681974  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:31.687958  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:34.688182  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:34.726377  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:34.726814  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:37.352293  2450 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:52:37
+I0807 10:52:37.352749  2450 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:52:37
+I0807 10:52:37.352825  2450 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0807 10:52:37.519425  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:52:37 by null
+I0807 10:52:37.727140  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:37.774714  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:37.774979  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:38.332120  2449 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:52:38
+I0807 10:52:38.334621  2449 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:52:38
+I0807 10:52:38.334789  2449 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0807 10:52:40.775308  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:40.809200  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:40.812834  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:43.813400  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:43.842142  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:43.842445  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:46.842711  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:46.874305  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:46.874742  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:47.519515  2448 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:52:47
+I0807 10:52:47.519876  2448 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:52:47
+I0807 10:52:47.519932  2448 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0807 10:52:49.875043  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:49.902104  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:49.902376  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:51.601783  2447 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2018-Aug-07 10:52:51 by null
+I0807 10:52:52.902585  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:52.929919  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:52.930708  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:54.205870  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:52:54
+I0807 10:52:55.930977  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:55.963131  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:55.963501  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:58.963838  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:52:58.991057  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:52:58.991410  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:52:59.424043  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:52:59 by null
+I0807 10:53:00.083894  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:52:59
+I0807 10:53:01.601881  2451 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:53:01
+I0807 10:53:01.602988  2451 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:53:01
+I0807 10:53:01.603051  2451 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0807 10:53:01.991668  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:02.020529  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:02.020938  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:05.021293  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:05.048444  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:05.048954  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:08.049278  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:08.083693  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:08.084038  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:09.424151  2450 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:53:09
+I0807 10:53:09.424649  2450 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:53:09
+I0807 10:53:09.424711  2450 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0807 10:53:10.082175  2447 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2018-Aug-07 10:53:09
+I0807 10:53:10.853706  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:53:10 by null
+I0807 10:53:11.084376  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:11.125620  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:11.126210  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:14.129134  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:14.160614  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:14.160928  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:16.483353  2447 ParkingSpot.cpp:87] Parking spot ID 1 has released at 2018-Aug-07 10:53:16
+I0807 10:53:17.161195  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:17.197088  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:17.197690  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:18.066355  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:53:17
+I0807 10:53:20.198091  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:20.236698  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:20.238474  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:20.853837  2448 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:53:20
+I0807 10:53:20.854419  2448 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:53:20
+I0807 10:53:20.854496  2448 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0807 10:53:23.238847  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:23.270850  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:23.271260  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:26.271523  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:26.299934  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:26.300318  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:29.300607  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:29.345129  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:29.345885  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:32.346403  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:32.373046  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:32.374433  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:34.367221  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:53:34
+I0807 10:53:35.374902  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:35.421635  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:35.422005  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:35.940596  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:53:35 by null
+I0807 10:53:38.422287  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:38.449985  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:38.450284  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:40.444056  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:53:40
+I0807 10:53:41.450551  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:41.478884  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:41.479244  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:44.479506  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:44.506780  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:44.507143  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:47.507396  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:47.537716  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:47.538096  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:49.710865  2447 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Aug-07 10:53:49 by null
+I0807 10:53:50.538699  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:50.565680  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:50.566188  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:53.566515  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:53.593720  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:53.594197  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:56.594552  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:56.621971  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:56.622269  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:59.622575  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:53:59.666086  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:53:59.666354  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:53:59.710954  2450 SerialVideoReader.cpp:159] Frame has requestd at 2018-Aug-07 10:53:59
+I0807 10:53:59.711316  2450 SerialVideoReader.cpp:167] Frame has found at 2018-Aug-07 10:53:59
+I0807 10:53:59.711364  2450 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0807 10:54:01.401895  2447 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2018-Aug-07 10:54:01
+I0807 10:54:02.644775  2447 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Aug-07 10:54:02 by null
+I0807 10:54:02.666790  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:02.697882  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:02.698127  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:05.698491  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:05.725613  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:05.725841  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:07.804443  2447 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Aug-07 10:54:07
+I0807 10:54:08.726610  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:08.766423  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:08.766930  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:11.767313  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:11.803642  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:11.804060  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:14.804575  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:14.838474  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:14.838802  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:17.839083  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:17.868389  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:17.868762  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:20.869031  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:20.908571  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:20.909045  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:23.909427  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:23.941408  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:23.941771  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:26.942032  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:26.969197  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:26.969645  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:29.970002  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:30.004973  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:30.005436  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:33.005750  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:33.034068  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:33.034513  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:36.034920  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:36.071270  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:36.071653  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:39.072242  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:39.114866  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:39.115350  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:42.115671  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:42.142902  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:42.143252  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:45.143968  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:45.173604  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:45.174834  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:48.175367  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:48.209025  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:48.209408  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:51.209661  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:51.253679  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:51.254184  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:54.254500  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:54.288731  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:54.289180  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:54:57.289809  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:54:57.318603  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:54:57.318927  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:00.319293  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:00.364619  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:00.365115  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:03.365425  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:03.392894  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:03.393525  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:06.394572  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:06.422056  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:06.422664  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:09.423141  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:09.450112  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:09.450481  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:12.450839  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:12.481245  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:12.493769  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:15.494027  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:15.540115  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:15.540532  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:18.540874  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:18.581099  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:18.581523  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:21.583160  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:21.610898  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:21.611258  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:24.611532  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:24.657625  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:24.657894  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:27.658282  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:27.685305  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:27.685799  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:30.686174  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:30.713364  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:30.713851  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:33.714553  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:33.742835  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:33.743187  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:36.743829  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:36.776875  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:36.777393  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:39.780633  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:39.819242  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:39.819567  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:42.819871  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:42.857286  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:42.865276  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:45.865486  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:45.904156  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:45.904642  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:48.904886  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:48.951905  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:48.952467  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:51.952670  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:51.986270  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:51.986706  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:54.987018  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:55.013957  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:55.014953  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:55:58.015405  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:55:58.064193  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:55:58.064636  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:01.064898  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:01.107100  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:01.107471  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:04.108417  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:04.140071  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:04.140511  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:07.140883  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:07.185376  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:07.185873  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:10.186215  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:10.213654  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:10.214015  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:13.214269  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:13.254559  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:13.254936  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:16.255201  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:16.312829  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:16.313890  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:19.314239  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:19.343310  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:19.347213  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:22.353741  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:22.381006  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:22.381237  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:25.381532  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:25.408838  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:25.409334  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:28.409677  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:28.445520  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:28.445816  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:31.447829  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:31.510109  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:31.510465  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:34.510689  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:34.545100  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:34.545460  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:37.545713  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:37.574410  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:37.575248  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:40.575919  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:40.605849  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:40.606231  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:43.606515  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:43.636658  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:43.641130  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:46.641476  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:46.689076  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:46.689494  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:49.690506  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:49.724452  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:49.725070  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:52.725474  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:52.757810  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:52.758167  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:55.758937  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:55.786577  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:55.787163  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:56:58.787403  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:56:58.821851  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:56:58.822165  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:01.822378  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:01.850212  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:01.850570  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:04.850889  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:04.885123  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:04.886641  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:07.887341  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:07.918503  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:07.918851  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:10.919139  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:10.961335  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:10.961729  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:13.962116  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:13.996224  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:13.996455  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:16.996664  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:17.034179  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:17.035068  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:20.035817  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:20.081032  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:20.081390  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:23.081689  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:23.110559  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:23.110826  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:26.111148  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:26.138386  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:26.138767  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:29.139088  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:29.170991  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:29.171401  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:32.171764  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:32.205204  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:32.205653  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:35.205884  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:35.237160  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:35.237787  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:38.238109  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:38.265277  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:38.267534  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:41.268023  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:41.308905  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:41.309273  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:44.309525  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:44.348517  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:44.348857  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:47.349089  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:47.381361  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:47.381763  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:50.382081  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:50.410507  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:50.410863  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:53.411141  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:53.438099  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:53.438452  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:56.438704  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:56.466428  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:56.469283  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:57:59.472558  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:57:59.500600  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:57:59.506549  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:58:02.506897  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:58:02.535019  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:58:02.535401  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:58:05.535759  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:58:05.570487  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:58:05.570753  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:58:08.570938  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:58:08.606734  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:58:08.607822  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:58:11.609177  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)
+E0807 10:58:11.639124  2453 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0807 10:58:11.639405  2453 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0807 10:58:14.639727  2453 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Aug-07 10:50:08 (1)

@@ -1,13 +1,1 @@
-Log file created at: 2019/05/17 14:16:47
-Running on machine: ubuntu
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-I0517 14:16:47.857632 12407 MainInterface.cpp:41] Starting the main activity
-I0517 14:16:47.858938 12407 MainInterface.cpp:231] Host name is ubuntu
-I0517 14:16:47.859021 12407 MainInterface.cpp:236] IPv4: 127.0.1.1
-I0517 14:16:48.205255 12407 SerialVideoReader.cpp:61] Modifying camera codec
-I0517 14:16:48.205813 12407 SerialVideoReader.cpp:65] The original camera codec: MJPG
-I0517 14:16:48.244580 12407 SerialVideoReader.cpp:77] Modified camera codec: MJPG
-I0517 14:16:48.245088 12407 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
-I0517 14:16:48.292701 12407 SerialVideoReader.cpp:87] Modified camera frame size: 1280, 720
-I0517 14:16:48.294231 12416 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
-I0517 14:16:48.294360 12417 TCPSocketListener.cpp:70] Starting the socket listener
+VisionSensor.tegra-ubuntu.ubuntu.log.INFO.20190628-160400.10375

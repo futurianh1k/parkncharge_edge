@@ -27,6 +27,7 @@
 
 #include <glog/logging.h>
 #include "Config.h"
+#include "ImageNetClassifier.h"
 
 using namespace seevider;
 namespace pt = boost::posix_time;
@@ -57,7 +58,7 @@ MainInterface::MainInterface() :
 	mServMsgQueue = std::make_shared<MessageQueue>();
 	// Open the connected camera
 	//mVideoReader->open("..\\..\\Video\\20160527120257(fixed).avi");
-	mVideoReader->open(1);
+	mVideoReader->open(0);
     //--------------------------------
 	// Start the resource managing threads.
 	//--------------------------------
@@ -78,6 +79,8 @@ MainInterface::MainInterface() :
 	// Occupancy Detector
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
 		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename, mSettings);
+	} else if (mSettings->Type == CLASSIFIER_CNN) {
+		mDetector = std::make_unique<ImageNetClassifier>(mSettings);
 	}
 
 	mODetector = std::make_unique<IOccupancyDetector>(std::move(mDetector));
@@ -85,7 +88,9 @@ MainInterface::MainInterface() :
 	// License Plate Detector
 	if (mSettings->Type == CLASSIFIER_CASCADE) {
 		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename, mSettings);
-	}
+	} else if (mSettings->Type == CLASSIFIER_CNN) {
+        mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename, mSettings);
+    }
 
 	mLPDetector = std::make_unique<IPlateDetector>(std::move(mDetector));
 
@@ -94,7 +99,7 @@ MainInterface::MainInterface() :
 		mLPR = std::make_unique<LPR>(mSettings->LPRRegionCode, SYSTEM_FOLDER_CORE + mSettings->LPRSettingsFilename);
 	}
 	else {
-		mLPR = nullptr;g
+		mLPR = nullptr;
 	}*/
 
 	//--------------------------------
@@ -357,8 +362,11 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 
 			if (mSettings->MotionDetectionEnabled && mMotionDetector->isMotionDetected(frame, elem.second->ROI)) {
 				std::cout << "Motion detected at spot " << elem.first << std::endl;
-				continue;	// if some motion has detected for this ROI, wait until the region becomes stable
-			}
+                if(parkingSpot->UpdateEnabled){
+                    continue;	// if some motion has detected for this ROI, wait until the region becomes stable
+                } else {
+                    parkingSpot->reset();
+                }}
 
 			if (!parkingSpot->UpdateEnabled) {
 				// Update only if the status of the parking spot is unstable
@@ -366,10 +374,11 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 			}
 
 			Mat croppedFrame = frame(parkingSpot->ROI);
+            cv::resize(croppedFrame, croppedFrame, cv::Size(64, 64));
 
 			if (parkingSpot->update(mODetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
 				if (parkingSpot->isOccupied()) {
-					// if the status has changed to 'Occupied' from 'Empty'
+                    // if the status has changed to 'Occupied' from 'Empty'
 					// detect license plate in cropped frame
 					Mat lpFrame;
 					if (mLPDetector->detect(croppedFrame, plates)) {
@@ -390,8 +399,7 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 					/*if (mLPR != nullptr) {
 						PN = mLPR->recognize(croppedFrame);
 					}*/
-
-					parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, PN);
+                    parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, PN);
 				}
 				else {
 					// if the status has changed to 'Empty' from 'Occupied'

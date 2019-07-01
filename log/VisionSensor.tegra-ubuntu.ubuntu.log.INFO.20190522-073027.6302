@@ -1,0 +1,79 @@
+Log file created at: 2019/05/22 07:30:27
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0522 07:30:27.329792  6302 MainInterface.cpp:42] Starting the main activity
+I0522 07:30:27.331275  6302 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0522 07:30:27.331524  6302 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0522 07:30:27.418813  6302 SerialVideoReader.cpp:61] Modifying camera codec
+E0522 07:30:27.424515  6302 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0522 07:30:27.428119  6302 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0522 07:30:27.428462  6302 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0522 07:30:27.442766  6302 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0522 07:30:27.449138  6311 TCPSocketListener.cpp:70] Starting the socket listener
+I0522 07:30:27.449434  6310 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0522 07:30:31.399209  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+I0522 07:30:31.399423  6302 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-May-22 07:30:31 by null
+I0522 07:30:31.399756  6306 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-22 07:30:31
+I0522 07:30:31.404866  6306 SerialVideoReader.cpp:167] Frame has found at 2019-May-22 07:30:31
+I0522 07:30:31.404953  6306 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0522 07:30:31.437656  6304 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-22 07:30:31
+I0522 07:30:31.439456  6304 SerialVideoReader.cpp:167] Frame has found at 2019-May-22 07:30:31
+I0522 07:30:31.439555  6304 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0522 07:30:31.442303  6302 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-May-22 07:30:31 by null
+E0522 07:30:31.473014  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:31.473381  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:31.950826  6305 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-22 07:30:31
+I0522 07:30:31.951665  6302 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-May-22 07:30:31 by null
+I0522 07:30:31.952200  6305 SerialVideoReader.cpp:167] Frame has found at 2019-May-22 07:30:31
+I0522 07:30:31.952265  6305 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0522 07:30:34.473580  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:34.543857  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:34.544167  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:37.545213  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:37.648989  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:37.649258  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:40.649402  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:40.737356  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:40.737812  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:43.738093  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:43.939815  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:43.940058  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:46.940187  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:47.049829  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:47.050048  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:50.050184  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:50.143409  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:50.143976  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:53.144467  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:53.200652  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:53.200958  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:56.201124  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:56.287384  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:56.287803  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:30:59.288082  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:30:59.379132  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:30:59.379472  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:31:02.379647  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:31:02.482095  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:31:02.482623  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:31:05.482904  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:31:05.578446  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:31:05.578893  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:31:06.903602  6302 MainInterface.cpp:118] Finishing the main activity
+I0522 07:31:06.904731  6302 ServerNetworkHandler.cpp:52] Destroying the HTTP message uploading handler
+I0522 07:31:08.579252  6310 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-22 07:30:31 (1)
+E0522 07:31:08.664716  6310 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:31:08.666754  6310 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0522 07:31:08.905143  6302 ServerNetworkHandler.cpp:62] The HTTP message uploading handler has destroyed
+I0522 07:31:08.905196  6302 TCPSocketListener.cpp:56] Destroying the socket listener
+I0522 07:31:13.905417  6302 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0522 07:31:13.905519  6302 SerialVideoReader.cpp:116] Destroying the video input handler
+I0522 07:31:13.912703  6302 SerialVideoReader.cpp:126] The video input handler has destroyed.
+I0522 07:31:13.912786  6302 SerialVideoReader.cpp:192] Closing the vidao API
+I0522 07:31:13.933353  6302 TCPSocketListener.cpp:56] Destroying the socket listener
+I0522 07:31:18.937422  6302 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0522 07:31:18.940795  6302 ParkingSpot.cpp:43] Release parking spot 5
+I0522 07:31:18.941025  6302 ParkingSpot.cpp:43] Release parking spot 4
+I0522 07:31:18.941221  6302 ParkingSpot.cpp:43] Release parking spot 3
+I0522 07:31:18.941592  6302 ParkingSpot.cpp:43] Release parking spot 1
+I0522 07:31:18.941823  6302 ParkingSpot.cpp:43] Release parking spot 2

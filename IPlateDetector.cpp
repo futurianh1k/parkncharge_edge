@@ -24,8 +24,8 @@ namespace seevider {
 	IPlateDetector::~IPlateDetector() {
 	}
 
-	int IPlateDetector::detect(const cv::Mat& image, std::vector<cv::Rect> &locs) {
-        pDetector->detect(image, locs, 8);
+	int IPlateDetector::detect(const cv::Mat& img, std::vector<cv::Rect> &locs) {
+        pDetector->detect(img, locs, 8);
 
         return locs.size();
     }

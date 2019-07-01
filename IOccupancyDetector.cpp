@@ -25,8 +25,6 @@ namespace seevider {
 	}
 
 	int IOccupancyDetector::detect(const cv::Mat& image, std::vector<cv::Rect> &locs) {
-        oDetector->detect(image, locs, 4);
-
-        return locs.size();
+            return oDetector->detect(image, locs, 4);
     }
 }

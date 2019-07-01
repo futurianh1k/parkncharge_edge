@@ -25,7 +25,7 @@ namespace seevider {
 		IPlateDetector(std::unique_ptr<IGenericDetector> generic_detector);
 		~IPlateDetector();
 
-		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);
+		virtual int detect(const cv::Mat &img, std::vector<cv::Rect> &locs);
 		
 	private:
 	};

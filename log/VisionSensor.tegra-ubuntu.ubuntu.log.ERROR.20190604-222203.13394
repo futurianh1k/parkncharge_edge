@@ -1,0 +1,27 @@
+Log file created at: 2019/06/04 22:22:03
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0604 22:22:03.363806 13394 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0604 22:22:03.370537 13394 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0604 22:22:08.758122 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:12.256556 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:15.343711 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:18.424962 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:21.516089 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:24.589182 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:27.666390 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:30.759207 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:33.847620 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:36.949088 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:40.026259 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:43.078521 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:46.189649 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:49.274669 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:52.354184 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:55.413806 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:22:58.476356 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:23:06.532658 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:23:09.668371 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:23:12.856993 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:23:15.949815 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0604 22:23:18.999169 13402 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)

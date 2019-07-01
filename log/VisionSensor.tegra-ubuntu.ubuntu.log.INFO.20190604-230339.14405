@@ -1,0 +1,131 @@
+Log file created at: 2019/06/04 23:03:39
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0604 23:03:39.125308 14405 MainInterface.cpp:42] Starting the main activity
+I0604 23:03:39.129312 14405 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0604 23:03:39.129565 14405 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0604 23:03:39.220022 14405 SerialVideoReader.cpp:61] Modifying camera codec
+E0604 23:03:39.220927 14405 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0604 23:03:39.222998 14405 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0604 23:03:39.223134 14405 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0604 23:03:39.239539 14405 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0604 23:03:39.244807 14414 TCPSocketListener.cpp:70] Starting the socket listener
+I0604 23:03:39.245060 14413 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0604 23:03:44.382617 14413 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-04 23:03:44 (1)
+I0604 23:03:44.387982 14410 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 23:03:44
+I0604 23:03:44.389626 14410 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 23:03:44
+I0604 23:03:44.389734 14410 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0604 23:03:44.393435 14405 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-04 23:03:44 by null
+I0604 23:03:44.481082 14407 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 23:03:44
+I0604 23:03:44.482254 14407 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 23:03:44
+I0604 23:03:44.482326 14407 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0604 23:03:44.483006 14405 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-Jun-04 23:03:44 by null
+I0604 23:03:45.313230 14413 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-04 23:03:44 (3)
+I0604 23:03:46.203176 14413 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-Jun-04 23:03:44 (1)
+I0604 23:03:47.035769 14413 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-Jun-04 23:03:44 (3)
+I0604 23:04:00.008538 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 23:03:59 (1)
+I0604 23:04:00.013270 14409 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 23:03:59
+I0604 23:04:00.014537 14409 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 23:03:59
+I0604 23:04:00.014619 14409 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0604 23:04:00.017195 14405 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-Jun-04 23:03:59 by null
+I0604 23:04:01.129678 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 23:03:59 (3)
+I0604 23:04:17.388353 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 23:04:16 (2)
+I0604 23:04:17.392035 14405 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2019-Jun-04 23:04:16
+I0605 10:06:12.544275 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 10:06:12 (1)
+I0605 10:06:12.545156 14409 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 10:06:12
+I0605 10:06:12.552354 14409 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 10:06:12
+I0605 10:06:12.552726 14409 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0605 10:06:12.545233 14405 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-Jun-05 10:06:12 by null
+I0605 10:06:13.051481 14411 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 10:06:12
+I0605 10:06:13.051465 14405 ParkingSpot.cpp:69] Parking spot ID 5 has occupied at 2019-Jun-05 10:06:12 by null
+I0605 10:06:13.052819 14411 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 10:06:12
+I0605 10:06:13.052933 14411 ParkingSpot.cpp:171] Parking spot ID 5 has expired.
+I0605 10:06:13.567723 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 10:06:12 (3)
+I0605 10:06:14.557513 14413 ServerNetworkHandler.cpp:86] 5 with plate number null at 2019-Jun-05 10:06:12 (1)
+I0605 10:06:15.482084 14413 ServerNetworkHandler.cpp:86] 5 with plate number null at 2019-Jun-05 10:06:12 (3)
+I0605 10:07:41.314565 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 10:07:40 (1)
+I0605 10:07:41.315646 14408 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 10:07:40
+I0605 10:07:41.326406 14408 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 10:07:40
+I0605 10:07:41.326511 14408 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0605 10:07:41.315917 14405 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-Jun-05 10:07:40 by null
+I0605 10:07:42.373528 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 10:07:40 (3)
+I0605 10:07:49.880872 14413 ServerNetworkHandler.cpp:86] 5 with plate number null at 2019-Jun-05 10:07:49 (2)
+I0605 10:07:49.890928 14405 ParkingSpot.cpp:87] Parking spot ID 5 has released at 2019-Jun-05 10:07:49
+I0605 10:07:56.322954 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 10:07:55 (2)
+I0605 10:07:56.331431 14405 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2019-Jun-05 10:07:55
+I0605 10:08:09.041996 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 10:08:08 (1)
+I0605 10:08:09.048945 14409 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 10:08:08
+I0605 10:08:09.050168 14409 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 10:08:08
+I0605 10:08:09.050236 14409 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0605 10:08:09.052418 14405 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-Jun-05 10:08:08 by null
+I0605 10:08:10.012235 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 10:08:08 (3)
+I0605 10:08:34.777827 14414 TCPSocketListener.cpp:80] Connection established with 192.168.64.169
+I0605 10:08:34.790210 14414 TCPSocketListener.cpp:222] Ack: ready
+I0605 10:09:06.667719 14414 TCPSocketListener.cpp:131] REQ_UPDATE
+I0605 10:09:06.673064 14414 TCPSocketListener.cpp:356] Turn on the management mode
+I0605 10:09:07.178325 14405 MainInterface.cpp:153] Enter to the management mode
+I0605 10:09:07.315356 14414 TCPSocketListener.cpp:363] Turn off the management mode
+I0605 10:09:07.315663 14405 MainInterface.cpp:160] Exit from the management mode
+I0605 10:09:12.044857 14413 ServerNetworkHandler.cpp:86] 5 with plate number null at 2019-Jun-05 10:09:11 (1)
+I0605 10:09:12.056988 14411 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 10:09:11
+I0605 10:09:12.058091 14411 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 10:09:11
+I0605 10:09:12.058168 14411 ParkingSpot.cpp:171] Parking spot ID 5 has expired.
+I0605 10:09:12.067960 14405 ParkingSpot.cpp:69] Parking spot ID 5 has occupied at 2019-Jun-05 10:09:11 by null
+I0605 10:09:13.016620 14413 ServerNetworkHandler.cpp:86] 5 with plate number null at 2019-Jun-05 10:09:11 (3)
+I0605 10:09:13.615790 14405 ParkingSpot.cpp:87] Parking spot ID 1 has released at 2019-Jun-05 10:09:13
+I0605 10:09:13.928421 14413 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-Jun-05 10:09:13 (2)
+I0605 11:00:06.275972 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 11:00:05 (2)
+I0605 11:00:06.282987 14405 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2019-Jun-05 11:00:05
+I0605 11:00:44.516942 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:00:43 (2)
+I0605 11:00:44.525868 14405 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2019-Jun-05 11:00:43
+I0605 11:01:37.979254 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:01:37 (1)
+I0605 11:01:37.984946 14408 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 11:01:37
+I0605 11:01:37.986057 14408 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 11:01:37
+I0605 11:01:37.986136 14408 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0605 11:01:37.988826 14405 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-Jun-05 11:01:37 by null
+I0605 11:01:38.987529 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:01:37 (3)
+I0605 11:02:25.002331 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:02:24 (2)
+I0605 11:02:25.012260 14405 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2019-Jun-05 11:02:24
+I0605 11:05:58.349467 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:05:57 (1)
+I0605 11:05:58.354493 14408 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 11:05:57
+I0605 11:05:58.356709 14408 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 11:05:57
+I0605 11:05:58.357241 14408 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0605 11:05:58.359987 14405 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-Jun-05 11:05:57 by null
+I0605 11:05:59.405444 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:05:57 (3)
+I0605 11:07:18.188814 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:07:17 (2)
+I0605 11:07:18.197896 14405 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2019-Jun-05 11:07:17
+I0605 11:08:01.698570 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:08:01 (1)
+I0605 11:08:01.704957 14408 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 11:08:01
+I0605 11:08:01.706199 14408 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 11:08:01
+I0605 11:08:01.706282 14408 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0605 11:08:01.709262 14405 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-Jun-05 11:08:01 by null
+I0605 11:08:02.755729 14413 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-Jun-05 11:08:01 (3)
+I0605 11:08:47.104641 14413 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-Jun-05 11:08:46 (1)
+I0605 11:08:47.112166 14407 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 11:08:46
+I0605 11:08:47.113272 14407 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 11:08:46
+I0605 11:08:47.113342 14407 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0605 11:08:47.115625 14405 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-Jun-05 11:08:46 by null
+I0605 11:08:48.270195 14413 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-Jun-05 11:08:46 (3)
+I0605 11:09:35.002715 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 11:09:34 (1)
+I0605 11:09:35.027707 14409 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-05 11:09:34
+I0605 11:09:35.032903 14409 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-05 11:09:34
+I0605 11:09:35.033221 14409 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0605 11:09:35.038918 14405 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-Jun-05 11:09:34 by null
+I0605 11:09:36.223042 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 11:09:34 (3)
+I0605 11:11:40.018131 14413 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-05 11:11:39 (2)
+I0605 11:11:40.024508 14405 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2019-Jun-05 11:11:39
+I0605 11:11:57.338850 14405 MainInterface.cpp:118] Finishing the main activity
+I0605 11:11:57.358880 14405 ServerNetworkHandler.cpp:52] Destroying the HTTP message uploading handler
+I0605 11:11:59.362244 14405 ServerNetworkHandler.cpp:62] The HTTP message uploading handler has destroyed
+I0605 11:11:59.362323 14405 TCPSocketListener.cpp:56] Destroying the socket listener
+I0605 11:12:04.362655 14405 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0605 11:12:04.362718 14405 SerialVideoReader.cpp:116] Destroying the video input handler
+I0605 11:12:04.365267 14405 SerialVideoReader.cpp:126] The video input handler has destroyed.
+I0605 11:12:04.365320 14405 SerialVideoReader.cpp:192] Closing the vidao API
+I0605 11:12:04.376974 14405 TCPSocketListener.cpp:56] Destroying the socket listener
+I0605 11:12:09.380933 14405 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0605 11:12:09.384605 14405 ParkingSpot.cpp:43] Release parking spot 5
+I0605 11:12:09.384881 14405 ParkingSpot.cpp:43] Release parking spot 4
+I0605 11:12:09.385085 14405 ParkingSpot.cpp:43] Release parking spot 3
+I0605 11:12:09.385422 14405 ParkingSpot.cpp:43] Release parking spot 1
+I0605 11:12:09.385664 14405 ParkingSpot.cpp:43] Release parking spot 2

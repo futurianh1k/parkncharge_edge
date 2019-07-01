@@ -1,3 +1,1 @@
-/home/ubuntu/seevider/VisionSensor/build/CMakeFiles/rebuild_cache.dir
-/home/ubuntu/seevider/VisionSensor/build/CMakeFiles/VisionSensor.dir
-/home/ubuntu/seevider/VisionSensor/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/VisionSensor/build/CMakeFiles/VisionSensor.dir

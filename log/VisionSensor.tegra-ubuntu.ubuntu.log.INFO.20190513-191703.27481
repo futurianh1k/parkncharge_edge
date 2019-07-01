@@ -1,0 +1,7 @@
+Log file created at: 2019/05/13 19:17:03
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0513 19:17:03.159973 27481 MainInterface.cpp:42] Starting the main activity
+I0513 19:17:03.161473 27481 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0513 19:17:03.161592 27481 MainInterface.cpp:241] IPv4: 127.0.1.1
+F0513 19:17:03.175272 27481 SerialVideoReader.cpp:52] Failed to connect the camera

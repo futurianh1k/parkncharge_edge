@@ -1,0 +1,143 @@
+Log file created at: 2018/10/25 11:12:58
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E1025 11:12:58.748778  2005 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E1025 11:12:58.757935  2005 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E1025 11:13:18.424278  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:13:21.448097  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:13:49.496753  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:14:02.797530  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:14:21.465910  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:14:44.497434  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:15:02.527144  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:15:25.562599  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:15:34.020445  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:15:42.335737  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:16:00.389628  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:16:13.420706  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:16:27.402164  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:16:50.441874  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:16:59.603876  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:17:02.836143  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:17:20.872637  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:17:29.487113  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:17:43.338892  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:18:06.377777  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:18:25.058097  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:18:43.493121  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:18:46.945600  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:18:50.431391  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:19:03.459833  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:19:21.501741  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:19:30.269618  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:19:53.311769  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:20:02.011819  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:20:05.164415  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:20:20.295087  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:20:38.341787  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:20:46.419139  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:20:59.756378  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:21:03.611032  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:21:06.783959  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:21:20.602879  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:21:23.865069  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:21:46.907687  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:21:56.091562  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:21:59.168252  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:22:07.352531  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:22:10.563127  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:22:13.635392  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:22:17.057641  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:22:20.250159  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:22:28.314333  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:22:47.142658  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:23:10.182191  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:23:13.254731  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:23:36.292076  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:23:55.312111  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:24:04.521301  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:24:23.153437  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:24:46.193564  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:25:09.241961  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:25:12.533809  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:25:25.571787  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:25:39.673940  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:26:02.711776  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:26:16.098624  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:26:29.233050  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:26:42.996088  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:26:48.323196  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:27:06.353821  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:27:09.746587  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:27:23.738198  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:27:42.521811  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:28:00.564401  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:28:19.144117  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:28:33.159008  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:28:47.159504  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:28:55.633841  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:28:59.133092  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:29:02.287150  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:29:05.790643  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:29:14.594347  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:29:23.810600  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:29:41.847586  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:29:59.888242  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:30:17.930307  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:30:24.766156  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:30:39.252542  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:30:52.952378  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:30:56.031647  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:31:10.044143  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:31:23.765172  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:31:26.865783  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:31:39.904503  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:31:53.381074  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:31:57.085749  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:32:00.331544  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:32:04.014420  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:32:22.940646  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:32:26.828050  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:32:40.312791  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:32:43.368387  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:32:46.541041  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:32:59.843729  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:33:13.419688  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:33:27.215006  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:33:41.064708  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:34:04.112012  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:34:27.174974  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:34:41.186583  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:34:59.231850  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:35:07.750834  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:35:11.539801  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:35:29.586668  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:35:32.660079  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:35:36.293720  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:35:49.391803  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:35:53.944242  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:36:02.437786  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:36:25.481878  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:36:38.541748  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:36:56.947831  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:37:10.244959  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:37:23.508296  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:37:41.958570  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:37:59.994782  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:38:18.033126  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:38:36.074553  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:38:44.203425  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:39:02.234498  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:39:06.007762  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:39:09.326774  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:39:12.427310  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:39:20.504474  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:39:23.974889  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:39:42.014503  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:39:55.701369  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:39:58.787776  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:40:12.691462  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:40:35.734643  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+E1025 11:40:38.816435  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:40:41.900882  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E1025 11:40:50.054512  2030 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)

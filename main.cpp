@@ -41,7 +41,7 @@ bool system_check() {
 	return true;
 }
 
-void writeXMLFile(cv::String filename) {
+void writeXMLFile(cv::string filename) {
 	using boost::property_tree::ptree;
 
 	ptree root;
@@ -67,7 +67,7 @@ void writeXMLFile(cv::String filename) {
 	dest.TargetPath = "/parkstatus/overtime";
 	ServerDestinations[HTTP_REQ_UPDATE_OVER] = dest;
 
-	root.add("ServerSettings.ServerAddress", "52.52.203.176");
+	root.add("ServerSettings.ServerAddress", "192.168.64.117");
 	for (const auto& data : ServerDestinations) {
 		ptree &node = root.add("ServerSettings.Request", "");
 

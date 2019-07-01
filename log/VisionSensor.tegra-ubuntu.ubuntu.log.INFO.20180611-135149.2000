@@ -1,0 +1,23 @@
+Log file created at: 2018/06/11 13:51:49
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0611 13:51:49.958058  2000 MainInterface.cpp:42] Starting the main activity
+I0611 13:51:49.959311  2000 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0611 13:51:49.959395  2000 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0611 13:51:50.069161  2000 SerialVideoReader.cpp:61] Modifying camera codec
+E0611 13:51:50.069334  2000 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0611 13:51:50.071213  2000 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0611 13:51:50.071287  2000 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0611 13:51:50.074090  2000 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0611 13:51:50.075098  2006 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0611 13:51:50.075256  2007 TCPSocketListener.cpp:70] Starting the socket listener
+I0611 13:52:10.130764  2007 TCPSocketListener.cpp:80] Connection established with 10.11.15.188
+I0611 13:52:10.138707  2007 TCPSocketListener.cpp:222] Ack: ready
+I0611 13:52:29.938918  2006 ServerNetworkHandler.cpp:86] 1 with plate number null at 2018-Jun-11 13:52:29 (1)
+I0611 13:52:29.949607  2000 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2018-Jun-11 13:52:29 by null
+I0611 13:52:36.895769  2000 ParkingSpot.cpp:87] Parking spot ID 1 has released at 2018-Jun-11 13:52:36
+I0611 13:52:40.006512  2000 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jun-11 13:52:39 by null
+I0611 13:52:44.402066  2000 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2018-Jun-11 13:52:44 by null
+I0611 13:52:47.075532  2000 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Jun-11 13:52:46
+I0611 13:52:49.325204  2000 ParkingSpot.cpp:87] Parking spot ID 1 has released at 2018-Jun-11 13:52:49
+I0611 13:53:04.644659  2000 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jun-11 13:53:04 by null

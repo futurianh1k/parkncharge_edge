@@ -1,0 +1,101 @@
+Log file created at: 2018/07/02 17:27:18
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0702 17:27:18.090616  1997 MainInterface.cpp:42] Starting the main activity
+I0702 17:27:18.091964  1997 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0702 17:27:18.092051  1997 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0702 17:27:18.211138  1997 SerialVideoReader.cpp:61] Modifying camera codec
+E0702 17:27:18.211680  1997 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0702 17:27:18.218681  1997 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0702 17:27:18.219013  1997 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0702 17:27:18.224234  1997 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0702 17:27:18.228508  2003 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0702 17:27:18.230155  2004 TCPSocketListener.cpp:70] Starting the socket listener
+I0702 17:27:22.099505  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:21 (1)
+I0702 17:27:22.102900  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:27:21 by null
+I0702 17:27:25.794139  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:27:25 by null
+I0702 17:27:32.102979  1999 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:27:31
+I0702 17:27:32.104008  1999 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:27:31
+I0702 17:27:32.104073  1999 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0702 17:27:35.794317  1998 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:27:35
+I0702 17:27:35.795313  1998 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:27:35
+I0702 17:27:35.795372  1998 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0702 17:27:41.701072  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:27:41 by null
+I0702 17:27:41.724270  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:27:41 by null
+I0702 17:27:51.701165  1999 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:27:51
+I0702 17:27:51.701587  1999 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:27:51
+I0702 17:27:51.701643  1999 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0702 17:27:51.724370  1998 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:27:51
+I0702 17:27:51.725054  1998 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:27:51
+I0702 17:27:51.725153  1998 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0702 17:28:15.448197  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:28:15 by null
+I0702 17:28:21.086725  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:28:20 by null
+I0702 17:28:24.148093  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:28:23 by null
+I0702 17:28:31.086807  1999 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:28:30
+I0702 17:28:31.087173  1999 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:28:30
+I0702 17:28:31.087224  1999 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0702 17:28:34.148119  1998 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:28:33
+I0702 17:28:34.148491  1998 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:28:33
+I0702 17:28:34.148546  1998 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0702 17:28:46.728751  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:28:46 by null
+I0702 17:28:55.971839  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:28:55 by null
+I0702 17:28:56.207505  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:28:55 by null
+I0702 17:29:05.971992  1999 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:29:05
+I0702 17:29:05.972602  1999 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:29:05
+I0702 17:29:05.972693  1999 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0702 17:29:06.207609  1998 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:29:05
+I0702 17:29:06.208086  1998 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:29:05
+I0702 17:29:06.208143  1998 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+E0702 17:29:29.509291  2003 SecureClient.cpp:54] Connect failed: Connection timed out
+I0702 17:29:29.509963  2003 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Jul-02 17:27:25 (1)
+I0702 17:30:01.238714  2004 TCPSocketListener.cpp:80] Connection established with 10.11.15.188
+I0702 17:30:01.264946  2004 TCPSocketListener.cpp:222] Ack: ready
+I0702 17:30:10.401253  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:30:10 by null
+I0702 17:30:14.172763  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:30:13 by null
+I0702 17:30:14.948026  1997 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Jul-02 17:30:14
+I0702 17:30:18.324854  1997 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2018-Jul-02 17:30:18
+I0702 17:30:35.119630  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:30:34 by null
+I0702 17:30:50.641181  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:30:50 by null
+I0702 17:30:51.349642  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:30:51 by null
+I0702 17:30:57.326957  1998 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:31:00
+I0702 17:30:57.327087  1998 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0702 17:30:59.678994  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:30:59 by null
+I0702 17:31:00.077960  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:30:59 by null
+I0702 17:31:09.679113  1999 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:31:09
+I0702 17:31:09.680074  1999 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:31:09
+I0702 17:31:09.680187  1999 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0702 17:31:10.078088  1998 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:31:09
+I0702 17:31:10.078485  1998 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:31:09
+I0702 17:31:10.078547  1998 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0702 17:31:12.927255  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:31:12 by null
+I0702 17:31:22.382983  1997 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-02 17:31:22 by null
+I0702 17:31:22.980823  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:31:22 by null
+I0702 17:31:32.383024  1999 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:31:32
+I0702 17:31:32.383414  1999 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:31:32
+I0702 17:31:32.383469  1999 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0702 17:31:32.980860  1998 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-02 17:31:32
+I0702 17:31:32.981247  1998 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-02 17:31:32
+I0702 17:31:32.981305  1998 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0702 17:31:33.179452  2004 TCPSocketListener.cpp:111] Connection closed by peer
+I0702 17:31:33.179652  2004 TCPSocketListener.cpp:82] Connection destroyed
+E0702 17:31:37.029250  2003 SecureClient.cpp:54] Connect failed: Connection timed out
+I0702 17:31:37.029510  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:31 (3)
+E0702 17:31:37.076249  2003 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0702 17:31:37.078161  2003 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0702 17:31:40.078413  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:31 (3)
+E0702 17:31:40.108554  2003 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0702 17:31:40.108675  2003 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0702 17:31:43.108822  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:31 (3)
+E0702 17:31:43.131964  2003 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0702 17:31:43.132091  2003 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0702 17:31:46.132246  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:31 (3)
+E0702 17:31:46.152654  2003 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0702 17:31:46.152794  2003 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0702 17:31:56.510768  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:31 (3)
+E0702 17:31:56.613092  2003 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0702 17:31:56.613229  2003 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0702 17:31:59.613394  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:31 (3)
+E0702 17:31:59.647060  2003 ServerNetworkHandler.cpp:248] resolve: Host not found (non-authoritative), try again later
+W0702 17:31:59.647202  2003 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0702 17:32:02.647421  2003 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-02 17:27:31 (3)
+I0702 17:32:11.028662  1997 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-02 17:32:10 by null

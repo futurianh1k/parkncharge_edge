@@ -1,0 +1,14 @@
+Log file created at: 2018/07/09 15:33:08
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0709 15:33:08.956648  2208 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0709 15:33:08.958786  2208 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0709 15:33:16.506758  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:33:25.509655  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:33:32.166175  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:33:35.546460  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:33:57.172829  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:34:07.217337  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:34:08.414718  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:34:11.076704  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+E0709 15:34:11.473994  2214 SecureClient.cpp:70] Handshake failed: wrong version number

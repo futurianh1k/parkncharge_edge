@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/VisionSensor.dir/BoardController.cpp.o"
   "CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o"
   "CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o"
+  "CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o"
   "CMakeFiles/VisionSensor.dir/IMessageData.cpp.o"
   "CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o"
   "CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o"

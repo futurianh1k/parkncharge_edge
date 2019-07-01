@@ -25,7 +25,7 @@ namespace seevider {
 		CascadeClassifier(std::string option_filename, std::shared_ptr<Settings> &settings);
 		~CascadeClassifier();
 
-		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs, int size);
+		virtual int detect(const cv::Mat &img, std::vector<cv::Rect> &locs, int size);
 
 	private:
 		cv::CascadeClassifier mClassifier;

@@ -5,9 +5,7 @@
 namespace seevider {
 	using namespace cv;
 
-	Ptr<BackgroundSubtractor> mMOG2 = createBackgroundSubtractorMOG2(100,16,false);
-	//MotionDetection::MotionDetection(Size imageSize) : mTargetSize(0, 0),  mMOG2(100, 16, false) {
-	MotionDetection::MotionDetection(Size imageSize) : mTargetSize(0, 0),  mMOG2() {
+	MotionDetection::MotionDetection(Size imageSize) : mTargetSize(0, 0),  mMOG2(100, 16, false) {
 		if (imageSize.width > 0 && imageSize.height > 0) {
 			mResize = true;
 			double ratio = round(computeImageRatio(imageSize.width, imageSize.height) / 0.01);
@@ -37,10 +35,10 @@ namespace seevider {
 		if (mResize && frame.size() != mTargetSize) {
 			Mat input;
 			resize(frame, input, mTargetSize);
-			mMOG2->apply(input, mFGMaskMOG2);
+			mMOG2(input, mFGMaskMOG2);
 		}
 		else {
-			mMOG2->apply(frame, mFGMaskMOG2);
+			mMOG2(frame, mFGMaskMOG2);
 		}
 
 		// Generate parameters for Open operation

@@ -1,0 +1,20 @@
+Log file created at: 2018/06/07 13:39:24
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0607 13:39:24.395851  2793 MainInterface.cpp:42] Starting the main activity
+I0607 13:39:24.397224  2793 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0607 13:39:24.397310  2793 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0607 13:39:24.427695  2793 SerialVideoReader.cpp:61] Modifying camera codec
+E0607 13:39:24.427916  2793 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0607 13:39:24.429189  2793 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0607 13:39:24.429298  2793 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0607 13:39:24.434492  2793 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0607 13:39:24.435909  2799 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0607 13:39:24.435941  2800 TCPSocketListener.cpp:70] Starting the socket listener
+I0607 13:39:54.841284  2800 TCPSocketListener.cpp:80] Connection established with 10.11.15.188
+I0607 13:39:54.848493  2800 TCPSocketListener.cpp:222] Ack: ready
+I0607 13:40:15.880447  2793 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jun-07 13:40:15 by null
+I0607 13:40:15.880431  2799 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jun-07 13:40:15 (1)
+I0607 13:40:18.323904  2793 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jun-07 13:40:18 by null
+I0607 13:40:21.843638  2793 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2018-Jun-07 13:40:21
+I0607 13:40:28.324041  2797 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jun-07 13:40:28

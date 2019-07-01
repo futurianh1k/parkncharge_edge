@@ -1,0 +1,56 @@
+Log file created at: 2018/07/09 15:33:08
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0709 15:33:08.798741  2208 MainInterface.cpp:42] Starting the main activity
+I0709 15:33:08.822141  2208 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0709 15:33:08.823074  2208 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0709 15:33:08.956271  2208 SerialVideoReader.cpp:61] Modifying camera codec
+E0709 15:33:08.956648  2208 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0709 15:33:08.958786  2208 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0709 15:33:08.959010  2208 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0709 15:33:08.994632  2208 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0709 15:33:09.000016  2215 TCPSocketListener.cpp:70] Starting the socket listener
+I0709 15:33:09.000253  2214 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0709 15:33:15.987198  2214 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-09 15:33:15 (1)
+I0709 15:33:15.989645  2208 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-09 15:33:15 by null
+I0709 15:33:16.053048  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:33:16.506758  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:33:25.042096  2208 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2018-Jul-09 15:33:24 by null
+I0709 15:33:25.042096  2214 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-09 15:33:24 (1)
+I0709 15:33:25.093921  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:33:25.509655  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:33:31.671363  2208 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-09 15:33:31 by null
+I0709 15:33:31.671435  2214 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Jul-09 15:33:31 (1)
+I0709 15:33:31.731788  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:33:32.166175  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:33:35.042168  2210 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-09 15:33:34
+I0709 15:33:35.043270  2210 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-09 15:33:34
+I0709 15:33:35.043331  2210 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0709 15:33:35.045405  2214 ServerNetworkHandler.cpp:86] 3 with plate number null at 2018-Jul-09 15:33:34 (3)
+I0709 15:33:35.099567  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:33:35.546460  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:33:56.749845  2208 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2018-Jul-09 15:33:56 by null
+I0709 15:33:56.749924  2214 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Jul-09 15:33:56 (1)
+I0709 15:33:56.821408  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:33:57.172829  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:34:06.749976  2209 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-09 15:34:06
+I0709 15:34:06.750929  2209 SerialVideoReader.cpp:167] Frame has found at 2018-Jul-09 15:34:06
+I0709 15:34:06.750985  2209 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0709 15:34:06.752873  2214 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Jul-09 15:34:06 (3)
+I0709 15:34:06.847126  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:34:07.217337  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:34:07.830469  2214 ServerNetworkHandler.cpp:86] 2 with plate number null at 2018-Jul-09 15:34:07 (1)
+I0709 15:34:07.837538  2208 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Jul-09 15:34:07 by null
+I0709 15:34:07.884728  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:34:08.414718  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:34:10.603142  2208 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2018-Jul-09 15:34:10
+I0709 15:34:10.603269  2214 ServerNetworkHandler.cpp:86] 4 with plate number null at 2018-Jul-09 15:34:10 (2)
+I0709 15:34:10.658634  2214 SecureClient.cpp:47] Connection OK!
+I0709 15:34:10.888224  2208 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2018-Jul-09 15:34:10 by null
+E0709 15:34:11.076704  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:34:11.077261  2214 ServerNetworkHandler.cpp:86] 2 with plate number null at 2018-Jul-09 15:34:10 (1)
+I0709 15:34:11.133352  2214 SecureClient.cpp:47] Connection OK!
+E0709 15:34:11.473994  2214 SecureClient.cpp:70] Handshake failed: wrong version number
+I0709 15:34:14.749447  2211 SerialVideoReader.cpp:159] Frame has requestd at 2018-Jul-09 15:34:20
+I0709 15:34:14.749536  2211 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0709 15:34:14.749614  2214 ServerNetworkHandler.cpp:86] 2 with plate number null at 2018-Jul-09 15:34:20 (3)

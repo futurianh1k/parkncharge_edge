@@ -25,9 +25,10 @@ namespace seevider {
 		IOccupancyDetector(std::unique_ptr<IGenericDetector> generic_detector);
 		~IOccupancyDetector();
 
-		virtual int detect(const cv::Mat &image, std::vector<cv::Rect> &locs);
+		virtual int detect(const cv::Mat &img, std::vector<cv::Rect> &locs);
 		
-	private:
+    private:
+        std::shared_ptr<Settings> mSettings = nullptr;
 	};
 }
 

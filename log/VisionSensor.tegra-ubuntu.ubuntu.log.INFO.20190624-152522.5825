@@ -1,0 +1,37 @@
+Log file created at: 2019/06/24 15:25:22
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0624 15:25:22.540400  5825 MainInterface.cpp:42] Starting the main activity
+I0624 15:25:22.542601  5825 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0624 15:25:22.542814  5825 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0624 15:25:22.761297  5825 SerialVideoReader.cpp:61] Modifying camera codec
+E0624 15:25:22.766608  5825 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0624 15:25:22.776525  5825 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0624 15:25:22.777820  5825 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0624 15:25:22.791640  5825 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0624 15:25:22.798393  5835 TCPSocketListener.cpp:70] Starting the socket listener
+I0624 15:25:22.806128  5834 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0624 15:25:28.781322  5834 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Jun-24 15:25:28 (1)
+I0624 15:25:28.785784  5829 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 15:25:28
+I0624 15:25:28.787055  5829 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 15:25:28
+I0624 15:25:28.787128  5829 ParkingSpot.cpp:171] Parking spot ID 15 has expired.
+I0624 15:25:28.789999  5825 ParkingSpot.cpp:69] Parking spot ID 15 has occupied at 2019-Jun-24 15:25:28 by null
+I0624 15:25:32.847548  5834 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Jun-24 15:25:28 (3)
+I0624 15:26:17.937270  5834 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Jun-24 15:26:17 (2)
+I0624 15:26:17.944175  5825 ParkingSpot.cpp:87] Parking spot ID 15 has released at 2019-Jun-24 15:26:17
+I0624 15:26:33.350483  5834 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Jun-24 15:26:28 (1)
+I0624 15:26:33.362140  5829 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 15:26:28
+I0624 15:26:33.368526  5829 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 15:26:28
+I0624 15:26:33.368955  5829 ParkingSpot.cpp:171] Parking spot ID 15 has expired.
+I0624 15:26:33.373265  5825 ParkingSpot.cpp:69] Parking spot ID 15 has occupied at 2019-Jun-24 15:26:28 by null
+I0624 15:26:43.273766  5834 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Jun-24 15:26:28 (3)
+I0624 15:27:31.523097  5834 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Jun-24 15:27:30 (2)
+I0624 15:27:31.530194  5825 ParkingSpot.cpp:87] Parking spot ID 15 has released at 2019-Jun-24 15:27:30
+I0624 15:30:51.952142  5834 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Jun-24 15:30:51 (1)
+I0624 15:30:51.957219  5832 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 15:30:51
+I0624 15:30:51.957530  5825 ParkingSpot.cpp:69] Parking spot ID 16 has occupied at 2019-Jun-24 15:30:51 by null
+I0624 15:30:51.958915  5832 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 15:30:51
+I0624 15:30:51.960391  5832 ParkingSpot.cpp:171] Parking spot ID 16 has expired.
+I0624 15:31:01.010910  5834 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Jun-24 15:30:51 (3)
+I0624 17:54:15.348338  5825 ParkingSpot.cpp:87] Parking spot ID 16 has released at 2019-Jun-24 17:54:15
+I0624 17:54:15.348352  5834 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Jun-24 17:54:15 (2)

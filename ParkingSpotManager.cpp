@@ -199,11 +199,18 @@ namespace seevider {
 
 		for (auto parkingSpot : mParkingSpots) {
 			cv::Scalar color;
-			if (parkingSpot.second->isOccupied()) {
-				color = CV_RGB(255, 0, 0);
+			if (parkingSpot.second->isOverstayed()) {
+				color = CV_RGB(0, 0, 255);
+                               
 			}
+                        else if(parkingSpot.second->isOccupied()){
+                                color = CV_RGB(255, 0, 0);
+                              
+                              
+                        }
 			else {
 				color = CV_RGB(0, 255, 0);
+                          
 			}
 
 			cv::rectangle(drawn, parkingSpot.second->ROI, color, 2);

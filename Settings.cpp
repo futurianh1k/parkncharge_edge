@@ -216,6 +216,20 @@ namespace seevider {
 			LPRSettingsFilename = "";
 		}
 
+		// Read the option 'CfgFile'
+		CfgFile = ptree.get<std::string>("Algorithm.CfgFile", "");
+		if (CfgFile.empty()) {
+			LOG(FATAL) << "Failed to read option \'CfgFile\'";
+            CfgFile = "";
+        }
+
+		// Read the option 'WeightFile'
+		WeightFile = ptree.get<std::string>("Algorithm.WeightFile", "");
+		if (WeightFile.empty()) {
+			LOG(FATAL) << "Failed to read option \'WeightFile\'";
+            WeightFile = "";
+        }
+
 		//-------------------------------------
 		// Read camera settings
 		//-------------------------------------
@@ -350,6 +364,12 @@ namespace seevider {
 
 		// Write the option 'LPRSettingsFilename'
 		ptree.put<std::string>("Algorithm.LPRSettingsFilename", LPRSettingsFilename);
+
+		// Write the option 'CfgFile'
+		ptree.put<std::string>("Algorithm.CfgFile", CfgFile);
+
+		// Write the option 'WeightFile'
+		ptree.put<std::string>("Algorithm.WeightFile", WeightFile);
 
 		// Write the option 'FrameWidth'
 		ptree.put<int>("Camera.FrameWidth", mFrameWidth);

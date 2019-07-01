@@ -1,0 +1,53 @@
+Log file created at: 2019/05/23 01:37:27
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0523 01:37:27.186528  2986 MainInterface.cpp:42] Starting the main activity
+I0523 01:37:27.189312  2986 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0523 01:37:27.189543  2986 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0523 01:37:27.275859  2986 SerialVideoReader.cpp:61] Modifying camera codec
+E0523 01:37:27.282097  2986 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0523 01:37:27.285015  2986 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0523 01:37:27.285358  2986 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0523 01:37:27.300743  2986 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0523 01:37:27.301875  2995 TCPSocketListener.cpp:70] Starting the socket listener
+I0523 01:37:27.302253  2994 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0523 01:37:31.572942  2986 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-May-23 01:37:31 by null
+I0523 01:37:31.573048  2990 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 01:37:31
+I0523 01:37:31.572923  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+I0523 01:37:31.574415  2990 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 01:37:31
+I0523 01:37:31.574483  2990 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0523 01:37:31.613822  2986 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-May-23 01:37:31 by null
+I0523 01:37:31.614864  2988 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 01:37:31
+I0523 01:37:31.619101  2988 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 01:37:31
+I0523 01:37:31.619174  2988 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+E0523 01:37:31.655346  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+I0523 01:37:31.655472  2989 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 01:37:31
+W0523 01:37:31.655906  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:31.655532  2986 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-May-23 01:37:31 by null
+I0523 01:37:31.657783  2989 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 01:37:31
+I0523 01:37:31.657896  2989 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0523 01:37:34.656126  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:34.721750  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:34.722368  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:37.722581  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:37.782179  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:37.782467  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:40.784260  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:40.892930  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:40.893234  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:43.893576  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:43.975322  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:43.975744  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:46.976030  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:47.066040  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:47.066330  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:50.066903  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:50.156082  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:50.156716  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:53.156930  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:53.225163  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:53.230492  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:56.230782  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)
+E0523 01:37:56.344950  2994 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 01:37:56.345496  2994 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 01:37:59.345778  2994 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 01:37:31 (1)

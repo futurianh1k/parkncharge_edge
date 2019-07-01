@@ -1,0 +1,242 @@
+Log file created at: 2019/06/24 12:41:01
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0624 12:41:01.059747  2750 MainInterface.cpp:42] Starting the main activity
+I0624 12:41:01.068460  2750 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0624 12:41:01.068783  2750 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0624 12:41:01.224164  2750 SerialVideoReader.cpp:61] Modifying camera codec
+E0624 12:41:01.229084  2750 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0624 12:41:01.233712  2750 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0624 12:41:01.233805  2750 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0624 12:41:01.251114  2750 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0624 12:41:01.255607  2759 TCPSocketListener.cpp:70] Starting the socket listener
+I0624 12:41:01.258581  2758 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0624 12:41:11.838148  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+I0624 12:41:11.844660  2755 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 12:41:11
+I0624 12:41:11.846393  2755 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 12:41:11
+I0624 12:41:11.846513  2755 ParkingSpot.cpp:171] Parking spot ID 17 has expired.
+I0624 12:41:11.850540  2750 ParkingSpot.cpp:69] Parking spot ID 17 has occupied at 2019-Jun-24 12:41:11 by null
+W0624 12:41:12.092809  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:15.092989  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:15.235342  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:18.235554  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:18.365700  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:20.797034  2756 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 12:41:20
+I0624 12:41:20.798830  2756 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 12:41:20
+I0624 12:41:20.798933  2756 ParkingSpot.cpp:171] Parking spot ID 16 has expired.
+I0624 12:41:20.802247  2750 ParkingSpot.cpp:69] Parking spot ID 16 has occupied at 2019-Jun-24 12:41:20 by null
+I0624 12:41:21.365875  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:21.441956  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:21.567477  2753 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 12:41:21
+I0624 12:41:21.568840  2753 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 12:41:21
+I0624 12:41:21.568910  2753 ParkingSpot.cpp:171] Parking spot ID 15 has expired.
+I0624 12:41:21.571666  2750 ParkingSpot.cpp:69] Parking spot ID 15 has occupied at 2019-Jun-24 12:41:21 by null
+I0624 12:41:24.442284  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:24.570871  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:27.571063  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:27.728451  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:30.732560  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:30.826190  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:33.826377  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:33.912644  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:36.912964  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:37.006871  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:40.007076  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:40.128837  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:43.129237  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:43.217612  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:45.768324  2754 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 12:41:45
+I0624 12:41:45.770349  2754 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 12:41:45
+I0624 12:41:45.770458  2754 ParkingSpot.cpp:171] Parking spot ID 14 has expired.
+I0624 12:41:45.776147  2750 ParkingSpot.cpp:69] Parking spot ID 14 has occupied at 2019-Jun-24 12:41:45 by null
+I0624 12:41:46.217980  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:46.338384  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:49.338558  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:49.430521  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:52.430830  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:52.492476  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:55.492745  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:55.615036  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:41:58.615221  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:41:58.726158  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:01.726372  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:01.793917  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:04.794450  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:04.946013  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:07.946213  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:08.066182  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:09.831506  2752 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 12:42:09
+I0624 12:42:09.832892  2752 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 12:42:09
+I0624 12:42:09.832963  2752 ParkingSpot.cpp:171] Parking spot ID 13 has expired.
+I0624 12:42:09.835842  2750 ParkingSpot.cpp:69] Parking spot ID 13 has occupied at 2019-Jun-24 12:42:09 by null
+I0624 12:42:11.072518  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:11.185313  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:14.185492  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:14.287884  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:17.288072  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:17.385637  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:20.386610  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:20.473491  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:23.475867  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:23.636175  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:26.636351  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:26.758049  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:29.758261  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:30.871074  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:33.871264  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:33.989868  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:36.990056  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:37.091251  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:40.091780  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:40.178766  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:43.179118  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:44.236783  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:47.236958  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:47.296972  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:50.297227  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:50.415814  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:53.416142  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:54.542078  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:42:57.542802  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:42:57.655825  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:00.655992  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:01.768357  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:04.768661  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:04.876945  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:07.877326  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:08.980677  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:11.980866  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:12.090791  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:15.091543  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:15.157367  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:18.157708  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:19.222772  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:22.223359  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:22.317903  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:25.319689  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:25.437361  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:28.437763  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:29.577039  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:32.577304  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:32.653640  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:35.328228  2750 ParkingSpot.cpp:87] Parking spot ID 15 has released at 2019-Jun-24 12:43:34
+I0624 12:43:35.653913  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:35.756186  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:38.756597  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:38.855926  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:41.856210  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:42.917908  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:45.918243  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:46.981707  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:49.982043  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:50.048943  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:53.050657  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:53.153733  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:43:53.176721  2750 ParkingSpot.cpp:69] Parking spot ID 15 has occupied at 2019-Jun-24 12:43:52 by null
+I0624 12:43:53.176761  2753 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 12:43:52
+I0624 12:43:53.178087  2753 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 12:43:52
+I0624 12:43:53.178169  2753 ParkingSpot.cpp:171] Parking spot ID 15 has expired.
+I0624 12:43:56.154125  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:43:57.244786  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:00.245159  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:00.320236  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:03.320639  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:03.413238  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:06.413642  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:06.507905  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:09.175746  2750 ParkingSpot.cpp:87] Parking spot ID 17 has released at 2019-Jun-24 12:44:08
+I0624 12:44:09.508342  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:10.591079  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:13.591315  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:13.695878  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:16.696637  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:16.758275  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:19.758703  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:19.847568  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:22.848449  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:22.921530  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:25.922374  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:26.071879  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:29.075523  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:30.181020  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:33.183019  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:33.287245  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:36.287798  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:36.447068  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:39.447391  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:39.547181  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:39.979704  2755 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 12:44:39
+I0624 12:44:39.980793  2755 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 12:44:39
+I0624 12:44:39.980859  2755 ParkingSpot.cpp:171] Parking spot ID 17 has expired.
+I0624 12:44:40.000921  2750 ParkingSpot.cpp:69] Parking spot ID 17 has occupied at 2019-Jun-24 12:44:39 by null
+I0624 12:44:42.547510  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:42.615451  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:45.619383  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:46.730841  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:49.731230  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:49.786105  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:52.786895  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:52.930903  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:55.931171  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:44:56.024828  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:44:59.025228  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:00.110800  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:03.111466  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:04.244580  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:07.249472  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:08.355146  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:11.355669  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:11.449226  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:14.449625  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:15.522893  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:18.523339  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:18.606221  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:21.606577  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:21.671664  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:24.671912  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:25.740555  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:28.741011  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:28.836563  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:31.838001  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:32.934999  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:35.935446  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:36.004976  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:39.005249  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:39.104584  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:42.106040  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:42.202917  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:45.204871  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:45.299768  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:48.300199  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:48.419224  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:51.419638  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:51.500802  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:54.501061  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:55.579099  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:45:58.579510  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:45:59.644259  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:02.644749  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:02.715617  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:05.716037  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:06.789225  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:09.789664  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:10.857427  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:13.857832  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:13.918897  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:16.919191  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:16.979605  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:19.981292  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:20.067199  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:23.067718  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:23.137935  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:26.138170  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:27.215657  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:30.215911  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:31.308434  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:34.308840  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:35.406616  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:38.406882  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:39.502885  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:42.503356  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)
+W0624 12:46:43.567443  2758 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0624 12:46:46.568616  2758 ServerNetworkHandler.cpp:86] 17 with plate number null at 2019-Jun-24 12:41:11 (1)

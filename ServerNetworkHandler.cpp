@@ -113,16 +113,19 @@ bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) con
 	root.put<std::string>("timeZone", mSensorInfo->TimeZone);
 	write_json(ss, root);
 
-	//std::ofstream fout("sync_upload.txt");
-	//fout << ss.str() << std::endl;
-	//fout.close();
+	std::ofstream fout("sync_upload.txt");
+	fout << ss.str() << std::endl;
+	fout.close();
 
+/*
 	if (mSecureConnection.compare("none") == 0) {
 		return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
 	}
 	else {
 		return sendSecureHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
 	}
+*/
+	return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
 }
 
 bool ServerNetworkHandler::sendHTTP(const std::string method,
@@ -134,7 +137,7 @@ bool ServerNetworkHandler::sendHTTP(const std::string method,
 
 		// Get a list of endpoints corresponding to the server name.
 		tcp::resolver resolver(io_service);
-		tcp::resolver::query query(mServerAddr, "http");
+		tcp::resolver::query query(mServerAddr, "20180");
 		tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
 		tcp::resolver::iterator end;
 
@@ -233,7 +236,7 @@ bool ServerNetworkHandler::sendSecureHTTP(const std::string method,
 
 		// Get a list of endpoints corresponding to the server name.
 		tcp::resolver resolver(io_service);
-		tcp::resolver::query query(mServerAddr, "https");	// or default secure port 443
+		tcp::resolver::query query(mServerAddr, "20180");	// or default secure port 443
 		tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
 
 		boost::asio::ssl::context ctx(boost::asio::ssl::context::tlsv11);
@@ -266,6 +269,9 @@ std::string ServerNetworkHandler::makeHTTPMessage(const std::string &method,
 	request_stream << "Connection: close\r\n\r\n";  //NOTE THE Double line feed
 	request_stream << contents;
 
+	//LOG(FATAL) << "Request stream" << mServerAddr;
+	//LOG(FATAL) << "Request stream" << targetAddr;
+
 	return request_stream.str();
 }
 
@@ -296,6 +302,9 @@ bool ServerNetworkHandler::loadSettings(const std::string filename) {
 			mServerDestinations[dest.RequestType] = dest;
 		}
 	}
+
+	//LOG(FATAL) << "Request stream" << mServerAddr;
+
 
 	return true;
 }

@@ -1,0 +1,11 @@
+Log file created at: 2018/06/07 13:44:34
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0607 13:44:34.386127  3027 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0607 13:44:34.388626  3027 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0607 13:46:45.880700  3033 SecureClient.cpp:54] Connect failed: Connection timed out
+W0607 13:47:02.988535  3034 ParkingSpot.cpp:92] Failed to update parking spot id 1. To update a parking spot, parking timer must be disabled.
+W0607 13:47:02.988803  3034 ParkingSpot.cpp:92] Failed to update parking spot id 2. To update a parking spot, parking timer must be disabled.
+W0607 13:47:03.575076  3034 ParkingSpot.cpp:92] Failed to update parking spot id 1. To update a parking spot, parking timer must be disabled.
+W0607 13:47:03.575350  3034 ParkingSpot.cpp:92] Failed to update parking spot id 2. To update a parking spot, parking timer must be disabled.
+E0607 13:48:53.240727  3033 SecureClient.cpp:54] Connect failed: Connection timed out
