@@ -1,0 +1,36 @@
+Log file created at: 2019/06/25 00:04:31
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0625 00:04:31.690201  5675 MainInterface.cpp:42] Starting the main activity
+I0625 00:04:31.691511  5675 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0625 00:04:31.691601  5675 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0625 00:04:31.821079  5675 SerialVideoReader.cpp:61] Modifying camera codec
+E0625 00:04:31.821303  5675 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0625 00:04:31.822989  5675 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0625 00:04:31.823103  5675 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0625 00:04:31.859486  5675 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0625 00:04:31.861848  5681 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0625 00:04:31.866835  5682 TCPSocketListener.cpp:70] Starting the socket listener
+I0625 00:04:34.868798  5675 ParkingSpot.cpp:109] (TEST!!)1
+I0625 00:04:39.432736  5675 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 00:04:44.891216  5675 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 00:04:45.080554  5675 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 00:04:45.246440  5675 ParkingSpot.cpp:109] (TEST!!)-3
+I0625 00:04:45.420236  5675 ParkingSpot.cpp:109] (TEST!!)-2
+I0625 00:04:45.618815  5675 ParkingSpot.cpp:109] (TEST!!)-1
+I0625 00:04:45.786712  5675 ParkingSpot.cpp:109] (TEST!!)0
+I0625 00:04:45.981338  5675 ParkingSpot.cpp:109] (TEST!!)1
+I0625 00:04:46.530488  5675 ParkingSpot.cpp:109] (TEST!!)0
+I0625 00:04:46.720896  5675 ParkingSpot.cpp:109] (TEST!!)1
+I0625 00:04:46.918481  5675 ParkingSpot.cpp:109] (TEST!!)2
+I0625 00:04:47.119118  5675 ParkingSpot.cpp:109] (TEST!!)3
+I0625 00:04:47.319842  5675 ParkingSpot.cpp:109] (TEST!!)4
+I0625 00:04:47.514948  5675 ParkingSpot.cpp:109] (TEST!!)5
+I0625 00:04:47.721302  5675 ParkingSpot.cpp:109] (TEST!!)6
+I0625 00:04:47.923421  5681 ServerNetworkHandler.cpp:86] 21 with plate number null at 2019-Jun-25 00:04:47 (1)
+I0625 00:04:47.925702  5675 ParkingSpot.cpp:68] Parking spot ID 21 has occupied at 2019-Jun-25 00:04:47 by null
+I0625 00:04:47.927451  5676 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-25 00:04:47
+I0625 00:04:47.928661  5676 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-25 00:04:47
+I0625 00:04:47.928774  5676 ParkingSpot.cpp:172] Parking spot ID 21 has expired.
+I0625 00:30:02.080263  5675 ParkingSpot.cpp:86] Parking spot ID 21 has released at 2019-Jun-25 00:30:01
+I0625 00:30:58.453665  5675 ParkingSpot.cpp:109] (TEST!!)-5

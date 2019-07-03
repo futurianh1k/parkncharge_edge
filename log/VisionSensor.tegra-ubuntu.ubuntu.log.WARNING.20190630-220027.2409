@@ -1,0 +1,5 @@
+Log file created at: 2019/06/30 22:00:27
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0630 22:00:27.891325  2409 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0630 22:00:27.892278  2409 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG

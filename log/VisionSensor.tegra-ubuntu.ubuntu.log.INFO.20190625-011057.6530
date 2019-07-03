@@ -1,0 +1,88 @@
+Log file created at: 2019/06/25 01:10:57
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0625 01:10:57.884692  6530 MainInterface.cpp:42] Starting the main activity
+I0625 01:10:57.886018  6530 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0625 01:10:57.886107  6530 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0625 01:10:58.016566  6530 SerialVideoReader.cpp:61] Modifying camera codec
+E0625 01:10:58.016995  6530 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0625 01:10:58.019524  6530 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0625 01:10:58.019771  6530 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0625 01:10:58.053069  6530 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0625 01:10:58.055932  6536 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0625 01:10:58.056496  6537 TCPSocketListener.cpp:70] Starting the socket listener
+I0625 01:11:08.367884  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:08.545941  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:13.524384  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:13.700790  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:11:18.711298  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:18.726718  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:18.900799  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:11:18.915634  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:11:19.102329  6530 ParkingSpot.cpp:109] (TEST!!)-3
+I0625 01:11:19.109760  6530 ParkingSpot.cpp:109] (TEST!!)-3
+I0625 01:11:19.278856  6530 ParkingSpot.cpp:109] (TEST!!)-2
+I0625 01:11:19.289384  6530 ParkingSpot.cpp:109] (TEST!!)-2
+I0625 01:11:19.466439  6530 ParkingSpot.cpp:109] (TEST!!)-1
+I0625 01:11:19.473464  6530 ParkingSpot.cpp:109] (TEST!!)-1
+I0625 01:11:19.640527  6530 ParkingSpot.cpp:109] (TEST!!)0
+I0625 01:11:19.813279  6530 ParkingSpot.cpp:109] (TEST!!)-1
+I0625 01:11:19.819638  6530 ParkingSpot.cpp:109] (TEST!!)1
+I0625 01:11:20.017894  6530 ParkingSpot.cpp:109] (TEST!!)2
+I0625 01:11:20.180055  6530 ParkingSpot.cpp:109] (TEST!!)3
+I0625 01:11:20.341356  6530 ParkingSpot.cpp:109] (TEST!!)4
+I0625 01:11:20.521812  6530 ParkingSpot.cpp:109] (TEST!!)5
+I0625 01:11:20.693416  6530 ParkingSpot.cpp:109] (TEST!!)6
+I0625 01:11:29.110388  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:29.308399  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:11:29.355077  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:29.692955  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:11:29.864754  6530 ParkingSpot.cpp:109] (TEST!!)-3
+I0625 01:11:50.899910  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:51.835922  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:54.832805  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:11:55.001130  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:12:01.277962  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:12:09.128698  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:12:10.146643  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:12:10.339857  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:12:10.675223  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:12:10.872496  6530 ParkingSpot.cpp:109] (TEST!!)-3
+I0625 01:12:11.067062  6530 ParkingSpot.cpp:109] (TEST!!)-2
+I0625 01:12:11.226157  6530 ParkingSpot.cpp:109] (TEST!!)-1
+I0625 01:12:11.409623  6530 ParkingSpot.cpp:109] (TEST!!)0
+I0625 01:12:11.593559  6530 ParkingSpot.cpp:109] (TEST!!)1
+I0625 01:12:12.494850  6530 ParkingSpot.cpp:109] (TEST!!)-2
+I0625 01:12:12.663578  6530 ParkingSpot.cpp:109] (TEST!!)-1
+I0625 01:12:12.849408  6530 ParkingSpot.cpp:109] (TEST!!)0
+I0625 01:12:13.008587  6530 ParkingSpot.cpp:109] (TEST!!)1
+I0625 01:12:13.193146  6530 ParkingSpot.cpp:109] (TEST!!)2
+I0625 01:12:13.357475  6530 ParkingSpot.cpp:109] (TEST!!)3
+I0625 01:12:13.545635  6530 ParkingSpot.cpp:109] (TEST!!)4
+I0625 01:12:13.742955  6530 ParkingSpot.cpp:109] (TEST!!)5
+I0625 01:12:13.942371  6530 ParkingSpot.cpp:109] (TEST!!)6
+I0625 01:12:14.133425  6536 ServerNetworkHandler.cpp:86] 20 with plate number null at 2019-Jun-25 01:12:13 (1)
+I0625 01:12:14.135542  6530 ParkingSpot.cpp:68] Parking spot ID 20 has occupied at 2019-Jun-25 01:12:13 by null
+I0625 01:12:19.997330  6530 ParkingSpot.cpp:109] (TEST!!)-5
+I0625 01:12:20.177640  6530 ParkingSpot.cpp:109] (TEST!!)-4
+I0625 01:12:20.344575  6530 ParkingSpot.cpp:109] (TEST!!)-3
+I0625 01:12:20.529470  6530 ParkingSpot.cpp:109] (TEST!!)-2
+I0625 01:12:20.696126  6530 ParkingSpot.cpp:109] (TEST!!)-1
+I0625 01:12:20.878388  6530 ParkingSpot.cpp:109] (TEST!!)0
+I0625 01:12:21.044863  6530 ParkingSpot.cpp:109] (TEST!!)1
+I0625 01:12:21.234401  6530 ParkingSpot.cpp:109] (TEST!!)2
+I0625 01:12:21.444020  6530 ParkingSpot.cpp:109] (TEST!!)3
+I0625 01:12:21.634853  6530 ParkingSpot.cpp:109] (TEST!!)4
+I0625 01:12:21.819277  6530 ParkingSpot.cpp:109] (TEST!!)5
+I0625 01:12:21.991344  6530 ParkingSpot.cpp:109] (TEST!!)6
+I0625 01:12:22.156044  6530 ParkingSpot.cpp:68] Parking spot ID 21 has occupied at 2019-Jun-25 01:12:21 by null
+I0625 01:12:22.156092  6536 ServerNetworkHandler.cpp:86] 21 with plate number null at 2019-Jun-25 01:12:21 (1)
+I0625 01:12:24.135624  6532 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-25 01:12:23
+I0625 01:12:24.136581  6532 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-25 01:12:23
+I0625 01:12:24.136641  6532 ParkingSpot.cpp:172] Parking spot ID 20 has expired.
+I0625 01:12:24.138569  6536 ServerNetworkHandler.cpp:86] 20 with plate number null at 2019-Jun-25 01:12:23 (3)
+I0625 01:12:32.156131  6531 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-25 01:12:31
+I0625 01:12:32.158210  6531 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-25 01:12:31
+I0625 01:12:32.158293  6531 ParkingSpot.cpp:172] Parking spot ID 21 has expired.
+I0625 01:12:32.160868  6536 ServerNetworkHandler.cpp:86] 21 with plate number null at 2019-Jun-25 01:12:31 (3)
+I0625 01:13:06.106160  6530 ParkingSpot.cpp:86] Parking spot ID 20 has released at 2019-Jun-25 01:13:05

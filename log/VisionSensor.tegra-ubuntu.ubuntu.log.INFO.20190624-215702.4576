@@ -1,0 +1,144 @@
+Log file created at: 2019/06/24 21:57:02
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0624 21:57:02.967897  4576 MainInterface.cpp:42] Starting the main activity
+I0624 21:57:02.969250  4576 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0624 21:57:02.969341  4576 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0624 21:57:03.096205  4576 SerialVideoReader.cpp:61] Modifying camera codec
+E0624 21:57:03.096452  4576 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0624 21:57:03.097367  4576 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0624 21:57:03.097448  4576 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0624 21:57:03.135651  4576 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0624 21:57:03.138324  4582 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0624 21:57:03.139158  4583 TCPSocketListener.cpp:70] Starting the socket listener
+I0624 21:57:08.962514  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 21:57:08 by null
+I0624 21:57:08.962539  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:57:08 (1)
+I0624 21:57:08.994575  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:57:08.999819  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:57:18.962590  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 21:57:18
+I0624 21:57:18.963575  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 21:57:18
+I0624 21:57:18.963634  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 21:57:18.965469  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:57:18 (3)
+I0624 21:57:18.998319  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:57:19.001235  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:57:21.754441  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:57:21 (2)
+I0624 21:57:21.755486  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 21:57:21
+I0624 21:57:21.792639  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:57:21.794428  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:57:38.061803  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 21:57:37 by null
+I0624 21:57:38.061803  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:57:37 (1)
+I0624 21:57:38.098979  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:57:38.101408  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:57:41.817306  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 21:57:41
+I0624 21:57:41.817314  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:57:41 (2)
+I0624 21:57:41.862057  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:57:41.866158  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:57:56.739354  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 21:57:56 by null
+I0624 21:57:56.739403  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:57:56 (1)
+I0624 21:57:56.778245  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:57:56.780581  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:58:06.739424  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 21:58:06
+I0624 21:58:06.739786  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 21:58:06
+I0624 21:58:06.739840  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 21:58:06.741104  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:58:06 (3)
+I0624 21:58:06.780380  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:58:06.784906  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:58:26.666280  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 21:58:26
+I0624 21:58:26.666313  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:58:26 (2)
+I0624 21:58:26.712076  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:58:26.716722  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:58:45.904875  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:58:45 (1)
+I0624 21:58:45.905714  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 21:58:45 by null
+I0624 21:58:45.935966  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:58:45.939102  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:58:55.905761  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 21:58:55
+I0624 21:58:55.906129  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 21:58:55
+I0624 21:58:55.906183  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 21:58:55.907568  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:58:55 (3)
+I0624 21:58:55.946875  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:58:55.949280  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:59:03.514050  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:59:03 (2)
+I0624 21:59:03.514453  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 21:59:03
+I0624 21:59:03.556998  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:59:03.561221  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:59:26.081117  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:59:25 (1)
+I0624 21:59:26.085618  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 21:59:25 by null
+I0624 21:59:26.120415  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:59:26.126231  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:59:36.085745  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 21:59:35
+I0624 21:59:36.086490  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 21:59:35
+I0624 21:59:36.086581  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 21:59:36.088873  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:59:35 (3)
+I0624 21:59:36.125531  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:59:36.130007  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 21:59:56.863309  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 21:59:56
+I0624 21:59:56.863400  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 21:59:56 (2)
+I0624 21:59:56.896761  4582 SecureClient.cpp:47] Connection OK!
+E0624 21:59:56.898968  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:01:14.986266  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:01:14 (1)
+I0624 22:01:14.986595  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 22:01:14 by null
+I0624 22:01:15.023514  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:01:15.025492  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:01:24.986630  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 22:01:24
+I0624 22:01:24.987005  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 22:01:24
+I0624 22:01:24.987057  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 22:01:24.988790  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:01:24 (3)
+I0624 22:01:25.017395  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:01:25.019790  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:01:31.209017  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 22:01:31
+I0624 22:01:31.209034  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:01:31 (2)
+I0624 22:01:31.250062  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:01:31.252435  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:01:54.530174  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 22:01:54 by null
+I0624 22:01:54.530226  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:01:54 (1)
+I0624 22:01:54.572738  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:01:54.574821  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:02:04.530288  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 22:02:04
+I0624 22:02:04.531158  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 22:02:04
+I0624 22:02:04.531261  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 22:02:04.534027  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:02:04 (3)
+I0624 22:02:05.598326  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:02:05.600548  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:02:15.574275  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 22:02:15
+I0624 22:02:15.574307  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:02:15 (2)
+I0624 22:02:15.609411  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:02:15.623208  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:03:09.456554  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 22:03:09 by null
+I0624 22:03:09.456627  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:03:09 (1)
+I0624 22:03:09.502643  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:03:09.504873  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:03:19.456727  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 22:03:19
+I0624 22:03:19.457515  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 22:03:19
+I0624 22:03:19.457630  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 22:03:19.460858  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:03:19 (3)
+I0624 22:03:19.531235  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:03:19.561199  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:03:58.030937  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:03:57 (2)
+I0624 22:03:58.031098  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 22:03:57
+I0624 22:03:58.080519  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:03:58.083763  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:04:20.208252  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 22:04:20 by null
+I0624 22:04:20.208304  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:04:20 (1)
+I0624 22:04:20.248868  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:04:20.251693  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:04:30.208288  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 22:04:30
+I0624 22:04:30.208850  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 22:04:30
+I0624 22:04:30.208911  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 22:04:30.210266  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:04:30 (3)
+I0624 22:04:30.264923  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:04:30.267562  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:06:42.294397  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:06:42 (2)
+I0624 22:06:42.294576  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 22:06:42
+I0624 22:06:42.331975  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:06:42.334444  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:06:49.690330  4576 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-24 22:06:49 by null
+I0624 22:06:49.690410  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:06:49 (1)
+I0624 22:06:49.735803  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:06:49.739255  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:06:59.690338  4580 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 22:06:59
+I0624 22:06:59.690691  4580 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 22:06:59
+I0624 22:06:59.690744  4580 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0624 22:06:59.691996  4582 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-24 22:06:59 (3)
+I0624 22:06:59.721791  4582 SecureClient.cpp:47] Connection OK!
+E0624 22:06:59.724278  4582 SecureClient.cpp:70] Handshake failed: wrong version number
+I0624 22:08:13.703676  4576 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-Jun-24 22:08:13

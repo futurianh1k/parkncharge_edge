@@ -1,0 +1,14 @@
+Log file created at: 2019/06/25 01:13:19
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0625 01:13:19.133172  6563 MainInterface.cpp:42] Starting the main activity
+I0625 01:13:19.134471  6563 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0625 01:13:19.134554  6563 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0625 01:13:19.266093  6563 SerialVideoReader.cpp:61] Modifying camera codec
+E0625 01:13:19.266273  6563 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0625 01:13:19.267161  6563 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0625 01:13:19.267263  6563 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0625 01:13:19.306107  6563 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0625 01:13:19.309633  6569 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0625 01:13:19.310498  6570 TCPSocketListener.cpp:70] Starting the socket listener
+I0625 01:13:58.464778  6563 ParkingSpot.cpp:109] (TEST!!)-5

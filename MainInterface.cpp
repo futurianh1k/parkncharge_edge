@@ -58,7 +58,7 @@ MainInterface::MainInterface() :
 	mServMsgQueue = std::make_shared<MessageQueue>();
 	// Open the connected camera
 	//mVideoReader->open("..\\..\\Video\\20160527120257(fixed).avi");
-	mVideoReader->open(0);
+	mVideoReader->open(1);
     //--------------------------------
 	// Start the resource managing threads.
 	//--------------------------------

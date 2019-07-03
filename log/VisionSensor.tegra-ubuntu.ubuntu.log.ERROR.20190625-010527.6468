@@ -1,0 +1,6 @@
+Log file created at: 2019/06/25 01:05:27
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0625 01:05:27.934767  6468 ParkingSpotManager.cpp:116] conversion of data to type "i" failed
+E0625 01:05:28.059005  6468 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0625 01:05:28.059475  6468 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG

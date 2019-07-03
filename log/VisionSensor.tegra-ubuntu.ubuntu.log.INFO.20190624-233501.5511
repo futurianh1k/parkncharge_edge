@@ -1,0 +1,138 @@
+Log file created at: 2019/06/24 23:35:01
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0624 23:35:01.862512  5511 MainInterface.cpp:42] Starting the main activity
+I0624 23:35:01.863831  5511 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0624 23:35:01.863920  5511 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0624 23:35:02.001847  5511 SerialVideoReader.cpp:61] Modifying camera codec
+E0624 23:35:02.002532  5511 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0624 23:35:02.007043  5511 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0624 23:35:02.007365  5511 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0624 23:35:02.038027  5511 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0624 23:35:02.044996  5517 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0624 23:35:02.046916  5518 TCPSocketListener.cpp:70] Starting the socket listener
+I0624 23:36:31.536545  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:31.732120  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:31.917230  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:32.081514  5511 ParkingSpot.cpp:109] (TEST!!)-2
+I0624 23:36:32.253177  5511 ParkingSpot.cpp:109] (TEST!!)-1
+I0624 23:36:32.442862  5511 ParkingSpot.cpp:109] (TEST!!)0
+I0624 23:36:32.608606  5511 ParkingSpot.cpp:109] (TEST!!)1
+I0624 23:36:32.808380  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:36:33.335942  5511 ParkingSpot.cpp:109] (TEST!!)1
+I0624 23:36:34.084511  5511 ParkingSpot.cpp:109] (TEST!!)-1
+I0624 23:36:38.447790  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:38.633986  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:39.127981  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:39.526237  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:39.893898  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:40.214848  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:40.236428  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:40.435209  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:40.593600  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:40.610805  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:40.763793  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:40.804366  5511 ParkingSpot.cpp:109] (TEST!!)-2
+I0624 23:36:40.959874  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:40.976085  5511 ParkingSpot.cpp:109] (TEST!!)-1
+I0624 23:36:42.134783  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:42.301934  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:42.501227  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:43.024292  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:43.186519  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:44.643275  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:45.759074  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:45.931821  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:47.347333  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:47.523340  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:47.716622  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:47.895031  5511 ParkingSpot.cpp:109] (TEST!!)-2
+I0624 23:36:48.098431  5511 ParkingSpot.cpp:109] (TEST!!)-1
+I0624 23:36:48.273470  5511 ParkingSpot.cpp:109] (TEST!!)0
+I0624 23:36:48.468700  5511 ParkingSpot.cpp:109] (TEST!!)1
+I0624 23:36:48.632588  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:48.651652  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:36:48.815024  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:36:49.010790  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:36:49.375596  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:36:49.579020  5511 ParkingSpot.cpp:109] (TEST!!)5
+I0624 23:36:49.734347  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:49.892163  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:50.085258  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:50.268429  5511 ParkingSpot.cpp:109] (TEST!!)-2
+I0624 23:36:50.471359  5511 ParkingSpot.cpp:109] (TEST!!)-1
+I0624 23:36:50.649008  5511 ParkingSpot.cpp:109] (TEST!!)0
+I0624 23:36:50.816709  5511 ParkingSpot.cpp:109] (TEST!!)1
+I0624 23:36:51.014822  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:36:51.181417  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:36:51.363767  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:36:51.589303  5511 ParkingSpot.cpp:109] (TEST!!)5
+I0624 23:36:51.767830  5511 ParkingSpot.cpp:109] (TEST!!)6
+I0624 23:36:51.938587  5511 ParkingSpot.cpp:68] Parking spot ID 19 has occupied at 2019-Jun-24 23:36:51 by null
+I0624 23:36:51.938616  5517 ServerNetworkHandler.cpp:86] 19 with plate number null at 2019-Jun-24 23:36:51 (1)
+I0624 23:36:53.716406  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:54.311228  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:55.227599  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:36:55.418241  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:36:55.623363  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:36:55.804432  5511 ParkingSpot.cpp:109] (TEST!!)-2
+I0624 23:36:56.005173  5511 ParkingSpot.cpp:109] (TEST!!)-1
+I0624 23:36:56.188380  5511 ParkingSpot.cpp:109] (TEST!!)0
+I0624 23:36:56.385905  5511 ParkingSpot.cpp:109] (TEST!!)1
+I0624 23:36:56.583850  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:36:56.783828  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:36:56.992486  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:36:57.188824  5511 ParkingSpot.cpp:109] (TEST!!)5
+I0624 23:36:57.368456  5511 ParkingSpot.cpp:109] (TEST!!)6
+I0624 23:36:57.563561  5511 ParkingSpot.cpp:68] Parking spot ID 21 has occupied at 2019-Jun-24 23:36:57 by null
+I0624 23:37:01.939020  5514 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 23:37:01
+I0624 23:37:01.940954  5514 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 23:37:01
+I0624 23:37:01.941059  5514 ParkingSpot.cpp:172] Parking spot ID 19 has expired.
+I0624 23:37:03.234987  5517 ServerNetworkHandler.cpp:86] 21 with plate number null at 2019-Jun-24 23:36:57 (1)
+I0624 23:37:07.563678  5512 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-24 23:37:07
+I0624 23:37:07.564977  5512 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-24 23:37:07
+I0624 23:37:07.565050  5512 ParkingSpot.cpp:172] Parking spot ID 21 has expired.
+I0624 23:37:16.362913  5517 ServerNetworkHandler.cpp:86] 19 with plate number null at 2019-Jun-24 23:37:01 (3)
+I0624 23:37:34.570432  5517 ServerNetworkHandler.cpp:86] 21 with plate number null at 2019-Jun-24 23:37:07 (3)
+I0624 23:38:44.972203  5511 ParkingSpot.cpp:86] Parking spot ID 21 has released at 2019-Jun-24 23:38:44
+I0624 23:38:44.972285  5517 ServerNetworkHandler.cpp:86] 21 with plate number null at 2019-Jun-24 23:38:44 (2)
+I0624 23:39:02.714613  5511 ParkingSpot.cpp:109] (TEST!!)-5
+I0624 23:39:02.910223  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:39:03.310402  5511 ParkingSpot.cpp:109] (TEST!!)-4
+I0624 23:39:03.515528  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:39:03.907336  5511 ParkingSpot.cpp:109] (TEST!!)-3
+I0624 23:39:04.075238  5511 ParkingSpot.cpp:109] (TEST!!)-2
+I0624 23:39:04.262939  5511 ParkingSpot.cpp:109] (TEST!!)-1
+I0624 23:39:04.428813  5511 ParkingSpot.cpp:109] (TEST!!)0
+I0624 23:39:04.621071  5511 ParkingSpot.cpp:109] (TEST!!)1
+I0624 23:39:04.801914  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:39:04.966787  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:39:05.556579  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:39:05.931731  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:39:06.096323  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:39:06.285557  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:39:06.452983  5511 ParkingSpot.cpp:86] Parking spot ID 19 has released at 2019-Jun-24 23:39:06
+I0624 23:39:06.453083  5517 ServerNetworkHandler.cpp:86] 19 with plate number null at 2019-Jun-24 23:39:06 (2)
+I0624 23:39:06.482007  5511 ParkingSpot.cpp:109] (TEST!!)5
+I0624 23:39:07.019407  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:39:07.405669  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:39:08.094533  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:39:08.786005  5511 ParkingSpot.cpp:109] (TEST!!)0
+I0624 23:39:08.972601  5511 ParkingSpot.cpp:109] (TEST!!)1
+I0624 23:39:09.137120  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:39:09.325748  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:39:09.843369  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:39:10.009538  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:39:10.531852  5511 ParkingSpot.cpp:109] (TEST!!)2
+I0624 23:39:10.728577  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:39:10.926981  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:39:11.310375  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:39:11.887712  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:39:12.282946  5511 ParkingSpot.cpp:109] (TEST!!)3
+I0624 23:39:12.482345  5511 ParkingSpot.cpp:109] (TEST!!)4
+I0624 23:39:12.650816  5511 ParkingSpot.cpp:109] (TEST!!)5
+I0624 23:39:13.044828  5511 ParkingSpot.cpp:109] (TEST!!)5
+I0624 23:39:13.386114  5511 ParkingSpot.cpp:109] (TEST!!)5
+I0624 23:39:13.587882  5511 ParkingSpot.cpp:109] (TEST!!)6
+I0624 23:39:13.989032  5511 ParkingSpot.cpp:109] (TEST!!)6
+I0624 23:39:15.920368  5511 ParkingSpot.cpp:109] (TEST!!)-2

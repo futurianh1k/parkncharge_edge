@@ -1,42 +1,42 @@
 {
     "": {
-        "parkingSpotId": "1",
-        "parkingSpotName": "spot1",
+        "parkingSpotId": "21",
+        "parkingSpotName": "4 Qisens back s1",
         "roiCoordX": "40",
         "roiCoordY": "280",
         "roiWidth": "140",
         "roiHeight": "140",
-        "policyId": "1",
+        "policyId": "5",
         "timeLimit": "10"
     },
     "": {
-        "parkingSpotId": "2",
-        "parkingSpotName": "spot2",
+        "parkingSpotId": "20",
+        "parkingSpotName": "3 Qisens back s1",
         "roiCoordX": "190",
         "roiCoordY": "280",
         "roiWidth": "140",
         "roiHeight": "140",
-        "policyId": "1",
+        "policyId": "5",
         "timeLimit": "10"
     },
     "": {
-        "parkingSpotId": "3",
-        "parkingSpotName": "spot3",
+        "parkingSpotId": "19",
+        "parkingSpotName": "2 Qisens back s1",
         "roiCoordX": "340",
         "roiCoordY": "280",
         "roiWidth": "140",
         "roiHeight": "140",
-        "policyId": "1",
+        "policyId": "5",
         "timeLimit": "10"
     },
     "": {
-        "parkingSpotId": "4",
-        "parkingSpotName": "spot4",
+        "parkingSpotId": "18",
+        "parkingSpotName": "1 Qisens back s1",
         "roiCoordX": "490",
         "roiCoordY": "280",
         "roiWidth": "140",
         "roiHeight": "140",
-        "policyId": "1",
+        "policyId": "5",
         "timeLimit": "10"
     }
 }

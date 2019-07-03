@@ -1,0 +1,59 @@
+Log file created at: 2019/07/01 23:49:37
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0701 23:49:37.401509  7837 MainInterface.cpp:42] Starting the main activity
+I0701 23:49:37.402818  7837 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0701 23:49:37.402909  7837 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0701 23:49:38.396271  7837 SerialVideoReader.cpp:61] Modifying camera codec
+E0701 23:49:38.397120  7837 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0701 23:49:38.401718  7837 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0701 23:49:38.402215  7837 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0701 23:49:38.433080  7837 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0701 23:49:38.437708  7843 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0701 23:49:38.439976  7844 TCPSocketListener.cpp:70] Starting the socket listener
+I0701 23:49:41.488276  7837 ParkingSpot.cpp:116] (TEST!!)1
+I0701 23:49:41.496714  7837 ParkingSpot.cpp:116] (TEST!!)1
+I0701 23:49:41.662127  7837 ParkingSpot.cpp:116] (TEST!!)2
+I0701 23:49:41.693027  7837 ParkingSpot.cpp:116] (TEST!!)2
+I0701 23:49:41.857507  7837 ParkingSpot.cpp:116] (TEST!!)3
+I0701 23:49:41.867375  7837 ParkingSpot.cpp:116] (TEST!!)3
+I0701 23:49:42.036468  7837 ParkingSpot.cpp:116] (TEST!!)4
+I0701 23:49:42.197000  7837 ParkingSpot.cpp:116] (TEST!!)3
+I0701 23:49:42.206558  7837 ParkingSpot.cpp:116] (TEST!!)5
+I0701 23:49:42.379745  7837 ParkingSpot.cpp:116] (TEST!!)4
+I0701 23:49:42.390193  7837 ParkingSpot.cpp:116] (TEST!!)6
+I0701 23:49:42.570083  7837 ParkingSpot.cpp:75] Parking spot ID 20 has occupied at 2019-Jul-01 23:49:42 by null
+I0701 23:49:42.570063  7843 ServerNetworkHandler.cpp:86] 20 with plate number null at 2019-Jul-01 23:49:42 (1)
+I0701 23:49:42.925351  7837 ParkingSpot.cpp:116] (TEST!!)3
+I0701 23:49:43.446775  7837 ParkingSpot.cpp:116] (TEST!!)2
+I0701 23:49:43.642971  7837 ParkingSpot.cpp:116] (TEST!!)3
+I0701 23:49:43.828013  7837 ParkingSpot.cpp:116] (TEST!!)4
+I0701 23:49:44.001760  7837 ParkingSpot.cpp:116] (TEST!!)5
+I0701 23:49:44.164505  7837 ParkingSpot.cpp:116] (TEST!!)6
+I0701 23:49:44.359653  7837 ParkingSpot.cpp:75] Parking spot ID 19 has occupied at 2019-Jul-01 23:49:44 by null
+I0701 23:49:44.359654  7843 ServerNetworkHandler.cpp:86] 19 with plate number null at 2019-Jul-01 23:49:44 (1)
+I0701 23:49:44.376229  7837 ParkingSpot.cpp:116] (TEST!!)1
+I0701 23:49:44.555101  7837 ParkingSpot.cpp:116] (TEST!!)2
+I0701 23:49:44.754410  7837 ParkingSpot.cpp:116] (TEST!!)3
+I0701 23:49:44.944407  7837 ParkingSpot.cpp:116] (TEST!!)4
+I0701 23:49:45.113759  7837 ParkingSpot.cpp:116] (TEST!!)5
+I0701 23:49:45.319716  7837 ParkingSpot.cpp:116] (TEST!!)6
+I0701 23:50:03.602943  7837 ParkingSpot.cpp:93] Parking spot ID 20 has released at 2019-Jul-01 23:50:03
+I0701 23:50:03.603011  7843 ServerNetworkHandler.cpp:86] 20 with plate number null at 2019-Jul-01 23:50:03 (2)
+I0701 23:50:04.513046  7837 ParkingSpot.cpp:116] (TEST!!)-5
+I0701 23:50:04.715512  7837 ParkingSpot.cpp:116] (TEST!!)-4
+I0701 23:50:04.918821  7837 ParkingSpot.cpp:116] (TEST!!)-3
+I0701 23:50:05.086360  7837 ParkingSpot.cpp:116] (TEST!!)-2
+I0701 23:50:05.283840  7837 ParkingSpot.cpp:116] (TEST!!)-1
+I0701 23:50:05.458153  7837 ParkingSpot.cpp:116] (TEST!!)0
+I0701 23:50:05.651504  7837 ParkingSpot.cpp:116] (TEST!!)1
+I0701 23:50:05.845655  7837 ParkingSpot.cpp:116] (TEST!!)2
+I0701 23:50:06.015269  7837 ParkingSpot.cpp:116] (TEST!!)3
+I0701 23:50:06.202782  7837 ParkingSpot.cpp:116] (TEST!!)4
+I0701 23:50:06.366390  7837 ParkingSpot.cpp:116] (TEST!!)5
+I0701 23:50:06.552728  7837 ParkingSpot.cpp:116] (TEST!!)6
+I0701 23:50:06.705518  7837 ParkingSpot.cpp:93] Parking spot ID 19 has released at 2019-Jul-01 23:50:06
+I0701 23:50:06.705601  7843 ServerNetworkHandler.cpp:86] 19 with plate number null at 2019-Jul-01 23:50:06 (2)
+I0701 23:50:06.725488  7837 ParkingSpot.cpp:75] Parking spot ID 20 has occupied at 2019-Jul-01 23:50:06 by null
+I0701 23:50:07.612478  7843 ServerNetworkHandler.cpp:86] 20 with plate number null at 2019-Jul-01 23:50:06 (1)
+I0701 23:53:06.725579  7839 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jul-01 23:53:06

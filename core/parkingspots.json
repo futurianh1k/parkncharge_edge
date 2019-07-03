@@ -1,57 +1,42 @@
 {
-    "":
-    {
-        "parkingSpotId": "13",
-        "parkingSpotName": "1 Qisens side s1",
-        "roiCoordX": "60",
-        "roiCoordY": "140",
-        "roiWidth": "100",
-        "roiHeight": "140",
-        "policyId": "0",
+    "": {
+        "parkingSpotId": "21",
+        "parkingSpotName": "Qisens reservation s1",
+        "roiCoordX": "90",
+        "roiCoordY": "90",
+        "roiWidth": "90",
+        "roiHeight": "90",
+        "policyId": "5",
         "timeLimit": "10"
     },
-    "":
-    {
-        "parkingSpotId": "14",
-        "parkingSpotName": "2 Qisens side s1",
-        "roiCoordX": "170",
-        "roiCoordY": "140",
-        "roiWidth": "100",
-        "roiHeight": "140",
-        "policyId": "0",
-        "timeLimit": "1000"
-    },
-    "":
-    {
-        "parkingSpotId": "15",
-        "parkingSpotName": "3 Qisens side s1",
-        "roiCoordX": "280",
-        "roiCoordY": "140",
-        "roiWidth": "100",
-        "roiHeight": "140",
-        "policyId": "0",
-        "timeLimit": "100"
-    },
-    "":
-    {
-        "parkingSpotId": "16",
-        "parkingSpotName": "4 Qisens side s1",
-        "roiCoordX": "390",
-        "roiCoordY": "140",
-        "roiWidth": "100",
-        "roiHeight": "140",
-        "policyId": "0",
+    "": {
+        "parkingSpotId": "20",
+        "parkingSpotName": "Qisens reservation s1",
+        "roiCoordX": "200",
+        "roiCoordY": "90",
+        "roiWidth": "90",
+        "roiHeight": "90",
+        "policyId": "5",
         "timeLimit": "10"
     },
-    "":
-    {
-        "parkingSpotId": "17",
-        "parkingSpotName": "5 Qisens side s1",
-        "roiCoordX": "500",
-        "roiCoordY": "140",
-        "roiWidth": "100",
-        "roiHeight": "140",
-        "policyId": "0",
+    "": {
+        "parkingSpotId": "19",
+        "parkingSpotName": "Qisens reservation s1",
+        "roiCoordX": "310",
+        "roiCoordY": "90",
+        "roiWidth": "90",
+        "roiHeight": "90",
+        "policyId": "5",
+        "timeLimit": "10"
+    },
+    "": {
+        "parkingSpotId": "18",
+        "parkingSpotName": "Qisens reservation s1",
+        "roiCoordX": "420",
+        "roiCoordY": "90",
+        "roiWidth": "90",
+        "roiHeight": "90",
+        "policyId": "5",
         "timeLimit": "10"
     }
 }

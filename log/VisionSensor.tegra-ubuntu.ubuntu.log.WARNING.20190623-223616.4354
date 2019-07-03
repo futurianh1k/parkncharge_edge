@@ -1,0 +1,11 @@
+Log file created at: 2019/06/23 22:36:16
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0623 22:36:16.985312  4354 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0623 22:36:16.986407  4354 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0623 22:38:28.413837  4360 SecureClient.cpp:54] Connect failed: Connection timed out
+E0623 22:40:35.773847  4360 SecureClient.cpp:54] Connect failed: Connection timed out
+E0623 22:42:43.133807  4360 SecureClient.cpp:54] Connect failed: Connection timed out
+E0623 22:44:50.495354  4360 SecureClient.cpp:54] Connect failed: Connection timed out
+E0623 22:46:57.853852  4360 SecureClient.cpp:54] Connect failed: Connection timed out
+E0623 22:49:05.213855  4360 SecureClient.cpp:54] Connect failed: Connection timed out

@@ -1,1 +1,3 @@
-/home/ubuntu/parkncharge_edge/CMakeFiles/VisionSensor.dir
+/home/ubuntu/VisionSensor/CMakeFiles/edit_cache.dir
+/home/ubuntu/VisionSensor/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/VisionSensor/CMakeFiles/VisionSensor.dir

@@ -93,14 +93,13 @@ namespace seevider {
 		}
 
 		printf("mysql_init success.\n");
-		LOG(INFO) << "msql_init success";
+
 		if(!(mysql_real_connect(conn,server,user,password,database, 3306, NULL, 0))){
 			printf("connect error.\n");
 			exit(1);
 		}
 
 		printf("mysql_real_connect suc.\n");
-		LOG(INFO) <<"mysql_real_connect suc.";
 
 		if(mysql_select_db(conn, database) !=0){
 			mysql_close(conn);
@@ -108,7 +107,7 @@ namespace seevider {
 			exit(1);
 		}
 		printf("select mydb syc.\n");
-		LOG(INFO) <<"select mydb syc";
+
 		//if(mysql_query(conn,"select * from parking_spot")){
 		if(mysql_query(conn,"SELECT s.parking_spot_id, s.policy_id, p.time_limit FROM parking_spot AS s LEFT JOIN parking_policy AS p ON s.policy_id = p.policy_id")){
 			printf("query fail\n");
@@ -116,16 +115,21 @@ namespace seevider {
 		}
 
 		printf("query success\n");
-		LOG(INFO) <<"query success";
+
 		res = mysql_store_result(conn);
 		printf("res success\n");
-		LOG(INFO) <<"res success";
+
 		while((row = mysql_fetch_row(res))!=NULL){
 			int temp;
 			temp = atoi(row[0]);
 			po_id[temp] = atoi(row[1]);
 			tlimit[temp]=atoi(row[2]);
 			
+			//printf("%s\n", row[2]);
+			//sp_id[cnt]=atoi(row[0]);
+			//po_id[cnt]=atoi(row[1]);
+			//tlimit[cnt]=atoi(row[2]);
+			//cnt++;
 		}
 
 		mysql_close(conn);
@@ -176,10 +180,13 @@ namespace seevider {
 				roi.y = elem.second.get<int>("roiCoordY");
 				roi.width = elem.second.get<int>("roiWidth");
 				roi.height = elem.second.get<int>("roiHeight");
+				//policy = atoi(po_id[id]);
+				//timeLimit = atoi(tlimit[id]);
 				policy = (PARKING_SPOT_POLICY)po_id[id]; //elem.second.get<int>("policyId");
 				timeLimit = tlimit[id];
 				//timeLimit = elem.second.get<int>("timeLimit");
-	
+				//cout<<typeof(policy)<<endl;
+				//cout<<typeof(timeLimit)<<endl;
 				add(id, spotName, timeLimit, roi, policy);
 			printf("%d\n", id);
 			cout<<spotName<<endl;
@@ -189,7 +196,6 @@ namespace seevider {
 			printf("%d\n", roi.height);
 			printf("%d\n", policy);
 			printf("%d\n\n\n", timeLimit);
-			
 
 			}
 			catch (const boost::property_tree::ptree_error &e) {
@@ -279,13 +285,9 @@ namespace seevider {
 
 		for (auto parkingSpot : mParkingSpots) {
 			cv::Scalar color;
-			if (parkingSpot.second->isOverstayed()) {
-				color = CV_RGB(0, 0, 255);
-                               
+			if (parkingSpot.second->isOccupied()) {
+				color = CV_RGB(255, 0, 0);
 			}
-                        else if(parkingSpot.second->isOccupied()){
-                                color = CV_RGB(255, 0, 0);
-                        }
 			else {
 				color = CV_RGB(0, 255, 0);
 			}
