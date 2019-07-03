@@ -1,0 +1,12 @@
+Log file created at: 2019/07/02 17:29:30
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0702 17:29:30.954398 26335 MainInterface.cpp:42] Starting the main activity
+I0702 17:29:30.955919 26335 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0702 17:29:30.956125 26335 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0702 17:29:30.957792 26335 ParkingSpotManager.cpp:96] msql_init success
+I0702 17:29:31.452924 26335 ParkingSpotManager.cpp:103] mysql_real_connect suc.
+I0702 17:29:31.615358 26335 ParkingSpotManager.cpp:111] select mydb syc
+I0702 17:29:31.778887 26335 ParkingSpotManager.cpp:119] query success
+I0702 17:29:31.779381 26335 ParkingSpotManager.cpp:122] res success
+F0702 17:29:31.826284 26335 SerialVideoReader.cpp:52] Failed to connect the camera

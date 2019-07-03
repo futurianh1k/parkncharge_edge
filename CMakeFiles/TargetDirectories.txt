@@ -1,1 +1,1 @@
-/home/ubuntu/VisionSensor/CMakeFiles/VisionSensor.dir
+/home/ubuntu/parkncharge_edge/CMakeFiles/VisionSensor.dir

@@ -164,6 +164,7 @@ namespace seevider {
          * Check if the parking spot is occupied
          */
         bool isOccupied() const;
+	void pullDB();
 
 		/**
 		 * Check if the parking spot is occupied and overstayed

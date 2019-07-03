@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/VisionSensor/BoardController.cpp
+/home/ubuntu/parkncharge_edge/BoardController.cpp
 BoardController.h
-/home/ubuntu/VisionSensor/BoardController.h
+/home/ubuntu/parkncharge_edge/BoardController.h
 
-/home/ubuntu/VisionSensor/BoardController.h
+/home/ubuntu/parkncharge_edge/BoardController.h
 stdio.h
 -
 string.h
@@ -26,33 +26,33 @@ unistd.h
 iostream
 -
 
-/home/ubuntu/VisionSensor/CameraInfo.cpp
+/home/ubuntu/parkncharge_edge/CameraInfo.cpp
 CameraInfo.h
-/home/ubuntu/VisionSensor/CameraInfo.h
+/home/ubuntu/parkncharge_edge/CameraInfo.h
 
-/home/ubuntu/VisionSensor/CameraInfo.h
+/home/ubuntu/parkncharge_edge/CameraInfo.h
 string
 -
 
-/home/ubuntu/VisionSensor/CascadeClassifier.cpp
+/home/ubuntu/parkncharge_edge/CascadeClassifier.cpp
 logging.h
 -
 CascadeClassifier.h
-/home/ubuntu/VisionSensor/CascadeClassifier.h
+/home/ubuntu/parkncharge_edge/CascadeClassifier.h
 
-/home/ubuntu/VisionSensor/CascadeClassifier.h
+/home/ubuntu/parkncharge_edge/CascadeClassifier.h
 IGenericDetector.h
-/home/ubuntu/VisionSensor/IGenericDetector.h
+/home/ubuntu/parkncharge_edge/IGenericDetector.h
 Settings.h
-/home/ubuntu/VisionSensor/Settings.h
+/home/ubuntu/parkncharge_edge/Settings.h
 
-/home/ubuntu/VisionSensor/Config.h
+/home/ubuntu/parkncharge_edge/Config.h
 
-/home/ubuntu/VisionSensor/IGenericDetector.cpp
+/home/ubuntu/parkncharge_edge/IGenericDetector.cpp
 IGenericDetector.h
-/home/ubuntu/VisionSensor/IGenericDetector.h
+/home/ubuntu/parkncharge_edge/IGenericDetector.h
 
-/home/ubuntu/VisionSensor/IGenericDetector.h
+/home/ubuntu/parkncharge_edge/IGenericDetector.h
 vector
 -
 memory
@@ -60,11 +60,11 @@ memory
 opencv2/opencv.hpp
 -
 
-/home/ubuntu/VisionSensor/IMessageData.cpp
+/home/ubuntu/parkncharge_edge/IMessageData.cpp
 IMessageData.h
-/home/ubuntu/VisionSensor/IMessageData.h
+/home/ubuntu/parkncharge_edge/IMessageData.h
 
-/home/ubuntu/VisionSensor/IMessageData.h
+/home/ubuntu/parkncharge_edge/IMessageData.h
 string
 -
 boost/property_tree/ptree.hpp
@@ -72,19 +72,19 @@ boost/property_tree/ptree.hpp
 boost/date_time/posix_time/posix_time.hpp
 -
 
-/home/ubuntu/VisionSensor/INetworkHandler.cpp
+/home/ubuntu/parkncharge_edge/INetworkHandler.cpp
 INetworkHandler.h
-/home/ubuntu/VisionSensor/INetworkHandler.h
+/home/ubuntu/parkncharge_edge/INetworkHandler.h
 
-/home/ubuntu/VisionSensor/INetworkHandler.h
+/home/ubuntu/parkncharge_edge/INetworkHandler.h
 boost/thread.hpp
 -
 
-/home/ubuntu/VisionSensor/IOUtils.cpp
+/home/ubuntu/parkncharge_edge/IOUtils.cpp
 IOUtils.h
-/home/ubuntu/VisionSensor/IOUtils.h
+/home/ubuntu/parkncharge_edge/IOUtils.h
 ParkingUpdateMessage.h
-/home/ubuntu/VisionSensor/ParkingUpdateMessage.h
+/home/ubuntu/parkncharge_edge/ParkingUpdateMessage.h
 iostream
 -
 boost/property_tree/json_parser.hpp
@@ -94,55 +94,55 @@ boost/filesystem.hpp
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/IOUtils.h
+/home/ubuntu/parkncharge_edge/IOUtils.h
 IMessageData.h
-/home/ubuntu/VisionSensor/IMessageData.h
+/home/ubuntu/parkncharge_edge/IMessageData.h
 string
 -
 opencv2/opencv.hpp
 -
 
-/home/ubuntu/VisionSensor/IOccupancyDetector.cpp
+/home/ubuntu/parkncharge_edge/IOccupancyDetector.cpp
 IOccupancyDetector.h
-/home/ubuntu/VisionSensor/IOccupancyDetector.h
+/home/ubuntu/parkncharge_edge/IOccupancyDetector.h
 
-/home/ubuntu/VisionSensor/IOccupancyDetector.h
+/home/ubuntu/parkncharge_edge/IOccupancyDetector.h
 CascadeClassifier.h
-/home/ubuntu/VisionSensor/CascadeClassifier.h
+/home/ubuntu/parkncharge_edge/CascadeClassifier.h
 
-/home/ubuntu/VisionSensor/IPlateDetector.cpp
+/home/ubuntu/parkncharge_edge/IPlateDetector.cpp
 IPlateDetector.h
-/home/ubuntu/VisionSensor/IPlateDetector.h
+/home/ubuntu/parkncharge_edge/IPlateDetector.h
 
-/home/ubuntu/VisionSensor/IPlateDetector.h
+/home/ubuntu/parkncharge_edge/IPlateDetector.h
 CascadeClassifier.h
-/home/ubuntu/VisionSensor/CascadeClassifier.h
+/home/ubuntu/parkncharge_edge/CascadeClassifier.h
 
-/home/ubuntu/VisionSensor/ImageNetClassifier.cpp
+/home/ubuntu/parkncharge_edge/ImageNetClassifier.cpp
 log_severity.h
 -
 logging.h
 -
 ImageNetClassifier.h
-/home/ubuntu/VisionSensor/ImageNetClassifier.h
+/home/ubuntu/parkncharge_edge/ImageNetClassifier.h
 
-/home/ubuntu/VisionSensor/ImageNetClassifier.h
+/home/ubuntu/parkncharge_edge/ImageNetClassifier.h
 boost/asio/detail/shared_ptr.hpp
 -
 Settings.h
-/home/ubuntu/VisionSensor/Settings.h
+/home/ubuntu/parkncharge_edge/Settings.h
 IGenericDetector.h
-/home/ubuntu/VisionSensor/IGenericDetector.h
+/home/ubuntu/parkncharge_edge/IGenericDetector.h
 darknet/include/darknet.h
-/home/ubuntu/VisionSensor/darknet/include/darknet.h
+/home/ubuntu/parkncharge_edge/darknet/include/darknet.h
 
-/home/ubuntu/VisionSensor/LPR.cpp
+/home/ubuntu/parkncharge_edge/LPR.cpp
 LPR.h
-/home/ubuntu/VisionSensor/LPR.h
+/home/ubuntu/parkncharge_edge/LPR.h
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/LPR.h
+/home/ubuntu/parkncharge_edge/LPR.h
 string
 -
 vector
@@ -152,25 +152,25 @@ opencv2/opencv.hpp
 alpr.h
 -
 
-/home/ubuntu/VisionSensor/Light.cpp
+/home/ubuntu/parkncharge_edge/Light.cpp
 Light.h
-/home/ubuntu/VisionSensor/Light.h
+/home/ubuntu/parkncharge_edge/Light.h
 
-/home/ubuntu/VisionSensor/Light.h
+/home/ubuntu/parkncharge_edge/Light.h
 BoardController.h
-/home/ubuntu/VisionSensor/BoardController.h
+/home/ubuntu/parkncharge_edge/BoardController.h
 
-/home/ubuntu/VisionSensor/MainInterface.cpp
+/home/ubuntu/parkncharge_edge/MainInterface.cpp
 MainInterface.h
-/home/ubuntu/VisionSensor/MainInterface.h
+/home/ubuntu/parkncharge_edge/MainInterface.h
 Utils.h
-/home/ubuntu/VisionSensor/Utils.h
+/home/ubuntu/parkncharge_edge/Utils.h
 IOUtils.h
-/home/ubuntu/VisionSensor/IOUtils.h
+/home/ubuntu/parkncharge_edge/IOUtils.h
 CascadeClassifier.h
-/home/ubuntu/VisionSensor/CascadeClassifier.h
+/home/ubuntu/parkncharge_edge/CascadeClassifier.h
 ServerSyncMessage.h
-/home/ubuntu/VisionSensor/ServerSyncMessage.h
+/home/ubuntu/parkncharge_edge/ServerSyncMessage.h
 boost/date_time/posix_time/posix_time.hpp
 -
 boost/date_time/local_time/local_time.hpp
@@ -180,39 +180,39 @@ boost/property_tree/json_parser.hpp
 glog/logging.h
 -
 Config.h
-/home/ubuntu/VisionSensor/Config.h
+/home/ubuntu/parkncharge_edge/Config.h
 ImageNetClassifier.h
-/home/ubuntu/VisionSensor/ImageNetClassifier.h
+/home/ubuntu/parkncharge_edge/ImageNetClassifier.h
 
-/home/ubuntu/VisionSensor/MainInterface.h
+/home/ubuntu/parkncharge_edge/MainInterface.h
 SerialVideoReader.h
-/home/ubuntu/VisionSensor/SerialVideoReader.h
+/home/ubuntu/parkncharge_edge/SerialVideoReader.h
 ServerNetworkHandler.h
-/home/ubuntu/VisionSensor/ServerNetworkHandler.h
+/home/ubuntu/parkncharge_edge/ServerNetworkHandler.h
 TCPSocketListener.h
-/home/ubuntu/VisionSensor/TCPSocketListener.h
+/home/ubuntu/parkncharge_edge/TCPSocketListener.h
 ParkingSpot.h
-/home/ubuntu/VisionSensor/ParkingSpot.h
+/home/ubuntu/parkncharge_edge/ParkingSpot.h
 Settings.h
-/home/ubuntu/VisionSensor/Settings.h
+/home/ubuntu/parkncharge_edge/Settings.h
 IOccupancyDetector.h
-/home/ubuntu/VisionSensor/IOccupancyDetector.h
+/home/ubuntu/parkncharge_edge/IOccupancyDetector.h
 IPlateDetector.h
-/home/ubuntu/VisionSensor/IPlateDetector.h
+/home/ubuntu/parkncharge_edge/IPlateDetector.h
 MotionDetection.h
-/home/ubuntu/VisionSensor/MotionDetection.h
+/home/ubuntu/parkncharge_edge/MotionDetection.h
 Light.h
-/home/ubuntu/VisionSensor/Light.h
+/home/ubuntu/parkncharge_edge/Light.h
 boost/thread.hpp
 -
 
-/home/ubuntu/VisionSensor/MessageQueue.cpp
+/home/ubuntu/parkncharge_edge/MessageQueue.cpp
 MessageQueue.h
-/home/ubuntu/VisionSensor/MessageQueue.h
+/home/ubuntu/parkncharge_edge/MessageQueue.h
 IOUtils.h
-/home/ubuntu/VisionSensor/IOUtils.h
+/home/ubuntu/parkncharge_edge/IOUtils.h
 
-/home/ubuntu/VisionSensor/MessageQueue.h
+/home/ubuntu/parkncharge_edge/MessageQueue.h
 string
 -
 sstream
@@ -224,29 +224,39 @@ boost/thread/condition_variable.hpp
 boost/thread/mutex.hpp
 -
 IMessageData.h
-/home/ubuntu/VisionSensor/IMessageData.h
+/home/ubuntu/parkncharge_edge/IMessageData.h
 
-/home/ubuntu/VisionSensor/MotionDetection.cpp
+/home/ubuntu/parkncharge_edge/MotionDetection.cpp
 MotionDetection.h
-/home/ubuntu/VisionSensor/MotionDetection.h
+/home/ubuntu/parkncharge_edge/MotionDetection.h
 Utils.h
-/home/ubuntu/VisionSensor/Utils.h
+/home/ubuntu/parkncharge_edge/Utils.h
 
-/home/ubuntu/VisionSensor/MotionDetection.h
+/home/ubuntu/parkncharge_edge/MotionDetection.h
 opencv2/opencv.hpp
 -
 
-/home/ubuntu/VisionSensor/ParkingSpot.cpp
+/home/ubuntu/parkncharge_edge/ParkingSpot.cpp
 ParkingSpot.h
-/home/ubuntu/VisionSensor/ParkingSpot.h
+/home/ubuntu/parkncharge_edge/ParkingSpot.h
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 ParkingUpdateMessage.h
-/home/ubuntu/VisionSensor/ParkingUpdateMessage.h
+/home/ubuntu/parkncharge_edge/ParkingUpdateMessage.h
 glog/logging.h
 -
+stdio.h
+-
+/usr/include/mysql/mysql.h
+-
+stdlib.h
+-
+errno.h
+-
+string.h
+-
 
-/home/ubuntu/VisionSensor/ParkingSpot.h
+/home/ubuntu/parkncharge_edge/ParkingSpot.h
 string
 -
 opencv2/opencv.hpp
@@ -260,29 +270,43 @@ boost/asio/deadline_timer.hpp
 boost/date_time/posix_time/posix_time.hpp
 -
 MessageQueue.h
-/home/ubuntu/VisionSensor/MessageQueue.h
+/home/ubuntu/parkncharge_edge/MessageQueue.h
 SerialVideoReader.h
-/home/ubuntu/VisionSensor/SerialVideoReader.h
+/home/ubuntu/parkncharge_edge/SerialVideoReader.h
 
-/home/ubuntu/VisionSensor/ParkingSpotManager.cpp
+/home/ubuntu/parkncharge_edge/ParkingSpotManager.cpp
 ParkingSpotManager.h
-/home/ubuntu/VisionSensor/ParkingSpotManager.h
+/home/ubuntu/parkncharge_edge/ParkingSpotManager.h
+stdio.h
+-
 unordered_set
+-
+/usr/include/mysql/mysql.h
 -
 glog/logging.h
 -
 boost/property_tree/json_parser.hpp
 -
+iostream
+-
+stdlib.h
+-
+errno.h
+-
+string.h
+-
 
-/home/ubuntu/VisionSensor/ParkingSpotManager.h
+/home/ubuntu/parkncharge_edge/ParkingSpotManager.h
 ParkingSpot.h
-/home/ubuntu/VisionSensor/ParkingSpot.h
+/home/ubuntu/parkncharge_edge/ParkingSpot.h
+/usr/include/mysql/mysql.h
+-
 
-/home/ubuntu/VisionSensor/ParkingUpdateMessage.cpp
+/home/ubuntu/parkncharge_edge/ParkingUpdateMessage.cpp
 ParkingUpdateMessage.h
-/home/ubuntu/VisionSensor/ParkingUpdateMessage.h
+/home/ubuntu/parkncharge_edge/ParkingUpdateMessage.h
 IOUtils.h
-/home/ubuntu/VisionSensor/IOUtils.h
+/home/ubuntu/parkncharge_edge/IOUtils.h
 sstream
 -
 boost/property_tree/ptree.hpp
@@ -296,19 +320,19 @@ boost/algorithm/string.hpp
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/ParkingUpdateMessage.h
+/home/ubuntu/parkncharge_edge/ParkingUpdateMessage.h
 opencv2/opencv.hpp
 -
 boost/date_time/posix_time/posix_time.hpp
 -
 IMessageData.h
-/home/ubuntu/VisionSensor/IMessageData.h
+/home/ubuntu/parkncharge_edge/IMessageData.h
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 
-/home/ubuntu/VisionSensor/SecureClient.cpp
+/home/ubuntu/parkncharge_edge/SecureClient.cpp
 SecureClient.h
-/home/ubuntu/VisionSensor/SecureClient.h
+/home/ubuntu/parkncharge_edge/SecureClient.h
 iostream
 -
 sstream
@@ -318,7 +342,7 @@ boost/bind.hpp
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/SecureClient.h
+/home/ubuntu/parkncharge_edge/SecureClient.h
 string
 -
 boost/asio.hpp
@@ -326,23 +350,23 @@ boost/asio.hpp
 boost/asio/ssl.hpp
 -
 
-/home/ubuntu/VisionSensor/SensorInfo.cpp
+/home/ubuntu/parkncharge_edge/SensorInfo.cpp
 SensorInfo.h
-/home/ubuntu/VisionSensor/SensorInfo.h
+/home/ubuntu/parkncharge_edge/SensorInfo.h
 
-/home/ubuntu/VisionSensor/SensorInfo.h
+/home/ubuntu/parkncharge_edge/SensorInfo.h
 string
 -
 CameraInfo.h
-/home/ubuntu/VisionSensor/CameraInfo.h
+/home/ubuntu/parkncharge_edge/CameraInfo.h
 SerialVideoReader.h
-/home/ubuntu/VisionSensor/SerialVideoReader.h
+/home/ubuntu/parkncharge_edge/SerialVideoReader.h
 
-/home/ubuntu/VisionSensor/SerialVideoReader.cpp
+/home/ubuntu/parkncharge_edge/SerialVideoReader.cpp
 SerialVideoReader.h
-/home/ubuntu/VisionSensor/SerialVideoReader.h
+/home/ubuntu/parkncharge_edge/SerialVideoReader.h
 Utils.h
-/home/ubuntu/VisionSensor/Utils.h
+/home/ubuntu/parkncharge_edge/Utils.h
 boost/date_time/local_time/local_time.hpp
 -
 boost/date_time/posix_time/posix_time_io.hpp
@@ -350,7 +374,7 @@ boost/date_time/posix_time/posix_time_io.hpp
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/SerialVideoReader.h
+/home/ubuntu/parkncharge_edge/SerialVideoReader.h
 string
 -
 list
@@ -366,15 +390,15 @@ boost/thread.hpp
 boost/thread/mutex.hpp
 -
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 CameraInfo.h
-/home/ubuntu/VisionSensor/CameraInfo.h
+/home/ubuntu/parkncharge_edge/CameraInfo.h
 
-/home/ubuntu/VisionSensor/ServerNetworkHandler.cpp
+/home/ubuntu/parkncharge_edge/ServerNetworkHandler.cpp
 ServerNetworkHandler.h
-/home/ubuntu/VisionSensor/ServerNetworkHandler.h
+/home/ubuntu/parkncharge_edge/ServerNetworkHandler.h
 SecureClient.h
-/home/ubuntu/VisionSensor/SecureClient.h
+/home/ubuntu/parkncharge_edge/SecureClient.h
 boost/property_tree/json_parser.hpp
 -
 boost/property_tree/xml_parser.hpp
@@ -386,7 +410,7 @@ boost/asio.hpp
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/ServerNetworkHandler.h
+/home/ubuntu/parkncharge_edge/ServerNetworkHandler.h
 iostream
 -
 unordered_map
@@ -396,31 +420,31 @@ boost/thread.hpp
 boost/property_tree/ptree.hpp
 -
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 INetworkHandler.h
-/home/ubuntu/VisionSensor/INetworkHandler.h
+/home/ubuntu/parkncharge_edge/INetworkHandler.h
 MessageQueue.h
-/home/ubuntu/VisionSensor/MessageQueue.h
+/home/ubuntu/parkncharge_edge/MessageQueue.h
 SensorInfo.h
-/home/ubuntu/VisionSensor/SensorInfo.h
+/home/ubuntu/parkncharge_edge/SensorInfo.h
 
-/home/ubuntu/VisionSensor/ServerSyncMessage.cpp
+/home/ubuntu/parkncharge_edge/ServerSyncMessage.cpp
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 ServerSyncMessage.h
-/home/ubuntu/VisionSensor/ServerSyncMessage.h
+/home/ubuntu/parkncharge_edge/ServerSyncMessage.h
 
-/home/ubuntu/VisionSensor/ServerSyncMessage.h
+/home/ubuntu/parkncharge_edge/ServerSyncMessage.h
 opencv2/opencv.hpp
 -
 IMessageData.h
-/home/ubuntu/VisionSensor/IMessageData.h
+/home/ubuntu/parkncharge_edge/IMessageData.h
 
-/home/ubuntu/VisionSensor/Settings.cpp
+/home/ubuntu/parkncharge_edge/Settings.cpp
 Settings.h
-/home/ubuntu/VisionSensor/Settings.h
+/home/ubuntu/parkncharge_edge/Settings.h
 Utils.h
-/home/ubuntu/VisionSensor/Utils.h
+/home/ubuntu/parkncharge_edge/Utils.h
 iostream
 -
 boost/property_tree/ini_parser.hpp
@@ -428,25 +452,25 @@ boost/property_tree/ini_parser.hpp
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/Settings.h
+/home/ubuntu/parkncharge_edge/Settings.h
 string
 -
 boost/property_tree/ptree.hpp
 -
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 SensorInfo.h
-/home/ubuntu/VisionSensor/SensorInfo.h
+/home/ubuntu/parkncharge_edge/SensorInfo.h
 CameraInfo.h
-/home/ubuntu/VisionSensor/CameraInfo.h
+/home/ubuntu/parkncharge_edge/CameraInfo.h
 
-/home/ubuntu/VisionSensor/TCPSocketListener.cpp
+/home/ubuntu/parkncharge_edge/TCPSocketListener.cpp
 TCPSocketListener.h
-/home/ubuntu/VisionSensor/TCPSocketListener.h
+/home/ubuntu/parkncharge_edge/TCPSocketListener.h
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 Utils.h
-/home/ubuntu/VisionSensor/Utils.h
+/home/ubuntu/parkncharge_edge/Utils.h
 sstream
 -
 boost/property_tree/json_parser.hpp
@@ -458,25 +482,25 @@ boost/bind.hpp
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/TCPSocketListener.h
+/home/ubuntu/parkncharge_edge/TCPSocketListener.h
 INetworkHandler.h
-/home/ubuntu/VisionSensor/INetworkHandler.h
+/home/ubuntu/parkncharge_edge/INetworkHandler.h
 ParkingSpotManager.h
-/home/ubuntu/VisionSensor/ParkingSpotManager.h
+/home/ubuntu/parkncharge_edge/ParkingSpotManager.h
 Settings.h
-/home/ubuntu/VisionSensor/Settings.h
+/home/ubuntu/parkncharge_edge/Settings.h
 SerialVideoReader.h
-/home/ubuntu/VisionSensor/SerialVideoReader.h
+/home/ubuntu/parkncharge_edge/SerialVideoReader.h
 boost/asio.hpp
 -
 boost/property_tree/ptree.hpp
 -
 
-/home/ubuntu/VisionSensor/Utils.cpp
+/home/ubuntu/parkncharge_edge/Utils.cpp
 Utils.h
-/home/ubuntu/VisionSensor/Utils.h
+/home/ubuntu/parkncharge_edge/Utils.h
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 algorithm
 -
 sstream
@@ -484,13 +508,13 @@ sstream
 opencv2/opencv.hpp
 -
 
-/home/ubuntu/VisionSensor/Utils.h
+/home/ubuntu/parkncharge_edge/Utils.h
 string
 -
 vector
 -
 
-/home/ubuntu/VisionSensor/darknet/include/darknet.h
+/home/ubuntu/parkncharge_edge/darknet/include/darknet.h
 stdlib.h
 -
 stdio.h
@@ -500,45 +524,45 @@ string.h
 pthread.h
 -
 cuda_runtime.h
-/home/ubuntu/VisionSensor/darknet/include/cuda_runtime.h
+/home/ubuntu/parkncharge_edge/darknet/include/cuda_runtime.h
 curand.h
-/home/ubuntu/VisionSensor/darknet/include/curand.h
+/home/ubuntu/parkncharge_edge/darknet/include/curand.h
 cublas_v2.h
-/home/ubuntu/VisionSensor/darknet/include/cublas_v2.h
+/home/ubuntu/parkncharge_edge/darknet/include/cublas_v2.h
 cudnn.h
-/home/ubuntu/VisionSensor/darknet/include/cudnn.h
+/home/ubuntu/parkncharge_edge/darknet/include/cudnn.h
 opencv2/highgui/highgui_c.h
-/home/ubuntu/VisionSensor/darknet/include/opencv2/highgui/highgui_c.h
+/home/ubuntu/parkncharge_edge/darknet/include/opencv2/highgui/highgui_c.h
 opencv2/imgproc/imgproc_c.h
-/home/ubuntu/VisionSensor/darknet/include/opencv2/imgproc/imgproc_c.h
+/home/ubuntu/parkncharge_edge/darknet/include/opencv2/imgproc/imgproc_c.h
 opencv2/core/version.hpp
-/home/ubuntu/VisionSensor/darknet/include/opencv2/core/version.hpp
+/home/ubuntu/parkncharge_edge/darknet/include/opencv2/core/version.hpp
 opencv2/videoio/videoio_c.h
-/home/ubuntu/VisionSensor/darknet/include/opencv2/videoio/videoio_c.h
+/home/ubuntu/parkncharge_edge/darknet/include/opencv2/videoio/videoio_c.h
 opencv2/imgcodecs/imgcodecs_c.h
-/home/ubuntu/VisionSensor/darknet/include/opencv2/imgcodecs/imgcodecs_c.h
+/home/ubuntu/parkncharge_edge/darknet/include/opencv2/imgcodecs/imgcodecs_c.h
 
-/home/ubuntu/VisionSensor/main.cpp
+/home/ubuntu/parkncharge_edge/main.cpp
 main.h
-/home/ubuntu/VisionSensor/main.h
+/home/ubuntu/parkncharge_edge/main.h
 MainInterface.h
-/home/ubuntu/VisionSensor/MainInterface.h
+/home/ubuntu/parkncharge_edge/MainInterface.h
 IOUtils.h
-/home/ubuntu/VisionSensor/IOUtils.h
+/home/ubuntu/parkncharge_edge/IOUtils.h
 boost/property_tree/xml_parser.hpp
 -
 glog/logging.h
 -
 
-/home/ubuntu/VisionSensor/main.h
+/home/ubuntu/parkncharge_edge/main.h
 string
 -
 unordered_map
 -
 types.h
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 
-/home/ubuntu/VisionSensor/types.h
+/home/ubuntu/parkncharge_edge/types.h
 opencv2/opencv.hpp
 -
 boost/version.hpp
@@ -585,4 +609,40 @@ glog/log_severity.h
 /usr/include/glog/glog/log_severity.h
 glog/vlog_is_on.h
 /usr/include/glog/glog/vlog_is_on.h
+
+/usr/include/mysql/my_alloc.h
+
+/usr/include/mysql/my_list.h
+
+/usr/include/mysql/mysql.h
+standards.h
+-
+sys/types.h
+-
+winsock2.h
+-
+mysql_version.h
+/usr/include/mysql/mysql_version.h
+mysql_com.h
+/usr/include/mysql/mysql_com.h
+mysql_time.h
+/usr/include/mysql/mysql_time.h
+my_list.h
+/usr/include/mysql/my_list.h
+typelib.h
+/usr/include/mysql/typelib.h
+my_alloc.h
+/usr/include/mysql/my_alloc.h
+
+/usr/include/mysql/mysql_com.h
+
+/usr/include/mysql/mysql_time.h
+
+/usr/include/mysql/mysql_version.h
+custom_conf.h
+-
+
+/usr/include/mysql/typelib.h
+my_alloc.h
+/usr/include/mysql/my_alloc.h
 

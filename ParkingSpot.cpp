@@ -17,8 +17,14 @@
 #include "ParkingSpot.h"
 #include "types.h"
 #include "ParkingUpdateMessage.h"
-
 #include <glog/logging.h>
+#include <stdio.h>
+#include "/usr/include/mysql/mysql.h"
+#include <stdlib.h>
+#include <errno.h>
+#include <string.h>
+
+
 
 using namespace seevider;
 namespace pt = boost::posix_time;
@@ -103,10 +109,11 @@ bool ParkingSpot::update(std::string spotName, int timeLimit, cv::Rect roi, PARK
 
 bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
 	bool updated = false;
-
 	if (occupied) {
 		if (mOccupiedFrameCounter < mPositiveThreshold) {
 			mOccupiedFrameCounter++;
+			//cout<<"test1: "<<mOccupiedFrameCounter;
+			LOG(INFO) << "(TEST!!)"<<mOccupiedFrameCounter;
 		}
 		else if (mOccupiedFrameCounter - mPositiveThreshold < mPositiveThreshold) {
 			if (!mOccupied) {
@@ -115,6 +122,7 @@ bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
 			}
 
 			mOccupiedFrameCounter++;
+			//cout<<"test2: "<<mOccupiedFrameCounter;
 		}
 		else if (mOccupiedFrameCounter - mPositiveThreshold >= mPositiveThreshold && triggerUpdatability) {
 			mUpdateEnabled = false;
