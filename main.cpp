@@ -13,18 +13,14 @@
 //
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
 //
+
 #include "main.h"
+
 #include "MainInterface.h"
 #include "IOUtils.h"
 
 #include <boost/property_tree/xml_parser.hpp>
 #include <glog/logging.h>
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <errno.h>
-#include <string.h>
-
 
 using namespace seevider;
 
@@ -71,7 +67,7 @@ void writeXMLFile(cv::string filename) {
 	dest.TargetPath = "/parkstatus/overtime";
 	ServerDestinations[HTTP_REQ_UPDATE_OVER] = dest;
 
-	root.add("ServerSettings.ServerAddress", "35.164.140.47");
+	root.add("ServerSettings.ServerAddress", "192.168.64.117"); //SPIRNG SERVER //
 	for (const auto& data : ServerDestinations) {
 		ptree &node = root.add("ServerSettings.Request", "");
 
@@ -123,7 +119,7 @@ int main(int argc, char** argv) {
 	FLAGS_alsologtostderr = 1;
 	FLAGS_log_dir = "./log/";
 	google::InitGoogleLogging(argv[0]);
-	
+
     MainInterface mainInterface;
 
     mainInterface.run();

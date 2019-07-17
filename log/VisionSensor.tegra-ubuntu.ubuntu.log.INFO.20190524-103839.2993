@@ -1,0 +1,60 @@
+Log file created at: 2019/05/24 10:38:39
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0524 10:38:39.401087  2993 MainInterface.cpp:42] Starting the main activity
+I0524 10:38:39.404696  2993 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0524 10:38:39.404987  2993 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0524 10:38:39.525620  2993 SerialVideoReader.cpp:61] Modifying camera codec
+E0524 10:38:39.526250  2993 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0524 10:38:39.529742  2993 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0524 10:38:39.530064  2993 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0524 10:38:39.551429  2993 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0524 10:38:39.564651  3002 TCPSocketListener.cpp:70] Starting the socket listener
+I0524 10:38:39.568043  3001 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0524 10:38:43.781376  3001 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-May-24 10:38:42 (1)
+I0524 10:38:43.796434  2999 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 10:38:42
+I0524 10:38:43.798369  2999 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 10:38:42
+I0524 10:38:43.798696  2999 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0524 10:38:43.809857  2993 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-May-24 10:38:42 by null
+I0524 10:38:43.853085  2993 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-May-24 10:38:42 by null
+I0524 10:38:43.853576  2998 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 10:38:42
+I0524 10:38:43.854761  2998 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 10:38:42
+I0524 10:38:43.854842  2998 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+E0524 10:38:43.869328  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:38:43.869990  3001 ServerNetworkHandler.cpp:86] 2 with plate number null at 2019-May-24 10:38:42 (3)
+I0524 10:38:43.885195  2997 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 10:38:42
+I0524 10:38:43.886282  2997 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 10:38:42
+I0524 10:38:43.886360  2997 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0524 10:38:43.889314  2993 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-May-24 10:38:42 by null
+E0524 10:38:43.911752  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:38:43.912933  3001 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 10:38:42 (1)
+I0524 10:38:43.918263  2993 ParkingSpot.cpp:69] Parking spot ID 5 has occupied at 2019-May-24 10:38:42 by null
+I0524 10:38:43.918758  2995 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 10:38:42
+I0524 10:38:43.920195  2995 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 10:38:42
+I0524 10:38:43.920320  2995 ParkingSpot.cpp:171] Parking spot ID 5 has expired.
+E0524 10:38:43.963781  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:38:43.964295  3001 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 10:38:42 (3)
+E0524 10:38:44.037534  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:38:44.037850  3001 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-24 10:38:42 (1)
+E0524 10:38:44.073029  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:38:44.073447  3001 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-24 10:38:42 (3)
+E0524 10:38:44.105948  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:38:44.106247  3001 ServerNetworkHandler.cpp:86] 5 with plate number null at 2019-May-24 10:38:42 (1)
+E0524 10:38:44.147194  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:38:44.147779  3001 ServerNetworkHandler.cpp:86] 5 with plate number null at 2019-May-24 10:38:42 (3)
+E0524 10:38:44.182785  3001 SecureClient.cpp:54] Connect failed: Connection refused
+I0524 10:39:26.720726  2993 MainInterface.cpp:118] Finishing the main activity
+I0524 10:39:26.747043  2993 ServerNetworkHandler.cpp:52] Destroying the HTTP message uploading handler
+I0524 10:39:28.756068  2993 ServerNetworkHandler.cpp:62] The HTTP message uploading handler has destroyed
+I0524 10:39:28.756489  2993 TCPSocketListener.cpp:56] Destroying the socket listener
+I0524 10:39:33.759701  2993 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0524 10:39:33.760138  2993 SerialVideoReader.cpp:116] Destroying the video input handler
+I0524 10:39:34.249058  2993 SerialVideoReader.cpp:126] The video input handler has destroyed.
+I0524 10:39:34.249255  2993 SerialVideoReader.cpp:192] Closing the vidao API
+I0524 10:39:34.319739  2993 TCPSocketListener.cpp:56] Destroying the socket listener
+I0524 10:39:39.320978  2993 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0524 10:39:39.353845  2993 ParkingSpot.cpp:43] Release parking spot 2
+I0524 10:39:39.363370  2993 ParkingSpot.cpp:43] Release parking spot 1
+I0524 10:39:39.363941  2993 ParkingSpot.cpp:43] Release parking spot 3
+I0524 10:39:39.364562  2993 ParkingSpot.cpp:43] Release parking spot 5
+I0524 10:39:39.369022  2993 ParkingSpot.cpp:43] Release parking spot 4

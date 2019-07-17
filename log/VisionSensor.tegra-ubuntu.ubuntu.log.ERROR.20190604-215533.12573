@@ -1,0 +1,19 @@
+Log file created at: 2019/06/04 21:55:33
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0604 21:55:33.592622 12573 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0604 21:55:33.603871 12573 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0604 21:55:37.879192 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:55:40.928139 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:55:44.052032 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:55:47.091194 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:55:50.189651 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:55:53.305951 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:55:56.351301 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:55:59.419488 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:56:02.460469 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:56:05.547766 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:56:08.629149 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:56:11.687297 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:56:14.777055 12581 ServerNetworkHandler.cpp:223] resolve: Service not found
+E0604 21:56:17.909476 12581 ServerNetworkHandler.cpp:223] resolve: Service not found

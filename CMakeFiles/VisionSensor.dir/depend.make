@@ -278,18 +278,3 @@ CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/mysql_time.h
 CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/mysql_version.h
 CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/typelib.h
 
-CMakeFiles/VisionSensor.dir/test.cpp.o: test.cpp
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/binary_log_types.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/my_alloc.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/my_command.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/my_list.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql/client_plugin.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql/plugin_auth_common.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql/psi/psi_base.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql/psi/psi_memory.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql_com.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql_time.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/mysql_version.h
-CMakeFiles/VisionSensor.dir/test.cpp.o: /usr/include/mysql/typelib.h
-

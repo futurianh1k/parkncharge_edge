@@ -1,0 +1,27 @@
+Log file created at: 2019/07/10 14:16:48
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0710 14:16:48.112304 25648 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0710 14:16:48.114033 25648 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+W0710 14:16:54.644887 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:16:57.779139 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:00.897248 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:03.972465 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:07.031478 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:10.153079 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:13.208034 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:16.296407 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:19.410550 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:22.498041 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:25.604758 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:28.653193 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:31.753840 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:34.894084 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:38.065320 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:41.163074 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:44.297267 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0710 14:17:47.369452 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0710 14:19:57.746009 25656 ServerNetworkHandler.cpp:223] Connection timed out
+W0710 14:19:57.746346 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0710 14:22:08.050024 25656 ServerNetworkHandler.cpp:223] Connection timed out
+W0710 14:22:08.050340 25656 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 

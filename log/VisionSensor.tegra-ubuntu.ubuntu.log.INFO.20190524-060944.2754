@@ -1,0 +1,1536 @@
+Log file created at: 2019/05/24 06:09:44
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0524 06:09:44.808794  2754 MainInterface.cpp:42] Starting the main activity
+I0524 06:09:44.811808  2754 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0524 06:09:44.812018  2754 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0524 06:09:44.914705  2754 SerialVideoReader.cpp:61] Modifying camera codec
+E0524 06:09:44.916054  2754 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0524 06:09:44.921334  2754 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0524 06:09:44.921967  2754 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0524 06:09:44.947451  2754 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0524 06:09:44.952625  2763 TCPSocketListener.cpp:70] Starting the socket listener
+I0524 06:09:44.955193  2762 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0524 06:09:48.780297  2763 TCPSocketListener.cpp:80] Connection established with 192.168.64.169
+I0524 06:09:48.789541  2763 TCPSocketListener.cpp:222] Ack: ready
+I0524 06:09:49.599472  2760 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 06:09:49
+I0524 06:09:49.599431  2754 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-May-24 06:09:49 by null
+I0524 06:09:49.599431  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+I0524 06:09:49.600862  2760 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 06:09:49
+I0524 06:09:49.600939  2760 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0524 06:09:49.631114  2754 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-May-24 06:09:49 by null
+I0524 06:09:49.631230  2759 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 06:09:49
+I0524 06:09:49.632575  2759 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 06:09:49
+I0524 06:09:49.632648  2759 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+E0524 06:09:49.674989  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:09:49.675875  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:09:49.685185  2754 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-May-24 06:09:49 by null
+I0524 06:09:49.685202  2756 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 06:09:49
+I0524 06:09:49.686944  2756 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 06:09:49
+I0524 06:09:49.687052  2756 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0524 06:09:49.716460  2754 ParkingSpot.cpp:69] Parking spot ID 5 has occupied at 2019-May-24 06:09:49 by null
+I0524 06:09:49.716531  2757 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 06:09:49
+I0524 06:09:49.717842  2757 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 06:09:49
+I0524 06:09:49.717921  2757 ParkingSpot.cpp:171] Parking spot ID 5 has expired.
+I0524 06:09:50.279386  2758 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-24 06:09:49
+I0524 06:09:50.280967  2758 SerialVideoReader.cpp:167] Frame has found at 2019-May-24 06:09:49
+I0524 06:09:50.281066  2758 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0524 06:09:50.283488  2754 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-May-24 06:09:49 by null
+I0524 06:09:52.676107  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:09:52.821846  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:09:52.822312  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:09:55.826946  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:09:55.929374  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:09:55.929806  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:09:58.930094  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:09:59.009999  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:09:59.010732  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:02.012410  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:02.057690  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:02.058104  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:05.058423  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:05.147846  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:05.148607  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:08.149088  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:08.203845  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:08.205735  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:11.207597  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:11.313289  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:11.313777  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:14.314066  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:14.393790  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:14.394058  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:17.394220  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:17.456053  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:17.456820  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:20.457023  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:20.556334  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:20.556576  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:23.556710  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:23.633365  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:23.633615  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:26.633744  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:26.738730  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:26.739054  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:29.744801  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:29.795547  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:29.795790  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:32.795920  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:32.862679  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:32.863168  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:35.863605  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:35.958765  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:35.959076  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:38.959276  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:39.031684  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:39.032066  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:42.033257  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:42.120777  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:42.121147  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:45.121330  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:45.189832  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:45.190305  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:48.190840  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:48.280915  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:48.281769  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:51.282857  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:51.369345  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:51.371064  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:54.371995  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:54.431639  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:54.432379  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:10:57.432790  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:10:57.502933  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:10:57.503358  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:00.503780  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:00.565851  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:00.566330  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:03.566599  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:03.629786  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:03.632144  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:06.955603  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:07.043296  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:07.045372  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:10.045641  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:10.104365  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:10.104732  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:13.104910  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:13.151306  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:13.151656  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:16.151840  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:16.202261  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:16.202642  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:19.202836  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:19.303216  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:19.303941  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:22.304417  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:22.367082  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:22.367794  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:25.368212  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+I0524 06:11:25.421576  2754 ParkingSpot.cpp:87] Parking spot ID 4 has released at 2019-May-24 06:11:24
+E0524 06:11:25.450204  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:25.452677  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:28.453738  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:28.524972  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:28.525830  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:31.526943  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:31.599021  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:31.599541  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:34.599762  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:34.650708  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:34.651199  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:37.651528  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:37.749681  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:37.750340  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:40.750624  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:40.835527  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:40.836097  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:43.836449  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:43.891721  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:43.892508  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:46.892834  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:46.955756  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:46.956430  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:49.956737  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:50.025490  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:50.025907  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:53.026361  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:53.152806  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:53.153421  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:56.153650  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:56.221722  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:56.222884  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:11:59.224117  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:11:59.298328  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:11:59.298774  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:02.298955  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:02.347065  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:02.347515  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:05.347712  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:05.450529  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:05.451004  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:08.451402  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:08.575883  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:08.576508  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:11.576941  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:11.651968  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:11.652413  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:14.652576  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:14.703318  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:14.704095  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:17.704301  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:17.793407  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:17.799051  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:20.804644  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:20.891696  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:20.894448  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:23.894682  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:23.981881  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:23.982372  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:26.982753  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:27.065268  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:27.068436  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:30.068658  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:30.127251  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:30.127562  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:33.127741  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:33.217051  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:33.217589  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:36.217804  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:36.281946  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:36.282621  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:39.282860  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:39.339819  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:39.340294  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:42.340520  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:42.431859  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:42.432381  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:45.432680  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:45.524824  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:45.525187  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:48.525656  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:48.774518  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:48.775440  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:51.775840  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:51.879823  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:51.880281  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:54.880658  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:54.975026  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:54.976075  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:12:57.976454  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:12:58.091251  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:12:58.091708  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:01.091850  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:01.182263  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:01.182852  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:04.183302  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:04.244686  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:04.245600  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:07.245924  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:07.314683  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:07.315282  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:10.315644  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:10.384416  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:10.384737  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:13.384939  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:13.435055  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:13.435422  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:16.435604  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:16.520153  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:16.520650  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:19.520952  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:19.573254  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:19.573730  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:22.573916  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:22.646076  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:22.646670  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:25.646883  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:25.729279  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:25.732350  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:28.732525  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:28.809439  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:28.809922  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:31.810256  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:31.879302  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:31.879768  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:34.880069  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:34.939174  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:34.939518  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:37.939713  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:38.035248  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:38.036423  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:41.036638  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:41.135313  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:41.135792  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:44.136049  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:44.194187  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:44.194710  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:47.195019  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:47.308293  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:47.309022  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:50.309381  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:50.370082  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:50.370654  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:53.370947  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:53.464327  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:53.464751  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:56.465008  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:56.513286  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:56.514820  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:13:59.515177  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:13:59.627040  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:13:59.627557  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:02.627882  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:02.677693  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:02.678100  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:05.678481  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:05.785485  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:05.785957  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:08.786370  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:08.881695  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:08.882252  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:11.882577  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:11.980816  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:11.981276  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:14.981572  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:15.051664  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:15.052300  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:18.052785  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:18.146229  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:18.146589  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:21.146765  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:21.249172  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:21.251690  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:24.254396  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:24.331454  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:24.331753  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:27.331928  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:27.455278  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:27.455772  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:30.456060  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:30.558970  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:30.559993  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:33.561215  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:33.686498  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:33.687018  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:36.687328  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:36.775272  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:36.776882  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:39.777190  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:39.834331  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:39.834820  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:42.835130  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:42.884230  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:42.884598  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:45.884768  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:45.973232  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:45.973600  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:48.973771  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:49.034819  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:49.035318  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:52.035676  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:52.127055  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:52.128055  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:55.129271  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:55.177189  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:55.177839  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:14:58.178792  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:14:58.259306  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:14:58.259652  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:01.260011  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:01.319531  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:01.320495  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:04.320804  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:04.418704  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:04.419373  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:07.419678  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:07.480258  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:07.480617  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:10.480823  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:10.558320  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:10.558811  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:13.559039  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:13.616179  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:13.616533  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:16.616724  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:16.674307  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:16.675071  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:19.675575  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:19.757298  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:19.757696  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:22.757895  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:22.833274  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:22.833659  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:25.833856  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:25.926477  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:25.927172  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:28.930169  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:29.041132  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:29.042080  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:32.042701  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:32.121567  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:32.122205  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:35.122511  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:35.180455  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:35.180948  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:38.181236  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:38.249825  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:38.250492  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:41.250927  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:41.315659  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:41.316653  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:44.316936  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:44.382454  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:44.387491  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:47.387791  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:47.487233  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:47.487776  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:50.488014  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:50.568451  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:50.569032  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:53.569381  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:53.664319  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:53.664827  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:56.665180  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:56.749003  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:56.749604  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:15:59.749923  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:15:59.835911  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:15:59.836391  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:02.836655  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:02.896879  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:02.902309  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:05.902635  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:06.033010  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:06.033473  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:09.036201  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:09.119276  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:09.161957  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:12.162137  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:12.230382  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:12.231892  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:15.233399  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:15.282907  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:15.283576  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:18.284953  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:18.379338  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:18.380102  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:21.380475  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:21.458248  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:21.458604  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:24.458801  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:24.515239  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:24.515825  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:27.516131  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:27.605772  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:27.606423  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:30.606760  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:30.661593  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:30.663625  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:33.668143  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:33.770787  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:33.771502  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:36.771801  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:36.829288  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:36.829707  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:39.829890  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:39.920440  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:39.920917  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:42.921361  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:42.999038  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:42.999979  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:46.001420  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:46.091059  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:46.101059  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:49.101500  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:49.151891  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:49.152309  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:52.152489  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:52.201341  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:52.201766  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:55.201974  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:55.326447  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:55.329062  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:16:58.337167  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:16:58.423467  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:16:58.427431  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:01.427726  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:01.487442  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:01.487982  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:04.488416  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:04.586968  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:04.587395  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:07.587689  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:07.707324  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:07.707783  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:10.708201  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:10.773265  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:10.773597  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:13.773782  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:13.862710  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:13.863533  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:16.863740  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:16.909377  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:16.909932  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:19.910254  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:19.987012  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:19.987582  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:22.987771  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:23.097918  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:23.098340  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:26.098531  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:26.174079  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:26.174597  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:29.175057  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:29.303330  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:29.303838  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:32.304895  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:32.411316  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:32.411630  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:35.411924  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:35.478132  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:35.478806  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:38.479066  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:38.539754  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:38.540349  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:41.540551  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:41.663290  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:41.663563  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:44.663852  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:44.708735  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:44.709188  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:47.709517  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:47.785213  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:47.785552  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:50.785751  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:50.893646  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:50.894076  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:53.894382  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:53.953254  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:53.953722  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:17:56.954252  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:17:57.033463  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:17:57.033816  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:00.034246  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:00.138232  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:00.145902  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:03.152153  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:03.254142  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:03.254729  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:06.255013  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:06.379451  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:06.379792  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:09.380153  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:09.473254  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:09.473690  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:12.474208  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:12.573532  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:12.574533  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:15.574918  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:15.659528  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:15.661072  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:18.663444  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:18.786509  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:18.787001  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:21.787308  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:21.858083  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:21.859567  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:24.859802  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:24.978030  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:24.978904  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:27.979326  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:33.141341  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:33.141834  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:36.142303  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:41.219640  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:41.220355  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:44.220649  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:44.314898  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:44.315260  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:47.315467  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:47.422461  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:47.423028  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:50.423300  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:50.491530  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:50.492020  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:53.492346  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:53.586261  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:53.586695  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:56.586899  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:56.668778  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:56.669134  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:18:59.670806  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:18:59.774850  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:18:59.776187  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:02.776505  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:02.883242  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:02.883612  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:05.883805  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:05.955449  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:05.955935  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:08.956277  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:09.069483  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:09.071156  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:12.072144  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:12.168251  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:12.168754  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:15.169554  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:15.290853  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:15.291183  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:18.291370  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:18.343006  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:18.343495  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:21.343809  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:21.423849  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:21.424186  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:24.424392  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:24.497308  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:24.497665  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:27.498008  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:27.584161  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:27.584672  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:30.584988  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:30.690146  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:30.691061  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:33.691433  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:33.780355  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:33.780864  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:36.781265  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:36.892771  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:36.893302  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:39.893750  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:39.972419  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:39.972885  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:42.974432  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:43.077095  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:43.077752  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:46.078034  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:46.190266  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:46.191092  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:49.191488  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:49.285320  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:49.285858  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:52.286072  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:52.395143  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:52.400599  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:55.401185  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:55.456939  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:55.457337  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:19:58.457633  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:19:58.559545  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:19:58.559934  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:01.560137  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:01.635248  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:01.635612  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:04.635808  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:04.714638  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:04.714987  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:07.715158  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:07.762307  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:07.762739  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:10.762941  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:10.867394  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:10.868386  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:13.868569  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:13.913960  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:13.914300  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:16.914557  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:16.973165  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:16.973659  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:19.973853  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:20.025327  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:20.025820  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:23.026155  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:23.104359  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:23.104813  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:26.105021  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:26.182478  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:26.182868  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:29.184573  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:29.281651  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:29.282480  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:32.282820  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:32.347131  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:32.347728  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:35.347918  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:35.483930  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:35.484467  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:38.484761  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:38.555902  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:38.556428  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:41.556720  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:41.614159  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:41.614616  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:44.614840  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:44.664870  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:44.665375  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:47.665567  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:47.796525  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:47.797446  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:50.798374  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:50.853518  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:50.854151  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:53.854480  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:53.931691  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:53.932261  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:56.932505  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:20:56.990051  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:20:56.990552  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:20:59.990837  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:00.094911  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:00.095412  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:03.095808  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:03.181555  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:03.182164  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:06.182488  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:06.244063  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:06.244640  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:09.245116  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:09.300307  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:09.300839  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:12.301059  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:12.358049  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:12.358486  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:15.358695  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:15.451349  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:15.451922  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:18.452280  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:18.507550  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:18.508383  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:21.508592  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:21.556391  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:21.556881  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:24.558630  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:24.641878  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:24.642616  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:27.642832  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:27.718642  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:27.719152  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:30.719440  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:30.783268  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:30.783980  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:33.784703  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:33.876829  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:33.877393  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:36.877635  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:36.943959  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:36.944782  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:39.945132  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:40.030253  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:40.033586  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:43.033890  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:43.166262  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:43.166620  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:46.166797  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:46.233142  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:46.233492  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:49.233783  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:49.306274  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:49.306658  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:52.306931  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:52.370537  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:52.371268  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:55.371662  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:55.457695  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:55.458174  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:21:58.458603  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:21:58.538556  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:21:58.539562  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:01.540585  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:01.588475  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:01.588904  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:04.589439  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:04.642719  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:04.643056  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:07.643229  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:07.770258  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:07.770625  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:10.770807  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:10.885932  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:10.886296  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:13.886675  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:13.936267  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:13.936837  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:16.937184  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:16.985031  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:16.985466  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:19.985652  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:20.058192  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:20.058658  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:23.058943  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:23.118096  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:23.118829  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:26.119344  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:26.184377  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:26.184815  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:29.185003  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:29.309979  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:29.310317  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:32.310508  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:32.392725  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:32.393201  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:35.393460  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:35.463897  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:35.464980  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:38.465188  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:38.553071  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:38.553721  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:41.555004  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:41.645617  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:41.646492  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:44.646790  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:44.699474  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:44.700225  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:47.706476  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:47.763310  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:47.763953  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:50.765377  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:50.870246  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:50.870784  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:53.871117  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:53.970206  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:53.971617  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:22:56.972095  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:22:57.035286  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:22:57.036176  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:00.039386  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:00.222407  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:00.222970  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:03.223160  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:03.316239  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:03.316591  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:06.316759  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:06.418221  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:06.418936  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:09.420372  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:09.547365  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:09.548410  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:12.548616  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:12.619135  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:12.619937  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:15.620292  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:15.676054  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:15.676556  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:18.676861  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:18.732064  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:18.734097  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:21.734338  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:21.784021  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:21.784523  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:24.784816  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:24.866755  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:24.867226  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:27.867818  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:27.953028  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:27.953604  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:30.953922  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:31.059234  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:31.059619  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:34.059795  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:34.199813  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:34.200273  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:37.200742  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:37.282382  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:37.283212  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:40.284910  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:40.366926  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:40.381515  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:43.381765  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:43.444200  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:43.445427  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:46.446022  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:46.548993  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:46.549567  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:49.549919  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:49.617081  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:49.617602  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:52.618295  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:52.668293  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:52.668927  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:55.670269  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:55.723079  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:55.723593  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:23:58.723771  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:23:58.831146  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:23:58.838647  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:01.838965  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:01.895433  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:01.895925  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:04.896224  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:05.009627  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:05.010150  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:08.010385  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:08.081435  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:08.082432  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:11.082787  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:11.196830  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:11.197374  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:14.197679  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:14.304246  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:14.304893  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:17.305341  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:17.387814  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:17.388454  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:20.388768  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:20.448220  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:20.448614  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:23.451228  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:23.557018  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:23.557364  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:26.557796  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:26.657184  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:26.657610  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:29.657893  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:29.719957  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:29.720470  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:32.720806  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:32.819344  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:32.819635  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:35.819788  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:35.880615  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:35.881090  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:38.881448  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:38.976279  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:38.976788  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:41.977118  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:42.026561  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:42.027215  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:45.027456  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:45.081921  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:45.082490  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:48.083016  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:48.144299  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:48.144659  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:51.144856  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:51.244693  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:51.245378  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:54.245676  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:54.311182  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:54.311542  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:24:57.311722  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:24:57.380262  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:24:57.380705  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:00.380962  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:00.427798  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:00.428269  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:03.428706  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:03.521028  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:03.521589  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:06.521893  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:06.615963  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:06.616559  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:09.616900  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:09.722961  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:09.723323  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:12.723626  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:12.863266  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:12.863713  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:15.863998  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:15.916802  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:15.917273  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:18.918023  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:18.967312  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:18.967680  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:21.967890  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:22.059320  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:22.063601  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:25.063810  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:25.117847  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:25.118374  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:28.118865  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:28.197005  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:28.197504  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:31.197814  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:31.290047  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:31.290829  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:34.291178  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:34.347724  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:34.348242  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:37.348537  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:37.408506  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:37.408892  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:40.409067  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:40.509205  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:40.509853  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:43.510046  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:43.558151  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:43.558634  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:46.559257  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:46.670225  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:46.679674  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:49.679889  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:49.754632  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:49.755589  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:52.755993  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:52.856720  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:52.857085  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:55.857281  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:55.951042  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:55.951580  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:25:58.951951  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:25:59.025914  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:25:59.026940  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:02.028059  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:02.130295  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:02.130802  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:05.131170  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:05.214941  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:05.215343  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:08.215545  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:08.277945  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:08.281298  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:11.281935  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:11.367755  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:11.368268  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:14.368562  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:14.451844  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:14.452327  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:17.452533  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:17.507120  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:17.507465  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:20.507652  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:20.614336  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:20.614863  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:23.615150  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:23.697233  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:23.697645  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:26.697855  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:26.813251  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:26.814499  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:29.814996  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:29.875247  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:29.875622  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:32.875803  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:32.963512  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:32.963896  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:35.966145  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:36.056497  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:36.057005  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:39.057314  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:39.121702  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:39.122485  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:42.122858  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:42.189488  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:42.190207  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:45.190551  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:45.311058  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:45.311434  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:48.311712  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:48.426235  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:48.426803  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:51.427374  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:51.497380  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:51.498023  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:54.498387  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:54.579077  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:54.579790  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:26:57.580425  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:26:57.665594  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:26:57.666440  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:00.666724  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:00.733984  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:00.734529  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:03.734889  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:03.833382  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:03.834056  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:06.834391  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:06.922034  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:06.922493  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:09.922708  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:10.026166  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:10.026528  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:13.026700  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:13.117451  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:13.118250  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:16.119376  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:16.200278  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:16.200767  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:19.201078  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:19.285126  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:19.285722  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:22.286075  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:22.354074  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:22.354573  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:25.354779  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:25.448889  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:25.449808  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:28.453181  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:28.554842  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:28.555440  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:31.555768  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:31.612557  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:31.613837  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:34.614265  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:34.721181  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:34.721658  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:37.721912  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:37.808259  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:37.808830  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:40.809172  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:40.897565  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:40.898082  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:43.898386  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:43.958303  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:43.958900  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:46.959129  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:47.025231  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:47.025667  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:50.025871  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:50.137238  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:50.141444  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:53.141644  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:53.226682  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:53.227471  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:56.227798  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:56.291580  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:56.295794  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:27:59.298147  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:27:59.394558  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:27:59.395097  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:02.395387  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:02.458590  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:02.459084  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:05.461560  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:05.566215  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:05.566640  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:08.566939  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:08.682576  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:08.683095  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:11.683452  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:11.734939  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:11.735399  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:14.735738  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:14.833012  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:14.833492  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:17.833681  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:17.932217  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:17.932657  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:20.932941  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:21.006521  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:21.006806  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:24.007180  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:24.114094  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:24.114589  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:27.117465  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:27.181607  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:27.181946  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:30.182173  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:30.236088  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:30.236505  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:33.236789  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:33.323689  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:33.324342  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:36.325204  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:36.401422  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:36.401909  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:39.402472  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:39.470276  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:39.470846  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:42.471361  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:42.565244  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:42.565822  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:45.566174  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:45.653350  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:45.653779  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:48.654924  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:48.743573  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:48.745528  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:51.745908  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:51.845778  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:51.846390  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:54.846568  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:54.961169  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:54.961668  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:28:57.962205  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:28:58.037777  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:28:58.038261  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:01.038802  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:01.193079  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:01.193696  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:04.194031  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:04.296386  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:04.297219  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:07.297646  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:07.408294  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:07.408938  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:10.409219  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:10.571157  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:10.571877  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:13.579828  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:13.631796  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:13.632293  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:16.632614  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:16.727319  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:16.727779  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:19.727949  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:19.825886  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:19.826409  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:22.826815  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:22.964498  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:22.967540  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:25.967916  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:26.069411  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:26.069901  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:29.070190  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:29.177284  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:29.177829  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:32.178133  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:32.242040  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:32.242826  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:35.243161  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:35.327622  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:35.327988  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:38.328163  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:38.395280  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:38.395694  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:41.395973  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:41.477761  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:41.478457  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:44.478829  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:44.558441  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:44.567320  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:47.567804  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:47.628659  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:47.629042  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:50.629616  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:50.740324  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:50.745573  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:53.745970  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:53.854528  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:53.855374  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:56.855851  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:29:56.951016  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:29:56.951823  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:29:59.952507  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:00.055675  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:00.056252  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:03.056529  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:03.134043  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:03.134551  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:06.134948  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:06.249629  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:06.250402  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:09.250684  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:09.336526  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:09.337028  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:12.337347  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:12.443825  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:12.444532  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:15.444839  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:15.501240  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:15.501969  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:18.502408  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:18.592535  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:18.593093  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:21.593464  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:21.659128  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:21.660953  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:24.662144  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:24.710887  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:24.711459  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:27.711771  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:27.758026  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:27.758435  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:30.758649  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:30.849933  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:30.851369  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:33.852442  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:33.928376  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:33.928972  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:36.929356  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:37.019698  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:37.020526  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:40.020848  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:40.120009  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:40.121407  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:43.121924  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:43.168973  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:43.169335  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:46.169533  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:46.282240  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:46.282603  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:49.282788  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:49.366755  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:49.367303  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:52.367633  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:52.467893  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:52.468539  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:55.468860  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:55.611441  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:55.611656  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:30:58.611945  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:30:58.694685  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:30:58.694890  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:01.695433  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:01.798002  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:01.799336  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:04.799906  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:04.873909  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:04.874441  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:07.874786  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:07.935088  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:07.935509  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:10.935714  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:11.037236  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:11.037626  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:14.038293  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:14.121858  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:14.122385  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:17.126143  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:17.236227  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:17.236727  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:20.236907  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:20.332804  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:20.335397  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:23.335613  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:23.408305  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:23.413661  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:26.413836  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:26.518364  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:26.518775  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:29.519062  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:29.574268  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:29.574635  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:32.574829  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:32.671274  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:32.671890  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:35.672415  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:35.804230  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:35.804571  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:38.804813  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:38.853752  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:38.854151  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:41.854327  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:41.914755  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:41.915282  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:44.915586  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:45.001837  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:45.002329  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:48.002743  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:48.051257  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:48.051621  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:51.051795  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:51.150393  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:51.156980  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:54.157655  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:54.260288  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:54.260668  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:31:57.260848  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:31:57.357429  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:31:57.357952  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:00.358552  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:00.449086  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:00.451625  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:03.452092  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:03.530180  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:03.530771  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:06.531092  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:06.662963  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:06.663547  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:09.664283  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:09.720201  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:09.720582  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:12.720767  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:12.786214  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:12.786710  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:15.787008  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:15.889809  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:15.890297  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:18.890601  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:18.949044  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:18.950507  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:21.951812  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:22.011492  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:22.012003  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:25.013293  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:25.073137  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:25.073587  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:28.073781  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:28.146639  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:28.147256  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:31.147581  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:31.199880  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:31.200422  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:34.200703  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:34.270138  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:34.270529  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:37.270717  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:37.349071  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:37.351332  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:40.352550  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:40.440450  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:40.440912  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:43.441152  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:43.523689  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:43.524243  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:46.526170  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:46.614300  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:46.614643  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:49.619132  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:49.718446  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:49.719326  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:52.720335  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:52.767226  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:52.767544  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:55.767716  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:55.828763  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:55.829139  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:32:58.829530  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:32:58.928047  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:32:58.928444  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:01.928846  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:02.011978  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:02.013844  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:05.014164  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:05.159440  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:05.160066  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:08.160425  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:08.332299  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:08.332721  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:11.334655  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:11.422736  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:11.423064  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:14.423439  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:14.489271  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:14.489696  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:17.490072  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:17.553293  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:17.553723  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:20.553916  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:20.610252  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:20.610790  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:23.611116  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:23.669096  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:23.669678  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:26.669996  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:26.752259  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:26.753221  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:29.753734  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:29.837222  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:29.839422  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:32.843320  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:32.931469  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:32.932096  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:35.932476  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:36.040244  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:36.040560  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:39.040866  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:39.134857  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:39.135417  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:42.135887  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:42.224009  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:42.224411  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:45.224833  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:45.291718  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:45.292254  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:48.292690  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:48.386320  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:48.387043  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:51.387320  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:51.455258  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:51.456213  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:54.456672  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:54.506260  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:54.506786  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:33:57.507154  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:33:57.597499  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:33:57.598309  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:00.598903  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:00.683166  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:00.684631  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:03.685145  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:03.758991  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:03.763299  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:06.763828  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:06.880318  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:06.880859  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:09.881065  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:09.967552  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:09.968364  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:12.968964  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:13.067059  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:13.067785  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:16.068320  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:16.132580  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:16.133131  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:19.133458  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:19.225930  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:19.226423  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:22.226716  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:22.306282  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:22.307564  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:25.308022  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:25.356705  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:25.357442  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:28.358000  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:28.473232  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:28.473614  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:31.474768  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:31.584571  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:31.584900  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:34.585206  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:34.636978  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:34.637557  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:37.637894  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:37.725291  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:37.726085  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:40.726771  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:40.825378  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:40.825911  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:43.826239  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:43.877200  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:43.877857  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:46.878543  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:46.949332  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:46.949865  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:49.950098  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:50.042914  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:50.043579  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:53.043895  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:53.159989  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:53.160746  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:56.161295  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:56.251925  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:56.252619  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:34:59.253027  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:34:59.335281  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:34:59.335757  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:02.336004  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:02.474618  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:02.480427  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:05.481379  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:05.538008  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:05.538583  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:08.538916  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:08.624907  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:08.626945  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:11.627544  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:11.731088  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:11.731580  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:14.731842  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:14.837417  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:14.837990  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:17.838544  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:17.903259  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:17.903970  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:20.904302  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:21.002076  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:21.003203  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:24.003651  2762 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-May-24 06:09:49 (1)
+E0524 06:35:24.067821  2762 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0524 06:35:24.068246  2762 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0524 06:35:24.850244  2754 MainInterface.cpp:118] Finishing the main activity
+I0524 06:35:24.869664  2754 ServerNetworkHandler.cpp:52] Destroying the HTTP message uploading handler
+I0524 06:35:26.870693  2754 ServerNetworkHandler.cpp:62] The HTTP message uploading handler has destroyed
+I0524 06:35:26.870800  2754 TCPSocketListener.cpp:56] Destroying the socket listener
+I0524 06:35:31.871299  2754 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0524 06:35:31.871351  2754 SerialVideoReader.cpp:116] Destroying the video input handler
+I0524 06:35:31.896293  2754 SerialVideoReader.cpp:126] The video input handler has destroyed.
+I0524 06:35:31.896345  2754 SerialVideoReader.cpp:192] Closing the vidao API
+I0524 06:35:31.909138  2754 TCPSocketListener.cpp:56] Destroying the socket listener
+I0524 06:35:36.909822  2754 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0524 06:35:36.913712  2754 ParkingSpot.cpp:43] Release parking spot 1
+I0524 06:35:36.914208  2754 ParkingSpot.cpp:43] Release parking spot 2
+I0524 06:35:36.914630  2754 ParkingSpot.cpp:43] Release parking spot 3
+I0524 06:35:36.915343  2754 ParkingSpot.cpp:43] Release parking spot 4
+I0524 06:35:36.915791  2754 ParkingSpot.cpp:43] Release parking spot 5

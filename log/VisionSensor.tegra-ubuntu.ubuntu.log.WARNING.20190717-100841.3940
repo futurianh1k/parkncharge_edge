@@ -1,0 +1,4 @@
+Log file created at: 2019/07/17 10:08:41
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0717 10:08:41.923439  3940 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1

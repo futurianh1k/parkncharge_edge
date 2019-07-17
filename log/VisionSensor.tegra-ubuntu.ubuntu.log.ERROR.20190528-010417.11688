@@ -1,0 +1,8 @@
+Log file created at: 2019/05/28 01:04:17
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0528 01:04:17.624615 11688 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0528 01:04:17.626348 11688 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0528 01:04:28.768373 11696 SecureClient.cpp:54] Connect failed: Connection refused
+E0528 01:04:28.813678 11696 SecureClient.cpp:54] Connect failed: Connection refused
+E0528 01:04:34.286653 11696 SecureClient.cpp:54] Connect failed: Connection refused

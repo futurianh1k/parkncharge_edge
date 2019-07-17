@@ -1,0 +1,13 @@
+Log file created at: 2019/05/22 07:21:59
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0522 07:21:59.448675  6110 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0522 07:21:59.460183  6110 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0522 07:22:03.807912  6119 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:22:03.808161  6119 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0522 07:22:06.938917  6119 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:22:06.939134  6119 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0522 07:22:10.019645  6119 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:22:10.020982  6119 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0522 07:22:13.119596  6119 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0522 07:22:13.123965  6119 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 

@@ -1,0 +1,57 @@
+Log file created at: 2019/06/04 20:21:06
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0604 20:21:06.749191 10318 MainInterface.cpp:42] Starting the main activity
+I0604 20:21:06.752933 10318 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0604 20:21:06.753237 10318 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0604 20:21:06.843508 10318 SerialVideoReader.cpp:61] Modifying camera codec
+E0604 20:21:06.844332 10318 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0604 20:21:06.848385 10318 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0604 20:21:06.848498 10318 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0604 20:21:06.861973 10318 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0604 20:21:06.871798 10327 TCPSocketListener.cpp:70] Starting the socket listener
+I0604 20:21:06.878650 10326 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0604 20:21:12.287750 10326 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-04 20:21:12 (1)
+I0604 20:21:12.297158 10324 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 20:21:12
+I0604 20:21:12.298692 10324 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 20:21:12
+I0604 20:21:12.298795 10324 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0604 20:21:12.309767 10318 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-04 20:21:12 by null
+I0604 20:21:12.376752 10318 ParkingSpot.cpp:69] Parking spot ID 5 has occupied at 2019-Jun-04 20:21:12 by null
+I0604 20:21:12.377008 10323 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 20:21:12
+I0604 20:21:12.380591 10323 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 20:21:12
+I0604 20:21:12.381122 10323 ParkingSpot.cpp:171] Parking spot ID 5 has expired.
+E0604 20:21:12.396538 10326 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0604 20:21:12.398802 10326 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0604 20:21:12.421326 10322 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 20:21:12
+I0604 20:21:12.423722 10322 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 20:21:12
+I0604 20:21:12.423889 10322 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0604 20:21:12.428382 10318 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-Jun-04 20:21:12 by null
+I0604 20:21:12.470814 10320 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 20:21:12
+I0604 20:21:12.470789 10318 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-Jun-04 20:21:12 by null
+I0604 20:21:12.474596 10320 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 20:21:12
+I0604 20:21:12.474789 10320 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0604 20:21:12.512123 10321 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 20:21:12
+I0604 20:21:12.515031 10318 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-Jun-04 20:21:12 by null
+I0604 20:21:12.515031 10321 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 20:21:12
+I0604 20:21:12.515586 10321 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0604 20:21:15.399051 10326 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-04 20:21:12 (1)
+E0604 20:21:15.474740 10326 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0604 20:21:15.475029 10326 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0604 20:21:18.475270 10326 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-04 20:21:12 (1)
+I0604 20:21:23.541290 10318 MainInterface.cpp:118] Finishing the main activity
+I0604 20:21:23.559003 10318 ServerNetworkHandler.cpp:52] Destroying the HTTP message uploading handler
+E0604 20:21:24.787811 10326 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0604 20:21:24.788182 10326 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0604 20:21:25.559587 10318 ServerNetworkHandler.cpp:62] The HTTP message uploading handler has destroyed
+I0604 20:21:25.559676 10318 TCPSocketListener.cpp:56] Destroying the socket listener
+I0604 20:21:30.560287 10318 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0604 20:21:30.560349 10318 SerialVideoReader.cpp:116] Destroying the video input handler
+I0604 20:21:30.598577 10318 SerialVideoReader.cpp:126] The video input handler has destroyed.
+I0604 20:21:30.598651 10318 SerialVideoReader.cpp:192] Closing the vidao API
+I0604 20:21:30.608675 10318 TCPSocketListener.cpp:56] Destroying the socket listener
+I0604 20:21:35.608927 10318 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0604 20:21:35.612591 10318 ParkingSpot.cpp:43] Release parking spot 4
+I0604 20:21:35.613159 10318 ParkingSpot.cpp:43] Release parking spot 5
+I0604 20:21:35.613590 10318 ParkingSpot.cpp:43] Release parking spot 3
+I0604 20:21:35.614086 10318 ParkingSpot.cpp:43] Release parking spot 2
+I0604 20:21:35.614536 10318 ParkingSpot.cpp:43] Release parking spot 1

@@ -63,7 +63,15 @@ namespace seevider {
 		 */
 		void reset();
 		
-		int pullDB();
+//////////////////////////////////////// MySQL  ////////////
+
+		void connectDB();
+		void updateDB(int id, std::string spotName, int x, int y, int h, int w);
+		bool isExist(int id);
+		void createDB(int id, std::string spotName, int x, int y, int h, int w);		
+		void pullDB();
+
+//////////////////////////////////////////////////////////
 
 		/**
 		 * Get the number of parking spots

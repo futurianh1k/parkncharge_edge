@@ -1,0 +1,213 @@
+Log file created at: 2019/05/23 02:04:39
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0523 02:04:39.632364  3759 MainInterface.cpp:42] Starting the main activity
+I0523 02:04:39.633852  3759 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0523 02:04:39.634099  3759 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0523 02:04:39.686264  3759 SerialVideoReader.cpp:61] Modifying camera codec
+E0523 02:04:39.686851  3759 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0523 02:04:39.688305  3759 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0523 02:04:39.689024  3759 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0523 02:04:39.700549  3759 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0523 02:04:39.720554  3768 TCPSocketListener.cpp:70] Starting the socket listener
+I0523 02:04:39.723278  3767 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0523 02:04:43.917996  3759 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-May-23 02:04:43 by null
+I0523 02:04:43.920032  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+I0523 02:04:43.920555  3763 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 02:04:43
+I0523 02:04:43.922000  3763 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 02:04:43
+I0523 02:04:43.922129  3763 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0523 02:04:43.943444  3761 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 02:04:43
+I0523 02:04:43.943430  3759 ParkingSpot.cpp:69] Parking spot ID 2 has occupied at 2019-May-23 02:04:43 by null
+I0523 02:04:43.944824  3761 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 02:04:43
+I0523 02:04:43.944912  3761 ParkingSpot.cpp:171] Parking spot ID 2 has expired.
+I0523 02:04:43.981072  3759 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-May-23 02:04:43 by null
+I0523 02:04:43.981122  3762 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 02:04:43
+I0523 02:04:43.983439  3762 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 02:04:43
+I0523 02:04:43.983527  3762 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+E0523 02:04:44.007694  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:04:44.008023  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:04:47.008208  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+I0523 02:06:27.235338  3768 TCPSocketListener.cpp:80] Connection established with 192.168.64.169
+I0523 02:06:46.505813  3768 TCPSocketListener.cpp:222] Ack: ready
+E0523 02:06:46.566960  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:06:46.567229  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:06:49.567384  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:06:49.614886  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:06:49.615692  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:06:52.615855  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:06:52.691579  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:06:52.691761  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:06:55.691960  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:06:55.783097  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:06:55.783475  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:06:58.786008  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:06:58.884095  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:06:58.884316  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:01.884558  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:01.942534  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:01.942749  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:04.942890  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:05.002135  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:05.002450  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:08.002619  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:08.070250  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:08.071532  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:09.527779  3768 TCPSocketListener.cpp:131] REQ_UPDATE
+I0523 02:07:09.527861  3768 TCPSocketListener.cpp:356] Turn on the management mode
+I0523 02:07:09.717322  3759 MainInterface.cpp:153] Enter to the management mode
+I0523 02:07:09.742146  3768 TCPSocketListener.cpp:363] Turn off the management mode
+I0523 02:07:09.742419  3759 MainInterface.cpp:160] Exit from the management mode
+I0523 02:07:11.071732  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:11.147902  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:11.148726  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:13.129796  3765 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 02:07:12
+I0523 02:07:13.131330  3765 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 02:07:12
+I0523 02:07:13.131429  3765 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0523 02:07:13.134362  3759 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-May-23 02:07:12 by null
+I0523 02:07:13.202934  3764 SerialVideoReader.cpp:159] Frame has requestd at 2019-May-23 02:07:12
+I0523 02:07:13.204037  3764 SerialVideoReader.cpp:167] Frame has found at 2019-May-23 02:07:12
+I0523 02:07:13.204104  3764 ParkingSpot.cpp:171] Parking spot ID 5 has expired.
+I0523 02:07:13.207026  3759 ParkingSpot.cpp:69] Parking spot ID 5 has occupied at 2019-May-23 02:07:12 by null
+I0523 02:07:14.148948  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:14.205742  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:14.206017  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:14.939361  3759 ParkingSpot.cpp:87] Parking spot ID 2 has released at 2019-May-23 02:07:14
+I0523 02:07:15.070628  3759 ParkingSpot.cpp:87] Parking spot ID 1 has released at 2019-May-23 02:07:14
+I0523 02:07:17.206156  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:17.272125  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:17.272714  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:20.273072  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:20.390471  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:20.391255  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:23.391533  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:23.479920  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:23.480212  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:26.480412  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:26.535094  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:26.535396  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:27.740931  3768 TCPSocketListener.cpp:131] REQ_UPDATE
+I0523 02:07:27.741112  3768 TCPSocketListener.cpp:356] Turn on the management mode
+I0523 02:07:27.793090  3759 MainInterface.cpp:153] Enter to the management mode
+I0523 02:07:27.808092  3768 TCPSocketListener.cpp:363] Turn off the management mode
+I0523 02:07:27.808197  3759 MainInterface.cpp:160] Exit from the management mode
+I0523 02:07:29.535557  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:29.592737  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:29.593288  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:32.595288  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:32.668920  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:32.669247  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:35.669409  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:35.735116  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:35.735400  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:36.809509  3768 TCPSocketListener.cpp:131] REQ_UPDATE
+I0523 02:07:36.809581  3768 TCPSocketListener.cpp:356] Turn on the management mode
+I0523 02:07:36.868239  3759 MainInterface.cpp:153] Enter to the management mode
+I0523 02:07:36.981037  3768 TCPSocketListener.cpp:363] Turn off the management mode
+I0523 02:07:36.981257  3759 MainInterface.cpp:160] Exit from the management mode
+I0523 02:07:38.735568  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:38.821748  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:38.821933  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:41.822266  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:41.887401  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:41.887877  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:44.888461  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:44.954144  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:44.955018  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:47.955263  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:48.049074  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:48.049801  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:51.050034  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:51.112355  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:51.112933  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:54.113811  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:54.168303  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:54.169292  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:57.169827  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:07:57.225100  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:07:57.225430  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:07:59.493765  3768 TCPSocketListener.cpp:142] REQ_DISCONNECT
+I0523 02:07:59.493935  3768 TCPSocketListener.cpp:82] Connection destroyed
+I0523 02:08:00.225644  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:00.279492  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:00.279942  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:03.280442  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:03.357368  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:03.357851  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:06.358211  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:06.423012  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:06.424609  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:09.425019  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:09.539927  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:09.540513  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:12.540992  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:12.645548  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:12.645855  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:15.646044  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:15.708184  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:15.708489  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:18.708669  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:18.840417  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:18.841303  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:21.841929  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:21.899041  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:21.899658  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:24.900198  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:24.975744  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:24.976727  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:27.977296  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:28.064658  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:28.068306  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:31.068565  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:31.181725  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:31.182045  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:34.182222  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:34.234663  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:34.235306  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:37.235703  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:37.358538  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:37.358810  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:40.359076  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:40.457702  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:40.458256  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:43.458442  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:43.533934  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:43.534267  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:46.534693  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:46.682065  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:46.682602  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:49.682958  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:49.785096  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:49.785394  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:52.785565  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:52.842169  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:52.842515  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:55.842653  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:55.924057  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:55.924322  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:08:58.924576  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:08:58.976102  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:08:58.976414  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:09:01.976583  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:09:02.034142  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:09:02.034468  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:09:05.034801  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:09:05.094099  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:09:05.094480  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:09:07.394671  3759 MainInterface.cpp:118] Finishing the main activity
+I0523 02:09:07.398990  3759 ServerNetworkHandler.cpp:52] Destroying the HTTP message uploading handler
+I0523 02:09:08.095151  3767 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-May-23 02:04:43 (1)
+E0523 02:09:08.205185  3767 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0523 02:09:08.207211  3767 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0523 02:09:09.399492  3759 ServerNetworkHandler.cpp:62] The HTTP message uploading handler has destroyed
+I0523 02:09:09.399546  3759 TCPSocketListener.cpp:56] Destroying the socket listener
+I0523 02:09:14.399863  3759 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0523 02:09:14.399921  3759 SerialVideoReader.cpp:116] Destroying the video input handler
+I0523 02:09:14.407740  3759 SerialVideoReader.cpp:126] The video input handler has destroyed.
+I0523 02:09:14.407793  3759 SerialVideoReader.cpp:192] Closing the vidao API
+I0523 02:09:14.426780  3759 TCPSocketListener.cpp:56] Destroying the socket listener
+I0523 02:09:19.430590  3759 TCPSocketListener.cpp:66] The socket listener has destroyed
+I0523 02:09:19.434192  3759 ParkingSpot.cpp:43] Release parking spot 4
+I0523 02:09:19.434762  3759 ParkingSpot.cpp:43] Release parking spot 5
+I0523 02:09:19.435263  3759 ParkingSpot.cpp:43] Release parking spot 3
+I0523 02:09:19.435901  3759 ParkingSpot.cpp:43] Release parking spot 2
+I0523 02:09:19.436425  3759 ParkingSpot.cpp:43] Release parking spot 1

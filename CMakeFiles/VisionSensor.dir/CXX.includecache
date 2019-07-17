@@ -253,6 +253,16 @@ stdlib.h
 -
 errno.h
 -
+iostream
+-
+stdlib.h
+-
+errno.h
+-
+sstream
+-
+math.h
+-
 string.h
 -
 
@@ -285,6 +295,8 @@ unordered_set
 -
 glog/logging.h
 -
+sstream
+-
 boost/property_tree/json_parser.hpp
 -
 iostream
@@ -293,7 +305,7 @@ stdlib.h
 -
 errno.h
 -
-string.h
+cstring
 -
 
 /home/ubuntu/VisionSensor/ParkingSpotManager.h
@@ -553,14 +565,6 @@ boost/property_tree/xml_parser.hpp
 -
 glog/logging.h
 -
-stdio.h
--
-stdlib.h
--
-errno.h
--
-string.h
--
 
 /home/ubuntu/VisionSensor/main.h
 string
@@ -569,18 +573,6 @@ unordered_map
 -
 types.h
 /home/ubuntu/VisionSensor/types.h
-
-/home/ubuntu/VisionSensor/test.cpp
-/usr/include/mysql/mysql.h
--
-stdio.h
--
-stdlib.h
--
-errno.h
--
-string.h
--
 
 /home/ubuntu/VisionSensor/types.h
 opencv2/opencv.hpp

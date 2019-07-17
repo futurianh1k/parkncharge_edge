@@ -1,0 +1,17 @@
+Log file created at: 2019/05/24 06:06:21
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0524 06:06:21.249089 17253 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0524 06:06:21.250784 17253 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0524 06:06:26.755826 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:29.969420 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:33.058234 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:36.118125 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:39.257831 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:42.355195 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:45.415158 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:48.496757 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:51.602736 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:54.701395 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:06:57.781188 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+E0524 06:07:00.872120 17261 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)

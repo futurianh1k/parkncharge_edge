@@ -1,0 +1,15 @@
+Log file created at: 2019/05/24 10:33:48
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0524 10:33:48.807061  2245 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0524 10:33:48.808930  2245 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0524 10:33:54.624377  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.663846  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.711980  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.757233  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.794819  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.858511  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.901145  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.935230  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:54.973282  2257 SecureClient.cpp:54] Connect failed: Connection refused
+E0524 10:33:55.009449  2257 SecureClient.cpp:54] Connect failed: Connection refused

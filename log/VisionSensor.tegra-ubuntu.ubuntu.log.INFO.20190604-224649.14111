@@ -1,0 +1,64 @@
+Log file created at: 2019/06/04 22:46:49
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0604 22:46:49.528053 14111 MainInterface.cpp:42] Starting the main activity
+I0604 22:46:49.532474 14111 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0604 22:46:49.532990 14111 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0604 22:46:49.665669 14111 SerialVideoReader.cpp:61] Modifying camera codec
+E0604 22:46:49.666105 14111 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0604 22:46:49.668120 14111 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0604 22:46:49.668241 14111 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0604 22:46:49.683688 14111 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0604 22:46:49.690279 14120 TCPSocketListener.cpp:70] Starting the socket listener
+I0604 22:46:49.694798 14119 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0604 22:47:20.682534 14119 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-Jun-04 22:47:20 (1)
+I0604 22:47:20.689064 14117 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 22:47:20
+I0604 22:47:20.690251 14117 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 22:47:20
+I0604 22:47:20.690336 14117 ParkingSpot.cpp:171] Parking spot ID 1 has expired.
+I0604 22:47:20.693467 14111 ParkingSpot.cpp:69] Parking spot ID 1 has occupied at 2019-Jun-04 22:47:20 by null
+I0604 22:47:21.606212 14119 ServerNetworkHandler.cpp:86] 1 with plate number null at 2019-Jun-04 22:47:20 (3)
+I0604 22:47:53.803004 14119 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-04 22:47:53 (1)
+I0604 22:47:53.810184 14113 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 22:47:53
+I0604 22:47:53.813256 14113 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 22:47:53
+I0604 22:47:53.813601 14113 ParkingSpot.cpp:171] Parking spot ID 4 has expired.
+I0604 22:47:53.816913 14111 ParkingSpot.cpp:69] Parking spot ID 4 has occupied at 2019-Jun-04 22:47:53 by null
+I0604 22:47:54.756608 14119 ServerNetworkHandler.cpp:86] 4 with plate number null at 2019-Jun-04 22:47:53 (3)
+I0604 22:50:47.377126 14119 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 22:50:46 (1)
+I0604 22:50:47.384379 14115 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 22:50:46
+I0604 22:50:47.386646 14115 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 22:50:46
+I0604 22:50:47.386790 14115 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0604 22:50:47.390898 14111 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-Jun-04 22:50:46 by null
+I0604 22:50:48.345952 14119 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 22:50:46 (3)
+I0604 22:51:42.639884 14120 TCPSocketListener.cpp:80] Connection established with 192.168.64.169
+I0604 22:51:42.647927 14120 TCPSocketListener.cpp:222] Ack: ready
+I0604 22:52:08.593979 14120 TCPSocketListener.cpp:131] REQ_UPDATE
+I0604 22:52:08.594285 14120 TCPSocketListener.cpp:356] Turn on the management mode
+I0604 22:52:08.663334 14111 MainInterface.cpp:153] Enter to the management mode
+I0604 22:52:08.679355 14120 TCPSocketListener.cpp:363] Turn off the management mode
+I0604 22:52:08.679458 14111 MainInterface.cpp:160] Exit from the management mode
+I0604 22:52:17.155391 14120 TCPSocketListener.cpp:131] REQ_UPDATE
+I0604 22:52:17.155516 14120 TCPSocketListener.cpp:356] Turn on the management mode
+I0604 22:52:17.379093 14111 MainInterface.cpp:153] Enter to the management mode
+I0604 22:52:17.415344 14120 TCPSocketListener.cpp:363] Turn off the management mode
+I0604 22:52:17.415436 14111 MainInterface.cpp:160] Exit from the management mode
+I0604 22:52:43.814806 14120 TCPSocketListener.cpp:131] REQ_UPDATE
+I0604 22:52:43.815130 14120 TCPSocketListener.cpp:356] Turn on the management mode
+I0604 22:52:43.968734 14111 MainInterface.cpp:153] Enter to the management mode
+I0604 22:52:44.003660 14120 TCPSocketListener.cpp:363] Turn off the management mode
+I0604 22:52:44.004045 14111 MainInterface.cpp:160] Exit from the management mode
+I0604 22:52:46.764111 14119 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 22:52:46 (2)
+I0604 22:52:46.773895 14111 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2019-Jun-04 22:52:46
+I0604 22:52:48.661550 14120 TCPSocketListener.cpp:131] REQ_UPDATE
+I0604 22:52:48.662963 14120 TCPSocketListener.cpp:356] Turn on the management mode
+I0604 22:52:48.784296 14111 MainInterface.cpp:153] Enter to the management mode
+I0604 22:52:48.816604 14120 TCPSocketListener.cpp:363] Turn off the management mode
+I0604 22:52:48.816721 14111 MainInterface.cpp:160] Exit from the management mode
+I0604 22:53:02.499552 14119 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 22:53:02 (1)
+I0604 22:53:02.503069 14115 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jun-04 22:53:02
+I0604 22:53:02.504067 14115 SerialVideoReader.cpp:167] Frame has found at 2019-Jun-04 22:53:02
+I0604 22:53:02.504138 14115 ParkingSpot.cpp:171] Parking spot ID 3 has expired.
+I0604 22:53:02.506557 14111 ParkingSpot.cpp:69] Parking spot ID 3 has occupied at 2019-Jun-04 22:53:02 by null
+I0604 22:53:03.430043 14119 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 22:53:02 (3)
+I0604 22:53:40.916198 14119 ServerNetworkHandler.cpp:86] 3 with plate number null at 2019-Jun-04 22:53:40 (2)
+I0604 22:53:40.922873 14111 ParkingSpot.cpp:87] Parking spot ID 3 has released at 2019-Jun-04 22:53:40
+I0604 23:03:13.246399 14111 MainInterface.cpp:118] Finishing the main activity

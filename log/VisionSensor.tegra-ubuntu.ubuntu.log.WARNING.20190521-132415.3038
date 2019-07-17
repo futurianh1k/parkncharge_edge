@@ -1,0 +1,253 @@
+Log file created at: 2019/05/21 13:24:15
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0521 13:24:15.018851  3038 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0521 13:24:15.020095  3038 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0521 13:24:43.009465  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:24:43.009681  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:24:46.168685  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:24:46.169030  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:24:49.314579  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:24:49.314815  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:24:52.470728  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:24:52.470954  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:24:55.632407  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:24:55.632779  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:24:58.791864  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:24:58.792115  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:01.889801  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:01.890321  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:05.034488  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:05.034741  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:08.217931  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:08.218366  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:11.336043  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:11.336261  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:14.481062  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:14.486588  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:17.654536  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:17.655012  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:20.782632  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:20.782883  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:23.928771  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:23.928992  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:27.024940  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:27.025183  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:30.172776  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:30.173044  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:33.263444  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:33.263787  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:36.374771  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:36.375205  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:39.481710  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:39.482174  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:42.580878  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:42.581565  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:45.709125  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:45.709470  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:48.812129  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:48.812391  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:51.936846  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:51.937341  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:55.123111  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:55.123369  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:25:58.251075  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:25:58.251310  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:01.319383  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:01.319815  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:04.386409  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:04.386669  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:07.510841  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:07.511040  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:10.595990  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:10.596319  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:13.778446  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:13.778717  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:16.867811  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:16.868234  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:19.989172  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:19.989436  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:23.080233  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:23.080580  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:26.219683  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:26.219916  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:29.316268  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:29.316534  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:32.408042  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:32.408324  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:35.569273  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:35.569718  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:38.893690  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:38.894452  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:42.069880  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:42.070272  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:45.193557  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:45.193898  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:48.363715  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:48.363994  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:51.495720  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:51.496079  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:54.668632  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:54.669203  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:26:57.734244  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:26:57.736966  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:00.885699  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:00.885995  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:03.993824  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:03.994335  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:07.127480  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:07.127815  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:10.257771  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:10.258051  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:13.323601  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:13.324187  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:16.406544  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:16.406988  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:19.465471  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:19.465816  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:22.526609  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:22.527091  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:25.625021  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:25.625620  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:28.762703  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:28.763181  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:31.810606  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:31.810855  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:34.878863  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:34.879091  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:37.924813  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:37.925215  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:41.076047  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:41.076455  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:44.237352  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:44.237735  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:47.350687  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:47.351258  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:50.485507  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:50.485946  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:53.606405  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:53.606760  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:56.688772  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:56.689389  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:27:59.811244  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:27:59.811518  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:02.979841  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:02.980159  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:06.080111  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:06.080533  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:09.152127  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:09.152743  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:12.239542  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:12.239966  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:15.296507  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:15.298836  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:18.394398  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:18.394850  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:21.496685  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:21.497586  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:24.552250  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:24.553131  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:27.657917  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:27.658735  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:30.789216  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:30.789541  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:33.916673  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:33.917212  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:36.981910  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:36.982395  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:40.039705  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:40.040551  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:43.187355  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:43.187716  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:46.311308  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:46.311786  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:49.373553  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:49.374094  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:52.482558  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:52.483230  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:55.561794  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:55.562249  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:28:58.661871  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:28:58.662153  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:01.711591  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:01.711928  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:04.768293  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:04.768863  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:07.843806  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:07.844266  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:11.024974  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:11.025323  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:14.127802  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:14.128103  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:17.187618  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:17.188097  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:20.298089  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:20.298702  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:23.387589  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:23.389968  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:26.473527  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:26.473827  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:29.581557  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:29.581881  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:32.738631  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:32.738924  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:35.855430  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:35.855942  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:38.949584  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:38.950623  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:42.026264  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:42.026777  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:45.144701  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:45.145843  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:48.194478  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:48.194777  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:51.296761  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:51.297163  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:54.363340  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:54.363713  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:29:57.412569  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:29:57.413252  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:00.506494  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:00.506815  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:03.599081  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:03.599560  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:06.689873  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:06.690366  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:09.775873  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:09.776294  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:12.877182  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:12.877646  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:15.959538  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:15.959976  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:19.063081  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:19.063386  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:22.126052  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:22.127501  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:25.197988  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:25.198470  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:28.269572  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:28.269989  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:31.390678  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:31.391161  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:34.451818  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:34.453040  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:37.507540  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:37.507905  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:40.595314  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:40.595811  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:43.675319  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:43.675788  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:46.779628  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:46.780311  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:49.837800  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:49.838349  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:52.991281  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:52.991866  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:56.083703  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:56.084628  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:30:59.170992  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:30:59.171692  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:31:02.292742  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:31:02.293550  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0521 13:31:05.400223  3045 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
+W0521 13:31:05.400681  3045 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 

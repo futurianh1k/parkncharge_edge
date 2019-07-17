@@ -705,30 +705,6 @@ CMakeFiles/VisionSensor.dir/Utils.cpp.o.provides: CMakeFiles/VisionSensor.dir/Ut
 CMakeFiles/VisionSensor.dir/Utils.cpp.o.provides.build: CMakeFiles/VisionSensor.dir/Utils.cpp.o
 
 
-CMakeFiles/VisionSensor.dir/test.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
-CMakeFiles/VisionSensor.dir/test.cpp.o: test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/VisionSensor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/VisionSensor.dir/test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/test.cpp.o -c /home/ubuntu/VisionSensor/test.cpp
-
-CMakeFiles/VisionSensor.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/test.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/VisionSensor/test.cpp > CMakeFiles/VisionSensor.dir/test.cpp.i
-
-CMakeFiles/VisionSensor.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/test.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/VisionSensor/test.cpp -o CMakeFiles/VisionSensor.dir/test.cpp.s
-
-CMakeFiles/VisionSensor.dir/test.cpp.o.requires:
-
-.PHONY : CMakeFiles/VisionSensor.dir/test.cpp.o.requires
-
-CMakeFiles/VisionSensor.dir/test.cpp.o.provides: CMakeFiles/VisionSensor.dir/test.cpp.o.requires
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/test.cpp.o.provides.build
-.PHONY : CMakeFiles/VisionSensor.dir/test.cpp.o.provides
-
-CMakeFiles/VisionSensor.dir/test.cpp.o.provides.build: CMakeFiles/VisionSensor.dir/test.cpp.o
-
-
 # Object files for target VisionSensor
 VisionSensor_OBJECTS = \
 "CMakeFiles/VisionSensor.dir/main.cpp.o" \
@@ -757,8 +733,7 @@ VisionSensor_OBJECTS = \
 "CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o" \
 "CMakeFiles/VisionSensor.dir/Settings.cpp.o" \
 "CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o" \
-"CMakeFiles/VisionSensor.dir/Utils.cpp.o" \
-"CMakeFiles/VisionSensor.dir/test.cpp.o"
+"CMakeFiles/VisionSensor.dir/Utils.cpp.o"
 
 # External object files for target VisionSensor
 VisionSensor_EXTERNAL_OBJECTS =
@@ -790,40 +765,29 @@ VisionSensor: CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o
 VisionSensor: CMakeFiles/VisionSensor.dir/Settings.cpp.o
 VisionSensor: CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o
 VisionSensor: CMakeFiles/VisionSensor.dir/Utils.cpp.o
-VisionSensor: CMakeFiles/VisionSensor.dir/test.cpp.o
 VisionSensor: CMakeFiles/VisionSensor.dir/build.make
 VisionSensor: /usr/lib/aarch64-linux-gnu/libssl.so
 VisionSensor: /usr/lib/aarch64-linux-gnu/libcrypto.so
-VisionSensor: /usr/lib/libopencv_vstab.so.2.4.13
-VisionSensor: /usr/lib/libopencv_imuvstab.so.2.4.13
-VisionSensor: /usr/lib/libopencv_facedetect.so.2.4.13
-VisionSensor: /usr/lib/libopencv_esm_panorama.so.2.4.13
-VisionSensor: /usr/lib/libopencv_detection_based_tracker.so.2.4.13
-VisionSensor: /usr/lib/libopencv_videostab.so.2.4.13
-VisionSensor: /usr/lib/libopencv_ts.a
-VisionSensor: /usr/lib/libopencv_superres.so.2.4.13
-VisionSensor: /usr/lib/libopencv_contrib.so.2.4.13
-VisionSensor: /usr/lib/libopencv_tegra.so.2.4.13
-VisionSensor: /usr/lib/libopencv_stitching.so.2.4.13
-VisionSensor: /usr/lib/libopencv_gpu.so.2.4.13
-VisionSensor: /usr/lib/libopencv_photo.so.2.4.13
-VisionSensor: /usr/lib/libopencv_legacy.so.2.4.13
-VisionSensor: /usr/local/cuda-8.0/lib64/libcufft.so
-VisionSensor: /usr/lib/libopencv_video.so.2.4.13
-VisionSensor: /usr/lib/libopencv_objdetect.so.2.4.13
-VisionSensor: /usr/lib/libopencv_ml.so.2.4.13
-VisionSensor: /usr/lib/libopencv_calib3d.so.2.4.13
-VisionSensor: /usr/lib/libopencv_features2d.so.2.4.13
-VisionSensor: /usr/lib/libopencv_highgui.so.2.4.13
-VisionSensor: /usr/lib/libopencv_imgproc.so.2.4.13
-VisionSensor: /usr/lib/libopencv_flann.so.2.4.13
-VisionSensor: /usr/lib/libopencv_core.so.2.4.13
-VisionSensor: /usr/local/cuda-8.0/lib64/libcudart.so
-VisionSensor: /usr/local/cuda-8.0/lib64/libnppc.so
-VisionSensor: /usr/local/cuda-8.0/lib64/libnppi.so
-VisionSensor: /usr/local/cuda-8.0/lib64/libnpps.so
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_videostab.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_ts.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_superres.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_ocl.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_gpu.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_contrib.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_photo.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_legacy.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_video.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_ml.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_features2d.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_flann.so.2.4.9
+VisionSensor: /usr/lib/aarch64-linux-gnu/libopencv_core.so.2.4.9
 VisionSensor: CMakeFiles/VisionSensor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/VisionSensor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable VisionSensor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/VisionSensor/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable VisionSensor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VisionSensor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -858,7 +822,6 @@ CMakeFiles/VisionSensor.dir/requires: CMakeFiles/VisionSensor.dir/ServerSyncMess
 CMakeFiles/VisionSensor.dir/requires: CMakeFiles/VisionSensor.dir/Settings.cpp.o.requires
 CMakeFiles/VisionSensor.dir/requires: CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o.requires
 CMakeFiles/VisionSensor.dir/requires: CMakeFiles/VisionSensor.dir/Utils.cpp.o.requires
-CMakeFiles/VisionSensor.dir/requires: CMakeFiles/VisionSensor.dir/test.cpp.o.requires
 
 .PHONY : CMakeFiles/VisionSensor.dir/requires
 
