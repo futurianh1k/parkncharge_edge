@@ -2,3 +2,4 @@
 *.cmake
 ./MessageData/
 MessageData/
+/MessageData
