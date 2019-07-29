@@ -1,4 +1,0 @@
-Log file created at: 2019/06/27 17:37:23
-Running on machine: tegra-ubuntu
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-F0627 17:37:23.175796 15069 SerialVideoReader.cpp:52] Failed to connect the camera

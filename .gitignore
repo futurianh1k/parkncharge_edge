@@ -1,5 +1,5 @@
-./darknet/*.weights
-*.cmake
-./MessageData/
-MessageData/
-/MessageData
+darknet/*.weights
+log
+MessageData
+*.log
+*.weights

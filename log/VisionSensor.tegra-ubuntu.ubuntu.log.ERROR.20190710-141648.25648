@@ -1,7 +1,0 @@
-Log file created at: 2019/07/10 14:16:48
-Running on machine: tegra-ubuntu
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-E0710 14:16:48.112304 25648 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
-E0710 14:16:48.114033 25648 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
-E0710 14:19:57.746009 25656 ServerNetworkHandler.cpp:223] Connection timed out
-E0710 14:22:08.050024 25656 ServerNetworkHandler.cpp:223] Connection timed out
