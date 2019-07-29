@@ -1,0 +1,109 @@
+Log file created at: 2019/07/25 18:02:52
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0725 18:02:52.870354  8581 MainInterface.cpp:42] Starting the main activity
+I0725 18:02:52.871991  8581 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0725 18:02:52.872215  8581 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0725 18:03:04.689465  8581 SerialVideoReader.cpp:61] Modifying camera codec
+E0725 18:03:04.697315  8581 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0725 18:03:04.698938  8581 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0725 18:03:04.699138  8581 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0725 18:03:04.706352  8581 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0725 18:03:04.723594  8876 TCPSocketListener.cpp:70] Starting the socket listener
+I0725 18:03:04.724375  8875 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0726 09:44:36.497066  8581 ParkingSpot.cpp:277] Parking spot ID 15 has occupied at 20190726T094435 by QISENS6
+I0726 09:44:36.497459  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:36.719856  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:36.721159  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:44:39.721320  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:39.935567  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:39.935854  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:44:42.938704  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:43.121800  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:43.122051  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:44:46.122195  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:46.300365  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:46.300842  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:44:46.496973  8715 ParkingSpot.cpp:413] 10
+I0726 09:44:46.497038  8715 ParkingSpot.cpp:416] 2019-Jul-26 09:54:35
+I0726 09:44:46.497361  8715 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jul-26 09:54:35
+I0726 09:44:46.497453  8715 ParkingSpot.cpp:419] Parking spot ID 15 has expired.
+I0726 09:44:49.301005  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:49.498235  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:49.498548  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:44:52.498950  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:52.692322  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:52.692647  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:44:55.692838  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:55.900841  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:55.901046  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:44:58.901175  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:44:59.077333  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:44:59.077543  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:02.077735  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:02.268474  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:02.268744  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:05.268887  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:05.490025  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:05.490296  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:08.490437  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:08.738471  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:08.739051  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:11.739289  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:11.932379  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:11.932708  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:14.932863  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:15.108428  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:15.108692  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:18.108831  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:18.294625  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:18.294857  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:21.294984  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:21.483577  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:21.484067  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:24.484427  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:24.661412  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:24.661659  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:27.661819  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:27.861830  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:27.862076  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:30.862219  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:31.063796  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:31.064076  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:34.064568  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:34.246388  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:34.246637  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:37.246817  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:37.454939  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:37.455173  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:40.455303  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:40.653735  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:40.654103  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:43.654537  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:43.831125  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:43.831481  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:46.831707  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:47.038810  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:47.039031  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:50.039440  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:50.229722  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:50.230995  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:53.231411  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:53.423108  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:53.423377  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:56.423701  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:56.609937  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:56.610352  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:45:59.610725  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:45:59.803620  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:45:59.804774  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:46:02.804970  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:46:02.994922  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:46:02.995240  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:46:05.995630  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:46:06.184957  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:46:06.185226  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:46:09.185398  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)
+E0726 09:46:09.439501  8875 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:46:09.439894  8875 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0726 09:46:12.440723  8875 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Jul-26 09:44:35 (1)

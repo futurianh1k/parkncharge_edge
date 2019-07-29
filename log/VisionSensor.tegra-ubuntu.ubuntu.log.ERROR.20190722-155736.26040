@@ -1,0 +1,17 @@
+Log file created at: 2019/07/22 15:57:36
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0722 15:57:36.717613 26040 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0722 15:57:36.718719 26040 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0722 15:57:46.070101 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:57:52.103938 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:57:58.153940 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:04.189929 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:10.229982 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:16.266010 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:22.330010 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:28.362006 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:34.430725 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:40.467936 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:46.553956 26360 ServerNetworkHandler.cpp:223] No route to host
+E0722 15:58:52.605928 26360 ServerNetworkHandler.cpp:223] No route to host

@@ -1,1 +1,4 @@
-VisionSensor.tegra-ubuntu.ubuntu.log.INFO.20190703-091810.31110
+Log file created at: 2019/07/29 09:36:33
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0729 09:36:33.982156 30789 MainInterface.cpp:42] Starting the main activity

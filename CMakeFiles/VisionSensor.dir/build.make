@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/parkncharge_edge
+CMAKE_SOURCE_DIR = "/home/ubuntu/VisionSensor(merge)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/parkncharge_edge
+CMAKE_BINARY_DIR = "/home/ubuntu/VisionSensor(merge)"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VisionSensor.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/VisionSensor.dir/flags.make
 
 CMakeFiles/VisionSensor.dir/main.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/main.cpp.o: main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/main.cpp.o -c /home/ubuntu/parkncharge_edge/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/main.cpp.o -c "/home/ubuntu/VisionSensor(merge)/main.cpp"
 
 CMakeFiles/VisionSensor.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/main.cpp > CMakeFiles/VisionSensor.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/main.cpp" > CMakeFiles/VisionSensor.dir/main.cpp.i
 
 CMakeFiles/VisionSensor.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/main.cpp -o CMakeFiles/VisionSensor.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/main.cpp" -o CMakeFiles/VisionSensor.dir/main.cpp.s
 
 CMakeFiles/VisionSensor.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/main.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/VisionSensor.dir/main.cpp.o.provides.build: CMakeFiles/VisionSensor.d
 
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: MainInterface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/MainInterface.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/MainInterface.cpp.o -c /home/ubuntu/parkncharge_edge/MainInterface.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/MainInterface.cpp.o -c "/home/ubuntu/VisionSensor(merge)/MainInterface.cpp"
 
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/MainInterface.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/MainInterface.cpp > CMakeFiles/VisionSensor.dir/MainInterface.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/MainInterface.cpp" > CMakeFiles/VisionSensor.dir/MainInterface.cpp.i
 
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/MainInterface.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/MainInterface.cpp -o CMakeFiles/VisionSensor.dir/MainInterface.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/MainInterface.cpp" -o CMakeFiles/VisionSensor.dir/MainInterface.cpp.s
 
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/MainInterface.cpp.o.requires
@@ -97,17 +97,17 @@ CMakeFiles/VisionSensor.dir/MainInterface.cpp.o.provides.build: CMakeFiles/Visio
 
 CMakeFiles/VisionSensor.dir/BoardController.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/BoardController.cpp.o: BoardController.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/BoardController.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/BoardController.cpp.o -c /home/ubuntu/parkncharge_edge/BoardController.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/BoardController.cpp.o -c "/home/ubuntu/VisionSensor(merge)/BoardController.cpp"
 
 CMakeFiles/VisionSensor.dir/BoardController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/BoardController.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/BoardController.cpp > CMakeFiles/VisionSensor.dir/BoardController.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/BoardController.cpp" > CMakeFiles/VisionSensor.dir/BoardController.cpp.i
 
 CMakeFiles/VisionSensor.dir/BoardController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/BoardController.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/BoardController.cpp -o CMakeFiles/VisionSensor.dir/BoardController.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/BoardController.cpp" -o CMakeFiles/VisionSensor.dir/BoardController.cpp.s
 
 CMakeFiles/VisionSensor.dir/BoardController.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/BoardController.cpp.o.requires
@@ -120,17 +120,17 @@ CMakeFiles/VisionSensor.dir/BoardController.cpp.o.provides.build: CMakeFiles/Vis
 
 CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o: CameraInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o -c /home/ubuntu/parkncharge_edge/CameraInfo.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o -c "/home/ubuntu/VisionSensor(merge)/CameraInfo.cpp"
 
 CMakeFiles/VisionSensor.dir/CameraInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/CameraInfo.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/CameraInfo.cpp > CMakeFiles/VisionSensor.dir/CameraInfo.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/CameraInfo.cpp" > CMakeFiles/VisionSensor.dir/CameraInfo.cpp.i
 
 CMakeFiles/VisionSensor.dir/CameraInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/CameraInfo.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/CameraInfo.cpp -o CMakeFiles/VisionSensor.dir/CameraInfo.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/CameraInfo.cpp" -o CMakeFiles/VisionSensor.dir/CameraInfo.cpp.s
 
 CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o.requires
@@ -143,17 +143,17 @@ CMakeFiles/VisionSensor.dir/CameraInfo.cpp.o.provides.build: CMakeFiles/VisionSe
 
 CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o: CascadeClassifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o -c /home/ubuntu/parkncharge_edge/CascadeClassifier.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o -c "/home/ubuntu/VisionSensor(merge)/CascadeClassifier.cpp"
 
 CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/CascadeClassifier.cpp > CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/CascadeClassifier.cpp" > CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.i
 
 CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/CascadeClassifier.cpp -o CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/CascadeClassifier.cpp" -o CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.s
 
 CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o.requires
@@ -166,17 +166,17 @@ CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o.provides.build: CMakeFiles/V
 
 CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o: ImageNetClassifier.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o -c /home/ubuntu/parkncharge_edge/ImageNetClassifier.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o -c "/home/ubuntu/VisionSensor(merge)/ImageNetClassifier.cpp"
 
 CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/ImageNetClassifier.cpp > CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/ImageNetClassifier.cpp" > CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.i
 
 CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/ImageNetClassifier.cpp -o CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/ImageNetClassifier.cpp" -o CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.s
 
 CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o.requires
@@ -189,17 +189,17 @@ CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/VisionSensor.dir/IMessageData.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/IMessageData.cpp.o: IMessageData.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/IMessageData.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IMessageData.cpp.o -c /home/ubuntu/parkncharge_edge/IMessageData.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IMessageData.cpp.o -c "/home/ubuntu/VisionSensor(merge)/IMessageData.cpp"
 
 CMakeFiles/VisionSensor.dir/IMessageData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/IMessageData.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/IMessageData.cpp > CMakeFiles/VisionSensor.dir/IMessageData.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/IMessageData.cpp" > CMakeFiles/VisionSensor.dir/IMessageData.cpp.i
 
 CMakeFiles/VisionSensor.dir/IMessageData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/IMessageData.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/IMessageData.cpp -o CMakeFiles/VisionSensor.dir/IMessageData.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/IMessageData.cpp" -o CMakeFiles/VisionSensor.dir/IMessageData.cpp.s
 
 CMakeFiles/VisionSensor.dir/IMessageData.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/IMessageData.cpp.o.requires
@@ -212,17 +212,17 @@ CMakeFiles/VisionSensor.dir/IMessageData.cpp.o.provides.build: CMakeFiles/Vision
 
 CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o: INetworkHandler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o -c /home/ubuntu/parkncharge_edge/INetworkHandler.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o -c "/home/ubuntu/VisionSensor(merge)/INetworkHandler.cpp"
 
 CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/INetworkHandler.cpp > CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/INetworkHandler.cpp" > CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.i
 
 CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/INetworkHandler.cpp -o CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/INetworkHandler.cpp" -o CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.s
 
 CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o.requires
@@ -235,17 +235,17 @@ CMakeFiles/VisionSensor.dir/INetworkHandler.cpp.o.provides.build: CMakeFiles/Vis
 
 CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o: IGenericDetector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o -c /home/ubuntu/parkncharge_edge/IGenericDetector.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o -c "/home/ubuntu/VisionSensor(merge)/IGenericDetector.cpp"
 
 CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/IGenericDetector.cpp > CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/IGenericDetector.cpp" > CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.i
 
 CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/IGenericDetector.cpp -o CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/IGenericDetector.cpp" -o CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.s
 
 CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o.requires
@@ -258,17 +258,17 @@ CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o.provides.build: CMakeFiles/Vi
 
 CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o: IOccupancyDetector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o -c /home/ubuntu/parkncharge_edge/IOccupancyDetector.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o -c "/home/ubuntu/VisionSensor(merge)/IOccupancyDetector.cpp"
 
 CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/IOccupancyDetector.cpp > CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/IOccupancyDetector.cpp" > CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.i
 
 CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/IOccupancyDetector.cpp -o CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/IOccupancyDetector.cpp" -o CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.s
 
 CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o.requires
@@ -281,17 +281,17 @@ CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o: IPlateDetector.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o -c /home/ubuntu/parkncharge_edge/IPlateDetector.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o -c "/home/ubuntu/VisionSensor(merge)/IPlateDetector.cpp"
 
 CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/IPlateDetector.cpp > CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/IPlateDetector.cpp" > CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.i
 
 CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/IPlateDetector.cpp -o CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/IPlateDetector.cpp" -o CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.s
 
 CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o.requires
@@ -304,17 +304,17 @@ CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o.provides.build: CMakeFiles/Visi
 
 CMakeFiles/VisionSensor.dir/IOUtils.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/IOUtils.cpp.o: IOUtils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/IOUtils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IOUtils.cpp.o -c /home/ubuntu/parkncharge_edge/IOUtils.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/IOUtils.cpp.o -c "/home/ubuntu/VisionSensor(merge)/IOUtils.cpp"
 
 CMakeFiles/VisionSensor.dir/IOUtils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/IOUtils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/IOUtils.cpp > CMakeFiles/VisionSensor.dir/IOUtils.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/IOUtils.cpp" > CMakeFiles/VisionSensor.dir/IOUtils.cpp.i
 
 CMakeFiles/VisionSensor.dir/IOUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/IOUtils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/IOUtils.cpp -o CMakeFiles/VisionSensor.dir/IOUtils.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/IOUtils.cpp" -o CMakeFiles/VisionSensor.dir/IOUtils.cpp.s
 
 CMakeFiles/VisionSensor.dir/IOUtils.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/IOUtils.cpp.o.requires
@@ -327,17 +327,17 @@ CMakeFiles/VisionSensor.dir/IOUtils.cpp.o.provides.build: CMakeFiles/VisionSenso
 
 CMakeFiles/VisionSensor.dir/Light.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/Light.cpp.o: Light.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/Light.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/Light.cpp.o -c /home/ubuntu/parkncharge_edge/Light.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/Light.cpp.o -c "/home/ubuntu/VisionSensor(merge)/Light.cpp"
 
 CMakeFiles/VisionSensor.dir/Light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/Light.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/Light.cpp > CMakeFiles/VisionSensor.dir/Light.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/Light.cpp" > CMakeFiles/VisionSensor.dir/Light.cpp.i
 
 CMakeFiles/VisionSensor.dir/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/Light.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/Light.cpp -o CMakeFiles/VisionSensor.dir/Light.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/Light.cpp" -o CMakeFiles/VisionSensor.dir/Light.cpp.s
 
 CMakeFiles/VisionSensor.dir/Light.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/Light.cpp.o.requires
@@ -350,17 +350,17 @@ CMakeFiles/VisionSensor.dir/Light.cpp.o.provides.build: CMakeFiles/VisionSensor.
 
 CMakeFiles/VisionSensor.dir/LPR.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/LPR.cpp.o: LPR.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/LPR.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/LPR.cpp.o -c /home/ubuntu/parkncharge_edge/LPR.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/LPR.cpp.o -c "/home/ubuntu/VisionSensor(merge)/LPR.cpp"
 
 CMakeFiles/VisionSensor.dir/LPR.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/LPR.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/LPR.cpp > CMakeFiles/VisionSensor.dir/LPR.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/LPR.cpp" > CMakeFiles/VisionSensor.dir/LPR.cpp.i
 
 CMakeFiles/VisionSensor.dir/LPR.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/LPR.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/LPR.cpp -o CMakeFiles/VisionSensor.dir/LPR.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/LPR.cpp" -o CMakeFiles/VisionSensor.dir/LPR.cpp.s
 
 CMakeFiles/VisionSensor.dir/LPR.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/LPR.cpp.o.requires
@@ -373,17 +373,17 @@ CMakeFiles/VisionSensor.dir/LPR.cpp.o.provides.build: CMakeFiles/VisionSensor.di
 
 CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o: MessageQueue.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o -c /home/ubuntu/parkncharge_edge/MessageQueue.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o -c "/home/ubuntu/VisionSensor(merge)/MessageQueue.cpp"
 
 CMakeFiles/VisionSensor.dir/MessageQueue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/MessageQueue.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/MessageQueue.cpp > CMakeFiles/VisionSensor.dir/MessageQueue.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/MessageQueue.cpp" > CMakeFiles/VisionSensor.dir/MessageQueue.cpp.i
 
 CMakeFiles/VisionSensor.dir/MessageQueue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/MessageQueue.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/MessageQueue.cpp -o CMakeFiles/VisionSensor.dir/MessageQueue.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/MessageQueue.cpp" -o CMakeFiles/VisionSensor.dir/MessageQueue.cpp.s
 
 CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o.requires
@@ -396,17 +396,17 @@ CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o.provides.build: CMakeFiles/Vision
 
 CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o: MotionDetection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o -c /home/ubuntu/parkncharge_edge/MotionDetection.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o -c "/home/ubuntu/VisionSensor(merge)/MotionDetection.cpp"
 
 CMakeFiles/VisionSensor.dir/MotionDetection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/MotionDetection.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/MotionDetection.cpp > CMakeFiles/VisionSensor.dir/MotionDetection.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/MotionDetection.cpp" > CMakeFiles/VisionSensor.dir/MotionDetection.cpp.i
 
 CMakeFiles/VisionSensor.dir/MotionDetection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/MotionDetection.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/MotionDetection.cpp -o CMakeFiles/VisionSensor.dir/MotionDetection.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/MotionDetection.cpp" -o CMakeFiles/VisionSensor.dir/MotionDetection.cpp.s
 
 CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o.requires
@@ -419,17 +419,17 @@ CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o.provides.build: CMakeFiles/Vis
 
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: ParkingSpot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o -c /home/ubuntu/parkncharge_edge/ParkingSpot.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o -c "/home/ubuntu/VisionSensor(merge)/ParkingSpot.cpp"
 
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/ParkingSpot.cpp > CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/ParkingSpot.cpp" > CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.i
 
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/ParkingSpot.cpp -o CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/ParkingSpot.cpp" -o CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.s
 
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o.requires
@@ -442,17 +442,17 @@ CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o.provides.build: CMakeFiles/VisionS
 
 CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o: ParkingSpotManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o -c /home/ubuntu/parkncharge_edge/ParkingSpotManager.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o -c "/home/ubuntu/VisionSensor(merge)/ParkingSpotManager.cpp"
 
 CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/ParkingSpotManager.cpp > CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/ParkingSpotManager.cpp" > CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.i
 
 CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/ParkingSpotManager.cpp -o CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/ParkingSpotManager.cpp" -o CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.s
 
 CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o.requires
@@ -465,17 +465,17 @@ CMakeFiles/VisionSensor.dir/ParkingSpotManager.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o: ParkingUpdateMessage.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o -c /home/ubuntu/parkncharge_edge/ParkingUpdateMessage.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o -c "/home/ubuntu/VisionSensor(merge)/ParkingUpdateMessage.cpp"
 
 CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/ParkingUpdateMessage.cpp > CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/ParkingUpdateMessage.cpp" > CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.i
 
 CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/ParkingUpdateMessage.cpp -o CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/ParkingUpdateMessage.cpp" -o CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.s
 
 CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o.requires
@@ -488,17 +488,17 @@ CMakeFiles/VisionSensor.dir/ParkingUpdateMessage.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/VisionSensor.dir/SecureClient.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/SecureClient.cpp.o: SecureClient.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/SecureClient.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/SecureClient.cpp.o -c /home/ubuntu/parkncharge_edge/SecureClient.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/SecureClient.cpp.o -c "/home/ubuntu/VisionSensor(merge)/SecureClient.cpp"
 
 CMakeFiles/VisionSensor.dir/SecureClient.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/SecureClient.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/SecureClient.cpp > CMakeFiles/VisionSensor.dir/SecureClient.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/SecureClient.cpp" > CMakeFiles/VisionSensor.dir/SecureClient.cpp.i
 
 CMakeFiles/VisionSensor.dir/SecureClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/SecureClient.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/SecureClient.cpp -o CMakeFiles/VisionSensor.dir/SecureClient.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/SecureClient.cpp" -o CMakeFiles/VisionSensor.dir/SecureClient.cpp.s
 
 CMakeFiles/VisionSensor.dir/SecureClient.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/SecureClient.cpp.o.requires
@@ -511,17 +511,17 @@ CMakeFiles/VisionSensor.dir/SecureClient.cpp.o.provides.build: CMakeFiles/Vision
 
 CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o: SensorInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o -c /home/ubuntu/parkncharge_edge/SensorInfo.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o -c "/home/ubuntu/VisionSensor(merge)/SensorInfo.cpp"
 
 CMakeFiles/VisionSensor.dir/SensorInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/SensorInfo.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/SensorInfo.cpp > CMakeFiles/VisionSensor.dir/SensorInfo.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/SensorInfo.cpp" > CMakeFiles/VisionSensor.dir/SensorInfo.cpp.i
 
 CMakeFiles/VisionSensor.dir/SensorInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/SensorInfo.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/SensorInfo.cpp -o CMakeFiles/VisionSensor.dir/SensorInfo.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/SensorInfo.cpp" -o CMakeFiles/VisionSensor.dir/SensorInfo.cpp.s
 
 CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o.requires
@@ -534,17 +534,17 @@ CMakeFiles/VisionSensor.dir/SensorInfo.cpp.o.provides.build: CMakeFiles/VisionSe
 
 CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o: SerialVideoReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o -c /home/ubuntu/parkncharge_edge/SerialVideoReader.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o -c "/home/ubuntu/VisionSensor(merge)/SerialVideoReader.cpp"
 
 CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/SerialVideoReader.cpp > CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/SerialVideoReader.cpp" > CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.i
 
 CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/SerialVideoReader.cpp -o CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/SerialVideoReader.cpp" -o CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.s
 
 CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o.requires
@@ -557,17 +557,17 @@ CMakeFiles/VisionSensor.dir/SerialVideoReader.cpp.o.provides.build: CMakeFiles/V
 
 CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o: ServerNetworkHandler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o -c /home/ubuntu/parkncharge_edge/ServerNetworkHandler.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o -c "/home/ubuntu/VisionSensor(merge)/ServerNetworkHandler.cpp"
 
 CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/ServerNetworkHandler.cpp > CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/ServerNetworkHandler.cpp" > CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.i
 
 CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/ServerNetworkHandler.cpp -o CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/ServerNetworkHandler.cpp" -o CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.s
 
 CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o.requires
@@ -580,17 +580,17 @@ CMakeFiles/VisionSensor.dir/ServerNetworkHandler.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o: ServerSyncMessage.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o -c /home/ubuntu/parkncharge_edge/ServerSyncMessage.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o -c "/home/ubuntu/VisionSensor(merge)/ServerSyncMessage.cpp"
 
 CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/ServerSyncMessage.cpp > CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/ServerSyncMessage.cpp" > CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.i
 
 CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/ServerSyncMessage.cpp -o CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/ServerSyncMessage.cpp" -o CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.s
 
 CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o.requires
@@ -603,17 +603,17 @@ CMakeFiles/VisionSensor.dir/ServerSyncMessage.cpp.o.provides.build: CMakeFiles/V
 
 CMakeFiles/VisionSensor.dir/Settings.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/Settings.cpp.o: Settings.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/Settings.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/Settings.cpp.o -c /home/ubuntu/parkncharge_edge/Settings.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/Settings.cpp.o -c "/home/ubuntu/VisionSensor(merge)/Settings.cpp"
 
 CMakeFiles/VisionSensor.dir/Settings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/Settings.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/Settings.cpp > CMakeFiles/VisionSensor.dir/Settings.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/Settings.cpp" > CMakeFiles/VisionSensor.dir/Settings.cpp.i
 
 CMakeFiles/VisionSensor.dir/Settings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/Settings.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/Settings.cpp -o CMakeFiles/VisionSensor.dir/Settings.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/Settings.cpp" -o CMakeFiles/VisionSensor.dir/Settings.cpp.s
 
 CMakeFiles/VisionSensor.dir/Settings.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/Settings.cpp.o.requires
@@ -626,17 +626,17 @@ CMakeFiles/VisionSensor.dir/Settings.cpp.o.provides.build: CMakeFiles/VisionSens
 
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: TCPSocketListener.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o -c /home/ubuntu/parkncharge_edge/TCPSocketListener.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o -c "/home/ubuntu/VisionSensor(merge)/TCPSocketListener.cpp"
 
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/TCPSocketListener.cpp > CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/TCPSocketListener.cpp" > CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.i
 
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/TCPSocketListener.cpp -o CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/TCPSocketListener.cpp" -o CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.s
 
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o.requires
@@ -649,17 +649,17 @@ CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o.provides.build: CMakeFiles/V
 
 CMakeFiles/VisionSensor.dir/Utils.cpp.o: CMakeFiles/VisionSensor.dir/flags.make
 CMakeFiles/VisionSensor.dir/Utils.cpp.o: Utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ubuntu/parkncharge_edge/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/ubuntu/VisionSensor(merge)/CMakeFiles" $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/VisionSensor.dir/Utils.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/Utils.cpp.o -c /home/ubuntu/parkncharge_edge/Utils.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/VisionSensor.dir/Utils.cpp.o -c "/home/ubuntu/VisionSensor(merge)/Utils.cpp"
 
 CMakeFiles/VisionSensor.dir/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VisionSensor.dir/Utils.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ubuntu/parkncharge_edge/Utils.cpp > CMakeFiles/VisionSensor.dir/Utils.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/ubuntu/VisionSensor(merge)/Utils.cpp" > CMakeFiles/VisionSensor.dir/Utils.cpp.i
 
 CMakeFiles/VisionSensor.dir/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VisionSensor.dir/Utils.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ubuntu/parkncharge_edge/Utils.cpp -o CMakeFiles/VisionSensor.dir/Utils.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/ubuntu/VisionSensor(merge)/Utils.cpp" -o CMakeFiles/VisionSensor.dir/Utils.cpp.s
 
 CMakeFiles/VisionSensor.dir/Utils.cpp.o.requires:
 .PHONY : CMakeFiles/VisionSensor.dir/Utils.cpp.o.requires
@@ -803,6 +803,6 @@ CMakeFiles/VisionSensor.dir/clean:
 .PHONY : CMakeFiles/VisionSensor.dir/clean
 
 CMakeFiles/VisionSensor.dir/depend:
-	cd /home/ubuntu/parkncharge_edge && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/parkncharge_edge /home/ubuntu/parkncharge_edge /home/ubuntu/parkncharge_edge /home/ubuntu/parkncharge_edge /home/ubuntu/parkncharge_edge/CMakeFiles/VisionSensor.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/ubuntu/VisionSensor(merge)" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/ubuntu/VisionSensor(merge)" "/home/ubuntu/VisionSensor(merge)" "/home/ubuntu/VisionSensor(merge)" "/home/ubuntu/VisionSensor(merge)" "/home/ubuntu/VisionSensor(merge)/CMakeFiles/VisionSensor.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/VisionSensor.dir/depend
 

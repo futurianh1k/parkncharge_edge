@@ -1,0 +1,57 @@
+Log file created at: 2019/07/22 15:57:24
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0722 15:57:24.932545 26040 MainInterface.cpp:42] Starting the main activity
+I0722 15:57:24.934602 26040 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0722 15:57:24.934898 26040 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0722 15:57:36.717170 26040 SerialVideoReader.cpp:61] Modifying camera codec
+E0722 15:57:36.717613 26040 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0722 15:57:36.718719 26040 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0722 15:57:36.718933 26040 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0722 15:57:36.729596 26040 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0722 15:57:36.747771 26361 TCPSocketListener.cpp:70] Starting the socket listener
+I0722 15:57:36.748179 26360 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0722 15:57:38.890693 26040 ParkingSpot.cpp:293] (TEST!!)1
+I0722 15:57:39.407919 26040 ParkingSpot.cpp:293] (TEST!!)2
+I0722 15:57:39.924171 26040 ParkingSpot.cpp:293] (TEST!!)3
+I0722 15:57:40.492408 26040 ParkingSpot.cpp:293] (TEST!!)4
+I0722 15:57:41.014566 26040 ParkingSpot.cpp:293] (TEST!!)5
+I0722 15:57:41.540740 26040 ParkingSpot.cpp:293] (TEST!!)6
+I0722 15:57:42.060948 26040 ParkingSpot.cpp:296] (TEST##)6
+I0722 15:57:43.002745 26040 ParkingSpot.cpp:143] 84
+I0722 15:57:43.002878 26040 ParkingSpot.cpp:181] 177082092830240031680 : 960 : 10
+I0722 15:57:43.002907 26040 ParkingSpot.cpp:182] 177082092830240031680 : 900 : 57
+I0722 15:57:43.002930 26040 ParkingSpot.cpp:191] result_timer : 13
+I0722 15:57:43.003027 26040 ParkingSpot.cpp:246] res_timer :  13
+I0722 15:57:43.003191 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)
+I0722 15:57:43.790604 26040 ParkingSpot.cpp:251] Parking spot ID 17 has occupied at 20190722T155741 by QISENS6
+I0722 15:57:44.309038 26040 ParkingSpot.cpp:296] (TEST##)7
+I0722 15:57:44.861987 26040 ParkingSpot.cpp:296] (TEST##)8
+I0722 15:57:45.408661 26040 ParkingSpot.cpp:296] (TEST##)9
+I0722 15:57:45.931989 26040 ParkingSpot.cpp:296] (TEST##)10
+E0722 15:57:46.070101 26360 ServerNetworkHandler.cpp:223] No route to host
+W0722 15:57:46.070397 26360 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 15:57:46.438596 26040 ParkingSpot.cpp:296] (TEST##)11
+I0722 15:57:49.070561 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)
+E0722 15:57:52.103938 26360 ServerNetworkHandler.cpp:223] No route to host
+W0722 15:57:52.104138 26360 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 15:57:53.790633 26306 ParkingSpot.cpp:366] 10
+I0722 15:57:53.790704 26306 ParkingSpot.cpp:370] 2019-Jul-22 16:07:41
+I0722 15:57:53.790930 26306 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jul-22 16:07:41
+I0722 15:57:53.791002 26306 ParkingSpot.cpp:373] Parking spot ID 17 has expired.
+I0722 15:57:55.104269 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)
+E0722 15:57:58.153940 26360 ServerNetworkHandler.cpp:223] No route to host
+W0722 15:57:58.154139 26360 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 15:58:01.154265 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)
+E0722 15:58:04.189929 26360 ServerNetworkHandler.cpp:223] No route to host
+W0722 15:58:04.190117 26360 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 15:58:07.190248 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)
+E0722 15:58:10.229982 26360 ServerNetworkHandler.cpp:223] No route to host
+W0722 15:58:10.230252 26360 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 15:58:13.230445 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)
+E0722 15:58:16.266010 26360 ServerNetworkHandler.cpp:223] No route to host
+W0722 15:58:16.266247 26360 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 15:58:19.269726 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)
+E0722 15:58:22.330010 26360 ServerNetworkHandler.cpp:223] No route to host
+W0722 15:58:22.330255 26360 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 15:58:25.330401 26360 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 15:57:41 (1)

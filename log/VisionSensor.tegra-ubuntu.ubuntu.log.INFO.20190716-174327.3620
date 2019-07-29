@@ -1,0 +1,75 @@
+Log file created at: 2019/07/16 17:43:27
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0716 17:43:27.951463  3620 MainInterface.cpp:42] Starting the main activity
+I0716 17:43:27.952802  3620 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0716 17:43:27.952881  3620 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0716 17:43:38.317049  3620 SerialVideoReader.cpp:61] Modifying camera codec
+E0716 17:43:38.317205  3620 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+I0716 17:43:38.318171  3620 SerialVideoReader.cpp:77] Modified camera codec: ÿÿÿÿ
+I0716 17:43:38.318229  3620 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0716 17:43:38.370070  3620 SerialVideoReader.cpp:87] Modified camera frame size: 960, 540
+I0716 17:43:38.371136  3627 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0716 17:43:38.371196  3628 TCPSocketListener.cpp:70] Starting the socket listener
+I0716 17:44:06.409023  3620 ParkingSpot.cpp:377] (TEST!!)-5
+I0716 17:44:20.006182  3620 ParkingSpot.cpp:377] (TEST!!)-5
+I0716 17:44:20.217808  3620 ParkingSpot.cpp:377] (TEST!!)-4
+I0716 17:44:20.458886  3620 ParkingSpot.cpp:377] (TEST!!)-3
+I0716 17:44:20.665946  3620 ParkingSpot.cpp:377] (TEST!!)-2
+I0716 17:44:20.895786  3620 ParkingSpot.cpp:377] (TEST!!)-1
+I0716 17:44:22.184811  3620 ParkingSpot.cpp:377] (TEST!!)-5
+I0716 17:44:22.427886  3620 ParkingSpot.cpp:377] (TEST!!)-4
+I0716 17:44:22.633226  3620 ParkingSpot.cpp:377] (TEST!!)-3
+I0716 17:44:22.857189  3620 ParkingSpot.cpp:377] (TEST!!)-2
+I0716 17:44:23.058790  3620 ParkingSpot.cpp:377] (TEST!!)-1
+I0716 17:44:23.258776  3620 ParkingSpot.cpp:377] (TEST!!)0
+I0716 17:44:23.489625  3620 ParkingSpot.cpp:377] (TEST!!)1
+I0716 17:44:23.700356  3620 ParkingSpot.cpp:377] (TEST!!)2
+I0716 17:44:23.916728  3620 ParkingSpot.cpp:377] (TEST!!)3
+I0716 17:44:24.133028  3620 ParkingSpot.cpp:377] (TEST!!)4
+I0716 17:44:24.359534  3620 ParkingSpot.cpp:377] (TEST!!)5
+I0716 17:44:24.581024  3620 ParkingSpot.cpp:377] (TEST!!)6
+I0716 17:44:24.820853  3620 ParkingSpot.cpp:380] (TEST##)6
+I0716 17:44:25.836366  3620 ParkingSpot.cpp:143] 83
+I0716 17:44:25.836702  3620 ParkingSpot.cpp:182] 1468800 : 32400 : 2400
+I0716 17:44:25.836747  3620 ParkingSpot.cpp:183] 1382400 : 61200 : 2640
+I0716 17:44:25.836783  3620 ParkingSpot.cpp:192] result_timer : 57360
+I0716 17:44:25.837123  3620 ParkingSpot.cpp:324] res_timer :  57360
+I0716 17:44:25.837406  3620 ParkingSpot.cpp:329] Parking spot ID 21 has occupied at 20190716T174424 by QISENS6
+I0716 17:44:25.838392  3627 ServerNetworkHandler.cpp:86] 21 with plate number QISENS6 at 2019-Jul-16 17:44:24 (1)
+I0716 17:44:26.063452  3620 ParkingSpot.cpp:380] (TEST##)7
+I0716 17:44:26.269569  3620 ParkingSpot.cpp:380] (TEST##)8
+I0716 17:44:26.459908  3620 ParkingSpot.cpp:380] (TEST##)9
+I0716 17:44:26.680090  3620 ParkingSpot.cpp:380] (TEST##)10
+I0716 17:44:26.896237  3620 ParkingSpot.cpp:380] (TEST##)11
+I0716 17:50:29.640281  3620 ParkingSpot.cpp:377] (TEST!!)-5
+I0716 17:50:29.865821  3620 ParkingSpot.cpp:377] (TEST!!)-4
+I0716 17:50:30.318235  3620 ParkingSpot.cpp:377] (TEST!!)-5
+I0716 17:50:30.337070  3620 ParkingSpot.cpp:377] (TEST!!)-4
+I0716 17:50:30.570806  3620 ParkingSpot.cpp:377] (TEST!!)-3
+I0716 17:50:30.784704  3620 ParkingSpot.cpp:377] (TEST!!)-2
+I0716 17:50:31.005524  3620 ParkingSpot.cpp:377] (TEST!!)-1
+I0716 17:50:31.207195  3620 ParkingSpot.cpp:377] (TEST!!)0
+I0716 17:50:31.420732  3620 ParkingSpot.cpp:377] (TEST!!)1
+I0716 17:50:31.639231  3620 ParkingSpot.cpp:377] (TEST!!)2
+I0716 17:50:31.866256  3620 ParkingSpot.cpp:377] (TEST!!)3
+I0716 17:50:32.096576  3620 ParkingSpot.cpp:377] (TEST!!)4
+I0716 17:50:32.317868  3620 ParkingSpot.cpp:377] (TEST!!)5
+I0716 17:50:32.530930  3620 ParkingSpot.cpp:377] (TEST!!)6
+I0716 17:50:32.759266  3620 ParkingSpot.cpp:380] (TEST##)6
+I0716 17:50:33.944124  3620 ParkingSpot.cpp:143] 85
+I0716 17:50:33.944237  3620 ParkingSpot.cpp:182] 1468800 : 32400 : 3000
+I0716 17:50:33.944262  3620 ParkingSpot.cpp:183] 1382400 : 61200 : 3000
+I0716 17:50:33.944284  3620 ParkingSpot.cpp:192] result_timer : 57600
+I0716 17:50:33.944514  3620 ParkingSpot.cpp:324] res_timer :  57600
+I0716 17:50:33.944653  3620 ParkingSpot.cpp:329] Parking spot ID 20 has occupied at 20190716T175032 by QISENS6
+I0716 17:50:33.944690  3627 ServerNetworkHandler.cpp:86] 20 with plate number QISENS6 at 2019-Jul-16 17:50:32 (1)
+I0716 17:50:34.207998  3620 ParkingSpot.cpp:380] (TEST##)7
+I0716 17:50:34.429201  3620 ParkingSpot.cpp:380] (TEST##)8
+I0716 17:50:34.650915  3620 ParkingSpot.cpp:380] (TEST##)9
+I0716 17:50:34.862936  3620 ParkingSpot.cpp:380] (TEST##)10
+I0716 17:50:35.078897  3620 ParkingSpot.cpp:380] (TEST##)11
+I0716 17:51:33.440604  3620 ParkingSpot.cpp:377] (TEST!!)-5
+I0716 17:51:40.528678  3620 ParkingSpot.cpp:350] Parking spot ID 20 has released at 2019-Jul-16 17:51:40
+I0716 17:51:40.528801  3627 ServerNetworkHandler.cpp:86] 20 with plate number null at 2019-Jul-16 17:51:40 (2)
+I0716 18:05:06.435763  3627 ServerNetworkHandler.cpp:86] 21 with plate number null at 2019-Jul-16 18:05:06 (2)

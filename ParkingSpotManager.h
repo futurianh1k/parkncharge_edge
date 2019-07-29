@@ -16,7 +16,6 @@
 #pragma once
 
 #include "ParkingSpot.h"
-#include "/usr/include/mysql/mysql.h"
 
 namespace seevider {
 	class ParkingSpotManager
@@ -37,7 +36,8 @@ namespace seevider {
 	public:
 		ParkingSpotManager();
 		~ParkingSpotManager();
-	
+///////////////////////////
+		
 		/**
 		 * Add one parking spot. If a parkign spot with the same id is already exist, do not add and return false.
 		 */
@@ -63,7 +63,16 @@ namespace seevider {
 		 */
 		void reset();
 		
-		int pullDB();
+//////////////////////////////////////// MySQL  ////////////
+
+		void connectDB();
+		void updateDB(int id, std::string spotName, int x, int y, int h, int w);
+		bool isExist(int id);
+		void createDB(int id, std::string spotName, int x, int y, int h, int w);		
+		void pullDB();
+
+
+//////////////////////////////////////////////////////////
 
 		/**
 		 * Get the number of parking spots

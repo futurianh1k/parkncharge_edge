@@ -1,0 +1,27 @@
+Log file created at: 2019/07/23 10:32:42
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0723 10:32:42.475282  5379 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0723 10:32:42.476305  5379 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0723 10:32:52.888967  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:32:52.889158  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:32:58.925930  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:32:58.926178  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:04.957976  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:04.958179  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:10.990118  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:10.990320  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:17.034070  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:17.034297  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:23.082129  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:23.082329  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:29.122053  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:29.122346  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:35.157920  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:35.158109  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:41.192021  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:41.192250  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:47.229938  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:47.230121  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0723 10:33:53.274498  5725 ServerNetworkHandler.cpp:223] No route to host
+W0723 10:33:53.274682  5725 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 

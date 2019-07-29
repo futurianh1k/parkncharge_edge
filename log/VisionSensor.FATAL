@@ -1,1 +1,4 @@
-VisionSensor.tegra-ubuntu.ubuntu.log.FATAL.20190702-172931.26335
+Log file created at: 2019/07/22 15:26:09
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0722 15:26:09.463145 10053 SerialVideoReader.cpp:52] Failed to connect the camera

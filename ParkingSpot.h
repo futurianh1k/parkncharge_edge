@@ -26,6 +26,7 @@
 #include "MessageQueue.h"
 #include "SerialVideoReader.h"
 
+
 namespace seevider {
     class ParkingSpot {
     public:
@@ -164,12 +165,22 @@ namespace seevider {
          * Check if the parking spot is occupied
          */
         bool isOccupied() const;
-	void pullDB();
+		void pullDB();
 
 		/**
 		 * Check if the parking spot is occupied and overstayed
 		 */
 		bool isOverstayed() const;
+
+///////////////////////////////
+		void connect_DB();
+		int entVehicle(const std::string PN, const std::string entryTime);
+		bool check_res(const std::string PN);
+
+		bool isReservation_sensor;
+		bool isSensor();
+		void isRes_sensor();
+///////////////////////////////
 
         /**
          * Must be called when the vehicle comes in.
@@ -184,7 +195,7 @@ namespace seevider {
         /**
          * Must be called when the vehicle goes out.
          */
-        void exit(const cv::Mat& exitImage, const boost::posix_time::ptime &exitTime);
+        void exit(const cv::Mat& exitImage, const boost::posix_time::ptime &exitTime, const std::string PN);
 
 		/**
 		 * Update parking spot attributes. If current spot is occupied and the timer is running,
@@ -202,6 +213,13 @@ namespace seevider {
 		 */
 		void reset();
 
+
+///////////////////////////////
+		void connectDB();
+
+
+/////////////////////////////
+
 	private:
         /**
          * Main entry of the timer thread
@@ -211,7 +229,8 @@ namespace seevider {
         /**
          * Start the parking timer
          */
-        void startTimer();
+        void startTimer(int res_timeLimit, const std::string PN);
+		void startTimer();
 
         /**
          * Stop the parking timer, if any
@@ -222,7 +241,6 @@ namespace seevider {
          * Notify a expiration message to the global message queue
          */
         void notifyExpiration();
-
         //-----------------------------------
         // Static functions and variables
         //-----------------------------------
