@@ -1,0 +1,89 @@
+Log file created at: 2019/07/24 16:09:15
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0724 16:09:15.903085  4081 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0724 16:09:15.909194  4081 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0724 16:09:26.306134  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:09:26.306459  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:09:32.343950  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:09:32.344211  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:09:38.386008  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:09:38.386277  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:09:44.445932  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:09:44.446158  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:09:50.515936  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:09:50.516170  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:09:56.587958  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:09:56.588199  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:02.638032  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:02.638314  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:08.689018  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:08.689391  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:14.738042  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:14.738277  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:20.826035  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:20.826261  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:26.857964  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:26.858402  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:32.906059  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:32.906406  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:38.958088  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:38.958447  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:45.003893  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:45.004127  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:51.049949  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:51.050185  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:10:57.101974  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:10:57.102216  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:03.134012  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:03.134302  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:09.173928  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:09.174156  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:15.209975  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:15.210233  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:21.245971  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:21.246304  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:27.327924  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:27.328227  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:33.369941  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:33.370369  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:39.405937  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:39.406183  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:45.473937  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:45.474206  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:51.521981  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:51.522292  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:11:57.564031  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:11:57.564376  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:03.605948  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:03.606246  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:09.666143  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:09.666537  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:15.725971  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:15.726310  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:21.758009  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:21.758328  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:27.829975  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:27.831609  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:33.881958  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:33.882274  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:39.959031  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:39.959970  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:46.001968  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:46.002326  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:52.093977  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:52.094316  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:12:58.146008  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:12:58.154604  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:13:04.233958  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:13:04.234256  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:13:10.278053  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:13:10.278406  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:13:16.334008  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:13:16.334587  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:13:22.421922  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:13:22.422210  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:13:28.468014  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:13:28.468348  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0724 16:13:34.522817  4401 ServerNetworkHandler.cpp:223] No route to host
+W0724 16:13:34.523231  4401 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 

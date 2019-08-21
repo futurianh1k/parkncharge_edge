@@ -1,0 +1,447 @@
+Log file created at: 2019/07/22 16:27:33
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0722 16:27:33.498112  7769 MainInterface.cpp:42] Starting the main activity
+I0722 16:27:33.499523  7769 MainInterface.cpp:236] Host name is tegra-ubuntu
+I0722 16:27:33.499615  7769 MainInterface.cpp:241] IPv4: 127.0.1.1
+I0722 16:27:45.248745  7769 SerialVideoReader.cpp:61] Modifying camera codec
+E0722 16:27:45.252179  7769 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0722 16:27:45.254819  7769 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+I0722 16:27:45.255071  7769 SerialVideoReader.cpp:84] The original camera frame size: [640 x 480]
+I0722 16:27:45.256908  7769 SerialVideoReader.cpp:87] Modified camera frame size: 640, 480
+I0722 16:27:45.275717  8064 TCPSocketListener.cpp:70] Starting the socket listener
+I0722 16:27:45.281206  8063 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I0722 16:27:47.499245  7769 ParkingSpot.cpp:292] (TEST!!)1
+I0722 16:27:48.000217  7769 ParkingSpot.cpp:292] (TEST!!)2
+I0722 16:27:48.506867  7769 ParkingSpot.cpp:292] (TEST!!)3
+I0722 16:27:49.005429  7769 ParkingSpot.cpp:292] (TEST!!)4
+I0722 16:27:49.494948  7769 ParkingSpot.cpp:292] (TEST!!)5
+I0722 16:27:49.984895  7769 ParkingSpot.cpp:292] (TEST!!)6
+I0722 16:27:50.475114  7769 ParkingSpot.cpp:295] (TEST##)6
+I0722 16:27:51.407243  7769 ParkingSpot.cpp:143] 83
+I0722 16:27:51.407614  7769 ParkingSpot.cpp:181] 177082092830240031680 : 1020 : 0
+I0722 16:27:51.407645  7769 ParkingSpot.cpp:182] 177082092830240031680 : 960 : 27
+I0722 16:27:51.407682  7769 ParkingSpot.cpp:191] result_timer : 33
+I0722 16:27:51.407778  7769 ParkingSpot.cpp:245] res_timer :  33
+I0722 16:27:51.407899  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+I0722 16:27:52.185220  7769 ParkingSpot.cpp:250] Parking spot ID 17 has occupied at 20190722T162750 by QISENS6
+I0722 16:27:52.692787  7769 ParkingSpot.cpp:295] (TEST##)7
+I0722 16:27:53.180608  7769 ParkingSpot.cpp:295] (TEST##)8
+I0722 16:27:53.667066  7769 ParkingSpot.cpp:295] (TEST##)9
+I0722 16:27:54.150104  7769 ParkingSpot.cpp:295] (TEST##)10
+I0722 16:27:54.635923  7769 ParkingSpot.cpp:295] (TEST##)11
+E0722 16:27:55.020023  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:27:55.020295  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:27:58.020414  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:01.049996  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:01.050242  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:02.185238  8009 ParkingSpot.cpp:365] 10
+I0722 16:28:02.185295  8009 ParkingSpot.cpp:369] 2019-Jul-22 16:37:50
+I0722 16:28:02.185505  8009 SerialVideoReader.cpp:159] Frame has requestd at 2019-Jul-22 16:37:50
+I0722 16:28:02.185575  8009 ParkingSpot.cpp:372] Parking spot ID 17 has expired.
+I0722 16:28:04.050387  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:07.091954  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:07.092161  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:10.092294  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:13.154012  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:13.154278  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:16.154423  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:19.193913  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:19.194111  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:22.194253  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:25.231952  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:25.232136  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:28.232262  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:31.283901  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:31.284123  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:34.284260  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:37.317955  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:37.318202  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:40.318344  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:43.381958  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:43.382177  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:46.382344  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:49.413959  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:49.414187  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:52.414330  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:28:55.447939  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:28:55.448218  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:28:58.448357  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:01.477936  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:01.478139  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:04.478274  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:07.513940  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:07.514183  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:10.514526  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:13.552263  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:13.552425  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:16.552582  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:19.583909  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:19.584110  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:22.584237  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:25.623932  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:25.624132  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:28.624259  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:31.653936  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:31.654171  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:34.654311  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:37.693994  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:37.694254  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:40.698745  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:43.741978  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:43.742200  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:46.742389  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:49.774178  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:49.774740  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:52.774973  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:29:55.815992  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:29:55.816224  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:29:58.816378  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:01.849915  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:01.850564  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:04.850715  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:07.886029  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:07.886379  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:10.886704  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:13.921905  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:13.922329  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:16.922618  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:19.958065  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:19.958343  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:22.958557  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:25.994251  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:25.994719  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:29.000902  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:32.034049  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:32.034889  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:35.035218  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:38.077464  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:38.077792  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:41.079655  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:44.114056  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:44.114444  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:47.114933  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:50.146080  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:50.146353  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:53.146792  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:30:56.198091  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:30:56.198523  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:30:59.198765  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:02.254019  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:02.254259  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:05.254427  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:08.290071  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:08.290365  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:11.290726  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:14.329998  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:14.330237  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:17.330780  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:20.417932  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:20.418215  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:23.418534  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:26.462005  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:26.462363  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:29.465719  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:32.503932  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:32.504276  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:35.504618  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:38.550060  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:38.550380  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:41.550829  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:44.583900  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:44.584195  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:47.584486  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:50.615985  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:50.617274  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:53.617818  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:31:56.663866  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:31:56.664119  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:31:59.664403  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:02.719930  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:02.720165  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:05.720455  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:08.754132  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:08.754694  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:11.755082  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:14.797962  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:14.799149  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:17.799494  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:20.832804  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:20.833108  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:23.834703  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:26.897959  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:26.898247  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:29.898501  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:32.928005  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:32.928231  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:35.928567  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:38.965842  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:38.966210  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:41.966552  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:45.007972  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:45.008250  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:48.008616  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:51.054092  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:51.054417  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:32:54.054857  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:32:57.085937  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:32:57.086514  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:00.086939  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:03.129907  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:03.130206  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:06.131719  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:09.187969  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:09.188319  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:12.188704  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:15.226043  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:15.226438  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:18.226794  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:21.269976  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:21.270251  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:24.270570  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:27.349930  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:27.350268  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:30.350566  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:33.393976  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:33.394331  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:36.394743  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:39.425982  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:39.426316  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:42.426687  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:45.502041  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:45.502488  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:48.502698  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:51.534112  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:51.534482  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:33:54.534855  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:33:57.570389  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:33:57.570724  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:00.573840  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:03.619920  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:03.620339  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:06.620628  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:09.659915  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:09.662796  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:12.663128  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:15.694128  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:15.696914  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:18.697234  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:21.729933  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:21.730178  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:24.730712  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:27.761981  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:27.762305  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:30.762497  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:33.793951  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:33.794255  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:36.794581  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:39.830041  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:39.830423  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:42.831183  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:45.869910  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:45.870240  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:48.870530  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:51.909947  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:51.910290  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:34:54.910486  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:34:57.960448  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:34:57.960741  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:00.961055  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:04.010033  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:04.010385  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:07.010783  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:10.049938  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:10.050756  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:13.050989  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:16.106032  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:16.107020  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:19.107309  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:22.150036  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:22.150354  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:25.150795  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:28.181941  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:28.182301  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:31.182627  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:34.219976  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:34.221007  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:37.221866  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:40.279932  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:40.280251  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:43.280403  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:46.311918  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:46.312268  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:49.312573  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:52.349925  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:52.350224  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:35:55.350806  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:35:58.393980  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:35:58.394322  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:01.394528  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:04.433990  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:04.434314  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:07.434509  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:10.474017  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:10.474345  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:13.474653  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:16.505986  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:16.506299  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:19.506770  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:22.545991  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:22.548660  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:25.549036  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:28.613911  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:28.614182  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:31.614356  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:34.655925  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:34.656266  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:37.656574  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:40.689913  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:40.690268  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:43.690595  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:46.723911  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:46.724257  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:49.724567  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:52.757967  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:52.758280  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:36:55.758466  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:36:58.789923  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:36:58.790218  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:01.790725  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:04.829931  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:04.830268  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:07.830611  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:10.862035  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:10.862430  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:13.864387  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:16.898381  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:16.898638  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:19.899021  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:22.930106  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:22.932531  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:25.932871  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:28.969921  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:28.970211  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:31.970573  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:35.007906  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:35.008167  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:38.008496  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:41.045928  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:41.046340  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:44.046569  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:47.087954  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:47.088461  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:50.088822  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:53.121943  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:53.122750  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:37:56.122951  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:37:59.165931  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:37:59.166220  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:02.166538  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:05.229916  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:05.230197  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:08.230504  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:11.266000  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:11.266328  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:14.266652  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:17.317991  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:17.318253  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:20.318544  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:23.354055  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:23.354553  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:26.354883  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:29.386065  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:29.390604  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:32.391093  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:35.422178  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:35.426453  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:38.428624  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:41.464803  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:41.465054  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:44.465342  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:47.507944  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:47.508283  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:50.508603  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:53.549954  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:53.550385  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:38:56.550940  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:38:59.630872  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:38:59.635568  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:02.637181  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:05.665959  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:05.666321  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:08.666646  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:11.705801  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:11.706080  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:14.706377  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:17.735941  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:17.736244  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:20.736488  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:23.765990  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:23.766218  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:26.766613  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:29.795914  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:29.796166  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:32.796463  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:35.845935  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:35.846258  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:38.846585  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:41.883924  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:41.884222  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:44.884397  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:47.926784  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:47.927212  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:50.931200  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:53.969949  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:53.970381  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:39:56.970810  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:39:59.998031  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:39:59.998401  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:02.998638  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:06.034010  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:06.034865  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:09.036350  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:12.068014  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:12.069142  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:15.069526  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:18.099915  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:18.100149  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:21.100451  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:24.137986  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:24.138279  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:27.138564  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:30.169986  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:30.170289  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:33.170684  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:36.211930  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:36.212252  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:39.212438  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:42.246045  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:42.250418  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:45.251089  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:48.295925  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:48.296228  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:51.296579  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:40:54.327921  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:40:54.328181  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:40:57.328557  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:41:00.364929  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:41:00.365362  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:41:03.365695  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:41:06.413928  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:41:06.414224  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:41:09.414397  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:41:12.461920  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:41:12.462198  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:41:15.463845  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:41:18.497987  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:41:18.503011  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:41:21.503451  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:41:24.533946  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:41:24.534178  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:41:27.534546  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:41:30.565932  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:41:30.566188  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:41:33.566548  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)
+E0722 16:41:36.597926  8063 ServerNetworkHandler.cpp:223] No route to host
+W0722 16:41:36.598171  8063 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+I0722 16:41:39.598495  8063 ServerNetworkHandler.cpp:86] 17 with plate number QISENS6 at 2019-Jul-22 16:27:50 (1)

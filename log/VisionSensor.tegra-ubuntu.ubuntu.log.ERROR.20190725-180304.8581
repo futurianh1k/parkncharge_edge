@@ -1,0 +1,37 @@
+Log file created at: 2019/07/25 18:03:04
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0725 18:03:04.697315  8581 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0725 18:03:04.698938  8581 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0726 09:44:36.719856  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:44:39.935567  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:44:43.121800  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:44:46.300365  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:44:49.498235  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:44:52.692322  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:44:55.900841  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:44:59.077333  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:02.268474  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:05.490025  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:08.738471  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:11.932379  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:15.108428  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:18.294625  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:21.483577  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:24.661412  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:27.861830  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:31.063796  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:34.246388  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:37.454939  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:40.653735  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:43.831125  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:47.038810  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:50.229722  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:53.423108  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:56.609937  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:45:59.803620  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:46:02.994922  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:46:06.184957  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:46:09.439501  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:46:12.670172  8875 ServerNetworkHandler.cpp:223] Connection refused
+E0726 09:46:15.886365  8875 ServerNetworkHandler.cpp:223] Connection refused

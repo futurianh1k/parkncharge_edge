@@ -1,0 +1,279 @@
+Log file created at: 2019/07/26 09:51:13
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0726 09:51:13.669558 21071 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0726 09:51:13.671144 21071 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+E0726 09:51:27.476130 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:27.476480 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:30.659878 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:30.660079 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:33.858139 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:33.858412 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:37.042739 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:37.042950 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:40.243722 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:40.243887 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:43.450439 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:43.450727 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:46.666332 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:46.666570 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:49.871481 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:49.871711 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:53.104269 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:53.104480 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:56.294168 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:56.294615 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:51:59.477851 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:51:59.478091 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:02.707935 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:02.708165 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:05.892216 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:05.892426 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:09.076926 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:09.077088 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:12.269263 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:12.269556 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:15.457090 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:15.457306 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:18.675846 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:18.676014 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:21.895731 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:21.895946 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:25.096585 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:25.096887 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:28.300411 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:28.300701 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:31.498685 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:31.498908 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:34.697803 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:34.698324 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:37.925701 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:37.925933 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:41.111935 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:41.112152 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:44.317178 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:44.317512 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:47.497982 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:47.498292 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:50.708693 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:50.708977 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:53.889027 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:53.889291 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:52:57.080355 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:52:57.080782 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:00.298735 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:00.299466 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:03.486709 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:03.486991 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:06.694041 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:06.694571 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:09.885447 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:09.885787 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:13.082703 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:13.082901 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:16.260882 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:16.261288 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:19.469507 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:19.471751 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:22.668620 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:22.669740 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:25.886471 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:25.886848 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:29.087914 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:29.088809 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:32.279876 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:32.280158 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:35.484633 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:35.484985 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:38.713809 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:38.714023 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:41.937245 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:41.937718 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:45.126443 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:45.126724 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:48.329232 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:48.329586 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:51.523834 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:51.524121 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:54.715791 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:54.716006 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:53:57.901240 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:53:57.901531 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:01.090266 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:01.090804 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:04.294450 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:04.294876 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:07.500352 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:07.500736 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:10.690029 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:10.692421 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:13.893688 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:13.894845 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:17.081665 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:17.081917 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:20.265264 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:20.265653 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:23.451115 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:23.451395 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:26.632488 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:26.632967 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:29.861225 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:29.861594 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:33.061383 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:33.062089 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:36.267210 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:36.267621 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:39.456789 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:39.457314 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:42.683189 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:42.683452 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:45.869837 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:45.871006 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:49.051533 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:49.051887 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:52.241436 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:52.242226 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:55.425595 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:55.425979 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:54:58.609889 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:54:58.612071 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:01.795305 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:01.795714 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:05.019230 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:05.019559 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:08.201413 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:08.201712 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:11.386152 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:11.386461 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:14.575062 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:14.575356 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:17.763209 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:17.763518 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:20.958649 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:20.959007 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:24.178462 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:24.178962 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:27.365563 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:27.365886 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:30.549374 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:30.549612 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:33.739717 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:33.740990 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:36.939455 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:36.940577 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:40.125360 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:40.125727 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:43.313138 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:43.313464 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:46.496407 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:46.496771 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:49.691469 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:49.691942 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:52.880120 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:52.880386 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:56.075476 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:56.076066 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:55:59.270360 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:55:59.272141 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:02.465953 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:02.466305 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:05.712337 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:05.712589 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:08.896571 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:08.896910 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:12.089165 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:12.089624 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:15.276156 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:15.276751 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:18.474781 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:18.475069 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:21.679898 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:21.680172 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:24.877480 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:24.881976 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:28.060881 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:28.061189 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:31.260877 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:31.261188 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:34.460214 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:34.460553 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:37.659893 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:37.660229 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:40.855391 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:40.855897 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:44.054477 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:44.055125 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:47.250350 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:47.251116 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:50.444325 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:50.444697 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:53.632251 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:53.632680 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:56:56.870537 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:56:56.871507 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:00.070363 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:00.071055 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:03.256595 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:03.256970 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:06.443322 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:06.449250 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:09.653549 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:09.653995 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:12.848322 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:12.848560 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:16.033195 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:16.033471 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:19.238869 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:19.239343 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:22.425120 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:22.425441 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:25.613464 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:25.613726 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:28.807415 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:28.807869 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:31.997074 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:31.997417 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:35.202605 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:35.202998 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:38.397831 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:38.398159 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:41.592715 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:41.593000 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:44.785007 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:44.785328 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:47.987423 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:47.987855 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:51.181272 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:51.182041 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:54.379272 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:54.379521 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:57:57.614425 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:57:57.617755 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:00.810999 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:00.817217 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:04.003964 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:04.004247 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:07.200860 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:07.201319 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:10.408860 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:10.409180 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:13.600797 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:13.601143 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:16.792285 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:16.792686 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:19.976922 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:19.977226 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:23.233876 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:23.234205 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:26.451328 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:26.451721 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:29.626262 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:29.626889 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:32.878538 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:32.878881 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:36.085291 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:36.085654 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:39.278626 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:39.279577 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+E0726 09:58:42.487337 21393 ServerNetworkHandler.cpp:223] Connection refused
+W0726 09:58:42.487819 21393 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 

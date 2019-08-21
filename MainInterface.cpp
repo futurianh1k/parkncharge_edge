@@ -207,7 +207,7 @@ void MainInterface::run() {
 				// Add a timer for testing purpose
 				int idx = inputKey - '1';
 				if ((*mParkingSpotManager)[idx]->isOccupied()) {
-					(*mParkingSpotManager)[idx]->exit(frame, now);
+					(*mParkingSpotManager)[idx]->exit(frame, now,"QISENS6");
 				}
 				else {
 					std::cout << "Timer " << std::to_string(idx) << " begins" << std::endl;
@@ -399,11 +399,11 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 					/*if (mLPR != nullptr) {
 						PN = mLPR->recognize(croppedFrame);
 					}*/
-                    parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, PN);
+                    parkingSpot->enter(frame.clone(), parkingSpot->ROI, now,"QISENS6"); // QISENS6 IS PLATE NUMBER SO WHEN YOU GET PLATE NUMBER BY DETECTION ALGORITHM YOU HAVE TO REPLACE
 				}
 				else {
 					// if the status has changed to 'Empty' from 'Occupied'
-					parkingSpot->exit(frame.clone(), now);
+					parkingSpot->exit(frame.clone(), now, "QISENS6");
 				}
 			}
 		}

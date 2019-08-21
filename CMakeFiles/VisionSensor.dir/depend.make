@@ -98,13 +98,6 @@ CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: TCPSocketListener.h
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: Utils.h
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: darknet/include/darknet.h
 CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: types.h
-CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: /usr/include/mysql/my_alloc.h
-CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: /usr/include/mysql/my_list.h
-CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: /usr/include/mysql/mysql.h
-CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: /usr/include/mysql/mysql_com.h
-CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: /usr/include/mysql/mysql_time.h
-CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: /usr/include/mysql/mysql_version.h
-CMakeFiles/VisionSensor.dir/MainInterface.cpp.o: /usr/include/mysql/typelib.h
 
 CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o: IMessageData.h
 CMakeFiles/VisionSensor.dir/MessageQueue.cpp.o: IOUtils.h
@@ -120,6 +113,7 @@ CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: IMessageData.h
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: MessageQueue.h
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: ParkingSpot.cpp
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: ParkingSpot.h
+CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: ParkingSpotManager.h
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: ParkingUpdateMessage.h
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: SerialVideoReader.h
 CMakeFiles/VisionSensor.dir/ParkingSpot.cpp.o: types.h
@@ -205,13 +199,6 @@ CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: TCPSocketListener.cpp
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: TCPSocketListener.h
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: Utils.h
 CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: types.h
-CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: /usr/include/mysql/my_alloc.h
-CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: /usr/include/mysql/my_list.h
-CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: /usr/include/mysql/mysql.h
-CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: /usr/include/mysql/mysql_com.h
-CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: /usr/include/mysql/mysql_time.h
-CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: /usr/include/mysql/mysql_version.h
-CMakeFiles/VisionSensor.dir/TCPSocketListener.cpp.o: /usr/include/mysql/typelib.h
 
 CMakeFiles/VisionSensor.dir/Utils.cpp.o: Utils.cpp
 CMakeFiles/VisionSensor.dir/Utils.cpp.o: Utils.h
@@ -240,11 +227,4 @@ CMakeFiles/VisionSensor.dir/main.cpp.o: TCPSocketListener.h
 CMakeFiles/VisionSensor.dir/main.cpp.o: main.cpp
 CMakeFiles/VisionSensor.dir/main.cpp.o: main.h
 CMakeFiles/VisionSensor.dir/main.cpp.o: types.h
-CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/my_alloc.h
-CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/my_list.h
-CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/mysql.h
-CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/mysql_com.h
-CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/mysql_time.h
-CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/mysql_version.h
-CMakeFiles/VisionSensor.dir/main.cpp.o: /usr/include/mysql/typelib.h
 

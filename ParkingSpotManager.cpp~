@@ -12,24 +12,36 @@
 // which the program(s) have been supplied.
 //
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
-//
 
 #include "ParkingSpotManager.h"
 #include <stdio.h>
 #include <unordered_set>
 #include "/usr/include/mysql/mysql.h"
 #include <glog/logging.h>
-
+#include <sstream>
 #include <boost/property_tree/json_parser.hpp>
 #include <iostream>
 #include <stdlib.h>
 #include <errno.h>
-#include <string.h>
 
-int cnt;
-int sp_id[1000];
+#include <cstring>
+
 int po_id[1000];
 int tlimit[1000];
+
+
+MYSQL *conn;
+MYSQL_RES *res;
+MYSQL_RES *ex_res;
+MYSQL_ROW row;
+MYSQL_ROW ex_row;
+
+
+char *server = "35.164.140.47";
+char *user = "seevider";
+char *password = "seevider123";
+char *database = "seevider";
+
 using namespace std;
 
 namespace seevider {
@@ -73,63 +85,146 @@ namespace seevider {
 
 		return true;
 	}
-
-
-	int ParkingSpotManager::pullDB(){
-		cnt = 0;
-		MYSQL *conn;
-		MYSQL_RES *res;
-		MYSQL_ROW row;
-		
-		char *server = "35.164.140.47";
-		char *user = "seevider";
-		char *password = "seevider123";
-		char *database = "seevider";
-
-
+//////////////////////////////////////////////MySQL
+	void ParkingSpotManager::connectDB(){
 		if( !(conn = mysql_init((MYSQL*)NULL))){
 			printf("init fail\n");
-			exit(1);
 		}
 
-		printf("mysql_init success.\n");
-		LOG(INFO) << "msql_init success";
+		
 		if(!(mysql_real_connect(conn,server,user,password,database, 3306, NULL, 0))){
 			printf("connect error.\n");
-			exit(1);
 		}
 
-		printf("mysql_real_connect suc.\n");
-		LOG(INFO) <<"mysql_real_connect suc.";
-
+		
 		if(mysql_select_db(conn, database) !=0){
 			mysql_close(conn);
 			printf("select_db fail.\n");
-			exit(1);
 		}
-		printf("select mydb syc.\n");
-		LOG(INFO) <<"select mydb syc";
-		//if(mysql_query(conn,"select * from parking_spot")){
+	}
+
+	void ParkingSpotManager::createDB(int id, std::string spotName, int x, int y, int h, int w){
+		connectDB();
+		printf("start creating DB\n");
+		stringstream cc;
+		cc<<"insert into parking_spot (parking_spot_id, parking_spot_name, roi_coordx, roi_coordy, roi_height, roi_width) values ("<<id<<", '"<<spotName<<"', "<<x<<", "<<y<<", "<<h<<", "<<w<<")";
+		string qy = cc.str();
+		cout<<qy<<endl;
+		const char* cd =qy.c_str();
+		cout<<cd<<endl;
+		mysql_query(conn, cd);
+		cout<<"Success creating DB"<<endl;
+		mysql_close(conn);
+	}
+	bool ParkingSpotManager::isExist(int id){
+		// id not exist return 0 -> createDB();
+		// id exist return 1 -> updateDB();
+		connectDB();
+		printf("start searching DB\n");
+		stringstream qq;
+		qq<<"SELECT parking_spot_id FROM parking_spot WHERE parking_spot_id = "<< id <<"";
+		string qry = qq.str();
+		const char* ee = qry.c_str();
+		mysql_query(conn,ee);
+		ex_res = mysql_store_result(conn);
+		if(mysql_fetch_row(ex_res)==0){
+			mysql_close(conn);
+			return false;
+		}
+		else{
+			mysql_close(conn);
+			return true;
+		}
+
+	}
+	void ParkingSpotManager::updateDB(int id, std::string spotName, int x, int y, int h, int w){
+		connectDB();
+		printf("start updateDB\n");
+		string query;
+		const char* q;
+		stringstream xx,yy,hh,ww,nn;
+		xx<<"UPDATE parking_spot SET roi_coordx = '"<< x <<"' WHERE parking_spot_id = "<< id <<"";
+		query = xx.str();
+		q = query.c_str();
+		mysql_query(conn,q);
+
+		nn<<"UPDATE parking_spot SET parking_spot_name = '"<< spotName <<"' WHERE parking_spot_id = "<< id <<"";
+		query = nn.str();
+		q = query.c_str();
+		mysql_query(conn,q);
+
+		yy<<"UPDATE parking_spot SET roi_coordy = '"<< y <<"' WHERE parking_spot_id = "<< id <<"";
+		query = yy.str();
+		q = query.c_str();
+		mysql_query(conn,q);
+
+		hh<<"UPDATE parking_spot SET roi_height = '"<< h <<"' WHERE parking_spot_id = "<< id <<"";
+		query = hh.str();
+		q = query.c_str();
+		mysql_query(conn,q);
+
+		ww<<"UPDATE parking_spot SET roi_width = '"<< w <<"' WHERE parking_spot_id = "<< id <<"";
+		query = ww.str();
+		q = query.c_str();
+		mysql_query(conn,q);
+		printf("updateDB success.\n");
+
+		mysql_close(conn);
+
+	}
+
+
+	void ParkingSpotManager::pullDB(){
+		connectDB();
 		if(mysql_query(conn,"SELECT s.parking_spot_id, s.policy_id, p.time_limit FROM parking_spot AS s LEFT JOIN parking_policy AS p ON s.policy_id = p.policy_id")){
 			printf("query fail\n");
-			exit(1);
 		}
 
 		printf("query success\n");
-		LOG(INFO) <<"query success";
+
 		res = mysql_store_result(conn);
-		printf("res success\n");
-		LOG(INFO) <<"res success";
-		while((row = mysql_fetch_row(res))!=NULL){
+		
+		int testing = 0;
+		while((row = mysql_fetch_row(res))!=NULL){ // from 1 to temp array save
 			int temp;
 			temp = atoi(row[0]);
 			po_id[temp] = atoi(row[1]);
 			tlimit[temp]=atoi(row[2]);
-			
-		}
+
+	}
+		printf("pullDB success.\n");
 
 		mysql_close(conn);
 	}
+
+/////void ParkingSpotManager::isRes_sensor(std::string sensorName) 나중에 sensorName 받아올수 있으면 이런 함수로 만들어서 구현
+ 	/*void ParkingSpotManager::isRes_sensor(){
+		connectDB();
+		if(mysql_query(conn,"SELECT reservation_sensor_yn FROM sensor WHERE sensor_id = 'qisens_side_s1'")){
+			printf("query fail\n");
+		}
+
+		printf("sensor query success\n");
+
+		res = mysql_store_result(conn);
+
+		row = mysql_fetch_row(res);
+		int temp_yn;
+		temp_yn = atoi(row[0]);
+		if(temp == 1)
+			isReservation_sensor = true;
+		else
+			isReservation_sensor = false;
+
+		mysql_close(conn);
+	}
+
+
+	bool ParkingSpotManager::isSensor(){
+		return isReservation_sensor;
+	}*/
+//////////////////////////////////////////////////////////////////////////
+
 
 	void ParkingSpotManager::clear() {
 		reset();
@@ -154,7 +249,8 @@ namespace seevider {
 		boost::property_tree::ptree ptree;
 		pullDB();
 
-		
+
+
 		try {
 			boost::property_tree::read_json(filename, ptree);
 		}
@@ -176,20 +272,21 @@ namespace seevider {
 				roi.y = elem.second.get<int>("roiCoordY");
 				roi.width = elem.second.get<int>("roiWidth");
 				roi.height = elem.second.get<int>("roiHeight");
-				policy = (PARKING_SPOT_POLICY)po_id[id]; //elem.second.get<int>("policyId");
+				policy = (PARKING_SPOT_POLICY)po_id[id];
 				timeLimit = tlimit[id];
-				//timeLimit = elem.second.get<int>("timeLimit");
-	
 				add(id, spotName, timeLimit, roi, policy);
-			printf("%d\n", id);
-			cout<<spotName<<endl;
-			printf("%d\n", roi.x);
-			printf("%d\n", roi.y);
-			printf("%d\n", roi.width);
-			printf("%d\n", roi.height);
-			printf("%d\n", policy);
-			printf("%d\n\n\n", timeLimit);
-			
+				if(isExist(id))
+                	updateDB(id, spotName, roi.x, roi.y, roi.height, roi.width);
+                else
+					createDB(id, spotName, roi.x, roi.y, roi.height, roi.width);
+				printf("%d\n", id);
+				cout<<spotName<<endl;
+				printf("%d\n", roi.x);
+				printf("%d\n", roi.y);
+				printf("%d\n", roi.width);
+				printf("%d\n", roi.height);
+				printf("%d\n", policy);
+				printf("%d\n\n\n", timeLimit);
 
 			}
 			catch (const boost::property_tree::ptree_error &e) {
@@ -254,7 +351,7 @@ namespace seevider {
 
 	boost::property_tree::ptree ParkingSpotManager::toPTree() const {
 		boost::property_tree::ptree spotArray;
-		
+
 		for (auto elem : mParkingSpots) {
 			std::shared_ptr<ParkingSpot> &spot = elem.second;
 			boost::property_tree::ptree result;
@@ -279,13 +376,12 @@ namespace seevider {
 
 		for (auto parkingSpot : mParkingSpots) {
 			cv::Scalar color;
-			if (parkingSpot.second->isOverstayed()) {
-				color = CV_RGB(0, 0, 255);
-                               
+			if(parkingSpot.second->isOverstayed()){
+				color = CV_RGB(0,0,255);
 			}
-                        else if(parkingSpot.second->isOccupied()){
-                                color = CV_RGB(255, 0, 0);
-                        }
+			else if (parkingSpot.second->isOccupied()) {
+				color = CV_RGB(255, 0, 0);
+			}
 			else {
 				color = CV_RGB(0, 255, 0);
 			}

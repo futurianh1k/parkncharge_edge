@@ -1,0 +1,53 @@
+Log file created at: 2019/07/26 17:04:46
+Running on machine: tegra-ubuntu
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0726 17:04:46.107401 15177 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
+E0726 17:04:46.108954 15177 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
+W0726 17:04:53.264015 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:04:57.194957 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:00.930030 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:04.667347 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:08.392549 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:12.291581 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:16.163257 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:20.076977 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:23.958380 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:27.864611 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:31.755821 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:35.653467 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:39.553424 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:43.369877 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:47.141237 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:50.871451 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:54.707175 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:05:58.549984 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:02.608762 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:06.385026 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:10.246062 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:14.125754 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:17.854873 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:21.577836 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:25.462079 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:29.305245 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:33.193171 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:36.896849 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:40.731806 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:44.585758 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:48.458526 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:52.176584 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:06:56.088405 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:00.057235 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:05.949349 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:09.758913 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:13.697250 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:17.628278 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:21.569506 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:25.442342 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:29.165287 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:32.894948 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:36.895581 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:41.020727 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:44.766736 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:48.543649 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:52.416497 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
+W0726 17:07:57.316464 15497 ServerNetworkHandler.cpp:75] Upload failed. Try it again in 3 seconds.. 
