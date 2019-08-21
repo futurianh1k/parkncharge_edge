@@ -1,4 +1,0 @@
-Log file created at: 2018/06/11 11:57:19
-Running on machine: tegra-ubuntu
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-I0611 11:57:19.619302  4679 MainInterface.cpp:42] Starting the main activity

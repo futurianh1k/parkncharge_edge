@@ -1,4 +1,0 @@
-Log file created at: 2019/05/23 01:45:02
-Running on machine: tegra-ubuntu
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-F0523 01:45:02.636703  3139 ServerNetworkHandler.cpp:304] Request stream35.164.140.47:20180

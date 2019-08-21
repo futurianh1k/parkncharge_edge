@@ -1,2 +1,10 @@
 *.weights
 *.cmake
+log/
+MessageData/
+*.cpp~
+*.swp
+*.swo
+*.txt~
+*.ini~
+

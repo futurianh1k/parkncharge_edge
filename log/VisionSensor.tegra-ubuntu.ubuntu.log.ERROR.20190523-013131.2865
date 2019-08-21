@@ -1,6 +1,0 @@
-Log file created at: 2019/05/23 01:31:31
-Running on machine: tegra-ubuntu
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-E0523 01:31:31.278414  2865 SerialVideoReader.cpp:68] Failed to retrieve camera codec: -1
-E0523 01:31:31.280594  2865 SerialVideoReader.cpp:73] Failed to change the input frame format: MJPG
-E0523 01:31:35.885357  2873 ServerNetworkHandler.cpp:248] resolve: Host not found (authoritative)
