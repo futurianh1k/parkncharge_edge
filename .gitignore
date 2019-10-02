@@ -30,3 +30,4 @@
 
 # Build folder
 build*/
+log/*

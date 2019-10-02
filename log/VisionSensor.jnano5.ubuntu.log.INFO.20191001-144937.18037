@@ -1,0 +1,191 @@
+Log file created at: 2019/10/01 14:49:37
+Running on machine: jnano5
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1001 14:49:37.537042 18037 MainInterface.cpp:52] Starting the main activity
+I1001 14:49:37.539813 18037 MainInterface.cpp:305] Host name is jnano5
+I1001 14:49:37.539870 18037 MainInterface.cpp:310] IPv4: 127.0.1.1
+I1001 14:49:37.642632 18037 SerialVideoReader.cpp:64] Modifying camera codec
+I1001 14:49:37.642876 18037 SerialVideoReader.cpp:69] ext_code print FOURCC: 1.4487e+09
+I1001 14:49:37.643038 18037 SerialVideoReader.cpp:70] ext_code print FPS   : 30
+I1001 14:49:37.643126 18037 SerialVideoReader.cpp:74] The original camera codec: YUYV
+I1001 14:49:37.648211 18037 SerialVideoReader.cpp:86] Modified camera codec: MJPG
+I1001 14:49:37.648305 18037 SerialVideoReader.cpp:94] The original camera frame size: [640 x 480]
+I1001 14:49:37.656636 18037 SerialVideoReader.cpp:97] Modified camera frame size: 1600, 896
+I1001 14:49:37.662137 18042 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I1001 14:49:37.662232 18043 TCPSocketListener.cpp:70] Starting the socket listener
+I1001 14:51:22.382212 18037 MainInterface.cpp:153] Finishing the python initialize activity
+I1001 14:51:28.565611 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145128 by QISENS6
+I1001 14:51:28.566119 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:51:28 (1)
+I1001 14:51:28.675148 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:51:42.055204 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:51:41 (2)
+I1001 14:51:42.055212 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:51:41
+I1001 14:51:42.113430 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:51:48.696482 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145148 by QISENS6
+I1001 14:51:48.696560 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:51:48 (1)
+I1001 14:51:48.750638 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:51:57.978288 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145157 by QISENS6
+I1001 14:51:58.051612 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:51:57 (1)
+I1001 14:51:58.091208 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:52:11.605866 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:52:11 (2)
+I1001 14:52:11.606096 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:52:11
+I1001 14:52:11.670676 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:52:14.894302 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145214 by QISENS6
+I1001 14:52:14.894315 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:52:14 (1)
+I1001 14:52:14.957569 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:52:16.467247 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:52:16
+I1001 14:52:16.467247 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:52:16 (2)
+I1001 14:52:16.521759 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:52:17.088028 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:52:16
+I1001 14:52:17.088119 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:52:16 (2)
+I1001 14:52:17.159639 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:52:18.497016 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:52:18 (1)
+I1001 14:52:18.497217 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145218 by QISENS6
+I1001 14:52:18.542989 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:52:22.431843 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145222 by QISENS6
+I1001 14:52:22.431856 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:52:22 (1)
+I1001 14:52:22.506395 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:05.811333 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:53:05
+I1001 14:53:05.811333 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:53:05 (2)
+I1001 14:53:06.069380 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:53:05
+I1001 14:53:06.082141 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:06.219053 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:53:05 (2)
+I1001 14:53:06.268188 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:08.340466 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145308 by QISENS6
+I1001 14:53:08.340477 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:53:08 (1)
+I1001 14:53:08.410943 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:12.703742 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145308 by QISENS6
+I1001 14:53:12.705695 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:53:08 (1)
+I1001 14:53:12.765183 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:45.009351 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:53:44
+I1001 14:53:45.015307 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:53:44 (2)
+I1001 14:53:45.070837 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:47.851078 18042 ServerNetworkHandler.cpp:86] 14 with plate number QISENS6 at 2019-Oct-01 14:53:47 (1)
+I1001 14:53:47.868891 18037 ParkingSpot.cpp:289] Parking spot ID 14 has occupied at 20191001T145347 by QISENS6
+I1001 14:53:47.889099 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:51.776295 18042 ServerNetworkHandler.cpp:86] 14 with plate number null at 2019-Oct-01 14:53:51 (2)
+I1001 14:53:51.788581 18037 ParkingSpot.cpp:310] Parking spot ID 14 has released at 2019-Oct-01 14:53:51
+I1001 14:53:51.832382 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:53.979674 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:53:53
+I1001 14:53:53.979619 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:53:53 (2)
+I1001 14:53:54.037413 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:57.280328 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145357 by QISENS6
+I1001 14:53:57.280359 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:53:57 (1)
+I1001 14:53:57.354351 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:53:57.709735 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145357 by QISENS6
+I1001 14:53:57.709748 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:53:57 (1)
+I1001 14:53:57.756144 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:36.318019 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:54:36
+I1001 14:54:36.318019 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:54:36 (2)
+I1001 14:54:36.383687 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:37.250713 18037 ParkingSpot.cpp:289] Parking spot ID 14 has occupied at 20191001T145437 by QISENS6
+I1001 14:54:37.250725 18042 ServerNetworkHandler.cpp:86] 14 with plate number QISENS6 at 2019-Oct-01 14:54:37 (1)
+I1001 14:54:37.291340 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:41.480981 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:54:41 (1)
+I1001 14:54:41.492938 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145441 by QISENS6
+I1001 14:54:41.531378 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:42.167104 18037 ParkingSpot.cpp:310] Parking spot ID 14 has released at 2019-Oct-01 14:54:42
+I1001 14:54:42.167104 18042 ServerNetworkHandler.cpp:86] 14 with plate number null at 2019-Oct-01 14:54:42 (2)
+I1001 14:54:42.229216 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:50.284723 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:54:50
+I1001 14:54:50.284721 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:54:50 (2)
+I1001 14:54:50.333416 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:50.376262 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:54:50
+I1001 14:54:50.436117 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:54:50 (2)
+I1001 14:54:50.486857 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:54.024600 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145453 by QISENS6
+I1001 14:54:54.024626 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:54:53 (1)
+I1001 14:54:54.098397 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:54:54.468334 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145453 by QISENS6
+I1001 14:54:54.468346 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:54:53 (1)
+I1001 14:54:54.514469 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:55:30.375771 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:55:30
+I1001 14:55:30.375799 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:55:30 (2)
+I1001 14:55:30.423717 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:55:31.214720 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:55:31 (2)
+I1001 14:55:31.228919 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:55:31
+I1001 14:55:31.264207 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:55:39.778823 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145539 by QISENS6
+I1001 14:55:39.778914 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:55:39 (1)
+I1001 14:55:39.862226 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:55:40.216187 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145539 by QISENS6
+I1001 14:55:40.216269 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:55:39 (1)
+I1001 14:55:40.261865 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:55:54.573974 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:55:54
+I1001 14:55:54.573974 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:55:54 (2)
+I1001 14:55:54.641894 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:55:58.020594 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145557 by QISENS6
+I1001 14:55:58.020659 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:55:57 (1)
+I1001 14:55:58.100185 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:56:20.030958 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:56:19
+I1001 14:56:20.030947 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:56:19 (2)
+I1001 14:56:20.088517 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:56:23.126101 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145623 by QISENS6
+I1001 14:56:23.126166 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:56:23 (1)
+I1001 14:56:23.204119 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:56:29.209157 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:56:29
+I1001 14:56:29.209208 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:56:29 (2)
+I1001 14:56:29.268589 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:56:33.503368 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145633 by QISENS6
+I1001 14:56:33.503403 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:56:33 (1)
+I1001 14:56:33.585924 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:56:39.778858 18038 ParkingSpot.cpp:428] 60
+I1001 14:56:39.778920 18038 ParkingSpot.cpp:431] 2019-Oct-01 15:55:39
+I1001 14:56:40.042289 18038 ParkingSpot.cpp:434] Check VideoReader operation
+I1001 14:56:40.042353 18038 ParkingSpot.cpp:435] Time in Minutes 2019-Oct-01 15:55:39
+I1001 14:56:40.042508 18038 ParkingSpot.cpp:439] Time in Seconds 2019-Oct-01 14:56:39
+I1001 14:56:40.042635 18038 SerialVideoReader.cpp:173] Frame has requestd at 2019-Oct-01 14:56:39
+I1001 14:56:40.052809 18038 SerialVideoReader.cpp:181] Frame has found at 2019-Oct-01 14:56:39
+I1001 14:56:40.053014 18038 ParkingSpot.cpp:448] Check VideoReader operation
+I1001 14:56:40.053205 18038 ParkingSpot.cpp:449] Parking spot ID 15 has expired.
+I1001 14:56:40.053253 18038 ParkingSpot.cpp:450] Time in Minutes 2019-Oct-01 14:56:39
+I1001 14:56:40.079027 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 15:55:39 (3)
+I1001 14:56:40.149540 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:56:44.099673 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:56:44
+I1001 14:56:44.099689 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:56:44 (2)
+I1001 14:56:44.156270 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:56:46.788127 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:56:46 (1)
+I1001 14:56:46.808885 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145646 by QISENS6
+I1001 14:56:46.844826 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:57:33.503449 18039 ParkingSpot.cpp:428] 60
+I1001 14:57:33.505044 18039 ParkingSpot.cpp:431] 2019-Oct-01 15:56:33
+I1001 14:57:33.505259 18039 ParkingSpot.cpp:434] Check VideoReader operation
+I1001 14:57:33.505295 18039 ParkingSpot.cpp:435] Time in Minutes 2019-Oct-01 15:56:33
+I1001 14:57:33.505398 18039 ParkingSpot.cpp:439] Time in Seconds 2019-Oct-01 14:57:33
+I1001 14:57:33.505503 18039 SerialVideoReader.cpp:173] Frame has requestd at 2019-Oct-01 14:57:33
+I1001 14:57:33.510423 18039 SerialVideoReader.cpp:181] Frame has found at 2019-Oct-01 14:57:33
+I1001 14:57:33.510598 18039 ParkingSpot.cpp:448] Check VideoReader operation
+I1001 14:57:33.510640 18039 ParkingSpot.cpp:449] Parking spot ID 16 has expired.
+I1001 14:57:33.510679 18039 ParkingSpot.cpp:450] Time in Minutes 2019-Oct-01 14:57:33
+I1001 14:57:33.553548 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 15:56:33 (3)
+I1001 14:57:33.596295 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:57:46.788123 18038 ParkingSpot.cpp:428] 60
+I1001 14:57:46.788208 18038 ParkingSpot.cpp:431] 2019-Oct-01 15:56:46
+I1001 14:57:46.788374 18038 ParkingSpot.cpp:434] Check VideoReader operation
+I1001 14:57:46.788413 18038 ParkingSpot.cpp:435] Time in Minutes 2019-Oct-01 15:56:46
+I1001 14:57:46.788516 18038 ParkingSpot.cpp:439] Time in Seconds 2019-Oct-01 14:57:46
+I1001 14:57:46.788614 18038 SerialVideoReader.cpp:173] Frame has requestd at 2019-Oct-01 14:57:46
+I1001 14:57:46.790486 18038 SerialVideoReader.cpp:181] Frame has found at 2019-Oct-01 14:57:46
+I1001 14:57:46.790644 18038 ParkingSpot.cpp:448] Check VideoReader operation
+I1001 14:57:46.790684 18038 ParkingSpot.cpp:449] Parking spot ID 15 has expired.
+I1001 14:57:46.790721 18038 ParkingSpot.cpp:450] Time in Minutes 2019-Oct-01 14:57:46
+I1001 14:57:46.800941 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 15:56:46 (3)
+I1001 14:57:46.865322 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:58:14.421814 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:58:14 (2)
+I1001 14:58:14.422003 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:58:14
+I1001 14:58:14.479446 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:58:15.504323 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145815 by QISENS6
+I1001 14:58:15.504343 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:58:15 (1)
+I1001 14:58:15.561893 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:58:23.729126 18037 ParkingSpot.cpp:310] Parking spot ID 15 has released at 2019-Oct-01 14:58:23
+I1001 14:58:23.729104 18042 ServerNetworkHandler.cpp:86] 15 with plate number null at 2019-Oct-01 14:58:23 (2)
+I1001 14:58:23.749801 18037 ParkingSpot.cpp:310] Parking spot ID 16 has released at 2019-Oct-01 14:58:23
+I1001 14:58:23.785921 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:58:23.895789 18042 ServerNetworkHandler.cpp:86] 16 with plate number null at 2019-Oct-01 14:58:23 (2)
+I1001 14:58:23.947989 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:58:30.770377 18037 ParkingSpot.cpp:289] Parking spot ID 15 has occupied at 20191001T145830 by QISENS6
+I1001 14:58:30.770414 18042 ServerNetworkHandler.cpp:86] 15 with plate number QISENS6 at 2019-Oct-01 14:58:30 (1)
+I1001 14:58:30.833266 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:58:31.200626 18037 ParkingSpot.cpp:289] Parking spot ID 16 has occupied at 20191001T145830 by QISENS6
+I1001 14:58:31.200644 18042 ServerNetworkHandler.cpp:86] 16 with plate number QISENS6 at 2019-Oct-01 14:58:30 (1)
+I1001 14:58:31.242666 18042 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:59:30.817024 18038 ParkingSpot.cpp:428] 60

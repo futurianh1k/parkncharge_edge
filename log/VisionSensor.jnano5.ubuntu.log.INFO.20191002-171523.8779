@@ -1,0 +1,4 @@
+Log file created at: 2019/10/02 17:15:23
+Running on machine: jnano5
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F1002 17:15:23.475198  8779 Settings.cpp:46] ./core/settings.ini(2): '=' character not found in line

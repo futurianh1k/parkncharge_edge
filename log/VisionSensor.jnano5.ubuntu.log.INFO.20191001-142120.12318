@@ -1,0 +1,45 @@
+Log file created at: 2019/10/01 14:21:20
+Running on machine: jnano5
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1001 14:21:20.489816 12318 MainInterface.cpp:52] Starting the main activity
+I1001 14:21:20.494926 12318 MainInterface.cpp:305] Host name is jnano5
+I1001 14:21:20.495013 12318 MainInterface.cpp:310] IPv4: 127.0.1.1
+I1001 14:21:20.590330 12318 SerialVideoReader.cpp:64] Modifying camera codec
+I1001 14:21:20.590402 12318 SerialVideoReader.cpp:69] ext_code print FOURCC: 1.4487e+09
+I1001 14:21:20.590481 12318 SerialVideoReader.cpp:70] ext_code print FPS   : 30
+I1001 14:21:20.590519 12318 SerialVideoReader.cpp:74] The original camera codec: YUYV
+I1001 14:21:20.595096 12318 SerialVideoReader.cpp:86] Modified camera codec: MJPG
+I1001 14:21:20.595160 12318 SerialVideoReader.cpp:94] The original camera frame size: [640 x 480]
+I1001 14:21:20.602931 12318 SerialVideoReader.cpp:97] Modified camera frame size: 1600, 896
+I1001 14:21:20.608178 12329 TCPSocketListener.cpp:70] Starting the socket listener
+I1001 14:21:20.611555 12328 ServerNetworkHandler.cpp:66] Starting the HTTP message uploading handler
+I1001 14:23:04.505316 12318 MainInterface.cpp:153] Finishing the python initialize activity
+I1001 14:23:11.231726 12318 ParkingSpot.cpp:289] Parking spot ID 14 has occupied at 20191001T142311 by QISENS6
+I1001 14:23:11.328750 12328 ServerNetworkHandler.cpp:86] 14 with plate number QISENS6 at 2019-Oct-01 14:23:11 (1)
+I1001 14:23:11.441340 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:24:02.908609 12318 ParkingSpot.cpp:310] Parking spot ID 14 has released at 2019-Oct-01 14:24:02
+I1001 14:24:02.908594 12328 ServerNetworkHandler.cpp:86] 14 with plate number null at 2019-Oct-01 14:24:02 (2)
+I1001 14:24:03.005096 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:24:06.739784 12318 ParkingSpot.cpp:289] Parking spot ID 14 has occupied at 20191001T142406 by QISENS6
+I1001 14:24:06.739799 12328 ServerNetworkHandler.cpp:86] 14 with plate number QISENS6 at 2019-Oct-01 14:24:06 (1)
+I1001 14:24:06.778632 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:24:27.626837 12318 ParkingSpot.cpp:310] Parking spot ID 14 has released at 2019-Oct-01 14:24:27
+I1001 14:24:27.626101 12328 ServerNetworkHandler.cpp:86] 14 with plate number null at 2019-Oct-01 14:24:27 (2)
+I1001 14:24:27.764674 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:25:05.851228 12318 ParkingSpot.cpp:289] Parking spot ID 14 has occupied at 20191001T142505 by QISENS6
+I1001 14:25:05.853426 12328 ServerNetworkHandler.cpp:86] 14 with plate number QISENS6 at 2019-Oct-01 14:25:05 (1)
+I1001 14:25:05.919900 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:25:33.297333 12318 ParkingSpot.cpp:310] Parking spot ID 14 has released at 2019-Oct-01 14:25:33
+I1001 14:25:33.297322 12328 ServerNetworkHandler.cpp:86] 14 with plate number null at 2019-Oct-01 14:25:33 (2)
+I1001 14:25:33.358489 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:25:37.210013 12318 ParkingSpot.cpp:289] Parking spot ID 14 has occupied at 20191001T142537 by QISENS6
+I1001 14:25:37.210028 12328 ServerNetworkHandler.cpp:86] 14 with plate number QISENS6 at 2019-Oct-01 14:25:37 (1)
+I1001 14:25:37.260161 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:25:57.652935 12318 ParkingSpot.cpp:310] Parking spot ID 14 has released at 2019-Oct-01 14:25:57
+I1001 14:25:57.652940 12328 ServerNetworkHandler.cpp:86] 14 with plate number null at 2019-Oct-01 14:25:57 (2)
+I1001 14:25:57.738926 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:26:01.727825 12328 ServerNetworkHandler.cpp:86] 14 with plate number QISENS6 at 2019-Oct-01 14:26:01 (1)
+I1001 14:26:01.744889 12318 ParkingSpot.cpp:289] Parking spot ID 14 has occupied at 20191001T142601 by QISENS6
+I1001 14:26:01.772104 12328 ServerNetworkHandler.cpp:109] line number 109
+I1001 14:26:49.745467 12318 ParkingSpot.cpp:85] Release parking spot 14
+I1001 14:27:46.201467 12318 ParkingSpot.cpp:289] Parking spot ID -1 has occupied at 20191001T142746 by QISENS6
