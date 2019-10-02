@@ -67,7 +67,7 @@ void writeXMLFile(cv::string filename) {
 	dest.TargetPath = "/parkstatus/overtime";
 	ServerDestinations[HTTP_REQ_UPDATE_OVER] = dest;
 
-	root.add("ServerSettings.ServerAddress", "52.52.203.176");
+	root.add("ServerSettings.ServerAddress", "35.164.140.47"); //SPIRNG SERVER //
 	for (const auto& data : ServerDestinations) {
 		ptree &node = root.add("ServerSettings.Request", "");
 

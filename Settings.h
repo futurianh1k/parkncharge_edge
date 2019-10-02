@@ -51,6 +51,19 @@ namespace seevider {
 		std::string ServerDataFilename;
 
 		/**
+<<<<<<< HEAD
+=======
+		 * cfg file settings
+		 */
+		std::string CfgFile;
+
+		/**
+		 * weight file settings
+		 */
+		std::string WeightFile;
+
+		/**
+>>>>>>> 3441677ab1565ffd6fa168e9812f543a820cd17e
 		 * Enability of motion detection
 		 */
 		bool MotionDetectionEnabled;

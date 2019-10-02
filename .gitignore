@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled Object files
 *.slo
 *.lo
@@ -30,4 +31,13 @@
 
 # Build folder
 build*/
-log/*
+*.weights
+*.cmake
+log/
+MessageData/
+*.cpp~
+*.swp
+*.swo
+*.txt~
+*.ini~
+

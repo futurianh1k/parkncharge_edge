@@ -1,4 +1,0 @@
-Log file created at: 2019/10/02 10:25:06
-Running on machine: jnano5
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-I1002 10:25:06.485117  8590 MainInterface.cpp:53] Starting the main activity
