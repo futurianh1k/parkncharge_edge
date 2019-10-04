@@ -1,0 +1,42 @@
+{
+    "": {
+        "parkingSpotId": "16",
+        "parkingSpotName": "spot16",
+        "roiCoordX": "680",
+        "roiCoordY": "140",
+        "roiWidth": "200",
+        "roiHeight": "270",
+        "policyId": "5",
+        "timeLimit": "60"
+    },
+    "": {
+        "parkingSpotId": "15",
+        "parkingSpotName": "spot15",
+        "roiCoordX": "470",
+        "roiCoordY": "140",
+        "roiWidth": "200",
+        "roiHeight": "270",
+        "policyId": "5",
+        "timeLimit": "60"
+    },
+    "": {
+        "parkingSpotId": "14",
+        "parkingSpotName": "spot14",
+        "roiCoordX": "260",
+        "roiCoordY": "140",
+        "roiWidth": "200",
+        "roiHeight": "270",
+        "policyId": "5",
+        "timeLimit": "60"
+    },
+    "": {
+        "parkingSpotId": "13",
+        "parkingSpotName": "spot13",
+        "roiCoordX": "50",
+        "roiCoordY": "140",
+        "roiWidth": "200",
+        "roiHeight": "270",
+        "policyId": "5",
+        "timeLimit": "60"
+    }
+}

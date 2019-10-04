@@ -106,6 +106,7 @@ bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) con
 		return false;
 	}
 	else {
+		LOG(INFO) << "line number 109";
 		dest = mServerDestinations.find(request)->second;
 	}
 
@@ -113,29 +114,19 @@ bool ServerNetworkHandler::upload(const std::unique_ptr<IMessageData> &data) con
 	root.put<std::string>("timeZone", mSensorInfo->TimeZone);
 	write_json(ss, root);
 
-<<<<<<< HEAD
-	//std::ofstream fout("sync_upload.txt");
-	//fout << ss.str() << std::endl;
-	//fout.close();
-
-=======
 	std::ofstream fout("sync_upload.txt");
 	fout << ss.str() << std::endl;
 	fout.close();
 
 /*
->>>>>>> 3441677ab1565ffd6fa168e9812f543a820cd17e
 	if (mSecureConnection.compare("none") == 0) {
 		return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
 	}
 	else {
 		return sendSecureHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
 	}
-<<<<<<< HEAD
-=======
 */
 	return sendHTTP(dest.HTTPRequestMethod, ss.str(), dest.TargetPath);
->>>>>>> 3441677ab1565ffd6fa168e9812f543a820cd17e
 }
 
 bool ServerNetworkHandler::sendHTTP(const std::string method,
@@ -147,11 +138,7 @@ bool ServerNetworkHandler::sendHTTP(const std::string method,
 
 		// Get a list of endpoints corresponding to the server name.
 		tcp::resolver resolver(io_service);
-<<<<<<< HEAD
-		tcp::resolver::query query(mServerAddr, "http");
-=======
 		tcp::resolver::query query(mServerAddr, "20180");
->>>>>>> 3441677ab1565ffd6fa168e9812f543a820cd17e
 		tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
 		tcp::resolver::iterator end;
 
@@ -164,6 +151,7 @@ bool ServerNetworkHandler::sendHTTP(const std::string method,
 		}
 
 		if (error) {
+			std::cout << "line number : 153";
 			throw boost::system::system_error(error);
 		}
 
@@ -230,8 +218,11 @@ bool ServerNetworkHandler::sendHTTP(const std::string method,
 		while (boost::asio::read(socket, response,
 			boost::asio::transfer_at_least(1), error))
 			std::cout << &response;
-		if (error != boost::asio::error::eof)
+		if (error != boost::asio::error::eof) {
+			std::cout << "line number : 221";
 			throw boost::system::system_error(error);
+		}
+			
 	}
 	catch (std::exception& e) {
 		LOG(ERROR) << e.what();
@@ -250,11 +241,7 @@ bool ServerNetworkHandler::sendSecureHTTP(const std::string method,
 
 		// Get a list of endpoints corresponding to the server name.
 		tcp::resolver resolver(io_service);
-<<<<<<< HEAD
-		tcp::resolver::query query(mServerAddr, "https");	// or default secure port 443
-=======
 		tcp::resolver::query query(mServerAddr, "20180");	// or default secure port 443
->>>>>>> 3441677ab1565ffd6fa168e9812f543a820cd17e
 		tcp::resolver::iterator endpoint_iterator = resolver.resolve(query);
 
 		boost::asio::ssl::context ctx(boost::asio::ssl::context::tlsv11);
@@ -287,12 +274,9 @@ std::string ServerNetworkHandler::makeHTTPMessage(const std::string &method,
 	request_stream << "Connection: close\r\n\r\n";  //NOTE THE Double line feed
 	request_stream << contents;
 
-<<<<<<< HEAD
-=======
 	//LOG(FATAL) << "Request stream" << mServerAddr;
 	//LOG(FATAL) << "Request stream" << targetAddr;
 
->>>>>>> 3441677ab1565ffd6fa168e9812f543a820cd17e
 	return request_stream.str();
 }
 
@@ -324,12 +308,9 @@ bool ServerNetworkHandler::loadSettings(const std::string filename) {
 		}
 	}
 
-<<<<<<< HEAD
-=======
 	//LOG(FATAL) << "Request stream" << mServerAddr;
 
 
->>>>>>> 3441677ab1565ffd6fa168e9812f543a820cd17e
 	return true;
 }
 

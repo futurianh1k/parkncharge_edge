@@ -41,7 +41,7 @@ bool system_check() {
 	return true;
 }
 
-void writeXMLFile(cv::string filename) {
+void writeXMLFile(cv::String filename) {
 	using boost::property_tree::ptree;
 
 	ptree root;
@@ -67,7 +67,12 @@ void writeXMLFile(cv::string filename) {
 	dest.TargetPath = "/parkstatus/overtime";
 	ServerDestinations[HTTP_REQ_UPDATE_OVER] = dest;
 
-	root.add("ServerSettings.ServerAddress", "35.164.140.47"); //SPIRNG SERVER //
+	//root.add("ServerSettings.ServerAddress", "35.164.140.47"); //SPIRNG SERVER
+	root.add("ServerSettings.ServerAddress", "192.168.64.83"); //jeeeun ubuntu local
+	//root.add("ServerSettings.ServerAddress", "192.168.43.66"); //hotspot jeeeun
+	//root.add("ServerSettings.ServerAddress", "192.168.1.102"); //hotspot internal
+	//root.add("ServerSettings.ServerAddress", "192.168.10.17"); //iptime skt demo
+	//root.add("ServerSettings.ServerAddress", "192.168.10.21"); //iptime ethernet
 	for (const auto& data : ServerDestinations) {
 		ptree &node = root.add("ServerSettings.Request", "");
 

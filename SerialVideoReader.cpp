@@ -22,6 +22,9 @@
 
 #include <glog/logging.h>
 
+//Ken trial with gstreamer camera code
+//#include "gstCamera.h"
+
 using namespace seevider;
 
 namespace bpt = boost::posix_time;
@@ -59,7 +62,13 @@ bool SerialVideoReader::open(int id) {
 	// Retrieve and print the current attributes
 	std::vector<char> EXT;
 	LOG(INFO) << "Modifying camera codec";
+#if 1
+    //double ext_code = mVideoReader.get(CV_CAP_PROP_FORMAT);
 	double ext_code = mVideoReader.get(CV_CAP_PROP_FOURCC);
+	double fps_code = mVideoReader.get(CV_CAP_PROP_FPS);
+    LOG(INFO) << "ext_code print FOURCC: " << ext_code;
+    LOG(INFO) << "ext_code print FPS   : " << fps_code;
+
 	if (ext_code >= 0.0) {
 		EXT = cvtToFourCC(ext_code);
 		LOG(INFO) << "The original camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
@@ -76,6 +85,7 @@ bool SerialVideoReader::open(int id) {
 		EXT = cvtToFourCC(mVideoReader.get(CV_CAP_PROP_FOURCC));
 		LOG(INFO) << "Modified camera codec: " << EXT[0] << EXT[1] << EXT[2] << EXT[3];
 	}
+#endif
 
 	// Modify video size
 	cv::Size originalSize;
@@ -137,15 +147,19 @@ cv::Mat SerialVideoReader::read() const {
 bool SerialVideoReader::read(cv::Mat &frame, bpt::ptime &now) {
     boost::mutex::scoped_lock lock(mMutex);
 
+	//LOG(INFO) << "checkpoint 5-0";
 	if (mFrameQueue.empty()) {
 		return false;
 	}
 
+	//LOG(INFO) << "checkpoint 5-1";
 	std::pair<boost::posix_time::ptime, cv::Mat> data = mFrameQueue.back();
 
 	now = data.first;
+	//LOG(INFO) << "checkpoint 5-2";
 	data.second.copyTo(frame);
 
+	//LOG(INFO) << "checkpoint 5-3";
 	return true;
 }
 
@@ -175,11 +189,13 @@ bool SerialVideoReader::readAt(cv::Mat &frame, boost::posix_time::ptime &time) {
 
 bool SerialVideoReader::isOpened() const {
     boost::mutex::scoped_lock lock(mMutex);
+	//LOG(INFO) << "checkpoint 6-0";
 	return mVideoReader.isOpened();
 }
 
 bool SerialVideoReader::isReady() const {
 	boost::mutex::scoped_lock lock(mMutex);
+	//LOG(INFO) << "checkpoint 6-1";
 	return !(mFrameQueue.empty() || mFrameIndexer.empty()) && !mFrameQueue.back().second.empty() && mReady;
 }
 
@@ -202,9 +218,14 @@ void SerialVideoReader::run() {
     bpt::ptime prev = bpt::second_clock::local_time();
 	bpt::ptime frontOfIndexerTime;
 
+    cv::waitKey(100);
+    cv::waitKey();
+
     // Wait and check if video input is opened. May need to be improved.
     while (!(isOpened()/* && mReady*/)) {
-		boost::this_thread::sleep_for(boost::chrono::seconds(1));
+    //while (!(isOpened() && mReady)) {
+        //LOG(INFO) << "checkpoint 10";
+	boost::this_thread::sleep_for(boost::chrono::seconds(1));
     }
 
     // Only this thread will access the instance of the actual VideoCapture.
@@ -212,6 +233,7 @@ void SerialVideoReader::run() {
         cv::Mat frame;
 
 		mVideoReader.read(frame);   // read one frame
+	//LOG(INFO) << "checkpoint 1";
         bpt::ptime now = bpt::second_clock::local_time();   // time stamp
 		
         // Insert the acquired frame to the queue
@@ -227,6 +249,7 @@ void SerialVideoReader::run() {
 			mFrameQueue.push_back({ now, frame });
 		}
 
+	//LOG(INFO) << "checkpoint 2";
         // mFrameIndexer holds the frame of each second, back to given time period.
 		if (mFrameIndexer.empty()) {
 			boost::mutex::scoped_lock lock(mMutex);
@@ -250,10 +273,13 @@ void SerialVideoReader::run() {
 			}
 		}
 
+	    //LOG(INFO) << "checkpoint 3";
 		prev = now;
 
 		mReady = true;	// make it ready after at least one frame-retrieval
 
+
+	    //LOG(INFO) << "checkpoint 4";
 		if (mFromVideo) {
 			boost::this_thread::sleep_for(boost::chrono::milliseconds(30));
 		}

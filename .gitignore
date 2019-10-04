@@ -41,3 +41,8 @@ MessageData/
 *.txt~
 *.ini~
 mobilenet/
+
+CMakeFiles/
+image/
+tflib/
+

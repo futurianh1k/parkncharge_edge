@@ -1,11 +1,18 @@
 #include "MotionDetection.h"
 
 #include "Utils.h"
+#include <glog/logging.h>
+
 
 namespace seevider {
 	using namespace cv;
 
-	MotionDetection::MotionDetection(Size imageSize) : mTargetSize(0, 0),  mMOG2(100, 16, false) {
+    //Ken fix opencv3
+    //Mat mFGMaskMOG2;
+    Ptr<BackgroundSubtractor> mMOG2 = createBackgroundSubtractorMOG2().dynamicCast<BackgroundSubtractor>();
+    //Ptr<BackgroundSubtractor> mMOG2 = createBackgroundSubtractorMOG2(100, 16, false);
+
+	MotionDetection::MotionDetection(Size imageSize) : mTargetSize(0, 0), mMOG2() {
 		if (imageSize.width > 0 && imageSize.height > 0) {
 			mResize = true;
 			double ratio = round(computeImageRatio(imageSize.width, imageSize.height) / 0.01);
@@ -32,19 +39,33 @@ namespace seevider {
 	}
 
 	void MotionDetection::update(const cv::Mat &frame) {
+        // create foreground mask of proper size
+        if( mFGMaskMOG2.empty() ){
+            mFGMaskMOG2.create(frame.size(), frame.type());
+        }
+		#if 1
 		if (mResize && frame.size() != mTargetSize) {
 			Mat input;
+            LOG(INFO) << "checkpoint b1";
 			resize(frame, input, mTargetSize);
-			mMOG2(input, mFGMaskMOG2);
+            LOG(INFO) << "checkpoint b2";
+			mMOG2->apply(input, mFGMaskMOG2, true ? -1 : 0);
+            LOG(INFO) << "checkpoint b3";
 		}
-		else {
-			mMOG2(frame, mFGMaskMOG2);
+		else 
+		#endif
+		{
+            LOG(INFO) << "checkpoint b4";
+			mMOG2->apply(frame, mFGMaskMOG2, true ? -1 : 0);
 		}
 
 		// Generate parameters for Open operation
 		int morph_size = 3;
+        LOG(INFO) << "checkpoint b5";
 		Mat element = getStructuringElement(MORPH_ELLIPSE, Size(2 * morph_size + 1, 2 * morph_size + 1), Point(morph_size, morph_size));
+        LOG(INFO) << "checkpoint b6";
 		morphologyEx(mFGMaskMOG2, mFGMaskMOG2, MORPH_OPEN, element);	// Open process to remove minor movements
+		LOG(INFO) << "checkpoint b7";
 	}
 
 	bool MotionDetection::isMotionDetected(const cv::Mat &frame, cv::Rect ROI) const {
