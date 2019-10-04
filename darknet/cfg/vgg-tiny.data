@@ -1,0 +1,6 @@
+classes=2
+train  = data/vgg-tiny-train.list
+valid  = data/vgg-tiny-valid.list
+labels = data/vgg-tiny-labels.txt
+backup = backup/
+top=1
