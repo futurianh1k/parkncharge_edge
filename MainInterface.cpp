@@ -479,14 +479,10 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
                     			//=====================================================
 					lpFrame = parkingSpot->enter(frame.clone(), parkingSpot->ROI, now,"QISENS6"); // QISENS6 IS PLATE NUMBER SO WHEN YOU GET PLATE NUMBER BY DETECTION ALGORITHM YOU HAVE TO REPLACE
 				    
-                    clock_t start = clock();
-                    int f_result = mkdir(f_path, 775);
-                    if(f_result == -1)
-                        printf("can't create folder!\n");
-                    char timebuf[100];
-                    sprintf(timebuf, "./image/cpp_%d.jpg", int(time(0)/60));
-                    imwrite(timebuf, lpFrame);
-					printf("*******parkingSpot ok**********\n");
+                    			clock_t start = clock();
+                    			char timebuf[100];
+                    			sprintf(timebuf, "cpp_%d.jpg", int(time(0)/60));
+                    			imwrite(timebuf, lpFrame);
 					const char* name = timebuf;
                     //jeeeun
 //-------------------------------------------------------------------------------------------------------------------
@@ -509,8 +505,14 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime& now) {
 							//여기는 ROI initializer 안되어있는거 같음. puttext 안됨
 
 							Py_DECREF(temp_bytes);
-                            printf("****time result : %f\n", (float)(clock() - start));
-                        }   
+                            				//printf("****time result : %f\n", (float)(clock() - start));
+                       	 				int del_result = remove(timebuf);
+                                                        if(del_result == 0)
+                                                                printf("file remove ok\n");
+                                                        else if(del_result == -1)
+                                                                perror("file remove fail\n");
+						
+						}   
 						else 
 						{
 							Py_XDECREF(result);

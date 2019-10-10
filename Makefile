@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/VisionSensor_final
+CMAKE_SOURCE_DIR = /home/ubuntu/VisionSensor_git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/VisionSensor_final
+CMAKE_BINARY_DIR = /home/ubuntu/VisionSensor_git
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/VisionSensor_final/CMakeFiles /home/ubuntu/VisionSensor_final/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/VisionSensor_git/CMakeFiles /home/ubuntu/VisionSensor_git/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/VisionSensor_final/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/VisionSensor_git/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -392,33 +392,6 @@ ImageNetClassifier.s: ImageNetClassifier.cpp.s
 ImageNetClassifier.cpp.s:
 	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.s
 .PHONY : ImageNetClassifier.cpp.s
-
-LPR.o: LPR.cpp.o
-
-.PHONY : LPR.o
-
-# target to build an object file
-LPR.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/LPR.cpp.o
-.PHONY : LPR.cpp.o
-
-LPR.i: LPR.cpp.i
-
-.PHONY : LPR.i
-
-# target to preprocess a source file
-LPR.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/LPR.cpp.i
-.PHONY : LPR.cpp.i
-
-LPR.s: LPR.cpp.s
-
-.PHONY : LPR.s
-
-# target to generate assembly for a file
-LPR.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/LPR.cpp.s
-.PHONY : LPR.cpp.s
 
 Light.o: Light.cpp.o
 
@@ -891,9 +864,6 @@ help:
 	@echo "... ImageNetClassifier.o"
 	@echo "... ImageNetClassifier.i"
 	@echo "... ImageNetClassifier.s"
-	@echo "... LPR.o"
-	@echo "... LPR.i"
-	@echo "... LPR.s"
 	@echo "... Light.o"
 	@echo "... Light.i"
 	@echo "... Light.s"

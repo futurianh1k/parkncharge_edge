@@ -168,7 +168,7 @@ namespace seevider {
         PyObject* localizer;
         PyObject* recognizer;
         PyObject* p_inference;
-	PyObject* result;
+		PyObject* result;
 	int tmp;
 	//	============================
 

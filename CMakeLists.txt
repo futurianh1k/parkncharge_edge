@@ -15,11 +15,11 @@ configure_file(
         "${PROJECT_SOURCE_DIR}/Config.h.in"
         "${PROJECT_BINARY_DIR}/Config.h"
 )
-set(TARGET_CPP BoardController.cpp CameraInfo.cpp CascadeClassifier.cpp IMessageData.cpp INetworkHandler.cpp IGenericDetector.cpp IOccupancyDetector.cpp IPlateDetector.cpp IOUtils.cpp Light.cpp LPR.cpp MessageQueue.cpp ImageNetClassifier.cpp MotionDetection.cpp ParkingSpot.cpp ParkingSpotManager.cpp ParkingUpdateMessage.cpp SecureClient.cpp SensorInfo.cpp SerialVideoReader.cpp ServerNetworkHandler.cpp ServerSyncMessage.cpp Settings.cpp TCPSocketListener.cpp Utils.cpp)
+set(TARGET_CPP BoardController.cpp CameraInfo.cpp CascadeClassifier.cpp IMessageData.cpp INetworkHandler.cpp IGenericDetector.cpp IOccupancyDetector.cpp IPlateDetector.cpp IOUtils.cpp Light.cpp MessageQueue.cpp ImageNetClassifier.cpp MotionDetection.cpp ParkingSpot.cpp ParkingSpotManager.cpp ParkingUpdateMessage.cpp SecureClient.cpp SensorInfo.cpp SerialVideoReader.cpp ServerNetworkHandler.cpp ServerSyncMessage.cpp Settings.cpp TCPSocketListener.cpp Utils.cpp)
 add_executable(VisionSensor main.cpp MainInterface.cpp ${TARGET_CPP})
 set(BOOST_LIB_LIST -lboost_system -lboost_thread -lboost_chrono -lboost_date_time -lboost_filesystem -lmysqlclient)
 include_directories(${OPENSSL_INCLUDE_DIR})
 include_directories(/usr/include/glog)
 include_directories(/usr/include/python3.6)
-target_link_libraries(VisionSensor ${OPENSSL_LIBRARIES} ${OpenCV_LIBS} ${Boost_LIBRARIES} ${BOOST_LIB_LIST} -lpthread -lglog -lopenalpr -lpython3.6m)
+target_link_libraries(VisionSensor ${OPENSSL_LIBRARIES} ${OpenCV_LIBS} ${Boost_LIBRARIES} ${BOOST_LIB_LIST} -lpthread -lglog -lpython3.6m)
 target_link_libraries(VisionSensor ${Darknet_LIB})

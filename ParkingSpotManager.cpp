@@ -23,6 +23,8 @@
 #include <iostream>
 #include <stdlib.h>
 #include <errno.h>
+#include <opencv2/freetype.hpp>
+
 
 #include <cstring>
 
@@ -368,7 +370,8 @@ namespace seevider {
 
 	cv::Mat ParkingSpotManager::drawParkingStatus(cv::Mat frame) const {
 		cv::Mat drawn = frame.clone();
-
+		cv::Ptr<cv::freetype::FreeType2> ft2 = cv::freetype::createFreeType2();
+                ft2->loadFontData("./GULIM.ttc", 0);
 		for (auto parkingSpot : mParkingSpots) {
 			cv::Scalar color;
 			std::string roi_text;
@@ -391,7 +394,8 @@ namespace seevider {
 
 			//insert text	//jeeeun_putText
 			cv::putText(drawn, roi_text, cv::Point(parkingSpot.second->ROI.x, parkingSpot.second->ROI.y), cv::FONT_HERSHEY_PLAIN, 2.0, color, 2);
-			cv::putText(drawn, parkingSpot.second->mPlateNumber, cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height + 20)), cv::FONT_HERSHEY_PLAIN, 2.0, color_text, 2);
+			//cv::putText(drawn, parkingSpot.second->mPlateNumber, cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height + 20)), cv::FONT_HERSHEY_PLAIN, 2.0, color_text, 2);
+			ft2->putText(drawn, parkingSpot.second->mPlateNumber, cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height+20)), 30, cv::Scalar(0,0,0), 1, cv::LINE_AA, true);
 			//std::cout << "plate number in ParkingSpotmanager.cpp : " << parkingSpot.second->mPlateNumber << std::endl;
 
 		}
