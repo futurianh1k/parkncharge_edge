@@ -1,3 +1,3 @@
-/media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model/CMakeFiles/rebuild_cache.dir
-/media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model/CMakeFiles/VisionSensor.dir
-/media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model/CMakeFiles/edit_cache.dir
+/media/qisens/4tb1/JH/juhee/11-12_git/CMakeFiles/rebuild_cache.dir
+/media/qisens/4tb1/JH/juhee/11-12_git/CMakeFiles/VisionSensor.dir
+/media/qisens/4tb1/JH/juhee/11-12_git/CMakeFiles/edit_cache.dir
