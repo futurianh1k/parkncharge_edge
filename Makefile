@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/VisionSensor_git
+CMAKE_SOURCE_DIR = /media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/VisionSensor_git
+CMAKE_BINARY_DIR = /media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/VisionSensor_git/CMakeFiles /home/ubuntu/VisionSensor_git/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model/CMakeFiles /media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/VisionSensor_git/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/qisens/4tb1/JH/juhee/11-07/VisionSensor_3model/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,60 +177,6 @@ CameraInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/CameraInfo.cpp.s
 .PHONY : CameraInfo.cpp.s
 
-CascadeClassifier.o: CascadeClassifier.cpp.o
-
-.PHONY : CascadeClassifier.o
-
-# target to build an object file
-CascadeClassifier.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.o
-.PHONY : CascadeClassifier.cpp.o
-
-CascadeClassifier.i: CascadeClassifier.cpp.i
-
-.PHONY : CascadeClassifier.i
-
-# target to preprocess a source file
-CascadeClassifier.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.i
-.PHONY : CascadeClassifier.cpp.i
-
-CascadeClassifier.s: CascadeClassifier.cpp.s
-
-.PHONY : CascadeClassifier.s
-
-# target to generate assembly for a file
-CascadeClassifier.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/CascadeClassifier.cpp.s
-.PHONY : CascadeClassifier.cpp.s
-
-IGenericDetector.o: IGenericDetector.cpp.o
-
-.PHONY : IGenericDetector.o
-
-# target to build an object file
-IGenericDetector.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.o
-.PHONY : IGenericDetector.cpp.o
-
-IGenericDetector.i: IGenericDetector.cpp.i
-
-.PHONY : IGenericDetector.i
-
-# target to preprocess a source file
-IGenericDetector.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.i
-.PHONY : IGenericDetector.cpp.i
-
-IGenericDetector.s: IGenericDetector.cpp.s
-
-.PHONY : IGenericDetector.s
-
-# target to generate assembly for a file
-IGenericDetector.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IGenericDetector.cpp.s
-.PHONY : IGenericDetector.cpp.s
-
 IMessageData.o: IMessageData.cpp.o
 
 .PHONY : IMessageData.o
@@ -312,114 +258,6 @@ IOUtils.cpp.s:
 	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOUtils.cpp.s
 .PHONY : IOUtils.cpp.s
 
-IOccupancyDetector.o: IOccupancyDetector.cpp.o
-
-.PHONY : IOccupancyDetector.o
-
-# target to build an object file
-IOccupancyDetector.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.o
-.PHONY : IOccupancyDetector.cpp.o
-
-IOccupancyDetector.i: IOccupancyDetector.cpp.i
-
-.PHONY : IOccupancyDetector.i
-
-# target to preprocess a source file
-IOccupancyDetector.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.i
-.PHONY : IOccupancyDetector.cpp.i
-
-IOccupancyDetector.s: IOccupancyDetector.cpp.s
-
-.PHONY : IOccupancyDetector.s
-
-# target to generate assembly for a file
-IOccupancyDetector.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IOccupancyDetector.cpp.s
-.PHONY : IOccupancyDetector.cpp.s
-
-IPlateDetector.o: IPlateDetector.cpp.o
-
-.PHONY : IPlateDetector.o
-
-# target to build an object file
-IPlateDetector.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.o
-.PHONY : IPlateDetector.cpp.o
-
-IPlateDetector.i: IPlateDetector.cpp.i
-
-.PHONY : IPlateDetector.i
-
-# target to preprocess a source file
-IPlateDetector.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.i
-.PHONY : IPlateDetector.cpp.i
-
-IPlateDetector.s: IPlateDetector.cpp.s
-
-.PHONY : IPlateDetector.s
-
-# target to generate assembly for a file
-IPlateDetector.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/IPlateDetector.cpp.s
-.PHONY : IPlateDetector.cpp.s
-
-ImageNetClassifier.o: ImageNetClassifier.cpp.o
-
-.PHONY : ImageNetClassifier.o
-
-# target to build an object file
-ImageNetClassifier.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.o
-.PHONY : ImageNetClassifier.cpp.o
-
-ImageNetClassifier.i: ImageNetClassifier.cpp.i
-
-.PHONY : ImageNetClassifier.i
-
-# target to preprocess a source file
-ImageNetClassifier.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.i
-.PHONY : ImageNetClassifier.cpp.i
-
-ImageNetClassifier.s: ImageNetClassifier.cpp.s
-
-.PHONY : ImageNetClassifier.s
-
-# target to generate assembly for a file
-ImageNetClassifier.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/ImageNetClassifier.cpp.s
-.PHONY : ImageNetClassifier.cpp.s
-
-Light.o: Light.cpp.o
-
-.PHONY : Light.o
-
-# target to build an object file
-Light.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/Light.cpp.o
-.PHONY : Light.cpp.o
-
-Light.i: Light.cpp.i
-
-.PHONY : Light.i
-
-# target to preprocess a source file
-Light.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/Light.cpp.i
-.PHONY : Light.cpp.i
-
-Light.s: Light.cpp.s
-
-.PHONY : Light.s
-
-# target to generate assembly for a file
-Light.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/Light.cpp.s
-.PHONY : Light.cpp.s
-
 MainInterface.o: MainInterface.cpp.o
 
 .PHONY : MainInterface.o
@@ -473,33 +311,6 @@ MessageQueue.s: MessageQueue.cpp.s
 MessageQueue.cpp.s:
 	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/MessageQueue.cpp.s
 .PHONY : MessageQueue.cpp.s
-
-MotionDetection.o: MotionDetection.cpp.o
-
-.PHONY : MotionDetection.o
-
-# target to build an object file
-MotionDetection.cpp.o:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/MotionDetection.cpp.o
-.PHONY : MotionDetection.cpp.o
-
-MotionDetection.i: MotionDetection.cpp.i
-
-.PHONY : MotionDetection.i
-
-# target to preprocess a source file
-MotionDetection.cpp.i:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/MotionDetection.cpp.i
-.PHONY : MotionDetection.cpp.i
-
-MotionDetection.s: MotionDetection.cpp.s
-
-.PHONY : MotionDetection.s
-
-# target to generate assembly for a file
-MotionDetection.cpp.s:
-	$(MAKE) -f CMakeFiles/VisionSensor.dir/build.make CMakeFiles/VisionSensor.dir/MotionDetection.cpp.s
-.PHONY : MotionDetection.cpp.s
 
 ParkingSpot.o: ParkingSpot.cpp.o
 
@@ -840,12 +651,6 @@ help:
 	@echo "... CameraInfo.o"
 	@echo "... CameraInfo.i"
 	@echo "... CameraInfo.s"
-	@echo "... CascadeClassifier.o"
-	@echo "... CascadeClassifier.i"
-	@echo "... CascadeClassifier.s"
-	@echo "... IGenericDetector.o"
-	@echo "... IGenericDetector.i"
-	@echo "... IGenericDetector.s"
 	@echo "... IMessageData.o"
 	@echo "... IMessageData.i"
 	@echo "... IMessageData.s"
@@ -855,27 +660,12 @@ help:
 	@echo "... IOUtils.o"
 	@echo "... IOUtils.i"
 	@echo "... IOUtils.s"
-	@echo "... IOccupancyDetector.o"
-	@echo "... IOccupancyDetector.i"
-	@echo "... IOccupancyDetector.s"
-	@echo "... IPlateDetector.o"
-	@echo "... IPlateDetector.i"
-	@echo "... IPlateDetector.s"
-	@echo "... ImageNetClassifier.o"
-	@echo "... ImageNetClassifier.i"
-	@echo "... ImageNetClassifier.s"
-	@echo "... Light.o"
-	@echo "... Light.i"
-	@echo "... Light.s"
 	@echo "... MainInterface.o"
 	@echo "... MainInterface.i"
 	@echo "... MainInterface.s"
 	@echo "... MessageQueue.o"
 	@echo "... MessageQueue.i"
 	@echo "... MessageQueue.s"
-	@echo "... MotionDetection.o"
-	@echo "... MotionDetection.i"
-	@echo "... MotionDetection.s"
 	@echo "... ParkingSpot.o"
 	@echo "... ParkingSpot.i"
 	@echo "... ParkingSpot.s"

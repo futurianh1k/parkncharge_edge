@@ -7,12 +7,15 @@
 
 #include <glog/logging.h>
 
+#include <iostream>
+
 SecureClient::SecureClient(boost::asio::io_service& io_service,
 	boost::asio::ssl::context& context,
 	boost::asio::ip::tcp::resolver::iterator endpoint_iterator,
 	std::string message)
 	: socket_(io_service, context), request_(message)
 {
+	std::cout << std::endl << "----------<<< SecureClient.cpp in  >>>----------" << std::endl << std::endl;
 	socket_.set_verify_mode(boost::asio::ssl::verify_none);
 	socket_.set_verify_callback(
 		boost::bind(&SecureClient::verify_certificate, this, _1, _2));

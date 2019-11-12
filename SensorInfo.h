@@ -42,11 +42,6 @@ namespace seevider {
          */
         const seevider::ParkingParams &ParkingParams;
 
-        /**
-         * The read-only parameters of lighting sensor
-         */
-        const seevider::LightingParams &LightingParams;
-
 		/**
 		 * Basic constructor
 		 */
@@ -78,9 +73,5 @@ namespace seevider {
          */
 		seevider::ParkingParams mParkingParams;
 
-        /**
-         * Parameters of lighting sensor
-         */
-        seevider::LightingParams mLightingParams;
 	};
 }

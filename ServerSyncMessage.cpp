@@ -16,10 +16,12 @@
 #include "types.h"
 #include "ServerSyncMessage.h"
 
+#include <iostream>
 namespace seevider {
 	ServerSyncMessage::ServerSyncMessage(const cv::Size imageSize,
 		const boost::posix_time::ptime eventTime,
 		const boost::property_tree::ptree& parkingSpots) : IMessageData(eventTime) {
+		std::cout << std::endl << "----------<<< ServerSyncMessage.cpp in  >>>----------" << std::endl << std::endl;
 		mImageSize = imageSize;
 		mJSONParkingSpots = parkingSpots;
 	}
@@ -46,7 +48,6 @@ namespace seevider {
 		info.put<int>("pictureWidth", mImageSize.width);
 		info.put<int>("pictureHeight", mImageSize.height);
 		info.add_child("ROI", mJSONParkingSpots);
-
 		return info;
 	}
 

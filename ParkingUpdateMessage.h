@@ -78,6 +78,19 @@ namespace seevider {
          */
         int mSpotID = 0;
 
+//jeeeun---
+        /**
+         * vehicle result
+         */
+//        std::string mVehicleType = "";
+
+        /**
+         * lpr result
+         */
+        std::string mPlateNum = "";
+//----------
+
+
         /**
          * Image frame
          */

@@ -15,11 +15,13 @@
 //
 
 #include "SensorInfo.h"
-
+#include <iostream>
 namespace seevider {
 	SensorInfo::SensorInfo() :
-		SensorID(mSensorID), SensorName(mSensorName), TimeZone(mTimeZone), ParkingParams(mParkingParams), LightingParams(mLightingParams) {
+//		SensorID(mSensorID), SensorName(mSensorName), TimeZone(mTimeZone), ParkingParams(mParkingParams), LightingParams(mLightingParams) {
+		SensorID(mSensorID), SensorName(mSensorName), TimeZone(mTimeZone), ParkingParams(mParkingParams) {
 		//mSensorID = sensorID;
+		std::cout << std::endl << "----------<<< SensorInfo.cpp in  >>>----------" << std::endl << std::endl;
 	};
 
 	SensorInfo::~SensorInfo() {

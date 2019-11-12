@@ -16,10 +16,11 @@
 
 #include "MessageQueue.h"
 #include "IOUtils.h"
-
+#include <iostream>
 using namespace seevider;
 
 MessageQueue::MessageQueue() {
+	std::cout << std::endl << "----------<<< MessageQueue.cpp in  >>>----------" << std::endl << std::endl;
 }
 
 MessageQueue::~MessageQueue() {

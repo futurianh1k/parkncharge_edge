@@ -1,4 +1,4 @@
-// File:	INetworkHandler.cpp
+// File:	OccupancyDetector.h
 // Author:	Seongdo Kim
 // Contact:	sdland85@gmail.com
 //
@@ -13,13 +13,10 @@
 //
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
 
-#include "INetworkHandler.h"
-#include <iostream>
-namespace seevider {
-	INetworkHandler::INetworkHandler() : mOperation(true), mWaitSeconds(2), mDestroySeconds(3) {
-		std::cout << std::endl << "----------<<< INetworkHandler.cpp in  >>>----------" << std::endl << std::endl;
-	}
+#pragma once
 
-	INetworkHandler::~INetworkHandler(){
-	}
-}
+/**
+ * Occupancy detector interface function.
+ */
+class OccupancyDetector {
+};

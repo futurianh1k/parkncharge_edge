@@ -36,6 +36,9 @@ namespace seevider {
          */
         const cv::Rect& ROI;
 
+    	int pConf;
+		int cConf;
+
         /**
          * The read-only time limit as minutes
          */
@@ -61,14 +64,21 @@ namespace seevider {
 		*/
 		const bool &UpdateEnabled;
 
-		//jeeeun add
-		const char* mPlateNumber;
+		std::string mPlateNumber;
+        std::string mCarBrand;
+
 
 	private:
+		/* result of recognized plate number of spot */
+
+
+
 		/**
 		 * The original rectangular ROI
 		 */
 		cv::Rect mROI;
+		cv::Rect pROI;
+		cv::Rect vROI;
 
 		/**
 		 * Time limit as minute
@@ -104,11 +114,6 @@ namespace seevider {
 		 * True if the spot is overstayed
 		 */
 		bool mOverstayed;
-
-		/**
-		 * Plane number of the parked car. Could be null if it failed to read PN.
-		 */
-		//std::string mPlateNumber;
 
 		/**
 		 * Frame counter represents the occurence of occupancy events.
@@ -158,11 +163,20 @@ namespace seevider {
          * @param length Allowed length of time for this parking spot
          */
 		ParkingSpot(int id, std::string spotName, const int length, const cv::Rect roi, PARKING_SPOT_POLICY policy);
-		
+
 		/**
 		 * Basic destructor
 		 */
         ~ParkingSpot();
+
+	//jeeeun
+	/*get set mPlateNumber*/
+        void setPlateNumber(std::string plate);
+        std::string getPlateNumber();
+
+	/*get set mCarBrand*/
+        void setCarBrand(std::string brand);
+        std::string getCarBrand();
 
         /**
          * Check if the parking spot is occupied
@@ -184,6 +198,13 @@ namespace seevider {
 		bool isSensor();
 		void isRes_sensor();
 ///////////////////////////////
+		/**
+		 * juhee add
+		 */
+		void setLocalizerROI(cv::Rect roiP);
+		void setVehicleROI(cv::Rect roiV);
+		cv::Rect getLocalizerROI();
+		cv::Rect getVehicleROI();
 
 		//jeeeun
 		std::string lpr_docker_server(const cv::Mat& cropImage);
@@ -191,7 +212,7 @@ namespace seevider {
         /**
          * Must be called when the vehicle comes in.
          */
-		cv::Mat enter(const cv::Mat& entryImage, const cv::Rect &ROI, const boost::posix_time::ptime &entryTime, const std::string PN = "null");
+		void enter(const cv::Mat& entryImage, const cv::Rect &ROI, const boost::posix_time::ptime &entryTime, const std::string PN = "null");
 
         /**
          * Must be called when the maximum allowed time has reached.
@@ -212,7 +233,7 @@ namespace seevider {
 		/**
 		 * Update current status. Return true if the status has updated.
 		 */
-		bool update(bool occupied, bool triggerUpdatability);
+		bool update(bool occupied);
 
 		/**
 		 * Reset the parking timer and status.

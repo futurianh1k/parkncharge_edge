@@ -22,8 +22,7 @@
 
 #include <glog/logging.h>
 
-//Ken trial with gstreamer camera code
-//#include "gstCamera.h"
+#include <iostream>
 
 using namespace seevider;
 
@@ -31,6 +30,7 @@ namespace bpt = boost::posix_time;
 
 SerialVideoReader::SerialVideoReader(std::shared_ptr<CameraInfo> setting) :
 mThread(boost::bind(&SerialVideoReader::run, this)) {
+	std::cout << std::endl << "----------<<< SerialVideoReader.cpp in  >>>----------" << std::endl << std::endl;
 	mFrameSize.width = setting->FrameWidth;
 	mFrameSize.height = setting->FrameHeight;
 	setting->FourCC.copy(mInputFourCC, 4, 0);
@@ -117,9 +117,18 @@ bool SerialVideoReader::open(std::string filename) {
 
 	mFrameSize = cv::Size((int)mVideoReader.get(CV_CAP_PROP_FRAME_WIDTH), (int)mVideoReader.get(CV_CAP_PROP_FRAME_HEIGHT));
 
+	mFrameLeng = mVideoReader.get(CV_CAP_PROP_FRAME_COUNT);
 	//mReady = true;
 
 	return true;
+}
+
+//juhee
+int SerialVideoReader::framelen() {
+	return mFrameLeng;
+}
+int SerialVideoReader::framenow() {
+	return mFrameNow;
 }
 
 void SerialVideoReader::destroy() {
@@ -146,6 +155,7 @@ cv::Mat SerialVideoReader::read() const {
 
 bool SerialVideoReader::read(cv::Mat &frame, bpt::ptime &now) {
     boost::mutex::scoped_lock lock(mMutex);
+	mFrameNow =  mVideoReader.get(CV_CAP_PROP_POS_FRAMES);
 
 	//LOG(INFO) << "checkpoint 5-0";
 	if (mFrameQueue.empty()) {

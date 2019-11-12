@@ -30,7 +30,7 @@
 #include <math.h>
 #include <string.h>
 
-#include <curl/curl.h>
+//#include <curl/curl.h>
 
 using namespace seevider;
 using namespace std;
@@ -72,7 +72,7 @@ ParkingSpot::ParkingSpot(int id, std::string spotName, const int length,
 	ROI(mROI), TimeLimit(mTimeLimit), ParkingPolicy(mParkingPolicy),
 	UpdateEnabled(mUpdateEnabled),
 	mID(id), mSpotName(spotName), mTimeLimit(length), mROI(roi),
-	mParkingPolicy(policy), mOccupied(false), mOverstayed(false), mPlateNumber("null"),
+	mParkingPolicy(policy), mOccupied(false), mOverstayed(false),
 	mUpdateEnabled(true),
 	mWork(mService), mTimerThread(boost::bind(&ParkingSpot::runTimer, this)),
 	mParkingTimer(mService) {
@@ -85,12 +85,48 @@ ParkingSpot::~ParkingSpot() {
 	DLOG(INFO) << "Release parking spot " << mID;
 }
 
+//jeeeun-----------------------------------------------
+void ParkingSpot::setPlateNumber(std::string plate) {
+        mPlateNumber = plate;
+}
+
+std::string ParkingSpot::getPlateNumber() {
+        return mPlateNumber;
+}
+
+
+void ParkingSpot::setCarBrand(std::string brand) {
+	mCarBrand = brand;
+}
+
+std::string ParkingSpot::getCarBrand() {
+	return mCarBrand;
+}
+//-----------------------------------------------------
+
 bool ParkingSpot::isOccupied() const {
     return mOccupied;
 }
 
 bool ParkingSpot::isOverstayed() const {
 	return mOccupied && mOverstayed;
+}
+//-------------juhee
+void ParkingSpot::setLocalizerROI(cv::Rect roiP)
+{
+	ParkingSpot::pROI = roiP;
+}
+void ParkingSpot::setVehicleROI(cv::Rect roiV)
+{
+	ParkingSpot::vROI = roiV;
+}
+cv::Rect ParkingSpot::getLocalizerROI()
+{
+	return pROI;
+}
+cv::Rect ParkingSpot::getVehicleROI()
+{
+	return vROI;
 }
 
 ///////////////////////////////////////////
@@ -232,7 +268,7 @@ bool ParkingSpot::check_res(const std::string PN){
 	
 }
 
-Mat ParkingSpot::enter(const Mat& entryImage, const cv::Rect &ROI, const pt::ptime &entryTime, const std::string PN) {
+void ParkingSpot::enter(const Mat& entryImage, const cv::Rect &ROI, const pt::ptime &entryTime, const std::string PN) {
 /*
 	if(isWork==false)
 		isRes_sensor();
@@ -247,7 +283,7 @@ Mat ParkingSpot::enter(const Mat& entryImage, const cv::Rect &ROI, const pt::pti
 	}
 //----------------------------------------------------------------------------------------------------                    	
 	//show crop image	//jeeeun
-	cv::imshow("cropImage", cropImage);
+//	cv::imshow("cropImage", cropImage);
 //	cv::waitKey(0);
 
 //----------------------------------------------------------------------------------------------------                    
@@ -287,8 +323,6 @@ Mat ParkingSpot::enter(const Mat& entryImage, const cv::Rect &ROI, const pt::pti
 	mEntryTime = entryTime;
 	 
 	LOG(INFO) << "Parking spot ID " << mID << " has occupied at " << to_iso_string(entryTime) + " by " + PN;
-	return cropImage;
- 
  
  }
 
@@ -304,11 +338,12 @@ void ParkingSpot::exit(const Mat& exitImage, const pt::ptime &exitTime, const st
 		HTTP_REQ_UPDATE_EXIT, mID, exitImage, exitTime);
     mOccupied = false;
 	mOverstayed = false;
-	mPlateNumber = "null";
+	mPlateNumber.clear();
+	setLocalizerROI(cv::Rect (0,0,0,0));
+	setVehicleROI(cv::Rect(0,0,0,0));
 	mServerMsgQueue->push(data);
 	stopTimer();
 	LOG(INFO) << "Parking spot ID " << mID << " has released at " << to_simple_string(exitTime);
-
 }
 
 bool ParkingSpot::update(std::string spotName, int timeLimit, cv::Rect roi, PARKING_SPOT_POLICY policy) {
@@ -325,7 +360,7 @@ bool ParkingSpot::update(std::string spotName, int timeLimit, cv::Rect roi, PARK
 	return true;
 }
 
-bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
+bool ParkingSpot::update(bool occupied) {
 	bool updated = false;
 	if (occupied) {
 		if (mOccupiedFrameCounter < mPositiveThreshold) {
@@ -340,9 +375,6 @@ bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
 
 			mOccupiedFrameCounter++;
 		}
-		else if (mOccupiedFrameCounter - mPositiveThreshold >= mPositiveThreshold && triggerUpdatability) {
-			mUpdateEnabled = false;
-		}
 	}
 	else {
 		if (mOccupiedFrameCounter > mNegativeThreshold) {
@@ -356,11 +388,7 @@ bool ParkingSpot::update(bool occupied, bool triggerUpdatability) {
 
 			mOccupiedFrameCounter--;
 		}
-		else if (mOccupiedFrameCounter - mNegativeThreshold <= mNegativeThreshold && triggerUpdatability) {
-			mUpdateEnabled = false;
-		}
 	}
-
 	return updated;
 }
 

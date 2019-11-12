@@ -3,6 +3,7 @@
 using namespace std;
 
 BoardController::BoardController() {
+	cout << endl << "----------<<< BoardController.cpp in  >>>----------" << endl << endl;
 	USB = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY | O_NDELAY);
 //	USB = open("/dev/tty0", O_RDWR | O_NOCTTY | O_NDELAY);
 	if (USB == -1 ) {

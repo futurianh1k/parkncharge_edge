@@ -25,6 +25,8 @@
 
 #include <glog/logging.h>
 
+#include <iostream>
+
 namespace seevider {
 	using boost::asio::ip::tcp;
 
@@ -35,6 +37,9 @@ namespace seevider {
 		MutualConditionVariable& mutualCV) :
 		mParkingSpotManager(parkingSpotManager), mSerialVideoReader(serialVideoReader),
 		mSettings(settings), mMutualConditionVariable(mutualCV) {
+
+		std::cout << std::endl << "----------<<< TCPSocketListener.cpp in  >>>----------" << std::endl << std::endl;
+
 		// Start the handling thread
 		boost::thread t(boost::bind(&TCPSocketListener::run, this));
 		mHandlerThread.swap(t);
@@ -42,7 +47,6 @@ namespace seevider {
 		RequestTranslator["disconnect"] = REQ_DISCONNECT;
 		RequestTranslator["streaming"] = REQ_STREAMING;
 		RequestTranslator["update"] = REQ_UPDATE;
-		RequestTranslator["updateLighting"] = REQ_LIGHTING_SENSOR_UPDATE;
 	}
 
 	TCPSocketListener::~TCPSocketListener() {
@@ -130,11 +134,6 @@ namespace seevider {
 				case REQ_UPDATE:
 					DLOG(INFO) << "REQ_UPDATE";
 					update(sock, json);
-					break;
-
-				case REQ_LIGHTING_SENSOR_UPDATE:
-					DLOG(INFO) << "REQ_LIGHTING_SENSOR_UPDATE";
-					update_lighting(sock, json);
 					break;
 
 				case REQ_DISCONNECT:
@@ -327,31 +326,6 @@ namespace seevider {
 		resumeMainThread();
 	}
 
-	void TCPSocketListener::update_lighting(boost::asio::ip::tcp::socket &sock, boost::property_tree::ptree& message) {
-		boost::system::error_code error;
-		int bytes_reserved = message.get<int>("length");
-		int bytes_received;
-		boost::asio::streambuf read_buffer;
-		std::string input;
-
-		// Suspend the main thread for update
-		suspendMainThread();
-
-		// Send the image data size to the client
-		boost::asio::write(sock, boost::asio::buffer("{ \"response\" : \"ok\" }\0"), error);
-
-		bytes_received = boost::asio::read(sock, read_buffer, boost::asio::transfer_exactly(bytes_reserved));
-
-		message = parseJSON(read_buffer);
-		
-		if (!message.empty()) {
-			mSettings->updateLightingParams(message);
-		}
-		
-		// Resume the main thread for update
-		resumeMainThread();
-	}
-
 	void TCPSocketListener::suspendMainThread() {
 		DLOG(INFO) << "Turn on the management mode";
 		boost::mutex::scoped_lock lock(mMutualConditionVariable.MutexEntrace);
@@ -389,27 +363,6 @@ namespace seevider {
 
 		// exit count
 		message.put<int>("exitCount", mSettings->ParkingParams.exitCount);
-
-		// noise filter size
-		message.put<int>("noiseFilterSize", mSettings->LightingParams.noiseFilterSize);
-
-		// min motion area
-		message.put<int>("minMotionArea", mSettings->LightingParams.minMotionArea);
-
-		// max motion area
-		message.put<int>("maxMotionArea", mSettings->LightingParams.maxMotionArea);
-
-		// light delay time
-		message.put<int>("lightDelayTime", mSettings->LightingParams.lightDelayTime);
-
-		// light dimdown time
-		message.put<int>("lightDimdownTime", mSettings->LightingParams.lightDimdownTime);
-
-		// light max level
-		message.put<int>("lightMaxLevel", mSettings->LightingParams.lightMaxLevel);
-
-		// light min level
-		message.put<int>("lightMinLevel", mSettings->LightingParams.lightMinLevel);
 
 		// ROI
 		message.add_child("ROI", mParkingSpotManager->toPTree());

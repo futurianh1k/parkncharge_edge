@@ -15,10 +15,11 @@
 //
 
 #include "CameraInfo.h"
-
+#include <iostream>
 namespace seevider {
 	CameraInfo::CameraInfo() :
 		FrameWidth(mFrameWidth), FrameHeight(mFrameHeight), FourCC(mFourCC) {
+		std::cout << std::endl << "----------<<< CameraInfo.cpp in  >>>----------" << std::endl << std::endl;
 	}
 
 	CameraInfo::~CameraInfo() {

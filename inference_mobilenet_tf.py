@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+### 실행시간, 디버깅 모드 등 디버깅때 쓸것같은거 빼고 다 지워버리기
+### 실행시간, 디버깅 모드는 주석처리
 
 from __future__ import division
 from __future__ import print_function
@@ -7,13 +9,14 @@ from __future__ import print_function
 import inspect
 import os
 import sys
+import time
 
-import cv2
 import datetime
 import shutil
 import traceback
 
-# from scipy.misc import imsave
+#from scipy.misc import imsave
+import matplotlib.pyplot as plt
 from matplotlib import font_manager as fm
 from matplotlib import rc
 
@@ -43,11 +46,13 @@ from skimage.color import rgb2gray
 from skimage.color import gray2rgb
 
 from PIL import ImageFile
+from PIL import Image
 import platform
 import functools
 
 # 2019.03.29 added
 import time
+#from detector import create_detector
 #import shutil
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 #
@@ -101,6 +106,8 @@ def load_image(filename, color=True):
         of size (H x W x 1) in grayscale.
     """
     img = img_as_float(imread(filename, as_grey=not color)).astype(np.float32)
+    # img = img_as_float(imread(filename)).astype(np.float32)
+
     if img.ndim == 2:
         img = img[:, :, np.newaxis]
         if color:
@@ -114,7 +121,7 @@ def load_image(filename, color=True):
 def localization(localizer, fullImage, l_ios, l_iou, log):
     plateImage = []
     bbConf = 0.0
-    plateType = ''
+    plateType = 'None'
     lError = ''
     lBbox = None
 
@@ -130,14 +137,10 @@ def localization(localizer, fullImage, l_ios, l_iou, log):
     else:
         lError = Error_Table['101']  # '101':'LOC : Cannot fine any plates in a full image',
 
-
-    #cv2.imwrite("py_result" + str(time.time())+".jpg", plateImage)
     return plateImage, bbConf, plateType, lError, lBbox
-
 
 def recognition(recognizer, plateImage, rIos, rIou, plateType, log):
     rBboxes = _predict(plateImage, recognizer, False, log)
-
     #plateString, rError, rBboxes, rValidBboxes = get_plate_string(rBboxes, rIos, rIou, plateType, log)
     plateString, rError, rBboxes, rValidBboxes = get_plate_string(rBboxes, rIos, rIou, plateType, log)
     return plateString, rError, rBboxes, rValidBboxes
@@ -207,7 +210,7 @@ def get_plate_string(rBboxes, rIos, rIou, plateType, log):
         valid_bboxes.append(kor_bbox)
 
     parse_error = ''
-    # print (plateType)
+    # print ("plateType in python : " , plateType)
 
     if region == '' and hangul == '' and digit_string == '':
         parse_error = Error_Table['204']  # '204':'RECOG : No plate string'
@@ -266,31 +269,83 @@ def get_plate_string(rBboxes, rIos, rIou, plateType, log):
             return (region + hangul + digit_string[0:] + young), parse_error, bboxes, valid_bboxes
 
 
-def inference_an_image_simple(imgpath, localizer, recognizer, lIos=0.8, lIou=0.3, rIos=0.8, rIou=0.3):
-    log = 1;
-    result = ''
-    print("enter inference")
-    fullImage = load_image(imgpath)
-    print("python image path : ", imgpath)
-    ### Localizer Detection ###
+# def inference_an_image_simple(fullImage, localizer, recognizer, lIos=0.8, lIou=0.3, rIos=0.8, rIou=0.3):
+#     log = 1
+#     # if debug:
+#     #     global config
+#     # if IF_LOGING:
+#     #     global inferTotalTime
+#     #     startTime = time.time()
+#
+#     result = ''
+#     fullImage = load_image(fullImage)
+#
+#     ### Localizer Detection ###
+#     plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
+#
+#     if lError:
+#         result= 'No plate'
+#
+#     else:
+#         plateString, rError, rBboxes, rValidBboxes = recognition(recognizer, plateImage, rIos, rIou, plateType, log)
+#         result = plateString
+#
+#     return result
+
+def call_localizer(fullImage, localizer, lIos=0.8, lIou=0.3 ):
+    log = 0
+    bbConf=0
+    fullImage = load_image(fullImage)
+
     plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
-
     if lError:
-        result= 'No plate'
-
+        null_str='None'
+        # print("call_localizer : ", null_str, null_str, (0,0,0,0), bbConf)
+        return null_str, null_str, (0,0,0,0), bbConf
     else:
-        plateString, rError, rBboxes, rValidBboxes = recognition(recognizer, plateImage, rIos, rIou, plateType, log)
-        result = plateString
+        name = "./image/"+str(time.time()) + ".jpg"
+        #np.save(str(name), plateImage)
+        img = Image.fromarray(plateImage, 'RGB')
+        img.save(str(name))
+        # print("call_localizer : ", str(name), plateType, lBbox.rect.roi, bbConf)
+        return str(name), plateType, lBbox.rect.roi, bbConf
+
+def call_localizer_vehicle(fullImage, localizer, lIos=0.8, lIou=0.3 ): # localizer _ car
+    log = 0
+    bbConf=0
+    fullImage = load_image(fullImage)
+    plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
+    if lError:
+        null_str='None'
+        # print("call_localizer_vehicle : ", null_str, (0,0,0,0), bbConf)
+        return null_str, (0,0,0,0), bbConf
+    else:
+        # print("call_localizer_vehicle : ", plateType, lBbox.rect.roi, bbConf)
+        return plateType, lBbox.rect.roi, bbConf
+
+
+def call_recognizer(plateType, plateImage, recognizer, rIos=0.8, rIou=0.3):
+    result=''
+    #plateImage = np.load(plateImage + ".npy")
+    img = Image.open(plateImage)
+    plateImage = np.array(img)
+
+    log = 0
+    plateString, rError, rBboxes, rValidBboxes = recognition(recognizer, plateImage, rIos, rIou, plateType, log)
+    result = plateString
+    print("palteString : ", plateString)
     return result
 
-def null_inference(imgPath, localizer, recognizer, lIos=0.8, lIou=0.3, rIos=0.8, rIou=0.3):
+def null_inference(imgPath, localizer, localizer2, recognizer, lIos=0.8, lIou=0.3, rIos=0.8, rIou=0.3): #번호판, 차 순으로
     log = 0
     basename = os.path.basename(imgPath)
 
     fullImage = load_image(imgPath)
-
     ### Localizer Detection ###
+    plateImage, bbConf, plateType, lError, lBbox = localization(localizer2, fullImage, lIos, lIou, log)
+
     plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
+
 
     plateString, rError, rBboxes, rValidBboxes = recognition(recognizer, plateImage, rIos, rIou,
                                                              plateType, log)
@@ -299,6 +354,8 @@ def null_inference(imgPath, localizer, recognizer, lIos=0.8, lIou=0.3, rIos=0.8,
 
 def _predict(image, detect, isLoc, log):
     bboxes = []
+    #print(type(image))
+    #print(image)
     tfbboxes, names, labels, bbconfs = detect(image)
 
     h, w, d = image.shape
@@ -467,3 +524,9 @@ def parse_digits(digit_bboxes, log):
     for second_box in second_row_boxes:
         valid_digit_boxes.append(second_box)
     return first_row_digits + second_row_digits, valid_digit_boxes, is_old_plate
+
+def parseToBrand(n):
+    with open('./maker_label.csv', 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        #print(lines[n-1].split(',')[1])
+        return lines[n-1].split(',')[1]

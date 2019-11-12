@@ -71,6 +71,17 @@ namespace seevider {
 		CLASSIFIER_TYPE Type;
 
 		/**
+                 * Spot's ROI json file settings
+                 */
+                std::string ParkingSpotROIJsonFilename;
+
+                /**
+                 * Video file settigs
+                 * camera => usb port number (0) // video => video file name
+                 */
+                std::string VideoFilename;
+
+		/**
 		 * Default constructor.
 		 */
 		Settings(std::string filename);
@@ -91,11 +102,6 @@ namespace seevider {
 		 */
         void updateParkingParams(boost::property_tree::ptree &root);
 
-		/**
-		 * Update lighting sensor parameters
-		 * @param root
-		 */
-        void updateLightingParams(boost::property_tree::ptree &root);
 
 	private:
 		/**

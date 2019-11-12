@@ -93,11 +93,19 @@ namespace seevider {
 		 */
 		cv::Size size() const;
 
+		int framelen();
+		int framenow();
+
 	private:
 		/**
 		 * The processing thread
 		 */
 		boost::thread mThread;
+
+		//juhee!
+
+		int mFrameLeng;
+		int mFrameNow;
 
 		/**
 		 * Instance of a video source API.

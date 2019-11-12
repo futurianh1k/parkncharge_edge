@@ -57,14 +57,24 @@ def draw_boxes(image, boxes):
     return image
 
 
-def create_detector(model_path, label_path, model_confidence, num_classes):
-
+#def create_detector(model_path, label_path, model_confidence, num_classes):
+def create_detector(model_path, label_path, mode):
+    if mode == 0: #localizer
+        model_confidence = 0.3
+        num_classes = 7
+    elif mode == 1:
+        model_confidence = 0.1
+        num_classes = 88
+    elif mode == 2: #localizer _ car
+        model_confidence = 0.5
+        num_classes = 50
     label_map = label_map_util.load_labelmap(label_path)
     categories = label_map_util.convert_label_map_to_categories(
         label_map,
         max_num_classes=num_classes,
         use_display_name=True
     )
+
     category_index = label_map_util.create_category_index(categories)
     detection_graph = tf.Graph()
     with detection_graph.as_default():

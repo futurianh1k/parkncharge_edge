@@ -14,10 +14,10 @@
 // Written by Seongdo Kim <sdland85@gmail.com>, June, 2017
 
 #include "IMessageData.h"
-
+#include <iostream>
 namespace seevider {
 	IMessageData::IMessageData() {
-
+		std::cout << std::endl << "----------<<< IMessageData.cpp in  >>>----------" << std::endl << std::endl;
 	}
 
 	IMessageData::IMessageData(boost::posix_time::ptime eventTime) : mEventTime(eventTime) {

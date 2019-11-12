@@ -20,10 +20,6 @@
 #include "TCPSocketListener.h"
 #include "ParkingSpot.h"
 #include "Settings.h"
-#include "IOccupancyDetector.h"
-#include "IPlateDetector.h"
-#include "MotionDetection.h"
-#include "Light.h"
 //#include "LPR.h"
 
 #include <boost/thread.hpp>
@@ -31,28 +27,39 @@
 //----------------------------------------------------------
  // mush link python with option !
 #include <python3.6/Python.h>
-#include <numpy/arrayobject.h>
+//#include <numpy/arrayobject.h>
 
 #define NULL_PATH       "./null.jpg"
 
 
 /* Localizer configurations*/
-#define LOCALIZER_PATH 		"./mobilenet/localizer/frozen_inference_graph.pb"
-#define L_LABEL_MAP		"./mobilenet/localizer/localizer_label_map.pbtxt"
-#define L_LABEL                 7
-#define L_CONF                  0.001
+#define LOCALIZER_PATH 		"./mobilenet/localizer/frozen_inference_graph_plate.pb"
+// #define LOCALIZER_V_PATH 		"./mobilenet/localizer/frozen_inference_graph_car.pb"
+#define LOCALIZER_V_PATH 		"./inception/frozen_inference_graph.pb"
+
+// #define LOCALIZER_PATH 		"./mobilenet/localizer/mobilenet_localizer_plate_tensorRT.pb"
+// #define LOCALIZER_V_PATH 		"./mobilenet/localizer/mobilenet_localizer_car_tensorRT.pb"
+
+#define L_LABEL_MAP		"./mobilenet/localizer/localizer_label_map_plate.pbtxt"
+// #define L_LABEL_MAP_V		"./mobilenet/localizer/localizer_label_map_car.pbtxt"
+#define L_LABEL_MAP_V		"./inception/labelmap.pbtxt"
+
+//#define L_LABEL                 7
+//#define L_CONF                  0.1
 
 /* Recognizer configurations*/
 #define RECOGNIZER_PATH		"./mobilenet/recognizer/frozen_inference_graph.pb"
+// #define RECOGNIZER_PATH		"./mobilenet/recognizer/mobilenet_recognizer_tensorRT.pb"
 #define R_LABELMAP		"./mobilenet/recognizer/recognizer_label_map.pbtxt"
-#define R_CONF              0.1
-#define R_LABEL             88
-#define R_CONF_TH          0.93
-#define R_MODEL_WEIGHT      0.3
+//#define R_CONF              0.1
+//#define R_LABEL             88
+//#define R_CONF_TH          0.93
+//#define R_MODEL_WEIGHT      0.3
 
 
 #define INPUT_SIZE              300
 //----------------------------------------------------------
+char *parseToBrand(PyObject*, int);
 
 namespace seevider {
     /**
@@ -63,6 +70,10 @@ namespace seevider {
 	class MainInterface {
 
 	private:
+	/*
+	* 	====juhee
+	*/
+		
 		/**
 		 * Must be true while the system is operating.
 		 */
@@ -108,36 +119,7 @@ namespace seevider {
 		 */
 		std::unique_ptr<TCPSocketListener> mTCPSocketListener;
 
-		/**
-		 * Generic detector
-		 */
 
-		std::unique_ptr<IGenericDetector> mDetector;
-
-		/**
-		 * Occupancy detector
-		 */
-		std::unique_ptr<IOccupancyDetector> mODetector;
-
-		/**
-		 * License Plate detector
-		 */
-		std::unique_ptr<IPlateDetector> mLPDetector;
-		
-		/**
-		 * Motion detector
-		 */
-		std::unique_ptr<MotionDetection> mMotionDetector;
-
-		/**
-		 * Light Controller
-		 */
-		Light mLight;
-		
-		/**
-		 * Check if the light is on
-		 */
-		bool mLightOn;
 
 		/**
 		 * License plate recognizer
@@ -168,7 +150,8 @@ namespace seevider {
         PyObject* localizer;
         PyObject* recognizer;
         PyObject* p_inference;
-		PyObject* result;
+		PyObject* localizer_v;
+
 	int tmp;
 	//	============================
 

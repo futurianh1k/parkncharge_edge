@@ -26,24 +26,31 @@
 
 #include <glog/logging.h>
 
+#include <iostream>
+
 using namespace seevider;
 
 ParkingUpdateMessage::ParkingUpdateMessage() {
+	std::cout << std::endl << "----------<<< ParkingUpdateMessage.cpp in  >>>----------" << std::endl << std::endl;
 };
 
 ParkingUpdateMessage::ParkingUpdateMessage(const int request, const int spotID,
     const cv::Mat &frame, const boost::posix_time::ptime &eventTime,
 	const std::string PN) :
 	IMessageData(eventTime), mRequestCode(request), mSpotID(spotID),
-	mFrame(frame.clone()), mPN(PN) {
+	mFrame(frame.clone()), mPlateNum(PN) {
     // do nothing
+    std::cout << std::endl << "==================================================" << std::endl;
+    std::cout << "mPlateNum in ParkingUpdateMessage : " << mPlateNum << std::endl;
+    std::cout << "==================================================" << std::endl << std::endl;
+
 }
 
 ParkingUpdateMessage::ParkingUpdateMessage(const int request, const int spotID,
     const cv::Mat &frame, const cv::Mat &cropFrame, const boost::posix_time::ptime &eventTime,
 	const std::string PN) :
 	IMessageData(eventTime), mRequestCode(request), mSpotID(spotID),
-	mFrame(frame.clone()), mCropFrame(cropFrame.clone()), mPN(PN) {
+	mFrame(frame.clone()), mCropFrame(cropFrame.clone()), mPlateNum(PN) {
     // do nothing
 }
 
@@ -63,15 +70,21 @@ std::string ParkingUpdateMessage::toString() const {
 boost::property_tree::ptree ParkingUpdateMessage::toPTree() const {
 	boost::property_tree::ptree info;
 	
+	std::cout << "ParkingUpdateMessage httprequest, id" << mRequestCode << " " << mSpotID << std::endl;
+
 	info.put<int>("messageType", 1);
 	info.put<int>("httpRequest", mRequestCode);
 	info.put<int>("parkingSpotId", mSpotID);
+	info.put<std::string>("plateNumber", mPlateNum);
 	info.put<std::string>("timeStamp", boost::posix_time::to_iso_string(mEventTime));
-	info.put<std::string>("parkingCarNumber", mPN);
-	info.put<std::string>("currentPicture", utils::base64_encode_image(mFrame));
-	if (!mCropFrame.empty()) {
-		info.put<std::string>("croppedPicture", utils::base64_encode_image(mCropFrame));
-	}
+	//info.put<std::string>("parkingCarNumber", mPN);
+	
+	//juhee
+	// info.put<std::string>("currentPicture", utils::base64_encode_image(mFrame));
+	// if (!mCropFrame.empty()) {
+	// 	info.put<std::string>("croppedPicture", utils::base64_encode_image(mCropFrame));
+	// }
+
 	return info;
 }
 
@@ -115,7 +128,7 @@ bool ParkingUpdateMessage::load(const std::string filename) {
 
 	mEventTime = boost::posix_time::from_iso_string(substrs[0]);
 	mRequestCode = std::stoi(substrs[1]);
-	mPN = substrs[2];
+	mPlateNum = substrs[2];
 	mSpotID = stoi(substrs[3]);
 
 	return true;
@@ -130,5 +143,5 @@ cv::String ParkingUpdateMessage::constructFilename() const {
 
 	//return sstr.str();
 	return boost::posix_time::to_iso_string(mEventTime) + "_" + std::to_string(mRequestCode) +
-		"_" + mPN + "_" + std::to_string(mSpotID) + ".png";
+		"_" + mPlateNum + "_" + std::to_string(mSpotID) + ".png";
 }

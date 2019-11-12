@@ -23,12 +23,15 @@
 
 #include <glog/logging.h>
 
+#include <iostream>
+
 using namespace seevider;
 
 ServerNetworkHandler::ServerNetworkHandler(std::shared_ptr<MessageQueue> &messageQueue,
 	const std::shared_ptr<SensorInfo> &sensorInfo, std::string serverDataFilename) :
 	mSettingsFilename(SYSTEM_FOLDER_CORE + serverDataFilename),
 	mSensorInfo(sensorInfo) {
+	std::cout << std::endl << "----------<<< ServerNetworkHandler.cpp in  >>>----------" << std::endl << std::endl;
 	assert(messageQueue != nullptr);
 	mMessageQueue = messageQueue;
 
@@ -171,6 +174,9 @@ bool ServerNetworkHandler::sendHTTP(const std::string method,
 		request_stream << "Connection: close\r\n\r\n";  //NOTE THE Double line feed
 		request_stream << jsonstring;
 		
+		//juhee!!!
+		// std::cout << "#####jsonstring######"<<jsonstring << std::endl;
+
 		//std::string s((std::istreambuf_iterator<char>(&request)), std::istreambuf_iterator<char>());
 		//std::cout << s << std::endl << std::endl;
 
