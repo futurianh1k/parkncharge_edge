@@ -58,16 +58,20 @@ def draw_boxes(image, boxes):
 
 
 #def create_detector(model_path, label_path, model_confidence, num_classes):
+# def create_detector(model_path, label_path, mode):
 def create_detector(model_path, label_path, mode):
-    if mode == 0: #localizer
-        model_confidence = 0.3
-        num_classes = 7
-    elif mode == 1:
-        model_confidence = 0.1
-        num_classes = 88
-    elif mode == 2: #localizer _ car
-        model_confidence = 0.5
-        num_classes = 50
+    # if mode == 0: #localizer
+    #     model_confidence = 0.3
+    #     num_classes = 7
+    # elif mode == 1:
+    #     model_confidence = 0.1
+    #     num_classes = 88
+    # elif mode == 2: #localizer _ car
+    #     model_confidence = 0.3
+    #     num_classes = 50
+
+    model_confidence = 0.3
+    num_classes = 3
     label_map = label_map_util.load_labelmap(label_path)
     categories = label_map_util.convert_label_map_to_categories(
         label_map,
@@ -106,6 +110,7 @@ def create_detector(model_path, label_path, mode):
 
             picked = list(filter(lambda x: x > model_confidence, scores[0]))
             picked_size = len(picked)
+            #print(len(picked))
             _boxes = boxes[0][:picked_size]
             _classes = []
             _labels=[]
