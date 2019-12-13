@@ -53,4 +53,4 @@ make
 sudo make install
 ```
 
-* If run with tensorflow, must be copy or clone tflib *
+*If run with tensorflow, must be copy or clone tflib*
