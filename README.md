@@ -52,3 +52,5 @@ make
 ### Install the binaries/libraries to your local system (prefix is /usr)
 sudo make install
 ```
+
+## If run with tensorflow, must be copy or clone tflib ##
