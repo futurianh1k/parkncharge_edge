@@ -1,3 +1,3 @@
-/media/qisens/4tb1/JH/juhee/11-12_git/CMakeFiles/rebuild_cache.dir
-/media/qisens/4tb1/JH/juhee/11-12_git/CMakeFiles/VisionSensor.dir
-/media/qisens/4tb1/JH/juhee/11-12_git/CMakeFiles/edit_cache.dir
+/media/qisens/4tb1/JH/juhee/git_vision/parkncharge_edge/CMakeFiles/rebuild_cache.dir
+/media/qisens/4tb1/JH/juhee/git_vision/parkncharge_edge/CMakeFiles/VisionSensor.dir
+/media/qisens/4tb1/JH/juhee/git_vision/parkncharge_edge/CMakeFiles/edit_cache.dir

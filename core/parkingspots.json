@@ -1,12 +1,92 @@
 {
     "": {
-        "parkingSpotId": "13",
-        "parkingSpotName": "spot13",
-        "roiCoordX": "518",
-        "roiCoordY": "464",
-        "roiWidth": "341",
-        "roiHeight": "233",
+        "parkingSpotId": "26",
+        "parkingSpotName": "spot26",
+        "roiCoordX": "1741",
+        "roiCoordY": "502",
+        "roiWidth": "176",
+        "roiHeight": "157",
         "policyId": "5",
-        "timeLimit": "5"
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "18",
+        "parkingSpotName": "spot18",
+        "roiCoordX": "114",
+        "roiCoordY": "528",
+        "roiWidth": "174",
+        "roiHeight": "167",
+        "policyId": "5",
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "25",
+        "parkingSpotName": "spot25",
+        "roiCoordX": "1502",
+        "roiCoordY": "486",
+        "roiWidth": "233",
+        "roiHeight": "176",
+        "policyId": "5",
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "24",
+        "parkingSpotName": "spot24",
+        "roiCoordX": "1284",
+        "roiCoordY": "502",
+        "roiWidth": "226",
+        "roiHeight": "161",
+        "policyId": "5",
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "20",
+        "parkingSpotName": "spot20",
+        "roiCoordX": "503",
+        "roiCoordY": "519",
+        "roiWidth": "183",
+        "roiHeight": "161",
+        "policyId": "5",
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "19",
+        "parkingSpotName": "spot19",
+        "roiCoordX": "288",
+        "roiCoordY": "519",
+        "roiWidth": "213",
+        "roiHeight": "162",
+        "policyId": "5",
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "23",
+        "parkingSpotName": "spot23",
+        "roiCoordX": "1078",
+        "roiCoordY": "507",
+        "roiWidth": "206",
+        "roiHeight": "165",
+        "policyId": "5",
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "21",
+        "parkingSpotName": "spot21",
+        "roiCoordX": "690",
+        "roiCoordY": "512",
+        "roiWidth": "208",
+        "roiHeight": "157",
+        "policyId": "5",
+        "timeLimit": "15"
+    },
+    "": {
+        "parkingSpotId": "22",
+        "parkingSpotName": "spot22",
+        "roiCoordX": "905",
+        "roiCoordY": "515",
+        "roiWidth": "156",
+        "roiHeight": "153",
+        "policyId": "5",
+        "timeLimit": "15"
     }
 }

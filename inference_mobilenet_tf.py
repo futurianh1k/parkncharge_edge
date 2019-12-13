@@ -54,7 +54,7 @@ import functools
 import time
 #from detector import create_detector
 #import shutil
-os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+os.environ["CUDA_VISIBLE_DEVICES"] = '1'
 #
 ImageFile.LOAD_TRUNCATED_IMAGES = True  ### SEAN : to avoid loading failure of truncated images
 #
@@ -105,8 +105,8 @@ def load_image(filename, color=True):
         of size (H x W x 3) in RGB or
         of size (H x W x 1) in grayscale.
     """
-    img = img_as_float(imread(filename, as_grey=not color)).astype(np.float32)
-    # img = img_as_float(imread(filename)).astype(np.float32)
+    #img = img_as_float(imread(filename, as_grey=not color)).astype(np.float32)
+    img = img_as_float(imread(filename)).astype(np.float32)
 
     if img.ndim == 2:
         img = img[:, :, np.newaxis]
@@ -124,23 +124,24 @@ def localization(localizer, fullImage, l_ios, l_iou, log):
     plateType = 'None'
     lError = ''
     lBbox = None
+    plateTypes = []
 
     ### Localizer Detection ###
     lBboxes = _predict(fullImage, localizer, True, log)
     if len(lBboxes) > 0:
         plateImages, bbConfs, plateTypes, lBboxes = get_plates(fullImage, lBboxes, l_ios, l_iou)
-        plateImage, bbConf, plateType, lBbox = get_major_plate(plateImages, bbConfs, plateTypes, lBboxes, log)
-
-    if lBbox:
+        # plateImage, bbConf, plateType, lBbox = get_major_plate(plateImages, bbConfs, plateTypes, lBboxes, log)
+        # print("len, type : ", len(lBboxes), type(lBboxes))
+    if lBboxes:
         lError = ''
-
     else:
         lError = Error_Table['101']  # '101':'LOC : Cannot fine any plates in a full image',
-
-    return plateImage, bbConf, plateType, lError, lBbox
+    return plateTypes, lError, lBboxes
+    # return plateImage, bbConf, plateType, lError, lBbox
 
 def recognition(recognizer, plateImage, rIos, rIou, plateType, log):
     rBboxes = _predict(plateImage, recognizer, False, log)
+
     #plateString, rError, rBboxes, rValidBboxes = get_plate_string(rBboxes, rIos, rIou, plateType, log)
     plateString, rError, rBboxes, rValidBboxes = get_plate_string(rBboxes, rIos, rIou, plateType, log)
     return plateString, rError, rBboxes, rValidBboxes
@@ -153,7 +154,6 @@ def get_plates(fullImage, bboxes, ios_threshold, iou_threshold):
     plateTypes = []
 
     bboxes = filter_bbox(bboxes, ios_threshold, iou_threshold)
-
     for i in range(len(bboxes)):
         rect = bboxes[i].rect
         xmin, xmax = rect.xline.low, rect.xline.high
@@ -165,13 +165,13 @@ def get_plates(fullImage, bboxes, ios_threshold, iou_threshold):
 
     return plateImages, bbConfs, plateTypes, bboxes
 
-#
+
 def filter_bbox(bboxes, ios_threshold, iou_threshold):
     bboxes = tfutils.filter_bbox_iou(bboxes, iou_threshold)
     bboxes = tfutils.filter_bbox_ios(bboxes, ios_threshold)
     return bboxes
 
-#
+
 # ### Choose a plate from detected plates array
 def get_major_plate(plateImages, bbConfs, plateTypes, l_bboxes, log):
     # find max confidence index
@@ -210,7 +210,7 @@ def get_plate_string(rBboxes, rIos, rIou, plateType, log):
         valid_bboxes.append(kor_bbox)
 
     parse_error = ''
-    # print ("plateType in python : " , plateType)
+    print ("plateType in python : " , plateType)
 
     if region == '' and hangul == '' and digit_string == '':
         parse_error = Error_Table['204']  # '204':'RECOG : No plate string'
@@ -268,35 +268,11 @@ def get_plate_string(rBboxes, rIos, rIou, plateType, log):
         else:  # less than 5
             return (region + hangul + digit_string[0:] + young), parse_error, bboxes, valid_bboxes
 
-
-# def inference_an_image_simple(fullImage, localizer, recognizer, lIos=0.8, lIou=0.3, rIos=0.8, rIou=0.3):
-#     log = 1
-#     # if debug:
-#     #     global config
-#     # if IF_LOGING:
-#     #     global inferTotalTime
-#     #     startTime = time.time()
-#
-#     result = ''
-#     fullImage = load_image(fullImage)
-#
-#     ### Localizer Detection ###
-#     plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
-#
-#     if lError:
-#         result= 'No plate'
-#
-#     else:
-#         plateString, rError, rBboxes, rValidBboxes = recognition(recognizer, plateImage, rIos, rIou, plateType, log)
-#         result = plateString
-#
-#     return result
-
+'''
 def call_localizer(fullImage, localizer, lIos=0.8, lIou=0.3 ):
     log = 0
     bbConf=0
     fullImage = load_image(fullImage)
-
     plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
     if lError:
         null_str='None'
@@ -309,21 +285,38 @@ def call_localizer(fullImage, localizer, lIos=0.8, lIou=0.3 ):
         img.save(str(name))
         # print("call_localizer : ", str(name), plateType, lBbox.rect.roi, bbConf)
         return str(name), plateType, lBbox.rect.roi, bbConf
-
-def call_localizer_vehicle(fullImage, localizer, lIos=0.8, lIou=0.3 ): # localizer _ car
+'''
+def call_localizer_vehicle(fullImage, localizer, lIos=0.3, lIou=0.1): # localizer _ car
+    starttime = time.time()
     log = 0
     bbConf=0
+    lBbox=[]
+    lRoi=[]
+    # print("!!!!!!!!")
     fullImage = load_image(fullImage)
-    plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
+    # print("@@@@@@@@@@@@@@")
+    plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
+    # print("lBbox len, type", len(lBbox), type(lBbox))
     if lError:
         null_str='None'
-        # print("call_localizer_vehicle : ", null_str, (0,0,0,0), bbConf)
-        return null_str, (0,0,0,0), bbConf
+        #print("call_localizer_vehicle : ", null_str, (0,0,0,0), bbConf)
+        # print("python time : ", time.time() - starttime)
+        # return 0, lError, lBbox
+        return lBbox, lRoi
     else:
-        # print("call_localizer_vehicle : ", plateType, lBbox.rect.roi, bbConf)
-        return plateType, lBbox.rect.roi, bbConf
+        for i in range(len(lBbox)):
+            lRoi.append((lBbox[i].rect.roi))
+        # print("in python : ", lBbox[0].rect.roi)
+        # print(lRoi)
+        # print(plateType)
+        # print("size : ", len(lRoi))
+        # print("python time : ", time.time() - starttime)
+        #print("call_localizer_vehicle : ", plateType, lBbox.rect.roi, bbConf)
+        #return plateType, lError, lBbox
+        return plateType, lRoi
 
 
+'''
 def call_recognizer(plateType, plateImage, recognizer, rIos=0.8, rIou=0.3):
     result=''
     #plateImage = np.load(plateImage + ".npy")
@@ -335,21 +328,26 @@ def call_recognizer(plateType, plateImage, recognizer, rIos=0.8, rIou=0.3):
     result = plateString
     print("palteString : ", plateString)
     return result
-
-def null_inference(imgPath, localizer, localizer2, recognizer, lIos=0.8, lIou=0.3, rIos=0.8, rIou=0.3): #번호판, 차 순으로
+'''
+#def null_inference(imgPath, localizer, localizer2, recognizer, lIos=0.8, lIou=0.3, rIos=0.8, rIou=0.3): #번호판, 차 순으로
+def null_inference(imgPath, localizer2, lIos=0.8, lIou=0.3): #번호판, 차 순으로
     log = 0
     basename = os.path.basename(imgPath)
-
     fullImage = load_image(imgPath)
+    # print("111111111")
+
+    # fullImage = load_image("/media/qisens/4tb1/JH/juhee/11-28/VisionSensor_onlyVehicle_tf/null.jpg")
+
+    # print("22222222222222")
+
     ### Localizer Detection ###
-    plateImage, bbConf, plateType, lError, lBbox = localization(localizer2, fullImage, lIos, lIou, log)
+    #plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
+    # print("333333333333333")
+    plateType, lError, lBbox = localization(localizer2, fullImage, lIos, lIou, log)
+    # print("444444444")
 
-    plateImage, bbConf, plateType, lError, lBbox = localization(localizer, fullImage, lIos, lIou, log)
-
-
-    plateString, rError, rBboxes, rValidBboxes = recognition(recognizer, plateImage, rIos, rIou,
-                                                             plateType, log)
-
+    #plateString, rError, rBboxes, rValidBboxes = recognition(recognizer, plateImage, rIos, rIou, plateType, log)
+    # print("null_inference in python : ", plateType)
     return 0
 
 def _predict(image, detect, isLoc, log):
@@ -366,6 +364,7 @@ def _predict(image, detect, isLoc, log):
         yline = geo.Line(int(tfbbox[0] * h), int(tfbbox[2] * h))
         rect = geo.Rect(xline, yline)
         bboxes.append(bb.BBox(rect, bbconfs[id], names[id], labels[id]))
+    #print("len bboxes", len(bboxes))
     return bboxes
 
 

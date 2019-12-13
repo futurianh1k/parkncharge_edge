@@ -56,10 +56,8 @@ MYSQL *con_check;
 MYSQL_RES *res_check;
 MYSQL_ROW row_check;
 
-std::string url_docker_server = "192.168.60.14:51000/api/lpr";
-
-const char *serve = "192.168.64.83";
-//const char *serve = "192.168.43.66";
+//const char *serve = "192.168.64.83";
+const char *serve = "192.168.64.155";
 const char *use = "root";
 const char *passwor = "qisens123";
 const char *databas = "seevider";
@@ -456,11 +454,11 @@ void ParkingSpot::notifyExpiration() {
 	LOG(INFO) << mTimeLimit;
         Mat frame;
 	pt::ptime time = mEntryTime + boost::posix_time::minutes(mTimeLimit);
-	LOG(INFO) <<time;
-        
-	printf("chkpoint 1\n");
+//	LOG(INFO) <<time;
+
+	// printf("chkpoint 1\n");
 	LOG(INFO) << "Check VideoReader operation";
-	LOG(INFO) << "Time in Minutes " << time;
+//	LOG(INFO) << "Time in Minutes " << time;
 
         //read at "Time"
 	time = mEntryTime + boost::posix_time::seconds(mTimeLimit);
@@ -472,15 +470,16 @@ void ParkingSpot::notifyExpiration() {
         //}
 
 
-	printf("chkpoint 2\n");
+	// printf("chkpoint 2\n");
 	LOG(INFO) << "Check VideoReader operation";
         LOG(INFO) << "Parking spot ID " << mID << " has expired.";
 	LOG(INFO) << "Time in Minutes " << time;
-	time = mEntryTime + boost::posix_time::minutes(mTimeLimit);
+//jeeeun
+	//time = mEntryTime + boost::posix_time::minutes(mTimeLimit);
 	overstayed(frame, time);
 
-	cv::Scalar black;
-	black = CV_RGB(0,0,0);
+	//cv::Scalar black;
+	//black = CV_RGB(0,0,0);
 	//jeeeun add puttext spot id
 	//cv::putText(frame, mID, cv::Point(ROI.x, ROI.y), cv::FONT_HERSHEY_PLAIN, 2.0, black, 2);
 
@@ -513,5 +512,5 @@ void ParkingSpot::setNegativeThreshold(int negativeThreshold) {
 
 std::shared_ptr<MessageQueue> ParkingSpot::mServerMsgQueue = nullptr;
 std::shared_ptr<SerialVideoReader> ParkingSpot::mVideoReader = nullptr;
-int ParkingSpot::mPositiveThreshold = 5;
-int ParkingSpot::mNegativeThreshold = -3;
+int ParkingSpot::mPositiveThreshold = 1;
+int ParkingSpot::mNegativeThreshold = -1;

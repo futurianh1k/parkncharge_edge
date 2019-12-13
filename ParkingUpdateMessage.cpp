@@ -41,7 +41,7 @@ ParkingUpdateMessage::ParkingUpdateMessage(const int request, const int spotID,
 	mFrame(frame.clone()), mPlateNum(PN) {
     // do nothing
     std::cout << std::endl << "==================================================" << std::endl;
-    std::cout << "mPlateNum in ParkingUpdateMessage : " << mPlateNum << std::endl;
+    std::cout << "mPlateNum in ParkingUpdateMessage (overstay, exit) : " << mPlateNum << std::endl;
     std::cout << "==================================================" << std::endl << std::endl;
 
 }
@@ -52,6 +52,9 @@ ParkingUpdateMessage::ParkingUpdateMessage(const int request, const int spotID,
 	IMessageData(eventTime), mRequestCode(request), mSpotID(spotID),
 	mFrame(frame.clone()), mCropFrame(cropFrame.clone()), mPlateNum(PN) {
     // do nothing
+    std::cout << std::endl << "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" << std::endl;
+    std::cout << "mPlateNum in ParkingUpdateMessage (enter) : " << mPlateNum << std::endl;
+    std::cout << std::endl << "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" << std::endl;
 }
 
 ParkingUpdateMessage::~ParkingUpdateMessage() {
@@ -70,21 +73,16 @@ std::string ParkingUpdateMessage::toString() const {
 boost::property_tree::ptree ParkingUpdateMessage::toPTree() const {
 	boost::property_tree::ptree info;
 	
-	std::cout << "ParkingUpdateMessage httprequest, id" << mRequestCode << " " << mSpotID << std::endl;
-
 	info.put<int>("messageType", 1);
 	info.put<int>("httpRequest", mRequestCode);
 	info.put<int>("parkingSpotId", mSpotID);
 	info.put<std::string>("plateNumber", mPlateNum);
 	info.put<std::string>("timeStamp", boost::posix_time::to_iso_string(mEventTime));
 	//info.put<std::string>("parkingCarNumber", mPN);
-	
-	//juhee
-	// info.put<std::string>("currentPicture", utils::base64_encode_image(mFrame));
-	// if (!mCropFrame.empty()) {
-	// 	info.put<std::string>("croppedPicture", utils::base64_encode_image(mCropFrame));
-	// }
-
+	info.put<std::string>("currentPicture", utils::base64_encode_image(mFrame));
+	if (!mCropFrame.empty()) {
+		info.put<std::string>("croppedPicture", utils::base64_encode_image(mCropFrame));
+	}
 	return info;
 }
 

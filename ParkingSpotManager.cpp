@@ -39,11 +39,8 @@ MYSQL_ROW row;
 MYSQL_ROW ex_row;
 
 
-const char *server = "192.168.64.83";
-//const char *server = "192.168.1.102"; //pocket-fi
-//const char *server = "192.168.10.17";
-//const char *server = "192.168.10.21"; //ethernet
-//const char *server = "192.168.43.66";
+//const char *server = "192.168.64.83";
+const char *server = "192.168.64.155";
 const char *user = "root";
 const char *password = "qisens123";
 const char *database = "seevider";
@@ -396,24 +393,20 @@ namespace seevider {
 			}
 
 			cv::rectangle(drawn, parkingSpot.second->ROI, color, 2); // ROI영
-			cv::rectangle(drawn, parkingSpot.second->getLocalizerROI(), CV_RGB(0, 0, 0), 2); // 번호판
+//			cv::rectangle(drawn, parkingSpot.second->getLocalizerROI(), CV_RGB(0, 0, 0), 2); // 번호판
 			cv::rectangle(drawn, parkingSpot.second->getVehicleROI(), CV_RGB(255, 255, 255), 2); // car
 
 
 		    if (!(parkingSpot.second->getPlateNumber()).empty()) // if plate is not null
 		    {
-				// printf("%d\n", parkingSpot.second->pConf);
-				// printf("%d\n", parkingSpot.second->pConf / 100);
-				// printf("%d\n", parkingSpot.second->pConf % 100);
-
-			    ft2->putText(drawn, parkingSpot.second->getPlateNumber() + " " + to_string(parkingSpot.second->pConf / 100) + "." + to_string(abs(parkingSpot.second->pConf % 100)) + "%", cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height + 50)), 20, cv::Scalar(0, 0, 0), -1, 8, true);
+			    ft2->putText(drawn, parkingSpot.second->getPlateNumber() + " " + to_string(parkingSpot.second->pConf / 100) + "." + to_string(parkingSpot.second->pConf % 100) + "%", cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height + 50)), 20, cv::Scalar(0, 0, 0), -1, 8, true);
 		    }
 			//insert text	//jeeeun_putText
 			cv::putText(drawn, roi_text, cv::Point(parkingSpot.second->ROI.x, parkingSpot.second->ROI.y), cv::FONT_HERSHEY_PLAIN, 2.0, color, 2);
 			//cv::putText(drawn, parkingSpot.second->getPlateNumber(), cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height + 20)), cv::FONT_HERSHEY_PLAIN, 2.0, color_text, 2);
 			//ft2->putText(drawn, parkingSpot.second->getPlateNumber(), cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height+50)), 20, cv::Scalar(0,0,0), -1, 8, true);
 			//std::cout << "plate number in ParkingSpotmanager.cpp : " << parkingSpot.second->getPlateNumber() << std::endl;
-			if (!carbrand.empty() && !drawn.empty())
+			if (!carbrand.empty() && carbrand.compare("unknown") != 0 && !drawn.empty())
 			{
 				ft2->putText(drawn, carbrand + " " +to_string(parkingSpot.second->cConf / 100) +"." + to_string(parkingSpot.second->cConf % 100)+ "%", cv::Point(parkingSpot.second->ROI.x, (parkingSpot.second->ROI.y + parkingSpot.second->ROI.height + 20)), 20, cv::Scalar(0, 0, 0), -1, 8, true);
 			}

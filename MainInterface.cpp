@@ -43,11 +43,13 @@ char f_path[] = {"./image"};
 //PyObject *create_detector(PyObject *p, const char *model_path, const char *labelmap_file, double confidence, double label);
 PyObject *create_detector(PyObject *p, const char *model_path, const char *labelmap_file, int mode);
 //PyObject* inference_image(PyObject* p,  const char*, PyObject* localizer, PyObject* recognizer);
-int null_inference(PyObject *p, const char *image_path, PyObject *localizer, PyObject *localizer2, PyObject *recognizer);
+//int null_inference(PyObject *p, const char *image_path, PyObject *localizer, PyObject *localizer2, PyObject *recognizer);
+int null_inference(PyObject *p, const char *image_path, PyObject *localizer2);
 PyObject *call_localizer_Vehicle(PyObject *, char *, PyObject *);
-PyObject *call_localizer(PyObject *, char *, PyObject *);
-PyObject *call_recognizer(PyObject *, char *, char *, PyObject *);
-bool localizer_detect(char *, char *);
+//PyObject *call_localizer(PyObject *, char *, PyObject *);
+//PyObject *call_recognizer(PyObject *, char *, char *, PyObject *);
+//bool localizer_detect(char *, char *);
+bool localizer_detect(std::vector<cv::Rect>, cv::Rect);
 
 MainInterface::MainInterface() : mOperation(true),
 								 //mLightOn(false),
@@ -98,6 +100,7 @@ MainInterface::MainInterface() : mOperation(true),
 		//std::cout << "Video version" << std::endl;
 		std::cout << "Video Filename : " << jsonFilename << std::endl;
 		mVideoReader->open(jsonFilename);
+		// ok
 	}
 	else
 	{
@@ -124,25 +127,7 @@ MainInterface::MainInterface() : mOperation(true),
 	ParkingSpot::setPositiveThreshold(mSettings->ParkingParams.enterCount);
 	ParkingSpot::setNegativeThreshold(-mSettings->ParkingParams.exitCount);
 	//--------------------------------
-	// Start computer vision engines
-	//--------------------------------
-	// Occupancy Detector
-	/*	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->TrainedFilename, mSettings);
-	} else if (mSettings->Type == CLASSIFIER_CNN) {
-		mDetector = std::make_unique<ImageNetClassifier>(mSettings);
-	}
-	mODetector = std::make_unique<IOccupancyDetector>(std::move(mDetector));
 
-	// License Plate Detector
-	if (mSettings->Type == CLASSIFIER_CASCADE) {
-		mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename, mSettings);
-	} else if (mSettings->Type == CLASSIFIER_CNN) {
-        mDetector = std::make_unique<CascadeClassifier>(SYSTEM_FOLDER_CORE + mSettings->LPTrainedFilename, mSettings);
-       	}
-
-	mLPDetector = std::make_unique<IPlateDetector>(std::move(mDetector));
-*/
 	// LPR engine initialize
 	Py_Initialize(); // Python interpreter init
 					 // * 1) Load share objects detector.so
@@ -157,32 +142,13 @@ MainInterface::MainInterface() : mOperation(true),
 	}
 	else
 	{
-		// * 2) Initialize Localizer SSD(Single Shot Multibox Detector)
-		//		localizer = create_detector(p_detector, LOCALIZER_PATH, L_LABEL_MAP, L_CONF, L_LABEL);
-		localizer = create_detector(p_detector, LOCALIZER_PATH, L_LABEL_MAP, 0);
-		if (localizer == NULL)
-		{
-			Py_XDECREF(localizer);
-			LOG(INFO) << "localizer is NULL";
-		}
-
-		localizer_v = create_detector(p_detector, LOCALIZER_V_PATH, L_LABEL_MAP, 2);
-
+		localizer_v = create_detector(p_detector, LOCALIZER_V_PATH, L_LABEL_MAP_V, 2);
 		if (localizer_v == NULL)
 		{
 			Py_XDECREF(localizer_v);
 			LOG(INFO) << "vehicle localizer is NULL";
 		}
 
-		// * 3) Initialize Recognizer SSD
-		//		recognizer = create_detector(p_detector, RECOGNIZER_PATH, R_LABELMAP, R_CONF, R_LABEL);
-		recognizer = create_detector(p_detector, RECOGNIZER_PATH, R_LABELMAP, 1);
-
-		if (recognizer == NULL)
-		{
-			LOG(INFO) << "recognizer is NULL";
-			Py_XDECREF(recognizer);
-		}
 		Py_XDECREF(p_detector);
 		p_inference = PyImport_ImportModule("inference_mobilenet_tf");
 		if (p_inference == NULL) // Object creation error
@@ -192,8 +158,7 @@ MainInterface::MainInterface() : mOperation(true),
 		}
 		else
 		{
-			// * 4) Initialize GPU with null image
-			tmp = null_inference(p_inference, NULL_PATH, localizer, localizer_v, recognizer);
+			tmp = null_inference(p_inference, NULL_PATH, localizer_v);
 			if (tmp)
 				LOG(INFO) << "Finishing the python initialize activity";
 		}
@@ -213,9 +178,7 @@ MainInterface::MainInterface() : mOperation(true),
 
 MainInterface::~MainInterface()
 {
-
-	Py_XDECREF(localizer);
-	Py_XDECREF(recognizer);
+	Py_XDECREF(localizer_v);
 	Py_XDECREF(p_inference);
 	Py_Finalize();
 	LOG(INFO) << "Finishing the main activity";
@@ -242,16 +205,19 @@ void MainInterface::run()
 		// if video is not opened, there is nothing to do with it.
 		// Maybe we need to upload some message to server that shows
 		// the sensor has some problem to connect the camera.
+		// std::cout << "return1" << std::endl;
+
 		return;
 	}
-	//LOG(INFO) << "checkpoint a6" ;
+	// LOG(INFO) << "checkpoint a6" ;
 
 	while (!mVideoReader->isReady())
 	{
 		// Wait until the camera connection becomes ready
+
 		boost::this_thread::sleep_for(boost::chrono::seconds(1));
 	}
-	//LOG(INFO) << "checkpoint a7" ;
+	// LOG(INFO) << "checkpoint a7" ;
 
 	// Motion detector--delayed initialization to retrieve the original frame size
 #if 1
@@ -273,11 +239,10 @@ void MainInterface::run()
 		}
 		else
 		{
-
 			if (frame.empty())
 			{
-				if(mVideoReader-> framelen() == mVideoReader->framenow()) //비디오가 끝난거면
-					std::cout << "VIDEO IS FINISH" << std::endl;	
+				if (mVideoReader->framelen() == mVideoReader->framenow()) //비디오가 끝난거면
+					std::cout << "VIDEO IS FINISH" << std::endl;
 				else
 					LOG(INFO) << "Frame is empty";
 				return;
@@ -393,7 +358,7 @@ void MainInterface::retrieveNetworkAddresses()
 
 void MainInterface::initParkingSpots()
 {
-	int id = -1, timeLimit = 10, policy = 5; //hard coding
+	int id = -1, timeLimit = 5, policy = 5; //hard coding
 	std::string spotName = "spot";
 	int key, outputSequence = 0;
 	ROISettingCallbackData callbackData;
@@ -455,8 +420,8 @@ void MainInterface::initParkingSpots()
 
 			std::cout << "Please enter <<ID>> of the new spot : ";
 			std::cin >> id;
-			std::cout << "Please enter <<time limit>> of the new spot (in seconds) : ";
-			std::cin >> timeLimit;
+			//std::cout << "Please enter <<time limit>> of the new spot (in seconds) : ";
+			//std::cin >> timeLimit;
 			//std::cout << "Please enter <<spot name>> of the new spot : ";
 			//std::cin >> spotName;
 			//std::cout << "Please enter <<policy ID>> of the new spot : ";
@@ -486,7 +451,6 @@ void MainInterface::initParkingSpots()
 			break;
 		}
 	} while (key != 27);
-
 	cv::destroyWindow(mInitializeWindow);
 #endif
 }
@@ -497,152 +461,74 @@ void MainInterface::updateSpots(const Mat &frame, const pt::ptime &now)
 	using cv::Rect;
 	using std::vector;
 	char *plate_str;
+
+	char timebuf[100];
+	sprintf(timebuf, "./image/cpp1_1%d.jpg", int(time(0)));
+	imwrite(timebuf, frame);
+	clock_t starttime = clock();
+	cv::Rect tmp;
+	vector<Rect> car;
+	// PyListObject* labellist, *lerror, *lbbox;
+	PyObject *labellist, *lerror, *lbbox;
+
+	PyObject *result_v = call_localizer_Vehicle(p_inference, timebuf, localizer_v);
+
+	//get return value as pyobject
+	if (!PyArg_ParseTuple(result_v, "OO", &labellist, &lbbox))
+		LOG(INFO) << "*can't convert python val to c - vehicle*\n";
+
+
+	Mat clonedFrame = frame.clone();
+
+	// std::cout << "C size : "<<PyList_Size(lbbox) << std::endl;
+	// return type is list.
+	// std::cout << "====================tmp==================" << std::endl;
+	for (int i = 0; i < PyList_Size(lbbox); i++)
+	{
+		PyObject *btuple = PyList_GetItem(lbbox, (Py_ssize_t)i); // each list has tuple(x1, y1, width, height)
+		if (!PyArg_ParseTuple(btuple, "iiii", &tmp.x, &tmp.y, &tmp.width, &tmp.height))
+			LOG(INFO) << "* Can't parse python tuple";
+		car.push_back(tmp);
+		// std::cout << "car " << car[i].x << " " << car[i].y << " " << car[i].width << " " << car[i].height << std::endl;
+		rectangle(clonedFrame, tmp, CV_RGB(255, 0, 0));
+	}
+	imshow("detect box", clonedFrame); 
+	// std::cout << "======================================" << std::endl;
+
+	// cv::waitKey(0);
+	// std::cout << "inference time : " << (clock() - starttime)/CLOCKS_PER_SEC  << "." << (clock() - starttime)%CLOCKS_PER_SEC << std::endl;
+	// std::cout << "ok "<< std::endl; // for debug
+
+
 	if (mParkingSpotManager->size() >= 1)
 	{
 		for (auto &elem : *mParkingSpotManager)
 		{
-
 			vector<Rect> locs;
 			vector<Rect> plates;
 			std::shared_ptr<ParkingSpot> &parkingSpot = elem.second;
-
-			/*			if (mSettings->MotionDetectionEnabled && mMotionDetector->isMotionDetected(frame, elem.second->ROI)) {
-				std::cout << "Motion detected at spot " << elem.first << std::endl;
-			       	if(parkingSpot->UpdateEnabled){
-					continue;	// if some motion has detected for this ROI, wait until the region becomes stable
-			       	} else {
-				       	parkingSpot->reset();
-			       	}
-			}
-
-			if (!parkingSpot->UpdateEnabled) {
-				// Update only if the status of the parking spot is unstable
-				continue;
-			}
-*/
-			Mat croppedFrame = frame(parkingSpot->ROI);
-			//			cv::resize(croppedFrame, croppedFrame, cv::Size(64, 64)); //64, 64로 지워주는 부분은 필요하지 않을 것 같아서 지움
-
-			//=========juhee========= 수정 필요==============================================================
-			// printf("============================\n");
-			char timebuf[100];
-			sprintf(timebuf, "./image/cpp1_1%d.jpg", int(time(0)));
-			imwrite(timebuf, croppedFrame);
-			PyObject *result = call_localizer(p_inference, timebuf, localizer);
-
-			char *ob1, *plateType, *carbrand; // 순서대로 이미지 이름, 타입
-			float pConf, cConf;
-			cv::Rect plate, car;
-			if (!PyArg_ParseTuple(result, "ss(iiii)f", &ob1, &plateType, &plate.x, &plate.y, &plate.width, &plate.height, &pConf))
-			{ // 순서대로 이미지 이름, 번호판타입, 번호판 roi, conf
-				printf("***can't convert python val to c***\n");			
-			}
-			else
+			// Mat croppedFrame = frame(parkingSpot->ROI);
+			if (parkingSpot->update(localizer_detect(car, parkingSpot->ROI)))
 			{
-				PyObject *result_v = call_localizer_Vehicle(p_inference, timebuf, localizer_v);
-				if (!PyArg_ParseTuple(result_v, "s(iiii)f", &carbrand, &car.x, &car.y, &car.width, &car.height, &cConf))
-					printf("***can't convert python val to c - vehicle***\n");
-				// printf("check localizer return %s %s %f\n", ob1, plateType, pConf);
-				// printf("check localizer return %s %f\n",carbrand, cConf);
-
-				//			printf("check localizer return %s %s\n", ob1, ob2);
-
-
-				char ob3[30];
-				memset(ob3, 0, sizeof(ob3));
-				strcpy(ob3, ob1);
-				Py_XDECREF(result);
-				Py_XDECREF(result_v);
-
-				/*
-			localizer_detect 에서는 localizer결과값을 매개변수로 받고 그 결과를 bool로 update에 반환
-			이후에 localizer리턴값은 레이블, 플레이트 이미지(혹은 bbox들)를 리턴할 것.
-			bbox를 리턴하면 bbox에 따라 박스 그려주고 이미지 자르면 되니까 이미지를 또 리턴할 필요x
-			*/
-				//======================================
-				//jeeeun_if_detector_1
-				//			if (parkingSpot->update(mODetector->detect(croppedFrame, locs), mSettings->MotionDetectionEnabled)) {
-				//localizer 결과로 해당하는 범위 내의 레이블 값이 나온 경우
-				//if(true)로 조건을 주게 되면 모든 detect를 전부 exit()으로 처리 (이유 : parkingSpot->isOccupied()가 false라서)
-				//따라서 isOccupied()를 true로 해 줘야 하는 경우를 처리 해 주어야 recognizer를 시작 할 수 있음
-				if (parkingSpot->update(localizer_detect(carbrand, plateType)))
-				{						
-					if (parkingSpot->isOccupied())
-					{
-						car.x += parkingSpot->ROI.x;
-						car.y += parkingSpot->ROI.y;
-						plate.x += parkingSpot->ROI.x;
-						plate.y += parkingSpot->ROI.y;
-						// if the status has changed to 'Occupied' from 'Empty'
-						// detect license plate in cropped frame
-						// if (mLPDetector->detect(croppedFrame, plates)) {
-						//jeeeun
-						//-------------------------------------------------------------------------------------------------------------------
-						// printf("if enter recognizer!");
-						if (strcmp(plateType, "None") != 0) // plate를 찾은 경우
-						{
-							parkingSpot->pConf = int(pConf * 10000);
-							parkingSpot->setLocalizerROI(plate);
-							// printf("if enter recognizer!\n");
-
-							PyObject *recog_result = call_recognizer(p_inference, ob1, plateType, recognizer);
-									// printf("if enter recognizer!\n");
-
-							if (recog_result != NULL)
-							{
-								PyObject *temp_bytes = PyUnicode_AsEncodedString(recog_result, "UTF-8", "strict"); // Owned reference
-								if (temp_bytes != NULL)
-								{
-									Py_DECREF(recog_result);
-									plate_str = PyBytes_AS_STRING(temp_bytes); // Borrowed pointer
-									plate_str = strdup(plate_str);
-									// std::cout << "plate : " << plate_str << std::endl;
-									parkingSpot->setPlateNumber(plate_str);
-									Py_DECREF(temp_bytes);
-								}
-								else
-								{
-									Py_XDECREF(temp_bytes);
-									Py_XDECREF(result);
-									printf("encoding error!\n");
-								}
-							}
-							else
-							{
-								printf("recognizer can't find!\n");
-								Py_XDECREF(recog_result);
-							}
-						}
-						// if (strcmp(carbrand, "None") != 0 && strcmp(carbrand, "50") != 0) // carbrand를 찾은 경우
-						if (strcmp(carbrand, "None") != 0 ) // carbrand를 찾은 경우
-						{
-							parkingSpot->cConf = int(cConf * 10000);
-							parkingSpot->setVehicleROI(car);
-							int n = atoi(carbrand);
-							carbrand = parseToBrand(p_inference, n);
-							// if (strcmp(carbrand, "unknown"))
-							parkingSpot->setCarBrand(carbrand);
-						}
-						//jeeeun
-						parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, parkingSpot->getPlateNumber());
-
-					} //if occupied()문에 걸려있는 else임
-					else
-					{
-						// if the status has changed to 'Empty' from 'Occupied'
-						parkingSpot->exit(frame.clone(), now, parkingSpot->getPlateNumber());
-					}
-					//				parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, "QISENS6"); // QISENS6 IS PLATE NUMBER SO WHEN YOU GET PLATE NUMBER BY DETECTION ALGORITHM YOU HAVE TO REPLACE
+				if (parkingSpot->isOccupied())
+				{
+					//jeeeun
+					//parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, parkingSpot->getPlateNumber());
+					parkingSpot->enter(frame.clone(), parkingSpot->ROI, now, "null");
+					// std::cout << std::endl << "car brand in cpp parsing : " << carbrand << std::endl << std::endl;
 				}
-				//===============file remove==================
-				if (strcmp(ob3, "None") != 0)
-					if (remove(ob3) != 0)
-						printf("file cannot remove**\n");
+				else
+				{
+					// if the status has changed to 'Empty' from 'Occupied'
+					//parkingSpot->exit(frame.clone(), now, parkingSpot->getPlateNumber());
+					parkingSpot->exit(frame.clone(), now, "null");
+				}
 			}
-			if (remove(timebuf) != 0)
-				printf("file cannot remove!\n");
 		}
 	}
+	//===============file remove==================
+	if (remove(timebuf) != 0)
+		printf("file cannot remove!\n");
 }
 
 void MainInterface::print_usage_roi_settings()
@@ -683,8 +569,10 @@ PyObject *create_detector(PyObject *p_detector, const char *model_path, const ch
 	return NULL;
 }
 
-int null_inference(PyObject *p, const char *image_path, PyObject *localizer, PyObject *localizer2, PyObject *recognizer) // 번호판, 차
+//int null_inference(PyObject *p, const char *image_path, PyObject *localizer, PyObject *localizer2, PyObject *recognizer) // 번호판, 차
+int null_inference(PyObject *p, const char *image_path, PyObject *localizer2) // 번호판, 차
 {
+	// std::cout << "1111111"<<std::endl;
 	PyObject *init_inference;
 	PyObject *inference;
 	if (p)
@@ -692,7 +580,7 @@ int null_inference(PyObject *p, const char *image_path, PyObject *localizer, PyO
 		init_inference = PyObject_GetAttrString(p, "null_inference");
 		if (init_inference)
 		{
-			inference = PyObject_CallFunction(init_inference, "sOOO", image_path, localizer, localizer2, recognizer);
+			inference = PyObject_CallFunction(init_inference, "sO", image_path, localizer2);
 			if (inference)
 			{
 				Py_XDECREF(init_inference);
@@ -715,94 +603,81 @@ int null_inference(PyObject *p, const char *image_path, PyObject *localizer, PyO
 	LOG(INFO) << "inference null load : Can't load inference_mobilenet_tf library";
 	return 0;
 }
-bool localizer_detect(char *carBrand, char *plateType) // 차 혹은 번호판을 인식했을 때로 바꾸기 -> 둘 중 하나라도 인식하면 true임
+
+bool localizer_detect(std::vector<cv::Rect> car, cv::Rect ROI)
 {
-	// if (strcmp(carBrand, "None") != 0 && strcmp(carBrand, "50") != 0) //label 50 : unknown
-	// {
-	// 	return true;
-	// }
-	// else if (strcmp(plateType, "None") != 0)
-	// 	return true;
-	if(strcmp(carBrand, "None") != 0 || strcmp(plateType, "None") != 0)
+	//1. compare roi size. if detect size is too big, or small, delete it
+	//2. if the ROI box has more than 50% intersection size with detect box, then occupy.
+	int idx = -1, size_inter = 0;
+	float size_max = 0;
+	for (int i=0; i<car.size(); i++)
+	{
+		int xline=0, yline = 0;
+		float size_com = (float)(car[i].area()) / ROI.area();
+		// std::cout << "car[i].area() " << car[i].area() <<" roi.area() " << ROI.area() << std::endl;
+		// std::cout << "car : " << car[i].x << " " << car[i].y <<  " " << car[i].width <<  " " << car[i].height<<std::endl;
+		if (size_com < 0.4 || size_com > 1.5)
+			continue;
+		else
+		{
+			if(ROI.x > car[i].x && ROI.x < car[i].x + car[i].width)
+				xline = car[i].x + car[i].width - ROI.x;
+			else if(car[i].x > ROI.x && car[i].x < ROI.x + ROI.width)
+				xline = ROI.x + ROI.width - car[i].x;
+			else if(ROI.x > car[i].x && ROI.x + ROI.width< car[i].x + car[i].width)
+				xline = ROI.width;
+			else if(car[i].x > ROI.x && car[i].x + car[i].width < ROI.x + ROI.width)
+				xline = car[i].width;
+			else
+				continue;
+			
+			if(ROI.y > car[i].y && ROI.y < car[i].y + car[i].height)
+				yline = car[i].y + car[i].height - ROI.y;
+			else if(car[i].y > ROI.y && car[i].y < ROI.y + ROI.height)
+				yline = ROI.y + ROI.height - car[i].y;
+			else if(ROI.y > car[i].y && ROI.y + ROI.height < car[i].y + car[i].height)
+				yline = ROI.height;
+			else if(car[i].y > ROI.y && car[i].y + car[i].height < ROI.y + ROI.height)
+				yline = car[i].height;
+			else
+				continue;
+
+			size_inter = xline * yline;
+			// std::cout << "xline:" << xline << "yline:" << yline << std::endl;
+			// std::cout << "size_inter:" << size_inter << std::endl;
+			if(size_max < size_inter)
+			{
+				size_max = size_inter;
+				idx = i;
+			}
+		}
+	}
+	// std::cout << "size_max : " << size_max << std::endl;
+	// std::cout << "size_max/ROI : " << size_max/ROI.area() << std::endl;
+
+	if(size_max/ROI.area() > 0.5)
+	{
+		car.erase(car.begin() + idx);
 		return true;
-	else
-		return false;
-}
-
-PyObject *call_recognizer(PyObject *p_inference, char *plateImage, char *plateType, PyObject *recognizer)
-{
-	PyObject *init_inference;
-	PyObject *inference;
-	//printf("call_recognizer start!\n");
-	if (p_inference)
-	{
-		init_inference = PyObject_GetAttrString(p_inference, "call_recognizer");
-		if (init_inference)
-		{
-			//printf("enter recognizer if\n");
-			inference = PyObject_CallFunction(init_inference, "ssO", plateType, plateImage, recognizer);
-			//printf("recognizer callfunction okay\n");
-			if (inference)
-			{
-				Py_XDECREF(init_inference);
-				return inference;
-			}
-			else
-			{
-				Py_XDECREF(inference);
-				printf("Can't call recognizer\n");
-				return 0;
-			}
-		}
-		else
-		{
-			Py_XDECREF(init_inference);
-			printf("Can't load call_recognizer function\n");
-			return 0;
-		}
 	}
-}
+	return false;
 
-PyObject *call_localizer(PyObject *p_inference, char *image, PyObject *localizer)
-{
-	PyObject *init_inference_image;
-	PyObject *inference;
-	if (p_inference)
-	{
-		init_inference_image = PyObject_GetAttrString(p_inference, "call_localizer");
-		if (init_inference_image)
-		{
-			inference = PyObject_CallFunction(init_inference_image, "sO", image, localizer);
-			if (inference)
-			{
-				Py_XDECREF(init_inference_image);
-				return inference;
-			}
-			else
-			{
-				Py_XDECREF(inference);
-				LOG(INFO) <<"Can't call localizer\n";
-				return 0;
-			}
-		}
-		else
-		{
-			Py_XDECREF(init_inference_image);
-			LOG(INFO) <<"Can't load call_localizer function\n";
-			return 0;
-		}
-	}
-}
+	
 
+}
 PyObject *call_localizer_Vehicle(PyObject *p_inference, char *image, PyObject *localizer)
 {
+	// std::cout << "1111111"<<std::endl;
 	PyObject *init_inference_image;
 	PyObject *inference;
 	if (p_inference)
 	{
+		// std::cout << "222222222"<<std::endl;
+
 		init_inference_image = PyObject_GetAttrString(p_inference, "call_localizer_vehicle");
 		if (init_inference_image)
 		{
+			// std::cout << "333333333"<<std::endl;
 			inference = PyObject_CallFunction(init_inference_image, "sO", image, localizer);
 			if (inference)
 			{
@@ -812,61 +687,14 @@ PyObject *call_localizer_Vehicle(PyObject *p_inference, char *image, PyObject *l
 			else
 			{
 				Py_XDECREF(inference);
-				LOG(INFO) <<"Can't call vehicle localizer\n";
+				LOG(INFO) << "Can't call vehicle localizer\n";
 				return 0;
 			}
 		}
 		else
 		{
 			Py_XDECREF(init_inference_image);
-			LOG(INFO) <<"Can't load call_localizer_v function\n";
-			return 0;
-		}
-	}
-}
-
-char *parseToBrand(PyObject *p, int n)
-{
-	PyObject *init_inference;
-	PyObject *inference;
-	char *result;
-	if (p)
-	{
-		init_inference = PyObject_GetAttrString(p, "parseToBrand");
-		if (init_inference)
-		{
-			//PyObject *recog_result = call_recognizer(p_inference, ob1, platetype, recognizer);
-			inference = PyObject_CallFunction(init_inference, "i", n);
-			if (inference)
-			{
-				PyObject *temp_bytes = PyUnicode_AsEncodedString(inference, "UTF-8", "strict"); // Owned reference
-				if (temp_bytes != NULL)
-				{
-					result = PyBytes_AS_STRING(temp_bytes); // Borrowed pointer
-					result = strdup(result);
-					// std::cout << "========================" << std::endl;
-					// std::cout << "partoBrand in result : " << result << std::endl;
-					// std::cout << "========================" << std::endl;
-					Py_DECREF(temp_bytes);
-					return result;
-				}
-				else
-				{
-					std::cout << "encoding error!" << std::endl;
-					return 0;
-				}
-			}
-			else
-			{
-				Py_XDECREF(inference);
-				printf("Can't call parseToBrand\n");
-				return 0;
-			}
-		}
-		else
-		{
-			Py_XDECREF(init_inference);
-			printf("Can't load parse function\n");
+			LOG(INFO) << "Can't load call_localizer_v function\n";
 			return 0;
 		}
 	}
