@@ -43,6 +43,9 @@ cd build
 ### setup the compile environment
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc ..
 
+### makefile claen
+./initCmake.sh
+
 ### compile the library
 make
 
