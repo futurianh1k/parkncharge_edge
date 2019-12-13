@@ -43,9 +43,14 @@ cd build
 ### setup the compile environment
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc ..
 
+### makefile claen
+./initCmake.sh
+
 ### compile the library
 make
 
 ### Install the binaries/libraries to your local system (prefix is /usr)
 sudo make install
 ```
+
+*If run with tensorflow, must be copy or clone tflib*
